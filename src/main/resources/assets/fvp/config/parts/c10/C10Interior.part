@@ -1,0 +1,25 @@
+{
+    "RegistryName": "fvp:c10_interior",
+    "Addon": "fvtm:fvp",
+    "Name": "C10 Interior",
+    "Model": "fvp:models/part/c10_interior",
+    "Category": "interior",
+    "Texture": "Default;fvp:textures/cars/c10.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": false,
+        "Compatible":[
+            { "Vehicle": "fvp:c10", "x": 0, "y": 0, "z": 0 }
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "123.4", "priority": "veryhigh"
+    	}
+    ],
+    "Function":{
+    	"id": "fvtm:inventory", "type": "ITEM", "capacity": 5
+    }
+}

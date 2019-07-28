@@ -1,0 +1,31 @@
+{
+    "RegistryName": "fvp:c10_seats",
+    "Addon": "fvtm:fvp",
+    "Name": "C10 Seats",
+    "Model": "fvp:models/part/c10_seats",
+    "Category": "seats",
+    "Texture": "Default;fvp:textures/cars/c10.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            { "Vehicle": "fvp:c10", "x": 0, "y": 0, "z": 0 }
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "120.50", "priority": "veryhigh"
+    	}
+    ],
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "x": 2, "y": -1, "z": -10, "name": "driver", "driver": true },
+    		{ "x": 2, "y": -1, "z": 10, "name": "pass_front" },
+    		{ "x": -16, "y": -1, "z": -10, "name": "pass_rear_left" },
+    		{ "x": -16, "y": -1, "z": 10, "name": "pass_rear_right" }
+    	]
+    }
+}

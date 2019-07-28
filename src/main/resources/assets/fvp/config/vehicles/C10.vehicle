@@ -1,0 +1,44 @@
+{
+    "RegistryName": "fvp:c10",
+    "Addon": "fvtm:fvp",
+    "Name": "C10 [Dekagra]",
+    "Model": "fvp:models/vehicle/c10",
+    "PrimaryColor": "#A8A8A8",
+    "SecondaryColor": "#C2C2C2",
+    "Texture": "Default;fvp:textures/cars/c10.png",
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 1480 },
+    	{ "id":"constructor_length", "type": "float", "value": 3 },
+    	{ "id":"constructor_height", "type": "float", "value": -9 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 18 }
+    ],
+    "WheelPositions":[
+        { "x":  32, "y": 0, "z": -18, "id": "right_front_wheel", "radius": 8, "drive": true, "y_rot": 180, "steering": true },
+        { "x":  32, "y": 0, "z":  18, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },
+        { "x": -32, "y": 0, "z": -18, "id": "right_back_wheel", "radius": 8, "y_rot": 180 },
+        { "x": -32, "y": 0, "z":  18, "id": "left_back_wheel", "radius": 8 }
+    ],
+    "RequiredParts": [
+        "right_front_wheel",
+        "left_front_wheel",
+        "right_back_wheel",
+        "left_back_wheel",
+        "steering_wheel",
+        "interior",
+        "seats",
+        "engine",
+        "fuel_tank"
+    ],
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.98,
+    	"MaxNegativeThrottle": 0.89,
+    	"TurnLeftModifier": 0.7,
+    	"TurnRightModifier": 0.7,
+    	"WheelPositions":[
+	        { "x": -32, "y": -7, "z": -18 },
+	        { "x": -32, "y": -7, "z":  18 },
+	        { "x":  32, "y": -7, "z":  18 },
+	        { "x":  32, "y": -7, "z": -18 }
+    	]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "RegistryName": "fvp:c9_doors",
+    "Addon": "fvtm:fvp",
+    "Name": "C9 Doors",
+    "Model": "fvp:models/part/c9_doors",
+    "Category": "doors",
+    "Textures": [
+        "Default;fvp:textures/cars/c9.png",
+        "Noise;fvp:textures/cars/c9_alt0.png"
+    ],
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            { "Vehicle": "fvp:sentinel", "x": 0, "y": 0, "z": 0 }
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "200", "priority": "veryhigh"
+    	}
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "RegistryName": "fvp:c10_license_plates",
+    "Addon": "fvtm:fvp",
+    "Name": "C10 License Plates",
+    "Model": "fvp:models/part/c10_license_plates",
+    "Category": "license_plates",
+    "Texture": "Default;fvp:textures/cars/c10.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            { "Vehicle": "fvp:c10", "x": 0, "y": 0, "z": 0 }
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "5", "priority": "veryhigh"
+    	}
+    ]
+}

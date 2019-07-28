@@ -1,0 +1,22 @@
+{
+    "RegistryName": "fvp:c10_lights",
+    "Addon": "fvtm:fvp",
+    "Name": "C10 Lights",
+    "Model": "fvp:models/part/c10_lights",
+    "Category": "lights",
+    "Texture": "Default;fvp:textures/cars/c10.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            { "Vehicle": "fvp:c10", "x": 0, "y": 0, "z": 0 }
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "48.35", "priority": "veryhigh"
+    	}
+    ]
+}

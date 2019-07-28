@@ -1,0 +1,22 @@
+{
+    "RegistryName": "fvp:c10_steering_wheel",
+    "Addon": "fvtm:fvp",
+    "Name": "C10 Steering Wheel",
+    "Model": "fvp:models/part/c10_steering_wheel",
+    "Category": "steering_wheel",
+    "Texture": "Default;fvp:textures/cars/c10.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            { "Vehicle": "fvp:c10", "x": 14, "y": -12, "z": 10 }
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "36.78", "priority": "veryhigh"
+    	}
+    ]
+}
