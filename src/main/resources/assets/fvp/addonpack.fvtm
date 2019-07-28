@@ -4,7 +4,7 @@
   "URL": "http://fexcraft.net/download?modid=addon-fvp",
   "UpdateID": "addon-fvp",
   "License": "http://fexcraft.net/license?id=mods",
-  "Dependencies": ["fvtm:generic"],
+  "Dependencies": ["fvtm:gep"],
   "Authors": [
     "01e4af9b-2a30-471e-addf-f6338ffce04b"
   ],
