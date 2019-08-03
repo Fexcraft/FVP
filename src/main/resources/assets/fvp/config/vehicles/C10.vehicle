@@ -33,12 +33,6 @@
     	"MaxPositiveThrottle": 1.98,
     	"MaxNegativeThrottle": 0.89,
     	"TurnLeftModifier": 0.7,
-    	"TurnRightModifier": 0.7,
-    	"WheelPositions":[
-	        { "x": -32, "y": -7, "z": -18 },
-	        { "x": -32, "y": -7, "z":  18 },
-	        { "x":  32, "y": -7, "z":  18 },
-	        { "x":  32, "y": -7, "z": -18 }
-    	]
+    	"TurnRightModifier": 0.7
     }
 }
