@@ -1,0 +1,23 @@
+{
+    "RegistryName": "fvp:t1_front_wheel",
+    "Addon": "fvtm:fvp",
+    "Name": "T1 Front Type Wheel",
+    "Model": "fvp:models/part/t1_front_wheel",
+    "Category": "wheel",
+    "Function": "fvtm:wheel",
+    "Textures": [
+        "Default;fvp:textures/trucks/t1p.png"
+    ],
+    "Installation":{
+    	"Handler": "wheel",
+        "Removable": true,
+        "Radius": 10, "Width": 6
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "45", "priority": "veryhigh"
+    	}
+    ]
+}
