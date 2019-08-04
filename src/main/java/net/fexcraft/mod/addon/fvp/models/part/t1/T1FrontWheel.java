@@ -96,10 +96,10 @@ public class T1FrontWheel extends PartModel {
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 497, 17, textureX, textureY).addBox(6, -3, 0.5f, 2, 6, 4).setName("Box 46"));
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 225, 25, textureX, textureY).addBox(-8, -3, 0.5f, 2, 6, 4).setName("Box 47"));
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 241, 25, textureX, textureY)
-			.addShapeBox(3, 6, 0.5f, 3, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0).setName("Box 48")
+			.addShapeBox(3, 6, 0.5f, 3, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1.99f, 0, 0, -1.99f, 0, 0, 0, 0).setName("Box 48")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 193, 33, textureX, textureY)
-			.addShapeBox(3, -8, 0.5f, 3, 2, 4, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 49")
+			.addShapeBox(3, -8, 0.5f, 3, 2, 4, 0, 0, 0, 0, 0, -1.99f, 0, 0, -1.99f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 49")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 209, 33, textureX, textureY)
 			.addShapeBox(-6, 6, 0.5f, 3, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0).setName("Box 50")
@@ -108,7 +108,7 @@ public class T1FrontWheel extends PartModel {
 			.addShapeBox(-6, -8, 0.5f, 3, 2, 4, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 51")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 257, 33, textureX, textureY)
-			.addShapeBox(6, 3, 0.5f, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, -3, 0, 0, 0, 0).setName("Box 52")
+			.addShapeBox(6, 3, 0.5f, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2.99f, 0, 0, -2.99f, 0, 0, 0, 0).setName("Box 52")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 273, 33, textureX, textureY)
 			.addShapeBox(-8, 3, 0.5f, 2, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0).setName("Box 53")
@@ -117,7 +117,7 @@ public class T1FrontWheel extends PartModel {
 			.addShapeBox(-8, -6, 0.5f, 2, 3, 4, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 54")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 305, 33, textureX, textureY)
-			.addShapeBox(6, -6, 0.5f, 2, 3, 4, 0, 0, 0, 0, 0, -3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 55")
+			.addShapeBox(6, -6, 0.5f, 2, 3, 4, 0, 0, 0, 0, 0, -2.99f, 0, 0, -2.99f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 55")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 321, 33, textureX, textureY)
 			.addShapeBox(3, 3, 0.5f, 3, 3, 4, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 56")
@@ -126,10 +126,10 @@ public class T1FrontWheel extends PartModel {
 			.addShapeBox(3, -6, 0.5f, 3, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0).setName("Box 57")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 353, 33, textureX, textureY)
-			.addShapeBox(-6, -6, 0.5f, 3, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, -3, 0, 0, 0, 0).setName("Box 58")
+			.addShapeBox(-6, -6, 0.5f, 3, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2.99f, 0, 0, -2.99f, 0, 0, 0, 0).setName("Box 58")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 377, 33, textureX, textureY)
-			.addShapeBox(-6, 3, 0.5f, 3, 3, 4, 0, 0, 0, 0, 0, -3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 59")
+			.addShapeBox(-6, 3, 0.5f, 3, 3, 4, 0, 0, 0, 0, 0, -2.99f, 0, 0, -2.99f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 59")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 417, 33, textureX, textureY).addBox(-3, -6, 0.5f, 6, 3, 5).setName("Box 60"));
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 441, 33, textureX, textureY).addBox(-3, 3, 0.5f, 6, 3, 5).setName("Box 61"));
@@ -155,7 +155,7 @@ public class T1FrontWheel extends PartModel {
 			.addShapeBox(3, 3, 5.5f, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, -3, 0, -1, -3, -0.5f, 0, -1, -0.5f).setName("Box 69")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 465, 17, textureX, textureY)
-			.addShapeBox(3, -6, 5.5f, 3, 3, 1, 0, 0, 0, 0, 0, -3, 0, -1, -3, -0.5f, 0, -1, -0.5f, 0, 0, 0, 0, 0, 0, -1, 0, -0.5f, 0, 0, -0.5f).setName("Box 70")
+			.addShapeBox(3, -6, 5.5f, 3, 3, 1, 0, 0, 0, 0, 0, -3, 0, -1, -3, -0.5f, 0, -1, -0.5f, 0, 0, 0, 0, 0, 0, -1.01f, 0, -0.5f, 0, 0, -0.5f).setName("Box 70")
 		);
 		wheel_front.add(new ModelRendererTurbo(wheel_front, 281, 9, textureX, textureY)
 			.addShapeBox(-3, -3, 5.5f, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f).setName("Box 71")

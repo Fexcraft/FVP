@@ -1,7 +1,7 @@
 {
     "RegistryName": "fvp:t1_back_wheel",
     "Addon": "fvtm:fvp",
-    "Name": "T1 Front Type Wheel",
+    "Name": "T1 Rear Type Wheel",
     "Model": "fvp:models/part/t1_rear_wheel",
     "Category": "wheel",
     "Function": "fvtm:wheel",

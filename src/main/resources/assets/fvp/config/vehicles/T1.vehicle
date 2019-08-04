@@ -1,0 +1,27 @@
+{
+    "RegistryName": "fvp:t1p",
+    "Addon": "fvtm:fvp",
+    "Name": "T1 [P Variant]",
+    "Model": "fvp:models/vehicle/t1p",
+    "PrimaryColor": "#A8A8A8",
+    "SecondaryColor": "#C2C2C2",
+    "Texture": "Default;fvp:textures/trucks/t1p.png",
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 2567.8 },
+    	{ "id":"constructor_length", "type": "float", "value": 6 },
+    	{ "id":"constructor_height", "type": "float", "value": -10.5 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 19.5 }
+    ],
+    "WheelPositions":[
+        { "x":  35, "y": 0, "z": -17, "id": "right_front_wheel", "radius": 10, "drive": true, "y_rot": 180, "steering": true },
+        { "x":  35, "y": 0, "z":  17, "id": "left_front_wheel", "radius": 10, "drive": true, "steering": true },
+        { "x": -71, "y": 0, "z": -17, "id": "right_back_wheel", "radius": 10, "y_rot": 180 },
+        { "x": -71, "y": 0, "z":  17, "id": "left_back_wheel", "radius": 10 }
+    ],
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.2,
+    	"MaxNegativeThrottle": 0.2,
+    	"TurnLeftModifier": 1.5,
+    	"TurnRightModifier": 1.5
+    }
+}

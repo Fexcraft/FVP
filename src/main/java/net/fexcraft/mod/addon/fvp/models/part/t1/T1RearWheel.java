@@ -17,6 +17,7 @@ public class T1RearWheel extends PartModel {
 	public T1RearWheel(){
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
+		//
 		TurboList wheel_rear = new TurboList("wheel_rear");
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 249, 145, textureX, textureY).addBox(-8, -3, 0, 16, 6, 2).setName("Box 231"));
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 209, 121, textureX, textureY).addBox(-3, 3, 0, 6, 5, 2).setName("Box 232"));
@@ -38,16 +39,16 @@ public class T1RearWheel extends PartModel {
 			.addShapeBox(6, 3, 0, 2, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0).setName("Box 241")
 		);
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 161, 57, textureX, textureY)
-			.addShapeBox(-8, -6, 0, 2, 3, 2, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 242")
+			.addShapeBox(-8, -6, 0, 2, 3, 2, 0, -1.99f, 0, 0, 0, 0, 0, 0, 0, 0, -1.99f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 242")
 		);
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 249, 113, textureX, textureY)
-			.addShapeBox(-6, -8, 0, 3, 2, 2, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 243")
+			.addShapeBox(-6, -8, 0, 3, 2, 2, 0, -2.99f, 0, 0, 0, 0, 0, 0, 0, 0, -2.99f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 243")
 		);
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 361, 57, textureX, textureY)
-			.addShapeBox(6, -6, 0, 2, 3, 2, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 244")
+			.addShapeBox(6, -6, 0, 2, 3, 2, 0, 0, 0, 0, -1.99f, 0, 0, -1.99f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 244")
 		);
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 281, 113, textureX, textureY)
-			.addShapeBox(3, -8, 0, 3, 2, 2, 0, 0, 0, 0, -3, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 245")
+			.addShapeBox(3, -8, 0, 3, 2, 2, 0, 0, 0, 0, -2.99f, 0, 0, -2.99f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).setName("Box 245")
 		);
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 209, 97, textureX, textureY)
 			.addShapeBox(-10, 3, 0, 2, 3, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 2, 0, 0, 2, 0, 0, -2, 0, 0)
