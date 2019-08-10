@@ -1,0 +1,23 @@
+{
+    "RegistryName": "fvp:c10_trailer_hitch",
+    "Addon": "fvtm:fvp",
+    "Name": "C10 Trailer Hitch",
+    "Model": "fvp:models/part/c10_th",
+    "Category": "trailer_hitch",
+    "Texture": "Default;fvp:textures/parts/c10_th.png",
+    "Installation":{
+    	"Handler": "connector",
+        "Removable": true,
+        "Compatible":[
+            { "vehicle": "fvp:c10", "x": 0, "y": 0, "z": 0 }
+        ],
+        "Rear": [ -50.5, 1, 0 ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "24.5", "priority": "veryhigh"
+    	}
+    ]
+}

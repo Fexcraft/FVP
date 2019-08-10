@@ -12,10 +12,10 @@
         "Rand01;fvp:textures/cars/c9_alt2.png"
     ],
     "WheelPositions":[
-        { "x":  33, "y": 10, "z": -16, "id": "right_front_wheel", "radius": 7, "drive": true, "y_rot": 180, "steering": true },
-        { "x":  33, "y": 10, "z":  16, "id": "left_front_wheel", "radius": 7, "drive": true, "steering": true },
-        { "x": -33, "y": 10, "z": -16, "id": "right_back_wheel", "radius": 7, "y_rot": 180 },
-        { "x": -33, "y": 10, "z":  16, "id": "left_back_wheel", "radius": 7 }
+        { "x":  33, "y": 10, "z":  16, "id": "right_front_wheel", "radius": 7, "drive": true, "steering": true },
+        { "x":  33, "y": 10, "z": -16, "id": "left_front_wheel", "radius": 7, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -33, "y": 10, "z":  16, "id": "right_back_wheel", "radius": 7 },
+        { "x": -33, "y": 10, "z": -16, "id": "left_back_wheel", "radius": 7, "y_rot": 180 }
     ],
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 1500 },

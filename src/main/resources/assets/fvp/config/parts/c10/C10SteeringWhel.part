@@ -9,7 +9,7 @@
     	"Handler": "default",
         "Removable": true,
         "Compatible":[
-            { "Vehicle": "fvp:c10", "x": 14, "y": -12, "z": 10 }
+            { "vehicle": "fvp:c10", "x": 14, "y": -12, "z": 10 }
         ]
     },
     "Modifiers":[

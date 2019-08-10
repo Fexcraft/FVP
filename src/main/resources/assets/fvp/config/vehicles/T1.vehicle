@@ -13,10 +13,10 @@
     	{ "id":"constructor_wheel_offset", "type": "float", "value": 19.5 }
     ],
     "WheelPositions":[
-        { "x":  35, "y": 0, "z": -17, "id": "right_front_wheel", "radius": 10, "drive": true, "y_rot": 180, "steering": true },
-        { "x":  35, "y": 0, "z":  17, "id": "left_front_wheel", "radius": 10, "drive": true, "steering": true },
-        { "x": -71, "y": 0, "z": -17, "id": "right_back_wheel", "radius": 10, "y_rot": 180 },
-        { "x": -71, "y": 0, "z":  17, "id": "left_back_wheel", "radius": 10 }
+        { "x":  35, "y": 0, "z":  17, "id": "right_front_wheel", "radius": 10, "drive": true, "steering": true },
+        { "x":  35, "y": 0, "z": -17, "id": "left_front_wheel", "radius": 10, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -71, "y": 0, "z":  17, "id": "right_back_wheel", "radius": 10 },
+        { "x": -71, "y": 0, "z": -17, "id": "left_back_wheel", "radius": 10, "y_rot": 180 }
     ],
     "LegacyData":{
     	"MaxPositiveThrottle": 1.2,
