@@ -1,0 +1,12 @@
+{
+    "RegistryName": "fvp:t1_steering_wheel",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t1_steering_wheel",
+    "Category": "steering_wheel",
+    "Textures": [ "fvp:textures/trucks/t1p.png" ],
+    "Installation":{
+        "Removable": false,
+	    "Compatible": [ { "vehicle": "fvp:t1p" } ],
+	    "Incompatible": [ { "vehicle": "t2s", "parts": [ "all" ] } ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "RegistryName": "fvp:t1_type1_cargoupgrade",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t1_type1",
+    "Name": "T1 Type 1 Cargo Upgrade",
+    "Category": "cargo",
+    "Textures": [
+        "Default;fvp:textures/parts/t1_1p.png",
+        "FTS;fvp:textures/parts/t1_alt_1.png",
+        "FVP;fvp:textures/parts/t1_alt_2.png"
+    ],
+    "Installation": {
+	    "Compatible": [
+	        { "vehicle": "fvp:t1p", "x": 0, "y": 0, "z": 0 }
+	    ]
+    },
+    "Function": {
+    	"id": "fvtm:inventory", "type": "ITEM", "capacity": 128
+    },
+    "Modifiers":[
+    	{ "id": "weight", "type": "additive", "target": "vehicle:weight", "value": "500", "priority": "veryhigh" }
+    ],
+    "Attributes":[
+    	{ "id":"t1_type1_door", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ]
+}

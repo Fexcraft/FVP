@@ -1,0 +1,21 @@
+{
+    "RegistryName": "fvp:t1_type4_cargoupgrade",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t1_type4",
+    "Name": "T1 Type 4 Cargo Upgrade",
+    "Category": "cargo",
+    "Textures": [
+        "Default;fvp:textures/parts/t1_type4.png",
+        "ChemLabs;fvp:textures/parts/t1_type4_alt1.png",
+        "Milk;fvp:textures/parts/t1_type4_alt2.png"
+    ],
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:t1p" } ]
+    },
+    "Function": {
+    	"id": "fvtm:inventory", "type": "FLUID", "capacity": 320000
+    },
+    "Modifiers":[
+    	{ "id": "weight", "type": "additive", "target": "vehicle:weight", "value": "1256", "priority": "veryhigh" }
+    ]
+}

@@ -23,5 +23,14 @@
     	"MaxNegativeThrottle": 0.2,
     	"TurnLeftModifier": 1.5,
     	"TurnRightModifier": 1.5
+    },
+    "PreInstalled":{
+    	"front_seats": "fvp:t1_front_seats",
+    	"right_back_wheel": "fvp:t1_back_wheel",
+    	"left_back_wheel": "fvp:t1_back_wheel",
+    	"right_front_wheel": "fvp:t1_front_wheel",
+    	"left_front_wheel": "fvp:t1_front_wheel",
+    	"steering_wheel": "fvp:t1_steering_wheel",
+    	"lights": "fvp:t1_lights"
     }
 }

@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t1_type5_cargoupgrade",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t1_type5",
+    "Name": "T1 Type 5 Cargo Upgrade",
+    "Category": [ "cargo" ],
+    "Textures": [ "fvp:textures/parts/t1_type5.png" ],
+    "Installation":{
+    	"Handler": "default",
+	    "Compatible": [
+	        { "vehicle": "fvp:t1p", "x": 0, "y": 0, "z": 0 }
+	    ]
+    },
+    "Function":{ "id": "fvtm:container", "x": -40, "y": 13, "z": 0, "rot": 180, "length": 6 }
+}

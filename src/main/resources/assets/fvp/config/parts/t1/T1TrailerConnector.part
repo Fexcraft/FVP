@@ -1,0 +1,20 @@
+{
+    "RegistryName": "fvp:t1_trailer_connector",
+    "Addon": "fvtm:fvp",
+    "Name": "Trailer hitch.",
+    "Model": "fvp:models/part/t1_trailer_connector",
+    "Category": "trailer_hitch", 
+    "Texture": "fvp:textures/parts/t1_trailer_connector.png",
+    "Installation":{
+    	"Handler": "connector",
+        "Removable": true,
+        "Compatible":[
+            { "vehicle": "fvp:t1p" },
+            { "vehicle": "fvp:ot1", "x": 25 }
+        ],
+        "Rear": {
+        	"fvp:t1p": [ -100.5, 2, 0.5 ],
+        	"fvp:ot1": [ -80.5, 2, 0.5 ] 
+        }
+    }
+}

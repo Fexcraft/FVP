@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t1_front_seats",
+    "Name": "T1 Front Seats", "Addon": "fvtm:fvp", "Model": "null",
+    "Category": [ "front_seats" ],
+    "Textures": [ "fvp:textures/trucks/t1p.png" ],
+    "Installation":{ "Handler": "default", "Removable": false },
+    "Function":{
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "driver": true, "x": 33, "y": 12, "z": -11, "name": "driver", "min_yaw": -120, "max_yaw": 120 },
+            { "x": 33, "y": 15, "z":  6, "name": "pass_front_middle" },
+            { "x": 33, "y": 15, "z": 14, "name": "pass_front_right" }
+    	]
+    }
+}

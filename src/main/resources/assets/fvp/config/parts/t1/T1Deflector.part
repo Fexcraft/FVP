@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:t1_deflector",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t1dc1.jtmt",
+    "Category": "top_deflector",
+    "Textures": "fvtm:textures/entity/null.png",
+    "Installation": {
+		"Compatible": [ { "vehicle": "fvp:t1p", "y": 1 } ],
+		"Incompatible": [ { "vehicle": "fvp:t1p", "parts": [ "fvp:t1_dc2" ] } ]
+    }
+}

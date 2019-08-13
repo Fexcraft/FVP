@@ -22,7 +22,7 @@
     "Function": {
     	"id": "fvtm:seats",
     	"seats":[
-    		{ "x": 2, "y": -1, "z": -10, "name": "driver", "driver": true },
+    		{ "x": 2, "y": -1, "z": -10, "name": "driver", "driver": true, "min_yaw": -120, "max_yaw": 120 },
     		{ "x": 2, "y": -1, "z": 10, "name": "pass_front" },
     		{ "x": -16, "y": -1, "z": -10, "name": "pass_rear_left" },
     		{ "x": -16, "y": -1, "z": 10, "name": "pass_rear_right" }

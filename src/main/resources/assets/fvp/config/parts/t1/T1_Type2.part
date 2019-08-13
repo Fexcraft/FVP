@@ -1,0 +1,25 @@
+{
+    "RegistryName": "fvp:t1_type2_cargoupgrade",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t1_type2",
+    "Name": "Type 2 Tow Truck Upgrade",
+    "Category": "cargo",
+    "Texture": "fvp:textures/parts/t1_type2.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:t1p" } ]
+    },
+    "Modifiers":[
+    	{ "id": "weight", "type": "additive", "target": "vehicle:weight", "value": "750", "priority": "veryhigh" }
+    ],
+    "Function": {
+    	"id": "fvtm:inventory", "type": "ITEM", "capacity": 4,
+    	"whitelist":[
+            { "id": "minecraft:stone", "meta": 6 },
+            { "id": "minecraft:stone", "meta": 5 },
+            { "id": "minecraft:cobblestone" }
+    	]
+    },
+    "Attributes":[
+    	{ "id":"t1_type2_tracks", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ]
+}

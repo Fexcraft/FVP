@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:t1_lights",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t1_lights",
+    "Name": "T1 Lights",
+    "Category": "lights",
+    "Texture": "fvp:textures/trucks/t1p.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:t1p" } ]
+    }
+}

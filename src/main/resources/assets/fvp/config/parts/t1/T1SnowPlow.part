@@ -1,0 +1,18 @@
+{
+    "RegistryName": "fvp:t1_snowplow",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t1_snow_plow",
+    "Name": "T1 FT1 Snow Plow",
+    "Category": "front_tool",
+    "Scripts":[ "net.fexcraft.mod.addon.fvp.scripts.T1SnowPlowScript.class" ],
+    "Texture": "fvp:textures/parts/t1_ft1.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:t1p" } ]
+    },
+    "Modifiers":[
+    	{ "id": "weight", "type": "additive", "target": "vehicle:weight", "value": "210", "priority": "veryhigh" }
+    ],
+    "Attributes":[
+    	{ "id":"t1_snowplow_state", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ]
+}

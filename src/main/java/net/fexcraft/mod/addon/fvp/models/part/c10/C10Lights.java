@@ -3,6 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c10;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
 
@@ -26,6 +27,7 @@ public class C10Lights extends PartModel {
 			.addShapeBox(0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -2.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2)
 			.setRotationPoint(-48.9f, -9, 19).setRotationAngle(0, 0, 0)
 		);
+		indicator_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
 		this.groups.add(indicator_left);
 		//
 		TurboList indicator_right = new TurboList("indicator_right");
@@ -37,6 +39,7 @@ public class C10Lights extends PartModel {
 			.addShapeBox(0, 0, 0, 4, 3, 3, 0, 0, 0, -0.5f, -2.5f, 0, -2, -2, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, -2, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(45.9f, -9, -22).setRotationAngle(0, 0, 0)
 		);
+		indicator_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
 		this.groups.add(indicator_right);
 		//
 		TurboList lights_fog = new TurboList("lights_fog");
