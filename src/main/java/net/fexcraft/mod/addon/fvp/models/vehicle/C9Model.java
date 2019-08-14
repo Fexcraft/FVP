@@ -1448,6 +1448,8 @@ public class C9Model extends VehicleModel {
 		);
 		chassis_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(chassis_primary);
+		//
+		this.translate(0, -8, 0);
 	}
 
 }

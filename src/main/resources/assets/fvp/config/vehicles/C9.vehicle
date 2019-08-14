@@ -12,15 +12,15 @@
         "Rand01;fvp:textures/cars/c9_alt2.png"
     ],
     "WheelPositions":[
-        { "x":  33, "y": 10, "z":  16, "id": "right_front_wheel", "radius": 7, "drive": true, "steering": true },
-        { "x":  33, "y": 10, "z": -16, "id": "left_front_wheel", "radius": 7, "y_rot": 180, "drive": true, "steering": true },
-        { "x": -33, "y": 10, "z":  16, "id": "right_back_wheel", "radius": 7 },
-        { "x": -33, "y": 10, "z": -16, "id": "left_back_wheel", "radius": 7, "y_rot": 180 }
+        { "x":  33, "y": 0, "z":  16, "id": "left_front_wheel", "radius": 7, "drive": true, "steering": true },
+        { "x":  33, "y": 0, "z": -16, "id": "right_front_wheel", "radius": 7, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -33, "y": 0, "z":  16, "id": "left_back_wheel", "radius": 7 },
+        { "x": -33, "y": 0, "z": -16, "id": "right_back_wheel", "radius": 7, "y_rot": 180 }
     ],
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 1500 },
     	{ "id":"constructor_length", "type": "float", "value": 3 },
-    	{ "id":"constructor_height", "type": "float", "value": -18 },
+    	{ "id":"constructor_height", "type": "float", "value": -9 },
     	{ "id":"constructor_wheel_offset", "type": "float", "value": 16 }
     ],
     "RequiredParts": [
@@ -38,12 +38,11 @@
     	"MaxPositiveThrottle": 1.98,
     	"MaxNegativeThrottle": 0.89,
     	"TurnLeftModifier": 0.7,
-    	"TurnRightModifier": 0.7,
-	    "WheelPositions":[
-	        { "x": -33, "y": -18, "z": -16 },
-	        { "x": -33, "y": -18, "z":  16 },
-	        { "x":  33, "y": -18, "z":  16 },
-	        { "x":  33, "y": -18, "z": -16 }
-	    ]
+    	"TurnRightModifier": 0.7
+    },
+    "PreInstalled":{
+    	"interior": "fvp:c9_interior",
+    	"seats": "fvp:c9_seats",
+    	"steering_wheel": "fvp:c9_steering_wheel"
     }
 }

@@ -137,6 +137,8 @@ public class C9Interior extends PartModel {
 			.setRotationPoint(8.8f, -2, -10.5f).setRotationAngle(0, 0, 0).setName("Box 551")
 		);
 		this.groups.add(interior);
+		//
+		this.translate(0, -8, 0);
 	}
 
 }

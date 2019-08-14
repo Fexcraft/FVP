@@ -21,5 +21,11 @@
     		"target": "vehicle:weight",
     		"value": "200", "priority": "veryhigh"
     	}
+    ],
+    "Attributes":[
+    	{ "id":"c9_doors_fl", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id":"c9_doors_fr", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },
+    	{ "id":"c9_doors_bl", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_left" },
+    	{ "id":"c9_doors_br", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_right" }
     ]
 }

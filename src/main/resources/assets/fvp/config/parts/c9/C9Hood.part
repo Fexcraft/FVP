@@ -1,0 +1,14 @@
+{
+    "RegistryName": "fvp:c9_hood",
+    "Addon": "fvtm:fvp",
+    "Name": "C9 Standard Hood",
+    "Model": "fvp:models/part/c9_hood",
+    "Category": "hood",
+    "Texture": "fvp:textures/cars/c9.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:sentinel" } ]
+    },
+    "Attributes":[
+    	{ "id":"c9_hood", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ]
+}

@@ -71,6 +71,8 @@ public class C9Seats extends PartModel {
 			.setRotationPoint(-4.5f, 7.8f, 3.5f).setRotationAngle(0, 0, 0).setName("Box 445")
 		);
 		this.groups.add(seats);
+		//
+		this.translate(0, -8, 0);
 	}
 
 }

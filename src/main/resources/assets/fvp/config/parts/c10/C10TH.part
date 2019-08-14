@@ -9,9 +9,13 @@
     	"Handler": "connector",
         "Removable": true,
         "Compatible":[
-            { "vehicle": "fvp:c10", "x": 0, "y": 0, "z": 0 }
+            { "vehicle": "fvp:c10" },
+            { "vehicle": "fvp:sentinel", "x": -9, "y": -4 }
         ],
-        "Rear": [ -50.5, -1, 0 ]
+        "Rear": {
+        	"fvp:c10": [ -50.5, -1, 0 ],
+        	"fvp:sentinel": [ -59.5, 4, 0 ]
+        }
     },
     "Modifiers":[
     	{

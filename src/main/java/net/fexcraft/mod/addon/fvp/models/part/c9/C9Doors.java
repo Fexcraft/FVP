@@ -103,7 +103,7 @@ public class C9Doors extends PartModel {
 			.addShapeBox(-3.9f, 0, 2.5f, 1, 2, 1, 0, 0, -0.3f, -0.5f, -0.4f, -0.5f, -1, -0.9f, 0, 0, 0, 0, 0, 0, -0.3f, -0.5f, -0.4f, -0.5f, -1, -0.9f, 0, 0, 0, 0, 0)
 			.setRotationPoint(17, -6.5f, 17.5f).setRotationAngle(0, -10.000001f, 0).setName("Box 561")
 		);
-		door_front_left.addProgram(DefaultPrograms.RGB_PRIMARY);
+		door_front_left.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fl", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_left);
 		//
 		TurboList door_front_right = new TurboList("door_front_right");
@@ -191,7 +191,7 @@ public class C9Doors extends PartModel {
 			.addShapeBox(-3.8f, -3.25f, 1.5f, 1, 5, 1, 0, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f)
 			.setRotationPoint(17, -5.5f, -19.5f).setRotationAngle(60, 0, -45).setName("Box 568")
 		);
-		door_front_right.addProgram(DefaultPrograms.RGB_PRIMARY);
+		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fr", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_right);
 		//
 		TurboList door_rear_left = new TurboList("door_rear_left");
@@ -263,7 +263,7 @@ public class C9Doors extends PartModel {
 			.addShapeBox(-15, -1.9f, 1.9f, 16, 1, 1, 0, 0.4f, -0.3f, 0.3f, 0.5f, 0, 0, 0.5f, 0, 0, -0.2f, -0.3f, -0.3f, -0.2f, 0.3f, 0.3f, 0.5f, 0, 0, 0.5f, 0, 0, -0.6f, 0.3f, -0.3f)
 			.setRotationPoint(-8, 3.8f, 17.5f).setRotationAngle(-45, 0, 0).setName("Box 509")
 		);
-		door_rear_left.addProgram(DefaultPrograms.RGB_PRIMARY);
+		door_rear_left.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_bl", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_rear_left);
 		//
 		TurboList door_rear_right = new TurboList("door_rear_right");
@@ -335,9 +335,10 @@ public class C9Doors extends PartModel {
 			.addShapeBox(-5.5f, -2, 1.5f, 3, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, 0, 0, 0, 0, 0, 0, -0.1f, 0, 0, -0.1f)
 			.setRotationPoint(-8, 0, -19.5f).setRotationAngle(0, 0, 0).setName("Box 527")
 		);
-		door_rear_right.addProgram(DefaultPrograms.RGB_PRIMARY);
+		door_rear_right.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_br", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_rear_right);
 		//
+		this.translate(0, -8, 0);
 	}
 
 }

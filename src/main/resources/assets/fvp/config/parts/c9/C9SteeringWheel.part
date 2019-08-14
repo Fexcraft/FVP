@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:c9_steering_wheel",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/c9_steering_wheel",
+    "Name": "C9 Steering Wheel",
+    "Category": "steering_wheel",
+    "Texture": "fvp:textures/cars/c9.png",
+    "Installation":{
+    	"Compatible": [ { "vehicle": "fvp:sentinel" } ]
+    }
+}

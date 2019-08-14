@@ -1,0 +1,14 @@
+{
+    "RegistryName": "fvp:c9_trunk",
+    "Addon": "fvtm:fvp",
+    "Name": "C9 Standard Trunk",
+    "Model": "fvp:models/part/c9_trunk",
+    "Category": "trunk",
+    "Texture": "fvp:textures/cars/c9.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:sentinel" } ]
+    },
+    "Attributes":[
+    	{ "id":"c9_trunk", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ]
+}

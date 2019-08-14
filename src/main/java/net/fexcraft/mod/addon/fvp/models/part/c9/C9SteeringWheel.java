@@ -3,6 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c9;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
 
@@ -62,8 +63,10 @@ public class C9SteeringWheel extends PartModel {
 			.addShapeBox(-1, 0, -0.5f, 1, 3, 1, 0, -0.4f, 0, 0, 0, 0, 0, 0, 0, 0, -0.4f, 0, 0, -0.3f, 0, 0, 0, 0, 0, 0, 0, 0, -0.3f, 0, 0)
 			.setRotationPoint(6.5f, -2.5f, 8).setRotationAngle(-2.268928f, 0, 0.20943952f).setName("Box 457")
 		);
-		//TODO steering_wheel.addProgram(DefaultPrograms.STEERING_X);
+		steering_wheel.addProgram(DefaultPrograms.STEERING_WHEEL_X);
 		this.groups.add(steering_wheel);
+		//
+		this.translate(0, -8, 0);
 	}
 
 }

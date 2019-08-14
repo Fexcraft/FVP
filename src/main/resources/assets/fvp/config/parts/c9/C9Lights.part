@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:c9_lights",
+    "Addon": "fvtm:fvp",
+    "Name": "C9 Standard Lights",
+    "Model": "fvp:models/part/c9_lights",
+    "Category": "lights",
+    "Texture": "fvp:textures/cars/c9.png",
+    "Installation": {
+    	"Compatible": [ { "vehicle": "fvp:sentinel" } ]
+    }
+}

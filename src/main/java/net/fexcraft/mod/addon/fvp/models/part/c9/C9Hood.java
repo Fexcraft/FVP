@@ -143,8 +143,10 @@ public class C9Hood extends PartModel {
 			.addShapeBox(28, 2.5f, -6.8f, 1, 1, 1, 0, 0, -0.2f, -0.8f, -0.9f, -0.2f, -0.9f, -0.9f, -0.2f, 0, 0, -0.2f, 0, 0, -0.2f, -0.6f, -0.4f, 0.1f, -0.6f, 0.1f, -0.3f, 0, 0, -0.4f, 0)
 			.setRotationPoint(20, -5, 0).setRotationAngle(0, 0, 0).setName("Box 141")
 		);
-		door_hood.addPrograms(DefaultPrograms.RGB_PRIMARY);//TODO, new GeneralPrograms.CustomMultiDoorHood(-60, 2, true));
+		door_hood.addPrograms(new DefaultPrograms.AttributeRotator("c9_hood", true, -60, 0, -1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_hood);
+		//
+		this.translate(0, -8, 0);
 	}
 
 }

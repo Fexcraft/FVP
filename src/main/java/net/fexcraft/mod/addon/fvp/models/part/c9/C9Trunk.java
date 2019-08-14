@@ -67,8 +67,10 @@ public class C9Trunk extends PartModel {
 			.addShapeBox(-8, 0, 6.5f, 9, 1, 10, 0, 0, -1, -0.5f, -0.5f, 0.2f, 0.5f, 0.2f, -0.6f, 0.1f, -1, -1.4f, 0.1f, 0, 1, -0.5f, -0.5f, 0, 0.5f, 0.2f, 0.6f, 0.1f, -1, 1.4f, 0.1f)
 			.setRotationPoint(-38, -6, 0).setRotationAngle(0, 0, 0).setName("Box 329")
 		);
-		door_trunk.addPrograms(DefaultPrograms.RGB_PRIMARY);//TODO, new GeneralPrograms.CustomMultiDoorTrunk(57, 2, true));
+		door_trunk.addPrograms(new DefaultPrograms.AttributeRotator("c9_trunk", true, 0, 57, 1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_trunk);
+		//
+		this.translate(0, -8, 0);
 	}
 
 }

@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:c9_interior",
+    "Addon": "fvtm:fvp",
+    "Name": "C9 Standard Interior",
+    "Model": "fvp:models/part/c9_interior",
+    "Category": "interior",
+    "Texture": "fvp:textures/cars/c9.png",
+    "Installation": {
+    	"Compatible": [{ "vehicle": "fvp:sentinel" }]
+    }
+}

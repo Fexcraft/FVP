@@ -81,6 +81,8 @@ public class C9Lights extends PartModel {
 		);
 		lights_rear.addProgram(DefaultPrograms.REAR_LIGHTS);
 		this.groups.add(lights_rear);
+		//
+		this.translate(0, -8, 0);
 	}
 
 }

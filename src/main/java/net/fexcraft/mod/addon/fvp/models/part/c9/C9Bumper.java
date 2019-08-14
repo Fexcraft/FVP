@@ -105,6 +105,8 @@ public class C9Bumper extends PartModel {
 		);
 		bumper_rear.addProgram(new DefaultPrograms.IDSpecific("rear_bumper"));
 		this.groups.add(bumper_rear);
+		//
+		this.translate(0, -8, 0);
 	}
 
 }
