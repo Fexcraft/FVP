@@ -1,0 +1,14 @@
+{
+    "RegistryName": "fvp:c1r1t1_wheel",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/c1_r1_t1_wheel",
+    "Name": "C1R1T1 Wheel",
+    "Category": "wheel",
+    "Function": "fvtm:wheel",
+    "Texture": "fvp:textures/cars/c1_r1.png",
+    "Installation":{
+    	"Handler": "wheel",
+        "Removable": true,
+        "Radius": 9.5, "Width": 6
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "RegistryName": "fvp:c1r1",
+    "Addon": "fvtm:fvp",
+    "Name": "C1 (Serie R1)",
+    "Model": "fvp:models/vehicle/c1_r1",
+    "PrimaryColor": "#A8A8A8",
+    "SecondaryColor": "#C2C2C2",
+    "Texture": "fvp:textures/cars/c1_r1.png",
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 1238.0 },
+    	{ "id":"constructor_length", "type": "float", "value": 3 },
+    	{ "id":"constructor_height", "type": "float", "value": -9 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 19 }
+    ],
+    "WheelPositions":[
+        { "x":  43.5, "y": 0.5, "z":  17, "id": "left_front_wheel", "radius": 9.5, "drive": true, "steering": true },
+        { "x":  43.5, "y": 0.5, "z": -17, "id": "right_front_wheel", "radius": 9.5, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -43.5, "y": 0.5, "z":  17, "id": "left_back_wheel", "radius": 9.5 },
+        { "x": -43.5, "y": 0.5, "z": -17, "id": "right_back_wheel", "radius": 9.5, "y_rot": 180 }
+    ],
+    "RequiredParts": [
+        "right_front_wheel",
+        "left_front_wheel",
+        "right_back_wheel",
+        "left_back_wheel",
+        "steering_wheel",
+        "interior",
+        "front_seats",
+        "back_seats",
+        "engine",
+        "fuel_tank"
+    ],
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.76,
+    	"MaxNegativeThrottle": 0.898,
+    	"TurnLeftModifier": 0.6,
+    	"TurnRightModifier": 0.6
+    },
+    "PreInstalled":{
+    	"interior": "fvp:c1r1_interior",
+    	"back_seats": "fvp:c1r1_back_seats",
+    	"front_seats": "fvp:c1r1_front_seats",
+    	"steering_wheel": "fvp:c1r1_steering_wheel",
+    	"lights": "fvp:c1r1_lights",
+    	"doors": "fvp:c1r1_doors"
+    }
+}

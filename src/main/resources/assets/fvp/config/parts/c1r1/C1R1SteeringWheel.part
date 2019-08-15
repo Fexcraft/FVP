@@ -1,0 +1,12 @@
+{
+    "RegistryName": "fvp:c1r1_steering_wheel",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/c1_r1_steering_wheel",
+    "Name": "C1R1 Steering Wheel",
+    "Category": "steering_wheel",
+    "Texture": "fvp:textures/cars/c1_r1.png",
+    "Installation": {
+	    "Removable": false,
+	    "Compatible": [ { "vehicle": "fvp:c1r1" } ]
+    }
+}

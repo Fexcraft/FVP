@@ -1,0 +1,17 @@
+{
+    "RegistryName": "fvp:c1r1_back_seats",
+    "Name": "C1R1 Back Seats",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/c1_r1_back_seats",
+    "Category": "back_seats",
+    "Texture": "fvp:textures/cars/c1_r1.png",
+    "Installation": { "Removable": false },
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "x": -19, "y": 5, "z": -10, "name": "pass_rear_left" },
+    		{ "x": -19, "y": 5, "z": 10, "name": "pass_rear_right" },
+    		{ "x": -19, "y": 5, "z": 0, "name": "pass_rear_middle" }
+    	]
+    }
+}
