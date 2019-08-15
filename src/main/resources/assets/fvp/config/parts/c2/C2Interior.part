@@ -1,0 +1,19 @@
+{
+    "RegistryName": "fvp:c2_interior",
+    "Addon": "fvtm:fvp",
+    "Name": "C2 Interior",
+    "Model": "fvp:models/part/c2_interior",
+    "Category": "interior",
+    "Texture": "fvp:textures/cars/c2.png",
+    "Installation":{
+    	"Compatible": [{ "vehicle": "fvp:c2" }],
+    	"Removable": false
+    },
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "x": -4, "y": 12, "z": -13, "name": "driver", "driver": true, "min_yaw": -120, "max_yaw": 120 },
+    		{ "x": -4, "y": 12, "z": 13, "name": "pass_front" }
+    	]
+    }
+}

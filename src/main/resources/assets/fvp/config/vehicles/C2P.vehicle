@@ -1,0 +1,33 @@
+{
+    "RegistryName": "fvp:c2",
+    "Addon": "fvtm:fvp",
+    "Name": "C2 Type P",
+    "Model": "fvp:models/vehicle/c2",
+    "PrimaryColor": "#A8A8A8",
+    "SecondaryColor": "#C2C2C2",
+    "Texture": "fvp:textures/cars/c2.png",
+    "WheelPositions":[
+        { "x":  29.5, "y": -7.5, "z":  22, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },
+        { "x":  29.5, "y": -7.5, "z": -22, "id": "right_front_wheel", "radius": 8, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -59.5, "y": -7.5, "z":  22, "id": "left_back_wheel", "radius": 8 },
+        { "x": -59.5, "y": -7.5, "z": -22, "id": "right_back_wheel", "radius": 8, "y_rot": 180 }
+    ],
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 1120 },
+    	{ "id":"constructor_length", "type": "float", "value": 5 },
+    	{ "id":"constructor_height", "type": "float", "value": -2 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 20 }
+    ],
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.47,
+    	"MaxNegativeThrottle": 0.7,
+    	"TurnLeftModifier": 0.8,
+    	"TurnRightModifier": 0.8
+    },
+    "PreInstalled":{
+    	"doors": "fvp:c2_doors",
+    	"lights": "fvp:c2_lights",
+    	"interior": "fvp:c2_interior",
+    	"steering_wheel": "fvp:c2_steering_wheel"
+    }
+}

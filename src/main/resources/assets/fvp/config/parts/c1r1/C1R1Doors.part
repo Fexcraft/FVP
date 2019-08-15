@@ -1,7 +1,7 @@
 {
     "RegistryName": "fvp:c1r1_doors",
     "Addon": "fvtm:fvp",
-    "Name": "C10 Doors",
+    "Name": "C1R1 Doors",
     "Model": "fvp:models/part/c1_r1_doors",
     "Category": "doors",
     "Texture": "fvp:textures/cars/c1_r1.png",

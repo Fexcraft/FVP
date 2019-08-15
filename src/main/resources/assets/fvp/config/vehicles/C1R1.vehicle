@@ -18,18 +18,6 @@
         { "x": -43.5, "y": 0.5, "z":  17, "id": "left_back_wheel", "radius": 9.5 },
         { "x": -43.5, "y": 0.5, "z": -17, "id": "right_back_wheel", "radius": 9.5, "y_rot": 180 }
     ],
-    "RequiredParts": [
-        "right_front_wheel",
-        "left_front_wheel",
-        "right_back_wheel",
-        "left_back_wheel",
-        "steering_wheel",
-        "interior",
-        "front_seats",
-        "back_seats",
-        "engine",
-        "fuel_tank"
-    ],
     "LegacyData":{
     	"MaxPositiveThrottle": 1.76,
     	"MaxNegativeThrottle": 0.898,
