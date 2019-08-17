@@ -5,7 +5,10 @@
     "Model": "fvp:models/vehicle/t1p",
     "PrimaryColor": "#A8A8A8",
     "SecondaryColor": "#C2C2C2",
-    "Texture": "Default;fvp:textures/trucks/t1p.png",
+    "Textures": [
+    	"Default;fvp:textures/trucks/t1p.png",
+    	"Classic;fvp:textures/trucks/t1pc.png"
+    ],
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 2567.8 },
     	{ "id":"constructor_length", "type": "float", "value": 6 },
