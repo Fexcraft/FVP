@@ -13,7 +13,9 @@
     	{ "id":"weight", "type": "float", "value": 2567.8 },
     	{ "id":"constructor_length", "type": "float", "value": 6 },
     	{ "id":"constructor_height", "type": "float", "value": -10.5 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 19.5 }
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 19.5 },
+    	{ "id":"t1_door_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id":"t1_door_right", "type": "boolean", "value": false, "editable": true, "seat": "pass_front_right" }
     ],
     "WheelPositions":[
         { "x":  35, "y": 0, "z":  17, "id": "left_front_wheel", "radius": 10, "drive": true, "steering": true },
