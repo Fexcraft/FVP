@@ -5,9 +5,7 @@
     "Model": "fvp:models/part/c4r1_wheel",
     "Category": "wheel",
     "Function": "fvtm:wheel",
-    "Textures": [
-        "Default;fvp:textures/cars/c4_general.png"
-    ],
+    "Texture": "Default;fvp:textures/cars/c4.png",
     "Installation":{
     	"Handler": "wheel",
         "Removable": true,

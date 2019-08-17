@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:c4_lights",
+    "Addon": "fvtm:fvp",
+    "Name": "C4 Lights",
+    "Model": "fvp:models/part/c4_lights",
+    "Category": "lights",
+    "Texture": "fvp:textures/cars/c4.png",
+    "Installation": {
+    	"Compatible": [ { "vehicle": "fvp:c4" } ]
+    }
+}
