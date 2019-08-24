@@ -1,0 +1,12 @@
+{
+    "RegistryName": "fvp:c5_steering_wheel",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/c5_steering_wheel",
+    "Name": "C5 Steering Wheel",
+    "Category": "steering_wheel",
+    "Texture": "fvp:textures/cars/c5.png",
+    "Installation":{
+		"Compatible": [ { "vehicle": "fvp:c5" } ],
+		"Removable": false
+    }
+}

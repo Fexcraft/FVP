@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:c5_interior",
+    "Addon": "fvtm:fvp",
+    "Name": "C5 (Default Front) Interior",
+    "Model": "fvp:models/part/c5_interior",
+    "Category": "interior",
+    "Texture": "fvp:textures/cars/c5.png",
+    "Installation":{
+		"Compatible": [ { "vehicle": "fvp:c5" } ]
+    }
+}

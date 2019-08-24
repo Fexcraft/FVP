@@ -734,6 +734,7 @@ public class C4R1Model extends VehicleModel {
 			
 		}, DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_side);
+		
 	}
 
 }

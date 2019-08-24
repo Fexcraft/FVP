@@ -1,0 +1,33 @@
+{
+    "RegistryName": "fvp:c5",
+    "Addon": "fvtm:fvp",
+    "Name": "C5 Type P",
+    "Model": "fvp:models/vehicle/c5",
+    "PrimaryColor": "#A8A8A8",
+    "SecondaryColor": "#C2C2C2",
+    "Texture": "Default;fvp:textures/cars/c5.png",
+    "WheelPositions":[
+        { "x":  46, "y": 2, "z":  21, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },
+        { "x":  46, "y": 2, "z": -21, "id": "right_front_wheel", "radius": 8, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -26, "y": 2, "z":  21, "id": "left_back_wheel", "radius": 8 },
+        { "x": -26, "y": 2, "z": -21, "id": "right_back_wheel", "radius": 8, "y_rot": 180 }
+    ],
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 1358.36 },
+    	{ "id":"constructor_length", "type": "float", "value": 5 },
+    	{ "id":"constructor_height", "type": "float", "value": -12 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 20 }
+    ],
+    "PreInstalled":{
+    	"interior": "fvp:c5_interior",
+    	"steering_wheel": "fvp:c5_steering_wheel",
+    	"lights": "fvp:c5_lights",
+    	"seats": "fvp:c5_seats"
+    },
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.7,
+    	"MaxNegativeThrottle": 0.8,
+    	"TurnLeftModifier": 0.67,
+    	"TurnRightModifier": 0.67
+    }
+}
