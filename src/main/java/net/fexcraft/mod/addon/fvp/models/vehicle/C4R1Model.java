@@ -1,11 +1,19 @@
 //FMT-Marker FVTM-1
 package net.fexcraft.mod.addon.fvp.models.vehicle;
 
+import org.lwjgl.opengl.GL11;
+
 import net.fexcraft.lib.mc.api.registry.fModel;
+import net.fexcraft.lib.mc.utils.Static;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.data.root.Attribute;
+import net.fexcraft.mod.fvtm.data.root.Colorable;
+import net.fexcraft.mod.fvtm.data.root.RenderCache;
+import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.TurboList;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
+import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.7-test &copy; 2019 - Fexcraft.net<br>
@@ -333,83 +341,6 @@ public class C4R1Model extends VehicleModel {
 		);
 		this.groups.add(chassis);
 		//
-		TurboList doors_closed = new TurboList("doors_closed");
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 0, 80, textureX, textureY)
-			.addShapeBox(0, 0, 0, 20, 7, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(12, -19, 22).setRotationAngle(0, 0, 0).setName("Box 173")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 358, 82, textureX, textureY)
-			.addShapeBox(0, 0, 0, 22, 4, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(12, -23, 22).setRotationAngle(0, 0, 0).setName("Box 174")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 89, 64, textureX, textureY).addBox(0, 0, 0, 24, 3, 1)
-			.setRotationPoint(12, -26, 22).setRotationAngle(0, 0, 0).setName("Box 175")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 396, 147, textureX, textureY).addBox(0, 0, 0, 1, 14, 1)
-			.setRotationPoint(12, -40, 22).setRotationAngle(0, 0, 0).setName("Box 176")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 311, 82, textureX, textureY).addBox(0, 0, 0, 22, 1, 1)
-			.setRotationPoint(13, -40, 22).setRotationAngle(0, 0, 0).setName("Box 178")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 34, 43, textureX, textureY).addBox(0, 0, 0, 3, 1, 1)
-			.setRotationPoint(15, -23, 22.5f).setRotationAngle(0, 0, 0).setName("Box 179")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 0, 29, textureX, textureY)
-			.addShapeBox(0, 0, 0, 20, 7, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(12, -19, -23).setRotationAngle(0, 0, 0).setName("Box 180")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 264, 82, textureX, textureY)
-			.addShapeBox(0, 0, 0, 22, 4, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(12, -23, -23).setRotationAngle(0, 0, 0).setName("Box 181")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 451, 51, textureX, textureY).addBox(0, 0, 0, 24, 3, 1)
-			.setRotationPoint(12, -26, -23).setRotationAngle(0, 0, 0).setName("Box 182")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 37, 18, textureX, textureY).addBox(0, 0, 0, 3, 1, 1)
-			.setRotationPoint(15, -23, -23.5f).setRotationAngle(0, 0, 0).setName("Box 183")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 204, 134, textureX, textureY).addBox(0, 0, 0, 1, 14, 1)
-			.setRotationPoint(12, -40, -23).setRotationAngle(0, 0, 0).setName("Box 184")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 89, 81, textureX, textureY).addBox(0, 0, 0, 22, 1, 1)
-			.setRotationPoint(13, -40, -23).setRotationAngle(0, 0, 0).setName("Box 186")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 0, 242, textureX, textureY).addBox(0, 0, 0, 1, 26, 42)
-			.setRotationPoint(-61, -39, -21).setRotationAngle(0, 0, 0).setName("Box 219")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 28, 116, textureX, textureY).addBox(0, 0, 0, 1, 1, 6)
-			.setRotationPoint(-61.5f, -16, -3).setRotationAngle(0, 0, 0).setName("Box 220")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 35, 141, textureX, textureY).addBox(0, 0, 0, 1, 16, 1)
-			.setRotationPoint(-60, -36, -21).setRotationAngle(0, 0, 0).setName("Box 221")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 30, 141, textureX, textureY).addBox(0, 0, 0, 1, 16, 1)
-			.setRotationPoint(-60, -36, 20).setRotationAngle(0, 0, 0).setName("Box 222")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 89, 48, textureX, textureY).addBox(0, 0, 0, 36, 14, 1)
-			.setRotationPoint(-27, -26, -23).setRotationAngle(0, 0, 0).setName("Box 235")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 237, 45, textureX, textureY).addBox(0, 0, 0, 36, 1, 1)
-			.setRotationPoint(-27, -25, -22.9f).setRotationAngle(0, 0, 0).setName("Box 236")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 127, 132, textureX, textureY).addBox(0, 0, 0, 1, 12, 1)
-			.setRotationPoint(8, -38, -23).setRotationAngle(0, 0, 0).setName("Box 237")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 504, 128, textureX, textureY).addBox(0, 0, 0, 1, 12, 1)
-			.setRotationPoint(-27, -38, -23).setRotationAngle(0, 0, 0).setName("Box 238")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 191, 42, textureX, textureY).addBox(0, 0, 0, 36, 1, 1)
-			.setRotationPoint(-27, -39, -23).setRotationAngle(0, 0, 0).setName("Box 239")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 234, 61, textureX, textureY).addBox(0, 0, 0, 34, 12, 1)
-			.setRotationPoint(-26, -38, -23).setRotationAngle(0, 0, 0).setName("Box 240")
-		);
-		doors_closed.add(new ModelRendererTurbo(doors_closed, 229, 106, textureX, textureY).addBox(0, 0, 0, 3, 1, 2)
-			.setRotationPoint(4, -23, -23.5f).setRotationAngle(0, 0, 0).setName("Box 246")
-		);
-		doors_closed.addPrograms(DefaultPrograms.RGB_PRIMARY);
-		this.groups.add(doors_closed);//TODO doors
-		//
 		TurboList primary = new TurboList("primary");
 		primary.add(new ModelRendererTurbo(primary, 220, 130, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 7, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4, 0, 0, -4, 0, 0, 0, 0)
@@ -678,6 +609,131 @@ public class C4R1Model extends VehicleModel {
 		);
 		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
+		//
+		TurboList door_back = new TurboList("door_back");
+		door_back.add(new ModelRendererTurbo(door_back, 0, 242, textureX, textureY).addBox(-1, 0, 0, 1, 26, 42)
+			.setRotationPoint(-60, -39, -21).setRotationAngle(0, 0, 0).setName("Box 219")
+		);
+		door_back.add(new ModelRendererTurbo(door_back, 28, 116, textureX, textureY).addBox(-1.5f, 23, 0, 1, 1, 6)
+			.setRotationPoint(-60, -39, -3).setRotationAngle(0, 0, 0).setName("Box 220")
+		);
+		door_back.add(new ModelRendererTurbo(door_back, 35, 141, textureX, textureY).addBox(0, 0, 0, 1, 16, 1)
+			.setRotationPoint(-58, -38, -21).setRotationAngle(0, 0, 0).setName("Box 221")
+		);
+		door_back.add(new ModelRendererTurbo(door_back, 30, 141, textureX, textureY).addBox(0, 0, 0, 1, 16, 1)
+			.setRotationPoint(-58, -38, 20).setRotationAngle(0, 0, 0).setName("Box 222")
+		);
+		door_back.addPrograms(new DefaultPrograms.AttributeRotator("c4_door_back", true, 0, 120, 0.5f, 2, 0f), DefaultPrograms.RGB_PRIMARY);
+		this.groups.add(door_back);
+		//
+		TurboList door_left = new TurboList("door_left");
+		door_left.add(new ModelRendererTurbo(door_left, 0, 80, textureX, textureY)
+			.addShapeBox(-24, 0, 0, 20, 7, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -19, 22).setRotationAngle(0, 0, 0).setName("Box 173")
+		);
+		door_left.add(new ModelRendererTurbo(door_left, 358, 82, textureX, textureY)
+			.addShapeBox(-24, 0, 0, 22, 4, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -23, 22).setRotationAngle(0, 0, 0).setName("Box 174")
+		);
+		door_left.add(new ModelRendererTurbo(door_left, 89, 64, textureX, textureY).addBox(-24, 0, 0, 24, 3, 1)
+			.setRotationPoint(36, -26, 22).setRotationAngle(0, 0, 0).setName("Box 175")
+		);
+		door_left.add(new ModelRendererTurbo(door_left, 396, 147, textureX, textureY).addBox(-24, 0, 0, 1, 14, 1)
+			.setRotationPoint(36, -40, 22).setRotationAngle(0, 0, 0).setName("Box 176")
+		);
+		door_left.add(new ModelRendererTurbo(door_left, 311, 82, textureX, textureY).addBox(-23, 0, 0, 22, 1, 1)
+			.setRotationPoint(36, -40, 22).setRotationAngle(0, 0, 0).setName("Box 178")
+		);
+		door_left.add(new ModelRendererTurbo(door_left, 34, 43, textureX, textureY).addBox(-21, 0, 0.5f, 3, 1, 1)
+			.setRotationPoint(36, -23, 22).setRotationAngle(0, 0, 0).setName("Box 179")
+		);
+		door_left.add(new ModelRendererTurbo(door_left, 39, 96, textureX, textureY).addBox(-1, 0, 0, 1, 14, 1)
+			.setRotationPoint(36, -40, 22).setRotationAngle(0, 0, 0).setName("Box 177")
+		);
+		door_left.addPrograms(new DefaultPrograms.AttributeRotator("c4_door_left", true, 0, 72, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		this.groups.add(door_left);
+		//
+		TurboList door_right = new TurboList("door_right");
+		door_right.add(new ModelRendererTurbo(door_right, 0, 29, textureX, textureY)
+			.addShapeBox(-24, 0, -1, 20, 7, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -19, -22).setRotationAngle(0, 0, 0).setName("Box 180cp")
+		);
+		door_right.add(new ModelRendererTurbo(door_right, 264, 82, textureX, textureY)
+			.addShapeBox(-24, 0, -1, 22, 4, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -23, -22).setRotationAngle(0, 0, 0).setName("Box 181cp")
+		);
+		door_right.add(new ModelRendererTurbo(door_right, 451, 51, textureX, textureY)
+			.addShapeBox(-24, 0, -1, 24, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -26, -22).setRotationAngle(0, 0, 0).setName("Box 182cp")
+		);
+		door_right.add(new ModelRendererTurbo(door_right, 37, 18, textureX, textureY)
+			.addShapeBox(-21, 0, -1.5f, 3, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -23, -22).setRotationAngle(0, 0, 0).setName("Box 183cp")
+		);
+		door_right.add(new ModelRendererTurbo(door_right, 204, 134, textureX, textureY)
+			.addShapeBox(-24, 0, -1, 1, 14, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -40, -22).setRotationAngle(0, 0, 0).setName("Box 184cp")
+		);
+		door_right.add(new ModelRendererTurbo(door_right, 89, 81, textureX, textureY)
+			.addShapeBox(-23, 0, -1, 22, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -40, -22).setRotationAngle(0, 0, 0).setName("Box 186cp")
+		);
+		door_right.add(new ModelRendererTurbo(door_right, 487, 99, textureX, textureY)
+			.addShapeBox(-1, 0, -1, 1, 14, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(36, -40, -22).setRotationAngle(0, 0, 0).setName("Box 185cp")
+		);
+		door_right.addPrograms(new DefaultPrograms.AttributeRotator("c4_door_right", true, -72, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		this.groups.add(door_right);
+		//
+		TurboList door_side = new TurboList("door_side");
+		door_side.add(new ModelRendererTurbo(door_side, 89, 48, textureX, textureY).addBox(0, 0, -1, 36, 14, 1)
+			.setRotationPoint(-27, -26, -22).setRotationAngle(0, 0, 0).setName("Box 235")
+		);
+		door_side.add(new ModelRendererTurbo(door_side, 237, 45, textureX, textureY).addBox(0, 0, -0.9f, 36, 1, 1)
+			.setRotationPoint(-27, -25, -22).setRotationAngle(0, 0, 0).setName("Box 236")
+		);
+		door_side.add(new ModelRendererTurbo(door_side, 127, 132, textureX, textureY).addBox(0, 0, -1, 1, 12, 1)
+			.setRotationPoint(8, -38, -22).setRotationAngle(0, 0, 0).setName("Box 237")
+		);
+		door_side.add(new ModelRendererTurbo(door_side, 504, 128, textureX, textureY).addBox(0, 0, -1, 1, 12, 1)
+			.setRotationPoint(-27, -38, -22).setRotationAngle(0, 0, 0).setName("Box 238")
+		);
+		door_side.add(new ModelRendererTurbo(door_side, 191, 42, textureX, textureY).addBox(0, 0, -1, 36, 1, 1)
+			.setRotationPoint(-27, -39, -22).setRotationAngle(0, 0, 0).setName("Box 239")
+		);
+		door_side.add(new ModelRendererTurbo(door_side, 234, 61, textureX, textureY).addBox(0, 0, -1, 34, 12, 1)
+			.setRotationPoint(-26, -38, -22).setRotationAngle(0, 0, 0).setName("Box 240")
+		);
+		door_side.add(new ModelRendererTurbo(door_side, 229, 106, textureX, textureY).addBox(0, 0, -1.5f, 3, 1, 2)
+			.setRotationPoint(4, -23, -22).setRotationAngle(0, 0, 0).setName("Box 246")
+		);
+		door_side.addPrograms(new TurboList.Program(){
+			
+			private Attribute<?> attr;
+			private Float offx, offz;
+
+			@Override
+			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
+				if(cache == null) return; attr = data.getAttribute("c4_door_side"); if(attr == null) return;
+				offx = cache.getValue("c4_side_offx"); offz = cache.getValue("c4_side_offz");
+				if(attr.getBooleanValue()){
+					offx = offx == null ? 0 : offx >= 2 ? 2 : offx + Static.sixteenth;
+				}
+				else{
+					offx = offx == null ? 2 : offx <= 0 ? 0 : offx - Static.sixteenth;
+				}
+				offz = offx == null ? 0 : offx > 0.5f ? Static.eighth : offx <= 0.1f ? 0 : Static.sixteenth;
+				cache.setValue("c4_side_offx", offx); cache.setValue("c4_side_offz", offz);
+				if(offx != null){ GL11.glTranslatef(-offx, 0, -offz);}
+			}
+
+			@Override
+			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
+				if(offx != null){ GL11.glTranslatef(offx, 0, offz);} offx = null;
+			}
+			
+		}, DefaultPrograms.RGB_PRIMARY);
+		this.groups.add(door_side);
 	}
 
 }

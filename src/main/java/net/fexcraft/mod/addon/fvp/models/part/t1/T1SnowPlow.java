@@ -4,6 +4,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.mc.utils.Static;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.data.root.Attribute;
+import net.fexcraft.mod.fvtm.data.root.RenderCache;
 import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
@@ -68,13 +69,13 @@ public class T1SnowPlow extends PartModel {
 
     @Override
     public void render(VehicleData data, String us){
-        body.render(null, data, data, us); snowplow.rotate(0, 0, -Static.rad20, true); snowplow.render(null, data, data, us);
+        body.render(null, data, data, us, null); snowplow.rotate(0, 0, -Static.rad20, true); snowplow.render(null, data, data, us, null);
     }
 
     @Override
-    public void render(VehicleData data, String us, Entity vehicle, int meta){
-        body.render(null, data, data, us); Attribute<?> attr = data.getAttribute("t1_snowplow_state");
-        snowplow.rotate(0, 0, attr == null ? 0 : attr.getBooleanValue() ? 0 : -Static.rad20, true); snowplow.render(null, data, data, us);
+    public void render(VehicleData data, String us, Entity vehicle, RenderCache cache, int meta){
+        body.render(null, data, data, us, cache); Attribute<?> attr = data.getAttribute("t1_snowplow_state");
+        snowplow.rotate(0, 0, attr == null ? 0 : attr.getBooleanValue() ? 0 : -Static.rad20, true); snowplow.render(null, data, data, us, cache);
     }
 
 }
