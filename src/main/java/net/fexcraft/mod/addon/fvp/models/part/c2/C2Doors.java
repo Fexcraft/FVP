@@ -38,7 +38,7 @@ public class C2Doors extends PartModel {
 		door_rear.add(new ModelRendererTurbo(door_rear, 217, 17, textureX, textureY).addBox(-0.5f, -13, 0, 1, 2, 4)
 			.setRotationPoint(-81.5f, -12, -2).setRotationAngle(0, 0, 0).setName("Box 111")
 		);
-		door_rear.addPrograms(new DefaultPrograms.AttributeRotator("c2_door_rear", true, -90, 0, 1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
+		door_rear.addPrograms(new DefaultPrograms.AttributeRotator("c2_door_rear", true, -90, 0, -1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_rear);
 		//
 		TurboList door_right = new TurboList("door_right");
