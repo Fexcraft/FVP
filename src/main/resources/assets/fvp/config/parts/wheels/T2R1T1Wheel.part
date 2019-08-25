@@ -1,0 +1,14 @@
+{
+    "RegistryName": "fvp:t2r1t1_wheel",
+    "Name": "T2 (R1) Type 1 Wheel",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/t2r1t1_wheel",
+    "Category": "wheel",
+    "Texture": "fvp:textures/wheels/t2r1t1_tex.png",
+    "Function": "fvtm:wheel",
+    "Installation":{
+    	"Handler": "wheel",
+        "Removable": true,
+        "Radius": 12, "Width": 7
+    }
+}
