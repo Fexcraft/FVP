@@ -1,0 +1,25 @@
+{
+    "RegistryName": "fvp:ab1_engine",
+    "Addon": "fvtm:fvp",
+    "Name": "AB Type AutoBus Engine",
+    "Model": "null",
+    "Category": "engine",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:ab1" } ]
+    },
+    "Modifiers":[
+    	{ "id": "weight", "type": "additive", "target": "vehicle:weight", "value": "500", "priority": "veryhigh" }
+    ],
+    "Function": {
+    	"id": "fvtm:engine",
+    	"engine_speed": 1.4,
+    	"idle_consumption": 4,
+    	"active_consumption": 12,
+    	"consumptions": {
+    		"petrodiesel": 8,
+    		"synthetic": 7,
+    		"biodiesel": 10
+    	},
+    	"fuel_group": "diesel"
+    }
+}

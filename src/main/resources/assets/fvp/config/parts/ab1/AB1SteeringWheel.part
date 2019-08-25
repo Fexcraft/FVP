@@ -1,0 +1,10 @@
+{
+    "RegistryName": "fvp:ab1_steering_wheel",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/ab1b_steering_wheel",
+    "Category": "steering_wheel",
+    "Texture": "fvp:textures/busses/ab1b.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:ab1" } ]
+    }
+}

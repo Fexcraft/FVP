@@ -1,0 +1,47 @@
+{
+    "RegistryName": "fvp:ab1",
+    "Addon": "fvtm:fvp",
+    "Name": "AB1 Variant B",
+    "Model": "fvp:models/vehicle/ab1b",
+    "PrimaryColor": "#EFEFEF",
+    "SecondaryColor": "#FAFAFA",
+    "Textures": [
+        "Default;fvp:textures/busses/ab1b.png",
+        "Imperial Blue;fvp:textures/busses/ab1c.png",
+        "SKR Trans;fvp:textures/busses/ab1d.png"
+    ],
+    "WheelPositions":[
+        { "x":  68, "y": -2, "z":  25, "id": "left_front_wheel", "radius": 12, "drive": true, "steering": true },
+        { "x":  68, "y": -2, "z": -25, "id": "right_front_wheel", "radius": 12, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -70, "y": -2, "z":  25, "id": "left_back_wheel", "radius": 12 },
+        { "x": -70, "y": -2, "z": -25, "id": "right_back_wheel", "radius": 12, "y_rot": 180 }
+    ],
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 3548.450 },
+    	{ "id":"constructor_length", "type": "float", "value": 7 },
+    	{ "id":"constructor_height", "type": "float", "value": -10 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 27 },
+    	{ "id":"ab1b_doors", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id":"ab1b_cargobay_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id":"ab1b_cargobay_right", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ],
+    "RequiredParts": [
+        "right_front_wheel",
+        "left_front_wheel",
+        "right_back_wheel",
+        "left_back_wheel",
+        "engine",
+        "fuel_tank",
+        "lights"
+    ],
+    "PreInstalled":{
+    	"steering_wheel": "fvp:ab1_steering_wheel",
+    	"driver_seat": "fvp:ab1_driver_seat"
+    },
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.1,
+    	"MaxNegativeThrottle": 0.5,
+    	"TurnLeftModifier": 1.1,
+    	"TurnRightModifier": 1.1
+    }
+}

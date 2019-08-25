@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:ab1_lights",
+    "Addon": "fvtm:fvp",
+    "Name": "AB1 Lights",
+    "Model": "fvp:models/part/ab1b_lights",
+    "Category": "lights",
+    "Texture": "fvp:textures/busses/ab1b.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:ab1" } ]
+    }
+}

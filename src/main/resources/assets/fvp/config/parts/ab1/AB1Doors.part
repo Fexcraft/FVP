@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:ab1_doors",
+    "Addon": "fvtm:fvp",
+    "Name": "AB1 Default Doors",
+    "Model": "fvp:models/part/ab1b_doors",
+    "Category": "doors",
+    "Textures": [
+        "Default;fvp:textures/busses/ab1b.png",
+        "Imperial Blue;fvp:textures/busses/ab1c.png",
+        "SKR Trans;fvp:textures/busses/ab1d.png"
+    ],
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:ab1" } ]
+    }
+}

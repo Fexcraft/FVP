@@ -1,0 +1,18 @@
+{
+    "RegistryName": "fvp:ab1_driver_seat",
+    "Name": "AB1 Driver Seat",
+    "Addon": "fvtm:fvp",
+    "Model": "null",
+    "Category": "driver_seat",
+    "Texture": "fvp:textures/busses/ab1b.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:ab1" } ],
+    	"Removable": false
+    },
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "x": 74, "y": 16, "z": -20, "name": "driver", "driver": true, "min_yaw": -170, "max_yaw": 170 }
+    	]
+    }
+}

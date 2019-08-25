@@ -1,0 +1,58 @@
+{
+    "RegistryName": "fvp:ab1_passenger_seats",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/ab1b_passenger_seats",
+    "Category": "inner",
+    "Textures": [
+        "Default;fvp:textures/busses/ab1b.png",
+        "Imperial Blue;fvp:textures/busses/ab1c.png",
+        "SKR Trans;fvp:textures/busses/ab1d.png"
+    ],
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:ab1" } ]
+    },
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+            { "x":  59, "y": 17, "z": 11, "name": "busseat_0" },
+			{ "x":  59, "y": 17, "z": 23, "name": "busseat_1" },
+			{ "x":  42, "y": 17, "z": 11, "name": "busseat_2" },
+			{ "x":  42, "y": 17, "z": 23, "name": "busseat_3" },
+			{ "x":  42, "y": 17, "z":-23, "name": "busseat_4" },
+			{ "x":  42, "y": 17, "z": -11, "name": "busseat_5" },
+			{ "x":  24, "y": 17, "z": -23, "name": "busseat_6" },
+			{ "x":  24, "y": 17, "z": -11, "name": "busseat_7" },
+			{ "x":  24, "y": 17, "z": 11, "name": "busseat_8" },
+			{ "x":  24, "y": 17, "z": 23, "name": "busseat_9" },
+			{ "x":   6, "y": 17, "z": -23, "name": "busseat_10" },
+			{ "x":   6, "y": 17, "z": -11, "name": "busseat_11" },
+			{ "x":   6, "y": 17, "z": 11, "name": "busseat_12" },
+			{ "x":   6, "y": 17, "z": 23, "name": "busseat_13" },
+			{ "x": -12, "y": 17, "z": -23, "name": "busseat_14" },
+			{ "x": -12, "y": 17, "z": -11, "name": "busseat_15" },
+			{ "x": -12, "y": 17, "z": 11, "name": "busseat_16" },
+			{ "x": -12, "y": 17, "z": 23, "name": "busseat_17" },
+			{ "x": -30, "y": 17, "z": -23, "name": "busseat_18" },
+			{ "x": -30, "y": 17, "z": -11, "name": "busseat_19" },
+			{ "x": -30, "y": 17, "z": 11, "name": "busseat_20" },
+			{ "x": -30, "y": 17, "z": 23, "name": "busseat_21" },
+			{ "x": -48, "y": 17, "z": -23, "name": "busseat_22" },
+			{ "x": -48, "y": 17, "z": -11, "name": "busseat_23" },
+			{ "x": -68, "y": 20, "z": -23, "name": "busseat_24" },
+			{ "x": -68, "y": 20, "z": -11, "name": "busseat_25" },
+			{ "x": -68, "y": 20, "z": 11, "name": "busseat_26" },
+			{ "x": -68, "y": 20, "z": 23, "name": "busseat_27" },
+			{ "x": -86, "y": 23, "z": -23, "name": "busseat_28" },
+			{ "x": -86, "y": 23, "z": -11, "name": "busseat_29" },
+			{ "x": -86, "y": 23, "z": 11, "name": "busseat_30" },
+			{ "x": -86, "y": 23, "z": 23, "name": "busseat_31" },
+			{ "x": -102, "y": 23, "z": -23, "name": "busseat_32" },
+			{ "x": -102, "y": 23, "z": -11, "name": "busseat_33" },
+			{ "x": -102, "y": 23, "z": 1, "name": "busseat_34" },
+			{ "x": -102, "y": 23, "z": 11, "name": "busseat_35" },
+			{ "x": -102, "y": 23, "z": 23, "name": "busseat_36" },
+			{ "x": 35, "y": 20, "z": -1, "sitting": false, "name": "bus_standing_0" },
+			{ "x": -2, "y": 20, "z": -1, "sitting": false, "name": "bus_standing_1" }
+    	]
+    }
+}
