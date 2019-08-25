@@ -10,17 +10,18 @@ item.fvp:c8.name=C8
 item.fvp:sentinel.name=C9
 item.fvp:c10.name=Ci Dieci
 item.fvp:t1p.name=T1P
-item.fvp:ab1b.name=Autobus 1B
+item.fvp:ab1.name=Autobus 1B
 item.fvp:t2.name=T2
 item.fvp:tr1.name=Universal Trailer 1
 
 # Wheels
 item.fvp:c1r1t1_wheel.name=C1R1 Wheel T1
 item.fvp:c1r1t2_wheel.name=C1R1 Wheel T2
-item.fvp:c2r2t1_wheel=.nameC2R2T1 Wheel
+item.fvp:c2r2t1_wheel=.name=C2R2T1 Wheel
 item.fvp:c4r1_wheel.name=C4R1 Wheel
 item.fvp:t1_back_wheel.name=T1 Back Wheel
 item.fvp:t1_front_wheel.name=T1 Front Wheel
+item.fvp:t2r1t1_wheel.name=T2 Wheel
 
 # Parts
 item.fvp:c10_doors.name=C10 Doors
@@ -68,5 +69,11 @@ item.fvp:t1_type1_cargoupgrade.name=T1 Cargobox
 item.fvp:t1_type2_cargoupgrade.name=T1 Tow Upgrade
 item.fvp:t1_type4_cargoupgrade.name=T1 Liquid Tank
 item.fvp:t1_type5_cargoupgrade.name=T1 Container Holder
+item.fvp:ab1_doors.name=AB1 Doors
+item.fvp:ab1_driver_seat.name=AB1 Driver Seat
+item.fvp:ab1_engine.name=AB1 Engine
+item.fvp:ab1_lights.name=AB1 Generic Lights
+item.fvp:ab1_passenger_seats.name=AB1 Passenger Seats
+item.fvp:ab1_steering_wheel.name=AB1 Steering Wheel
 
 
