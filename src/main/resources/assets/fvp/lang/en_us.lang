@@ -81,5 +81,12 @@ item.fvp:c8_interior.name=C8 Interior
 item.fvp:c8_lights.name=C8 Lights
 item.fvp:c8_seats.name=C8 Seats
 item.fvp:c8_steering_wheel.name=C8 Steering Wheel
+item.fvp:t2_doors.name=T2 Doors
+item.fvp:t2_interior.name=T2 Interior
+item.fvp:t2_lights.name=T2 Lights
+item.fvp:t2_rear_fender.name=T2 Rear Fenders
+item.fvp:t2_side_skirts.name=T2 Side Skirts
+item.fvp:t2_trailer_connector.name=T2 Trailer Connector
+item.fvp:t2_steering_wheel.name=T2 Steering Wheel
 
 

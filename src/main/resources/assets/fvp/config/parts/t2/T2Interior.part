@@ -1,0 +1,18 @@
+{
+    "RegistryName": "fvp:t2_interior",
+    "Addon": "fvtm:fvp",
+    "Name": "T2 Interior and Seats",
+    "Model": "fvp:models/part/t2_interior",
+    "Category": "interior",
+    "Texture": "fvp:textures/trucks/t2p.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:t2" } ]
+    },
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "x": 41, "y": 26, "z": -12, "name": "driver", "driver": true, "min_yaw": -120, "max_yaw": 120 },
+    		{ "x": 41, "y": 26, "z": 12, "name": "pass_front" }
+    	]
+    }
+}

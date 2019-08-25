@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:t2_rear_fender",
+    "Addon": "fvtm:fvp",
+    "Name": "T2 Rear Fenders",
+    "Model": "fvp:models/part/t2_rear_fenders",
+    "Category": [ "rear_fender_left", "rear_fender_right" ],
+    "Texture": "fvp:textures/trucks/t2p.png",
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:t2" } ]
+    }
+}

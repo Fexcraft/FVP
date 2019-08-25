@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t2_doors",
+    "Addon": "fvtm:fvp",
+    "Name": "T2 Front Doors",
+    "Model": "fvp:models/part/t2_doors",
+    "Category": "doors",
+    "Texture": "fvp:textures/trucks/t2p.png",
+    "Attributes":[
+    	{ "id":"t2_door_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id":"t2_door_right", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" }
+    ],
+    "Installation":{
+	    "Compatible": [ { "vehicle": "fvp:t2" } ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "RegistryName": "fvp:t2_trailer_connector",
+    "Addon": "fvtm:fvp",
+    "Name": "Trailer Connection Point",
+    "Model": "fvp:models/part/t2_trailer_connector",
+    "Category":"rear_connector",
+    "Texture": "fvp:textures/trucks/t2p.png",
+    "Installation":{
+    	"Handler": "connector",
+        "Removable": true,
+        "Compatible":[
+            { "vehicle": "fvp:t2" }
+        ],
+        "Rear": {
+        	"fvp:t2": [ -32, 0, 0.5 ]
+        }
+    }
+}
