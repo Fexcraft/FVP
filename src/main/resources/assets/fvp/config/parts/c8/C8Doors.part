@@ -1,0 +1,19 @@
+{
+    "RegistryName": "fvp:c8_doors",
+    "Addon": "fvtm:fvp",
+    "Name": "C8 Standard Doors, Hood and Trunk",
+    "Model": "fvp:models/part/c8_doors",
+    "Category": "doors",
+    "Texture": "fvp:textures/cars/c8.png",
+    "Attributes":[
+    	{ "id":"c8_doors_fl", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id":"c8_doors_fr", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },
+    	{ "id":"c8_doors_bl", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_left" },
+    	{ "id":"c8_doors_br", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_right" },
+    	{ "id":"c8_hood", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id":"c8_trunk", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ],
+    "Installation":{
+		"Compatible": [ { "vehicle": "fvp:c8" } ]
+    }
+}

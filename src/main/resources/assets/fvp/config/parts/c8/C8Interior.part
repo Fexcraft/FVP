@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:c8_interior",
+    "Addon": "fvtm:fvp",
+    "Name": "C8 Standard Interior",
+    "Model": "fvp:models/part/c8_interior",
+    "Category": "interior",
+    "Texture": "fvp:textures/cars/c8.png",
+    "Installation":{
+		"Compatible": [ { "vehicle": "fvp:c8" } ], "Removable": false
+    }
+}

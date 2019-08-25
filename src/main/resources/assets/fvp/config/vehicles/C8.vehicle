@@ -1,0 +1,47 @@
+{
+    "RegistryName": "fvp:c8",
+    "Addon": "fvtm:fvp",
+    "Name": "C8",
+    "Model": "fvp:models/vehicle/c8",
+    "PrimaryColor": "#A8A8A8",
+    "SecondaryColor": "#C2C2C2",
+    "Texture": "fvp:textures/cars/c8.png",
+    "WheelPositions":[
+        { "x":  39, "y": 2, "z":  19, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },
+        { "x":  39, "y": 2, "z": -19, "id": "right_front_wheel", "radius": 8, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -39, "y": 2, "z":  19, "id": "left_back_wheel", "radius": 8 },
+        { "x": -39, "y": 2, "z": -19, "id": "right_back_wheel", "radius": 8, "y_rot": 180 }
+    ],
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 1324.56 },
+    	{ "id":"constructor_length", "type": "float", "value": 3 },
+    	{ "id":"constructor_height", "type": "float", "value": -11 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 17.5 }
+    ],
+    "RequiredParts": [
+        "right_front_wheel",
+        "left_front_wheel",
+        "right_back_wheel",
+        "left_back_wheel",
+        "steering_wheel",
+        "interior",
+        "bumpers",
+        "seats",
+        "engine",
+        "fuel_tank"
+    ],
+    "PreInstalled":{
+    	"interior": "fvp:c8_interior",
+    	"steering_wheel": "fvp:c8_steering_wheel",
+    	"seats": "fvp:c8_seats",
+    	"doors": "fvp:c8_doors",
+    	"bumpers": "fvp:c8_bumpers",
+    	"lights": "fvp:c8_lights"
+    },
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.89,
+    	"MaxNegativeThrottle": 0.78,
+    	"TurnLeftModifier": 0.921,
+    	"TurnRightModifier": 0.921
+    }
+}

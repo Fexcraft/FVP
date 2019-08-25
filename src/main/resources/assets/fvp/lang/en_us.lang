@@ -17,7 +17,7 @@ item.fvp:tr1.name=Universal Trailer 1
 # Wheels
 item.fvp:c1r1t1_wheel.name=C1R1 Wheel T1
 item.fvp:c1r1t2_wheel.name=C1R1 Wheel T2
-item.fvp:c2r2t1_wheel=.name=C2R2T1 Wheel
+item.fvp:c2r2t1_wheel.name=C2R2T1 Wheel
 item.fvp:c4r1_wheel.name=C4R1 Wheel
 item.fvp:t1_back_wheel.name=T1 Back Wheel
 item.fvp:t1_front_wheel.name=T1 Front Wheel
@@ -75,5 +75,11 @@ item.fvp:ab1_engine.name=AB1 Engine
 item.fvp:ab1_lights.name=AB1 Generic Lights
 item.fvp:ab1_passenger_seats.name=AB1 Passenger Seats
 item.fvp:ab1_steering_wheel.name=AB1 Steering Wheel
+item.fvp:c8_bumpers.name=C8 Bumpers
+item.fvp:c8_doors.name=C8 Doors, Trunk and Hood
+item.fvp:c8_interior.name=C8 Interior
+item.fvp:c8_lights.name=C8 Lights
+item.fvp:c8_seats.name=C8 Seats
+item.fvp:c8_steering_wheel.name=C8 Steering Wheel
 
 
