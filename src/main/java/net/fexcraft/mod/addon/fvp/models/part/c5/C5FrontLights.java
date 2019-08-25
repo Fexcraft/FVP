@@ -1,5 +1,5 @@
 //FMT-Marker FVTM-1
-package net.fexcraft.mod.addon.fvp.models.partc5;
+package net.fexcraft.mod.addon.fvp.models.part.c5;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
