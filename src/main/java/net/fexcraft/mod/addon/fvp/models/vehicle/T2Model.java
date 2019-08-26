@@ -1,4 +1,4 @@
-//FMT-Marker FVTM-1
+//FMT-Marker FVTM-1.1
 package net.fexcraft.mod.addon.fvp.models.vehicle;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
@@ -7,8 +7,8 @@ import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.TurboList;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
-/** This file was exported via the FVTM Exporter V1 of<br>
- *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
+/** This file was exported via the FVTM Exporter V1.2 of<br>
+ *  FMT (Fex's Modelling Toolbox) v.1.2.9 &copy; 2019 - Fexcraft.net<br>
  *  All rights reserved. For this Model's License contact the Author/Creator.
  */
 @fModel(registryname = "fvp:models/vehicle/t2p")
@@ -88,7 +88,7 @@ public class T2Model extends VehicleModel {
 			.setRotationPoint(20, -18, -25).setRotationAngle(0, 0, 0).setName("Box 145")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 353, 257, textureX, textureY).addBox(0, -2, -2, 66, 4, 4)
-			.setRotationPoint(-47, -3, 0).setRotationAngle(-0.7853982f, 0, 0).setName("Box 152")
+			.setRotationPoint(-47, -3, 0).setRotationAngle(-45, 0, 0).setName("Box 152")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 73, 177, textureX, textureY)
 			.addShapeBox(0, 0, 0, 12, 13, 20, 0, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2)
@@ -199,21 +199,21 @@ public class T2Model extends VehicleModel {
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 505, 73, textureX, textureY)
 			.addShapeBox(0, -1, -1, 1, 2, 2, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1)
-			.setRotationPoint(69, -28, 0).setRotationAngle(0, 0, -0.05235988f).setName("Box 328")
+			.setRotationPoint(69, -28, 0).setRotationAngle(0, 0, -3).setName("Box 328")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 129, 81, textureX, textureY)
 			.addShapeBox(0, -1, -1, 1, 1, 4, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1)
-			.setRotationPoint(69.1f, 1, -21).setRotationAngle(0, 0, -0.05235988f).setName("Box 329")
+			.setRotationPoint(69.1f, 1, -21).setRotationAngle(0, 0, -3).setName("Box 329")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 105, 89, textureX, textureY)
 			.addShapeBox(0, -1, -1, 1, 1, 4, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1)
-			.setRotationPoint(69.1f, 1, 19).setRotationAngle(0, 0, -0.05235988f).setName("Box 330")
+			.setRotationPoint(69.1f, 1, 19).setRotationAngle(0, 0, -3).setName("Box 330")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 1, 217, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
 			.setRotationPoint(69.2f, -3.5f, -6).setRotationAngle(0, 0, 0).setName("Box 331")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 89, 265, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
-			.setRotationPoint(-67, -3.5f, -6).setRotationAngle(0, 0, -0.15707964f).setName("Box 332")
+			.setRotationPoint(-67, -3.5f, -6).setRotationAngle(0, 0, -9).setName("Box 332")
 		);
 		this.groups.add(chassis_core);
 		//

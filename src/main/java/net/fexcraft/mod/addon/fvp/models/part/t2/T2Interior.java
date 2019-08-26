@@ -1,13 +1,13 @@
-//FMT-Marker FVTM-1
+//FMT-Marker FVTM-1.1
 package net.fexcraft.mod.addon.fvp.models.part.t2;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.PartModel;
 
-/** This file was exported via the FVTM Exporter V1 of<br>
- *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
+/** This file was exported via the FVTM Exporter V1.2 of<br>
+ *  FMT (Fex's Modelling Toolbox) v.1.2.9 &copy; 2019 - Fexcraft.net<br>
  *  All rights reserved. For this Model's License contact the Author/Creator.
  */
 @fModel(registryname = "fvp:models/part/t2_interior")
@@ -15,7 +15,7 @@ public class T2Interior extends PartModel {
 
 	public T2Interior(){
 		super(); textureX = 512; textureY = 512;
-		this.addToCreators("Ferdinand (FEX___96)");
+		this.addToCreators("Ferdinand");
 		//
 		TurboList interior = new TurboList("interior");
 		interior.add(new ModelRendererTurbo(interior, 25, 361, textureX, textureY)
@@ -28,7 +28,7 @@ public class T2Interior extends PartModel {
 		);
 		interior.add(new ModelRendererTurbo(interior, 201, 137, textureX, textureY)
 			.addShapeBox(0, 0, 0, 6, 6, 8, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(51, -34, -1).setRotationAngle(0, 0.7853982f, 0).setName("Box 241")
+			.setRotationPoint(51, -34, -1).setRotationAngle(0, 45, 0).setName("Box 241")
 		);
 		interior.add(new ModelRendererTurbo(interior, 185, 73, textureX, textureY)
 			.addShapeBox(0, 0, 0, 6, 6, 5, 0, 0.375f, 0, -3.625f, -2.125f, -1, 0.625f, 0, -1, 0, 0, 0, 0, 0.375f, 0, -3.625f, -2.125f, 0, 0.625f, 0, 0, 0, 0, 0, 0)
@@ -40,7 +40,7 @@ public class T2Interior extends PartModel {
 		);
 		interior.add(new ModelRendererTurbo(interior, 377, 137, textureX, textureY)
 			.addShapeBox(0, 0, 0, 6, 9, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0)
-			.setRotationPoint(51, -28, -1).setRotationAngle(0, 0.7853982f, 0).setName("Box 244")
+			.setRotationPoint(51, -28, -1).setRotationAngle(0, 45, 0).setName("Box 244")
 		);
 		interior.add(new ModelRendererTurbo(interior, 1, 137, textureX, textureY)
 			.addShapeBox(0, 0, 0, 6, 9, 5, 0, 0.375f, 0, -3.625f, -2.125f, 0, 0.625f, 0, 0, 0, 0, 0, 0, -1.125f, 0, -2.125f, -2.125f, 0, 0.625f, 0, 0, 0, -2, 0, 0)
@@ -174,83 +174,83 @@ public class T2Interior extends PartModel {
 		);
 		interior.add(new ModelRendererTurbo(interior, 489, 57, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(56.6f, -34, 5).setRotationAngle(0, 0.2617994f, 0).setName("Box 298")
+			.setRotationPoint(56.6f, -34, 5).setRotationAngle(0, 15, 0).setName("Box 298")
 		);
 		interior.add(new ModelRendererTurbo(interior, 497, 57, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(56.6f, -33, 5).setRotationAngle(0, 0.2617994f, 0).setName("Box 299")
+			.setRotationPoint(56.6f, -33, 5).setRotationAngle(0, 15, 0).setName("Box 299")
 		);
 		interior.add(new ModelRendererTurbo(interior, 505, 57, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(56.6f, -32, 5).setRotationAngle(0, 0.2617994f, 0).setName("Box 300")
+			.setRotationPoint(56.6f, -32, 5).setRotationAngle(0, 15, 0).setName("Box 300")
 		);
 		interior.add(new ModelRendererTurbo(interior, 369, 65, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(56.6f, -31, 5).setRotationAngle(0, 0.2617994f, 0).setName("Box 301")
+			.setRotationPoint(56.6f, -31, 5).setRotationAngle(0, 15, 0).setName("Box 301")
 		);
 		interior.add(new ModelRendererTurbo(interior, 377, 65, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 302")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 302")
 		);
 		interior.add(new ModelRendererTurbo(interior, 89, 73, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -30, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 303")
+			.setRotationPoint(51, -30, -0.8f).setRotationAngle(0, 45, 0).setName("Box 303")
 		);
 		interior.add(new ModelRendererTurbo(interior, 121, 73, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 2, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -32, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 304")
+			.setRotationPoint(51, -32, -0.8f).setRotationAngle(0, 45, 0).setName("Box 304")
 		);
 		interior.add(new ModelRendererTurbo(interior, 505, 65, textureX, textureY)
 			.addShapeBox(0, 0, 1, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 305")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 305")
 		);
 		interior.add(new ModelRendererTurbo(interior, 113, 73, textureX, textureY)
 			.addShapeBox(0, 0, 2, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 306")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 306")
 		);
 		interior.add(new ModelRendererTurbo(interior, 129, 73, textureX, textureY)
 			.addShapeBox(0, 0, 3, 1, 1, 2, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 307")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 307")
 		);
 		interior.add(new ModelRendererTurbo(interior, 137, 73, textureX, textureY)
 			.addShapeBox(0, 0, 5, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 308")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 308")
 		);
 		interior.add(new ModelRendererTurbo(interior, 153, 73, textureX, textureY)
 			.addShapeBox(0, 0, 6, 1, 2, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 309")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 309")
 		);
 		interior.add(new ModelRendererTurbo(interior, 385, 73, textureX, textureY)
 			.addShapeBox(0, 1, 1, 1, 3, 5, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 310")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 310")
 		);
 		interior.add(new ModelRendererTurbo(interior, 169, 73, textureX, textureY)
 			.addShapeBox(0, 2, 6, 1, 2, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 311")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 311")
 		);
 		interior.add(new ModelRendererTurbo(interior, 185, 73, textureX, textureY)
 			.addShapeBox(0, 4, 6, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 312")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 312")
 		);
 		interior.add(new ModelRendererTurbo(interior, 209, 73, textureX, textureY)
 			.addShapeBox(0, 5, 6, 1, 1, 1, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 313")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 313")
 		);
 		interior.add(new ModelRendererTurbo(interior, 273, 73, textureX, textureY)
 			.addShapeBox(0, 5, 4, 1, 1, 2, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 314")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 314")
 		);
 		interior.add(new ModelRendererTurbo(interior, 409, 73, textureX, textureY)
 			.addShapeBox(0, 4, 4, 1, 1, 2, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 315")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 315")
 		);
 		interior.add(new ModelRendererTurbo(interior, 465, 73, textureX, textureY)
 			.addShapeBox(0, 4, 1, 1, 1, 3, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 316")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 316")
 		);
 		interior.add(new ModelRendererTurbo(interior, 25, 81, textureX, textureY)
 			.addShapeBox(0, 5, 1, 1, 1, 3, 0, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, -0.8f, -0.2f, -0.2f, 0, -0.2f, -0.2f)
-			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 0.7853982f, 0).setName("Box 317")
+			.setRotationPoint(51, -34, -0.8f).setRotationAngle(0, 45, 0).setName("Box 317")
 		);
 		interior.add(new ModelRendererTurbo(interior, 481, 257, textureX, textureY).addBox(0, 0, 0, 1, 4, 14)
 			.setRotationPoint(56.7f, -33, -20).setRotationAngle(0, 0, 0).setName("Box 318")
@@ -288,6 +288,7 @@ public class T2Interior extends PartModel {
 			.setRotationPoint(37, -23, -18).setRotationAngle(0, 0, 0).setName("Box 327")
 		);
 		this.groups.add(interior);
+		//
 	}
 
 }

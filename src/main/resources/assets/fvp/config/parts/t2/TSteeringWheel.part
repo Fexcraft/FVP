@@ -1,7 +1,7 @@
 {
     "RegistryName": "fvp:t2_steering_wheel",
     "Addon": "fvtm:fvp",
-    "ModelFile": "fvp:models/part/t2_steering_wheel",
+    "Model": "fvp:models/part/t2_steering_wheel",
     "Category": "steering_wheel",
     "Texture": "fvp:textures/trucks/t2p.png",
     "Installation":{
