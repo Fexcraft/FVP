@@ -1,0 +1,11 @@
+{
+    "RegistryName": "fvp:tr1_fenders",
+    "Addon": "fvtm:fvp",
+    "Name": "TR1 Fenders",
+    "Model": "fvp:models/part/tr_fenders",
+    "Category": [ "fender_left", "fender_right" ],
+    "Texture": "fvp:textures/trailers/tr1_base.png",
+    "Installation":{
+    	"Compatible": [ { "vehicle": "fvp:tr1" } ]
+    }
+}

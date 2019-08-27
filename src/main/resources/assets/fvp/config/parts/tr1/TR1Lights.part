@@ -1,0 +1,12 @@
+{
+    "RegistryName": "fvp:tr1_lights",
+    "Addon": "fvtm:fvp",
+    "Name": "TR1 Standard Lights",
+    "Model": "fvp:models/part/tr1_lights",
+    "Category": "lights",
+    "Texture": "fvp:textures/trailers/tr1_base.png",
+    "Installation":{
+    	"Compatible": [ { "vehicle": "fvp:tr1" } ],
+    	"Removable": false
+    }
+}

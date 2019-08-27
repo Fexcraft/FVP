@@ -1,0 +1,12 @@
+{
+    "RegistryName": "fvp:tr1_license_plate",
+    "Addon": "fvtm:fvp",
+    "Name": "TR1 License Plate",
+    "Model": "fvp:models/part/tr1_license_plate",
+    "Category": "license_plate",
+    "Texture": "fvp:textures/trailers/tr1_base.png",
+    "Installation":{
+    	"Compatible": [ { "vehicle": "fvp:tr1" } ],
+    	"Removable": false
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "RegistryName": "fvp:tr1_container_holder",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/tr1_container_holder",
+    "Name": "TR1 Container Holder",
+    "Category": "cargo",
+    "Texture": "fvp:textures/trailers/tr1_base.png",
+    "Installation":{
+    	"Compatible": [ { "vehicle": "fvp:tr1" } ]
+    },
+    "Function":{ "id": "fvtm:container", "x": -112, "y": 24, "z": 0, "rot": 180, "length": 12 }
+}

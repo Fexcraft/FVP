@@ -1,0 +1,27 @@
+{
+    "RegistryName": "fvp:tr1",
+    "Addon": "fvtm:fvp",
+    "Name": "Trailer Base",
+    "Model": "fvp:models/vehicle/tr1",
+    "Texture": "fvp:textures/trailers/tr1_base.png",
+    "WheelPositions":[
+        { "x": -126.5, "y": -2, "z":  18, "id": "left_back_wheel", "radius": 12 },
+        { "x": -126.5, "y": -2, "z": -18, "id": "right_back_wheel", "radius": 12, "y_rot": 180 },
+        { "x": -155.5, "y": -2, "z":  18, "id": "left_back_wheel1", "radius": 12 },
+        { "x": -155.5, "y": -2, "z": -18, "id": "right_back_wheel1", "radius": 12, "y_rot": 180 },
+        { "x": -184.5, "y": -2, "z":  18, "id": "left_back_wheel2", "radius": 12 },
+        { "x": -184.5, "y": -2, "z": -18, "id": "right_back_wheel2", "radius": 12, "y_rot": 180 }
+    ],
+    "PreInstalled":{
+    	"license_plate": "fvp:tr1_license_plate",
+    	"lights": "fvp:tr1_lights"
+    },
+    "Attributes":[
+    	{ "id":"weight", "type": "float", "value": 2540 },
+    	{ "id":"constructor_length", "type": "float", "value": 12 },
+    	{ "id":"constructor_height", "type": "float", "value": -10 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 21 }
+    ],
+    "LegacyData":{},
+    "Trailer": true
+}

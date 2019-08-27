@@ -1,0 +1,22 @@
+{
+    "RegistryName": "fvp:tr1_type1",
+    "Addon": "fvtm:fvp",
+    "Name": "TR1 Type 1",
+    "Model": "fvp:models/part/tr1_type1",
+    "Category": [ "cargo" ],
+    "Textures": [
+        "fvp:textures/trailers/tr1_type1.png",
+        "fvp:textures/trailers/tr1_type1_alt0.png",
+        "fvp:textures/trailers/tr1_type1_alt1.png"
+    ],
+    "Installation":{
+    	"Compatible": [ { "vehicle": "fvp:tr1" } ],
+    	"Removable": false
+    },
+    "Function": {
+    	"id": "fvtm:inventory", "type": "ITEM", "capacity": 1458
+    },
+    "Attributes":[
+    	{ "id":"tr1_type1_doors", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ]
+}

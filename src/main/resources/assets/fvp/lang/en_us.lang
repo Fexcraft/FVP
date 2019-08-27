@@ -88,5 +88,10 @@ item.fvp:t2_rear_fender.name=T2 Rear Fenders
 item.fvp:t2_side_skirts.name=T2 Side Skirts
 item.fvp:t2_trailer_connector.name=T2 Trailer Connector
 item.fvp:t2_steering_wheel.name=T2 Steering Wheel
+item.fvp:tr1_container_holder.name=TR1 Container Holder
+item.fvp:tr1_fenders.name=TR1 Fenders
+item.fvp:tr1_license_plate.name=TR1 License Plate
+item.fvp:tr1_lights.name=TR1 Lights
+item.fvp:tr1_type1.name=TR1 Type 1 Upgrade
 
 
