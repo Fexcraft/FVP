@@ -11,6 +11,7 @@
     ],
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 2567.8 },
+    	{ "id": "fuel_capacity", "type": "integer", "value": 100000 },
     	{ "id":"constructor_length", "type": "float", "value": 6 },
     	{ "id":"constructor_height", "type": "float", "value": -10.5 },
     	{ "id":"constructor_wheel_offset", "type": "float", "value": 19.5 },
