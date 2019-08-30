@@ -1,0 +1,10 @@
+{
+    "RegistryName": "fvp:bogie_st1",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/part/bogiest1",
+    "Name": "Bogie (S) Type 1",
+    "Category": "bogie",
+    "Texture": "fvp:textures/bogies/st1.png",
+    "Installation": "bogie",
+    "Function": "fvtm:bogie"
+}
