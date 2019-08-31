@@ -5,6 +5,8 @@
     "Name": "Bogie (S) Type 1",
     "Category": "bogie",
     "Texture": "fvp:textures/bogies/st1.png",
-    "Installation": "bogie",
+    "Installation":{
+    	"Handler": "bogie", "Height": 12
+    },
     "Function": "fvtm:bogie"
 }
