@@ -1,0 +1,483 @@
+{
+  "Attributes": [
+    {
+      "editable": 0,
+      "id": "constructor_height",
+      "initial": -10.0,
+      "max": 4096.0,
+      "min": -4096.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": -10.0
+    },
+    {
+      "editable": 0,
+      "id": "constructor_length",
+      "initial": 12.0,
+      "max": 4096.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 12.0
+    },
+    {
+      "editable": 1,
+      "id": "constructor_show",
+      "initial": 1,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "BOOLEAN",
+      "value": 1
+    },
+    {
+      "editable": 0,
+      "id": "constructor_wheel_offset",
+      "initial": 21.0,
+      "max": 4096.0,
+      "min": -4096.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 21.0
+    },
+    {
+      "editable": 0,
+      "id": "front_connected",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "fuel_capacity",
+      "initial": 20000,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "org": 0,
+      "type": "INTEGER",
+      "value": 20000
+    },
+    {
+      "editable": 0,
+      "id": "fuel_primary",
+      "initial": "",
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "STRING",
+      "value": ""
+    },
+    {
+      "editable": 0,
+      "id": "fuel_quality",
+      "initial": 0.0,
+      "max": 10.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
+      "editable": 0,
+      "id": "fuel_secondary",
+      "initial": "",
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "STRING",
+      "value": ""
+    },
+    {
+      "editable": 0,
+      "id": "fuel_stored",
+      "initial": 0,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "org": 0,
+      "type": "INTEGER",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "lights",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "lights_fog",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "lights_long",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "lights_other",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "rear_connected",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "steering_angle",
+      "initial": 0.0,
+      "max": 40.0,
+      "min": -40.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
+      "editable": 0,
+      "id": "throttle",
+      "initial": 0.0,
+      "max": 10.0,
+      "min": -10.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
+      "editable": 1,
+      "id": "tr1_type1_doors",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "origin": "cargo|fvp:tr1_type1",
+      "seat": "driver",
+      "target": "vehicle",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "turn_light_left",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "turn_light_right",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "id": "weight",
+      "initial": 2540.0,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 2540.0
+    },
+    {
+      "editable": 0,
+      "id": "wheel_angle",
+      "initial": 0.0,
+      "max": 360.0,
+      "min": -360.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    }
+  ],
+  "Locked": 0,
+  "Parts": [
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [
+        {
+          "id": "fvtm:inventory",
+          "inventory": {
+            "Items": []
+          }
+        }
+      ],
+      "InstalledAs": "cargo",
+      "Part": "fvp:tr1_type1",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "fender_left",
+      "Part": "fvp:tr1_fenders",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "fender_right",
+      "Part": "fvp:tr1_fenders",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -126.5,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": 18.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "left_back_wheel"
+        }
+      ],
+      "InstalledAs": "left_back_wheel",
+      "Part": "fvp:t2r1t1_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -155.5,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": 18.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "left_back_wheel1"
+        }
+      ],
+      "InstalledAs": "left_back_wheel1",
+      "Part": "fvp:t2r1t1_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -184.5,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": 18.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "left_back_wheel2"
+        }
+      ],
+      "InstalledAs": "left_back_wheel2",
+      "Part": "fvp:t2r1t1_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "license_plate",
+      "Part": "fvp:tr1_license_plate",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "lights",
+      "Part": "fvp:tr1_lights",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -126.5,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": -18.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "right_back_wheel"
+        }
+      ],
+      "InstalledAs": "right_back_wheel",
+      "Part": "fvp:t2r1t1_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -155.5,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": -18.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "right_back_wheel1"
+        }
+      ],
+      "InstalledAs": "right_back_wheel1",
+      "Part": "fvp:t2r1t1_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -184.5,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": -18.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "right_back_wheel2"
+        }
+      ],
+      "InstalledAs": "right_back_wheel2",
+      "Part": "fvp:t2r1t1_wheel",
+      "SelectedTexture": 0
+    }
+  ],
+  "Preset": "Trailer1 Blank",
+  "RGBPrimary": 16777215,
+  "RGBSecondary": 16777215,
+  "SelectedTexture": 0,
+  "Vehicle": "fvp:tr1",
+  "WheelPos": [
+    {
+      "id": "left_back_wheel",
+      "pos_x": -7.90625,
+      "pos_y": -0.625,
+      "pos_z": -0.6875
+    },
+    {
+      "id": "left_back_wheel1",
+      "pos_x": -9.71875,
+      "pos_y": -0.625,
+      "pos_z": -0.6875
+    },
+    {
+      "id": "left_back_wheel2",
+      "pos_x": -11.53125,
+      "pos_y": -0.625,
+      "pos_z": -0.6875
+    },
+    {
+      "id": "right_back_wheel",
+      "pos_x": -7.90625,
+      "pos_y": -0.625,
+      "pos_z": 0.6875
+    },
+    {
+      "id": "right_back_wheel1",
+      "pos_x": -9.71875,
+      "pos_y": -0.625,
+      "pos_z": 0.6875
+    },
+    {
+      "id": "right_back_wheel2",
+      "pos_x": -11.53125,
+      "pos_y": -0.625,
+      "pos_z": 0.6875
+    }
+  ],
+  "WheelSlots": [
+    {
+      "id": "left_back_wheel",
+      "max_radius": 8.0,
+      "max_width": 8.0,
+      "min_radius": 8.0,
+      "min_width": 8.0,
+      "x": -126.5,
+      "y": -2.0,
+      "y_rot": 0.0,
+      "z": 18.0
+    },
+    {
+      "id": "left_back_wheel1",
+      "max_radius": 8.0,
+      "max_width": 8.0,
+      "min_radius": 8.0,
+      "min_width": 8.0,
+      "x": -155.5,
+      "y": -2.0,
+      "y_rot": 0.0,
+      "z": 18.0
+    },
+    {
+      "id": "left_back_wheel2",
+      "max_radius": 8.0,
+      "max_width": 8.0,
+      "min_radius": 8.0,
+      "min_width": 8.0,
+      "x": -184.5,
+      "y": -2.0,
+      "y_rot": 0.0,
+      "z": 18.0
+    },
+    {
+      "id": "right_back_wheel",
+      "max_radius": 8.0,
+      "max_width": 8.0,
+      "min_radius": 8.0,
+      "min_width": 8.0,
+      "x": -126.5,
+      "y": -2.0,
+      "y_rot": 180.0,
+      "z": -18.0
+    },
+    {
+      "id": "right_back_wheel1",
+      "max_radius": 8.0,
+      "max_width": 8.0,
+      "min_radius": 8.0,
+      "min_width": 8.0,
+      "x": -155.5,
+      "y": -2.0,
+      "y_rot": 180.0,
+      "z": -18.0
+    },
+    {
+      "id": "right_back_wheel2",
+      "max_radius": 8.0,
+      "max_width": 8.0,
+      "min_radius": 8.0,
+      "min_width": 8.0,
+      "x": -184.5,
+      "y": -2.0,
+      "y_rot": 180.0,
+      "z": -18.0
+    }
+  ]
+}
