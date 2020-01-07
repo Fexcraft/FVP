@@ -49,6 +49,7 @@ public class C10Lights extends PartModel {
 		lights_fog.add(new ModelRendererTurbo(lights_fog, 259, 4, textureX, textureY).addCylinder(0, 0, 0, 1, 1.5f, 12, 1.5f, 1.5f, 3, null)
 			.setRotationPoint(49.125f, 1.5f, -15).setRotationAngle(0, 0, 0)
 		);
+		lights_fog.addProgram(DefaultPrograms.FOG_LIGHTS);
 		this.groups.add(lights_fog);
 		//
 		TurboList lights_front = new TurboList("lights_front");
@@ -60,6 +61,7 @@ public class C10Lights extends PartModel {
 			.addShapeBox(0, 0, 0, 1, 3, 4, 0, 2, 0, 0, -2, 0, 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(48.9f, -9, -19).setRotationAngle(0, 0, 0)
 		);
+		lights_front.addProgram(DefaultPrograms.FRONT_LIGHTS);
 		this.groups.add(lights_front);
 		//
 		TurboList lights_rear = new TurboList("lights_rear");
@@ -69,6 +71,7 @@ public class C10Lights extends PartModel {
 		lights_rear.add(new ModelRendererTurbo(lights_rear, 15, 91, textureX, textureY).addBox(0, 0, 0, 3, 3, 4)
 			.setRotationPoint(-48.9f, -9, -19).setRotationAngle(0, 0, 0)
 		);
+		lights_rear.addProgram(DefaultPrograms.BACK_LIGHTS);
 		this.groups.add(lights_rear);
 		//
 		TurboList lights_reverse = new TurboList("lights_reverse");
@@ -78,6 +81,7 @@ public class C10Lights extends PartModel {
 		lights_reverse.add(new ModelRendererTurbo(lights_reverse, 142, 77, textureX, textureY).addBox(0, 0, 0, 0.5f, 1, 2)
 			.setRotationPoint(-48.95f, -6.5f, -17.5f).setRotationAngle(0, 0, 0)
 		);
+		lights_reverse.addProgram(DefaultPrograms.REVERSE_LIGHTS);
 		this.groups.add(lights_reverse);
 	}
 
