@@ -1,0 +1,39 @@
+{
+    "RegistryName": "fvp:c11",
+    "Addon": "fvtm:fvp",
+    "Name": "C11 [C-ileven]",
+    "Model": "fvp:models/vehicle/c11",
+    "PrimaryColor": "#FFFFFF",
+    "SecondaryColor": "#A8A8A8",
+    "Texture": "Default;fvp:textures/cars/c11.png",
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 1256 },
+    	{ "id":"constructor_length", "type": "float", "value": 3 },
+    	{ "id":"constructor_height", "type": "float", "value": -11 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 18 },
+    	{ "id":"windshield_wipers", "type": "boolean", "value": false }
+    ],
+    "WheelPositions":[
+        { "x":  32, "y": 2, "z":  18, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },
+        { "x":  32, "y": 2, "z": -18, "id": "right_front_wheel", "radius": 8, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -32, "y": 2, "z":  18, "id": "left_back_wheel", "radius": 8 },
+        { "x": -32, "y": 2, "z": -18, "id": "right_back_wheel", "radius": 8, "y_rot": 180 }
+    ],
+    "RequiredParts": [
+        "right_front_wheel",
+        "left_front_wheel",
+        "right_back_wheel",
+        "left_back_wheel",
+        "steering_wheel",
+        "interior",
+        "seats",
+        "engine",
+        "fuel_tank"
+    ],
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.78,
+    	"MaxNegativeThrottle": 0.70,
+    	"TurnLeftModifier": 0.8,
+    	"TurnRightModifier": 0.8
+    }
+}
