@@ -1,0 +1,25 @@
+{
+    "RegistryName": "fvp:c11_trunk",
+    "Addon": "fvtm:fvp",
+    "Name": "C11 Trunk",
+    "Model": "fvp:models/part/c11_trunk",
+    "Category": "trunk",
+    "Texture": "Default;fvp:textures/cars/c11.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            { "vehicle": "fvp:c11", "x": 0, "y": 0, "z": 0 }
+        ]
+    },
+    "Attributes":[
+    	{ "id":"c11_trunk", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ],
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "40.30", "priority": "veryhigh"
+    	}
+    ]
+}

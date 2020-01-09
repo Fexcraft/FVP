@@ -1,0 +1,31 @@
+{
+    "RegistryName": "fvp:c11_seats",
+    "Addon": "fvtm:fvp",
+    "Name": "C11 Seats",
+    "Model": "fvp:models/part/c11_seats",
+    "Category": "seats",
+    "Texture": "Default;fvp:textures/cars/c11.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            { "vehicle": "fvp:c11", "x": 0, "y": 0, "z": 0 }
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "82.5", "priority": "veryhigh"
+    	}
+    ],
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "x": 1, "y": -1, "z": -10, "name": "driver", "driver": true, "min_yaw": -120, "max_yaw": 120 },
+    		{ "x": 1, "y": -1, "z": 10, "name": "pass_front" },
+    		{ "x": -18, "y": -1, "z": -8, "name": "pass_rear_left" },
+    		{ "x": -18, "y": -1, "z": 8, "name": "pass_rear_right" }
+    	]
+    }
+}

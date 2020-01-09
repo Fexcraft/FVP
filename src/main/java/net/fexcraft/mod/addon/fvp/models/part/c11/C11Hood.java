@@ -23,10 +23,11 @@ public class C11Hood extends PartModel {
 			.setRotationPoint(20, -11.5f, -15).setRotationAngle(0, 0, 0)
 		);
 		hood.add(new ModelRendererTurbo(hood, 0, 69, textureX, textureY)
-			.addShapeBox(16, 0, 0, 12, 1, 30, 0, 0, 0, 0, 0, -1.5f, 0, 0, -1.5f, 0, 0, 0, 0, 0, 0, 0, 0, 1.5f, 0, 0, 1.5f, 0, 0, 0, 0)
-			.setRotationPoint(18, -11.5f, -15).setRotationAngle(0, 0, 0)
+			.addShapeBox(14, 0, 0, 12, 1, 30, 0, 0, 0, 0, 0, -1.5f, 0, 0, -1.5f, 0, 0, 0, 0, 0, 0, 0, 0, 1.5f, 0, 0, 1.5f, 0, 0, 0, 0)
+			.setRotationPoint(20, -11.5f, -15).setRotationAngle(0, 0, 0)
 		);
 		hood.addProgram(DefaultPrograms.RGB_PRIMARY);
+		hood.addProgram(new DefaultPrograms.AttributeRotator("c11_hood", true, -64, 0, -1, 2, 0f));
 		this.groups.add(hood);
 	}
 

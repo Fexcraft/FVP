@@ -39,7 +39,7 @@ public class C10SteeringWheel extends PartModel {
 		steering_wheel.add(new ModelRendererTurbo(steering_wheel, 150, 0, textureX, textureY).addHollowCylinder(-1.75f, 0, 0, 3, 1, 1, 16, 4, 1, 1, 3, new net.fexcraft.lib.common.math.Vec3f(-0.5, 0.0, 0.0))
 			.setRotationPoint(14, -12, 10).setRotationAngle(45, 0, 15)
 		);
-		steering_wheel.addProgram(new DefaultPrograms.SteeringWheel(0, 1.5f));//new DefaultPrograms.AttributeRotator("steering_angle", false, -360, 360, 1, 0, 0f, false));
+		steering_wheel.addProgram(new DefaultPrograms.SteeringWheelCentered(0, 1.5f));//new DefaultPrograms.AttributeRotator("steering_angle", false, -360, 360, 1, 0, 0f, false));
 		steering_wheel.translate(-14, 12, -10);
 		this.groups.add(steering_wheel);
 	}

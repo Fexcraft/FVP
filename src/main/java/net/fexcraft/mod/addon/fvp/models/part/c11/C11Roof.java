@@ -3,6 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c11;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
 
@@ -44,6 +45,7 @@ public class C11Roof extends PartModel {
 			.addShapeBox(0, 0, 0, 1, 1, 26, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2)
 			.setRotationPoint(-32, -12.1875f, -13).setRotationAngle(0, 0, 0)
 		);
+		roof_open.addProgram(new DefaultPrograms.AttributeVisible("c11_roof", false));
 		this.groups.add(roof_open);
 		//
 		TurboList roof_close = new TurboList("roof_close");
@@ -110,8 +112,8 @@ public class C11Roof extends PartModel {
 			.addShapeBox(0, 0, 0, 11, 12, 1, 0, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, 0.875f, 0, 0, 0.875f, 0, 0, -1.75f, 0, 0, -1.75f)
 			.setRotationPoint(-15.5f, -22.5f, -18).setRotationAngle(0, 0, 0)
 		);
+		roof_close.addProgram(new DefaultPrograms.AttributeVisible("c11_roof", true));
 		this.groups.add(roof_close);
-		//
 	}
 
 }

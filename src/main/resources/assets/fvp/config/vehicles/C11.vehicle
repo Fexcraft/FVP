@@ -11,7 +11,7 @@
     	{ "id":"constructor_length", "type": "float", "value": 3 },
     	{ "id":"constructor_height", "type": "float", "value": -11 },
     	{ "id":"constructor_wheel_offset", "type": "float", "value": 18 },
-    	{ "id":"windshield_wipers", "type": "boolean", "value": false }
+    	{ "id":"windshield_wipers", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
     ],
     "WheelPositions":[
         { "x":  32, "y": 2, "z":  18, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },

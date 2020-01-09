@@ -3,6 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c11;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
 
@@ -35,6 +36,8 @@ public class C11SW extends PartModel {
 			.addShapeBox(0, 1, -0.5f, 1, 2, 1, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0)
 			.setRotationPoint(11, -8.5f, 10).setRotationAngle(124, 0, 15)
 		);
+		steering_wheel.addProgram(new DefaultPrograms.SteeringWheelCentered(0, 1.5f));
+		steering_wheel.translate(-11, 8.5f, -10);
 		this.groups.add(steering_wheel);
 	}
 

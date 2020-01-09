@@ -20,18 +20,19 @@ public class C11Trunk extends PartModel {
 		//
 		TurboList trunk = new TurboList("trunk");
 		trunk.add(new ModelRendererTurbo(trunk, 392, 131, textureX, textureY)
-			.addShapeBox(0, 0, 0, 2, 4, 35, 0, -0.5f, -1.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -1.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(-50, -11, -17.5f).setRotationAngle(0, 0, 0)
+			.addShapeBox(-18, 0, 0, 2, 4, 35, 0, -0.5f, -1.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -1.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(-32, -11, -17.5f).setRotationAngle(0, 0, 0)
 		);
 		trunk.add(new ModelRendererTurbo(trunk, 277, 81, textureX, textureY)
-			.addShapeBox(0, 0, 0, 10, 1, 37, 0, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f)
-			.setRotationPoint(-42, -11.5f, -18.5f).setRotationAngle(0, 0, 0)
+			.addShapeBox(-10, 0, 0, 10, 1, 37, 0, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f)
+			.setRotationPoint(-32, -11.5f, -18.5f).setRotationAngle(0, 0, 0)
 		);
 		trunk.add(new ModelRendererTurbo(trunk, 415, 93, textureX, textureY)
-			.addShapeBox(0, 0, 0, 6, 1, 36, 0, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, 0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0.5f, -0.5f)
-			.setRotationPoint(-48, -11.5f, -18).setRotationAngle(0, 0, 0)
+			.addShapeBox(-16, 0, 0, 6, 1, 36, 0, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, 0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0.5f, -0.5f)
+			.setRotationPoint(-32, -11.5f, -18).setRotationAngle(0, 0, 0)
 		);
 		trunk.addProgram(DefaultPrograms.RGB_PRIMARY);
+		trunk.addProgram(new DefaultPrograms.AttributeRotator("c11_trunk", true, 0, 72, 1, 2, 0f));
 		this.groups.add(trunk);
 	}
 

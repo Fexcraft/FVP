@@ -31,7 +31,7 @@ public class C11Doors extends PartModel {
 			.addShapeBox(-21, 0, -1, 21, 4, 2, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f)
 			.setRotationPoint(18, -11, 20).setRotationAngle(0, 0, 0)
 		);
-		door_left_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
+		door_left_primary.addPrograms(new DefaultPrograms.AttributeRotator("c11_door_left", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_left_primary);
 		//
 		TurboList door_right_primary = new TurboList("door_right_primary");
@@ -47,7 +47,7 @@ public class C11Doors extends PartModel {
 			.addShapeBox(-21, 0, -1, 21, 5, 2, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(18, -1, -20).setRotationAngle(0, 0, 0)
 		);
-		door_right_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
+		door_right_primary.addPrograms(new DefaultPrograms.AttributeRotator("c11_door_right", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_right_primary);
 		//
 		TurboList door_left = new TurboList("door_left");
@@ -69,6 +69,7 @@ public class C11Doors extends PartModel {
 		door_left.add(new ModelRendererTurbo(door_left, 86, 53, textureX, textureY).addBox(-8, -1, -2, 3, 1, 1)
 			.setRotationPoint(18, -7, 20).setRotationAngle(0, 0, 0)
 		);
+		door_left.addProgram(new DefaultPrograms.AttributeRotator("c11_door_left", true, 0, 60, 0.5f, 1, 0f));
 		this.groups.add(door_left);
 		//
 		TurboList door_right = new TurboList("door_right");
@@ -90,6 +91,7 @@ public class C11Doors extends PartModel {
 		door_right.add(new ModelRendererTurbo(door_right, 426, 40, textureX, textureY).addBox(-8, -1, 1, 3, 1, 1)
 			.setRotationPoint(18, -7, -20).setRotationAngle(0, 0, 0)
 		);
+		door_right.addProgram(new DefaultPrograms.AttributeRotator("c11_door_right", true, -60, 0, -0.5f, 1, 0f));
 		this.groups.add(door_right);
 	}
 

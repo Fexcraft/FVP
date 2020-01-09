@@ -1,0 +1,22 @@
+{
+    "RegistryName": "fvp:c11_lights",
+    "Addon": "fvtm:fvp",
+    "Name": "C11 Lights",
+    "Model": "fvp:models/part/c11_lights",
+    "Category": "lights",
+    "Texture": "Default;fvp:textures/cars/c11.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            { "vehicle": "fvp:c11", "x": 0, "y": 0, "z": 0 }
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "20.50", "priority": "veryhigh"
+    	}
+    ]
+}
