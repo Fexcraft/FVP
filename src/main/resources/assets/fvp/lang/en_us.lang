@@ -13,6 +13,7 @@ item.fvp:t1p.name=T1P
 item.fvp:ab1.name=Autobus 1B
 item.fvp:t2.name=T2
 item.fvp:tr1.name=Universal Trailer 1
+item.fvp:c11.name=Ci Undici
 
 # Wheels
 item.fvp:c1r1t1_wheel.name=C1R1 Wheel T1
@@ -93,5 +94,15 @@ item.fvp:tr1_fenders.name=TR1 Fenders
 item.fvp:tr1_license_plate.name=TR1 License Plate
 item.fvp:tr1_lights.name=TR1 Lights
 item.fvp:tr1_type1.name=TR1 Type 1 Upgrade
+item.fvp:c11_doors.name=C11 Doors
+item.fvp:c11_hood.name=C11 Hood
+item.fvp:c11_interior.name=C11 Interior
+item.fvp:c11_lights.name=C11 Lights
+item.fvp:c11_roof.name=C11 Roof
+item.fvp:c11_seats.name=C11 Seats
+item.fvp:c11_steering_wheel.name=C11 Steering Wheel
+item.fvp:c11_trunk.name=C11 Trunk
 
+#Bogies
+item.fvp:bogie_st1.name=ST1 Bogie
 
