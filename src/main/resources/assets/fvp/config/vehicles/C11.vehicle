@@ -26,6 +26,7 @@
         "left_back_wheel",
         "steering_wheel",
         "interior",
+        "roof",
         "seats",
         "engine",
         "fuel_tank"

@@ -797,6 +797,15 @@ public class C11Model extends VehicleModel {
 		);
 		window.addProgram(new DefaultPrograms.Window(0x97abdb));
 		this.groups.add(window);
+		//
+		TurboList license_plates = new TurboList("license_plates");
+		license_plates.add(new ModelRendererTurbo(license_plates, 153, 115, textureX, textureY).addBox(0, 0, -6, 1, 3, 12)
+			.setRotationPoint(-49.875f, -1.5f, 0).setRotationAngle(0, 0, 0)
+		);
+		license_plates.add(new ModelRendererTurbo(license_plates, 198, 113, textureX, textureY).addBox(-0.25f, -1, -6, 1, 3, 12)
+			.setRotationPoint(50, 1.5f, 0).setRotationAngle(0, 0, -5)
+		);
+		this.groups.add(license_plates);
 	}
 
 }
