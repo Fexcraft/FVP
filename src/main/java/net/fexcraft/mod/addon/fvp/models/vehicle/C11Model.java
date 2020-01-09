@@ -776,13 +776,16 @@ public class C11Model extends VehicleModel {
 			.setRotationPoint(18.75f, -11.5f, -11).setRotationAngle(0, 0, -39)
 		);
 		wipers.addProgram(new TurboList.Program(){
+			private boolean ison, ret = false; private float moved;
 			@Override
 			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				//TODO
+				if(cache == null) return; ison = !data.getAttribute("windshield_wipers").getBooleanValue(); moved = cache.getValue("wipers_moved", 0f);
+				if(ison && !ret){ moved += 0.5f; } if(moved >= 110 || ret){ ret = true; moved -= 0.5f; } if(moved <= 0f){ ret = false; moved = 0f;}
+				if(moved != 0f) for(ModelRendererTurbo mrt : list){ mrt.rotationAngleX = moved; } cache.setValue("wipers_moved", moved);
 			}
 			@Override
 			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				//TODO
+				if(moved != 0f) for(ModelRendererTurbo mrt : list){ mrt.rotationAngleX = 0; }
 			}
 		});
 		this.groups.add(wipers);
