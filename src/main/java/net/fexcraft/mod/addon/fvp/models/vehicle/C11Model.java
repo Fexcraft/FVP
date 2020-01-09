@@ -792,7 +792,7 @@ public class C11Model extends VehicleModel {
 			.addShapeQuad(0, 0, 0, 1, 11, 0, 0, 0, 0, -1, 0, 34, -9, 0, -1, 8, 0, 35)
 			.setRotationPoint(9.5f, -22.5f, 17).setRotationAngle(0, 0, 0)
 		);
-		window.addProgram(DefaultPrograms.WINDOW);
+		window.addProgram(new DefaultPrograms.Window(0x97abdb));
 		this.groups.add(window);
 	}
 
