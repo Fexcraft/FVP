@@ -18,6 +18,63 @@ public class C11Lights extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
+		TurboList lights_off = new TurboList("lights_off");
+		lights_off.add(new ModelRendererTurbo(lights_off, 421, 89, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
+			.setRotationPoint(49, 4.25f, -17).setRotationAngle(0, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 375, 89, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
+			.setRotationPoint(49, 4.25f, 15).setRotationAngle(0, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 29, 43, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 1.25f, 1, 3, null)
+			.setRotationPoint(48, -3, 14.5f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 132, 41, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 1.25f, 1, 3, null)
+			.setRotationPoint(48, -3, 17.25f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 29, 39, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 0.5f, 3, null)
+			.setRotationPoint(47.5f, -4, 20.25f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 29, 35, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 0.5f, 3, null)
+			.setRotationPoint(47.5f, -2, 20).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 314, 33, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 1.25f, 1, 3, null)
+			.setRotationPoint(48, -3, -17).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 29, 31, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 1.25f, 1, 3, null)
+			.setRotationPoint(48, -3, -14.25f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 29, 27, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 0.5f, 3, null)
+			.setRotationPoint(47.5f, -4, -20.25f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 29, 19, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 0.5f, 3, null)
+			.setRotationPoint(47.5f, -2, -20).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 29, 15, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 1, 3, null)
+			.setRotationPoint(-49, -5.5f, -17.5f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 206, 9, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.375f, 0.5f, 3, null)
+			.setRotationPoint(-48.5f, -6.25f, -19.75f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 108, 9, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.375f, 0.5f, 3, null)
+			.setRotationPoint(-48.5f, -4.75f, -19.75f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 0, 8, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 1, 3, null)
+			.setRotationPoint(-49, -5.5f, 17.75f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 503, 7, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 1, 3, null)
+			.setRotationPoint(-49, -5.5f, 15.5f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 479, 5, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.375f, 0.5f, 3, null)
+			.setRotationPoint(-48.5f, -6.25f, 19.75f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 314, 5, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.375f, 0.5f, 3, null)
+			.setRotationPoint(-48.5f, -4.75f, 19.75f).setRotationAngle(12.5f, 0, 0)
+		);
+		lights_off.add(new ModelRendererTurbo(lights_off, 108, 5, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 1, 3, null)
+			.setRotationPoint(-49, -5.5f, -15.25f).setRotationAngle(12.5f, 0, 0)
+		);
+		this.groups.add(lights_off);
+		//
 		TurboList fog_lights = new TurboList("fog_lights");
 		fog_lights.add(new ModelRendererTurbo(fog_lights, 225, 88, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 2, 0, 0, 0, 0, -0.875f, 0, 0, -0.875f, 0, 0, 0, 0, 0, 0, 0, 0, -0.875f, 0, 0, -0.875f, 0, 0, 0, 0, 0)
@@ -87,63 +144,6 @@ public class C11Lights extends PartModel {
 		);
 		rear_lights.addProgram(DefaultPrograms.REAR_LIGHTS);
 		this.groups.add(rear_lights);
-		//
-		TurboList lights_off = new TurboList("lights_off");
-		lights_off.add(new ModelRendererTurbo(lights_off, 421, 89, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
-			.setRotationPoint(49, 4.25f, -17).setRotationAngle(0, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 375, 89, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
-			.setRotationPoint(49, 4.25f, 15).setRotationAngle(0, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 29, 43, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 1.25f, 1, 3, null)
-			.setRotationPoint(48, -3, 14.5f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 132, 41, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 1.25f, 1, 3, null)
-			.setRotationPoint(48, -3, 17.25f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 29, 39, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 0.5f, 3, null)
-			.setRotationPoint(47.5f, -4, 20.25f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 29, 35, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 0.5f, 3, null)
-			.setRotationPoint(47.5f, -2, 20).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 314, 33, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 1.25f, 1, 3, null)
-			.setRotationPoint(48, -3, -17).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 29, 31, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 1.25f, 1, 3, null)
-			.setRotationPoint(48, -3, -14.25f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 29, 27, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 0.5f, 3, null)
-			.setRotationPoint(47.5f, -4, -20.25f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 29, 19, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 0.5f, 3, null)
-			.setRotationPoint(47.5f, -2, -20).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 29, 15, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 1, 3, null)
-			.setRotationPoint(-49, -5.5f, -17.5f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 206, 9, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.375f, 0.5f, 3, null)
-			.setRotationPoint(-48.5f, -6.25f, -19.75f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 108, 9, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.375f, 0.5f, 3, null)
-			.setRotationPoint(-48.5f, -4.75f, -19.75f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 0, 8, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 1, 3, null)
-			.setRotationPoint(-49, -5.5f, 17.75f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 503, 7, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 1, 3, null)
-			.setRotationPoint(-49, -5.5f, 15.5f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 479, 5, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.375f, 0.5f, 3, null)
-			.setRotationPoint(-48.5f, -6.25f, 19.75f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 314, 5, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.375f, 0.5f, 3, null)
-			.setRotationPoint(-48.5f, -4.75f, 19.75f).setRotationAngle(12.5f, 0, 0)
-		);
-		lights_off.add(new ModelRendererTurbo(lights_off, 108, 5, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 16, 0.75f, 1, 3, null)
-			.setRotationPoint(-49, -5.5f, -15.25f).setRotationAngle(12.5f, 0, 0)
-		);
-		this.groups.add(lights_off);
 	}
 
 }
