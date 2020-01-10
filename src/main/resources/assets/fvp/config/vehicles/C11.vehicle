@@ -42,6 +42,9 @@
         { "x": -32, "y": 2, "z":  18, "id": "left_back_wheel", "radius": 8 },
         { "x": -32, "y": 2, "z": -18, "id": "right_back_wheel", "radius": 8, "y_rot": 180 }
     ],
+    "PreInstalled":{
+    	"interior": "fvp:c11_interior"
+    },
     "RequiredParts": [
         "right_front_wheel",
         "left_front_wheel",
@@ -51,8 +54,7 @@
         "interior",
         "roof",
         "seats",
-        "engine",
-        "fuel_tank"
+        "engine"
     ],
     "LegacyData":{
     	"MaxPositiveThrottle": 1.78,

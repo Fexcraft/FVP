@@ -31,7 +31,6 @@
         "right_back_wheel",
         "left_back_wheel",
         "engine",
-        "fuel_tank",
         "lights"
     ],
     "PreInstalled":{

@@ -27,8 +27,7 @@
         "interior",
         "bumpers",
         "seats",
-        "engine",
-        "fuel_tank"
+        "engine"
     ],
     "PreInstalled":{
     	"interior": "fvp:c8_interior",
