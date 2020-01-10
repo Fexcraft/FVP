@@ -237,7 +237,7 @@ public class C11Interior extends PartModel {
 			@Override
 			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
 				if(ent == null) return; Attribute<?> attr = data.getAttribute("turn_lights");
-				list.get(0).rotationAngleX = attr.getTriStateValue() == null ? 30f : attr.getTriStateValue() ? 25f : 35f;
+				list.get(0).rotationAngleX = attr.getTriStateValue() == null ? 30f : attr.getTriStateValue() ? 35f : 25f;
 				attr = data.getAttribute("windshield_wipers"); list.get(1).rotationAngleX = attr.getBooleanValue() ? 25f : 30f;
 			}
 			@Override
