@@ -13,8 +13,24 @@
         ]
     },
     "Attributes":[
-    	{ "id":"c11_door_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
-    	{ "id":"c11_door_right", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" }
+    	{
+    		"id":"c11_door_left", "type": "boolean", "value": false, "editable": true, "seat": "driver",
+    		"external": true, "hitbox": {
+    			"external-false": [ 1, -6.5, 22, 2 ],
+    			"external-true": [ 11, -6.5, 35.5, 2 ],
+    			"false": [ 11.5, -7.5, 18, 2 ],
+    			"true": [ 13, -7.5, 24.5, 2 ]
+    		}
+    	},
+    	{
+    		"id":"c11_door_right", "type": "boolean", "value": false, "editable": true, "seat": "pass_front",
+    		"external": true, "hitbox": {
+    			"external-false": [ 1, -6.5, -22, 2 ],
+    			"external-true": [ 11, -6.5, -35.5, 2 ],
+    			"false": [ 11.5, -7.5, -18, 2 ],
+    			"true": [ 13, -7.5, -24.5, 2 ]
+    		}
+    	}
     ],
     "Modifiers":[
     	{
