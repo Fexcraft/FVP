@@ -38,12 +38,12 @@ public class T1SnowPlowScript extends VehicleScript {
         if(!entity.world.isRemote){
             if(data.getAttribute("t1_snowplow_state").getBooleanValue()){
                 Vec3d[] pos = new Vec3d[6];
-                pos[0] = calculate(vehicle.getAxes(), entity, 2);
-                pos[1] = calculate(vehicle.getAxes(), entity, 1);
-                pos[2] = calculate(vehicle.getAxes(), entity, 0);
-                pos[3] = calculate(vehicle.getAxes(), entity, -1);
-                pos[4] = calculate(vehicle.getAxes(), entity, -2);
-                pos[5] = calculate(vehicle.getAxes(), entity, 3);
+                pos[0] = calculate(vehicle.getRotPoint().getAxes(), entity, 2);
+                pos[1] = calculate(vehicle.getRotPoint().getAxes(), entity, 1);
+                pos[2] = calculate(vehicle.getRotPoint().getAxes(), entity, 0);
+                pos[3] = calculate(vehicle.getRotPoint().getAxes(), entity, -1);
+                pos[4] = calculate(vehicle.getRotPoint().getAxes(), entity, -2);
+                pos[5] = calculate(vehicle.getRotPoint().getAxes(), entity, 3);
                 IBlockState[] states = new IBlockState[6];
                 int j = 0;
                 for(int i = 0; i < 6; i++){
