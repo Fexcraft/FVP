@@ -1,5 +1,7 @@
 # FVP lang file
 
+# Other
+itemGroup.fvtm:fvp=Fex's Vehicle Pack
 
 # Vehicles
 item.fvp:c1r1.name=C1R1
