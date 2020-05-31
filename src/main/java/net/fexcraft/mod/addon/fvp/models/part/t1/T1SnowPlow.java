@@ -73,7 +73,7 @@ public class T1SnowPlow extends PartModel {
     }
 
     @Override
-    public void render(VehicleData data, String us, Entity vehicle, RenderCache cache, int meta){
+    public void render(VehicleData data, String us, Entity vehicle, RenderCache cache){
         body.render(null, data, data, us, cache); Attribute<?> attr = data.getAttribute("t1_snowplow_state");
         snowplow.rotate(0, 0, attr == null ? 0 : attr.getBooleanValue() ? 0 : -Static.rad20, true); snowplow.render(null, data, data, us, cache);
     }

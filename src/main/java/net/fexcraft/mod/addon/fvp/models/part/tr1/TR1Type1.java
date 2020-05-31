@@ -271,7 +271,7 @@ public class TR1Type1 extends PartModel {
     }
 
     @Override
-    public void render(VehicleData data, String us, Entity ent, RenderCache cache, int meta){
+    public void render(VehicleData data, String us, Entity ent, RenderCache cache){
     	chassis_body.render(ent, data, data, us, cache);
     	float doortoggle = 0;
     	if(cache != null){

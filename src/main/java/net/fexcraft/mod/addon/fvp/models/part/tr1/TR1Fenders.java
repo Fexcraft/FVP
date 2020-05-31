@@ -195,7 +195,7 @@ public class TR1Fenders extends PartModel {
     }
 
     @Override
-    public void render(VehicleData data, String us, Entity vehicle, RenderCache cache, int meta){
+    public void render(VehicleData data, String us, Entity vehicle, RenderCache cache){
         super.render(data, us);
     }
 
