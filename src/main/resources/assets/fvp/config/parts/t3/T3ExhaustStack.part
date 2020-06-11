@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t3_exhaust_stack",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Exhaust Stack",
+    "Model": "fvp:models/part/t3_exhaust_stack.jtmt",
+    "Category": "cabin",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    }
+}
