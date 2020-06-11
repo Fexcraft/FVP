@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t3_air_filters",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Air Filters",
+    "Model": "fvp:models/part/t3_air_filters",
+    "Category": "mirrors",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    }
+}
