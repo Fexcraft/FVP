@@ -1,0 +1,24 @@
+{
+    "RegistryName": "fvp:t3_mid_chassis",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Mid Chassis",
+    "Model": "fvp:models/part/t3_mid_chassis.jtmt",
+    "Category": "mid_chassis",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "part_slot",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    },
+    "Function": {
+    	"id": "fvtm:part_slots",
+    	"slots":[
+    		[ 0, 0, 0, "mid_axle", "mid_axle" ],
+    		[ 0, 0, 0, "rear_axle", "rear_axle" ],
+    		[ 0, 0, 0, "side_storage", "storage_left" ],
+    		[ 0, 0, 0, "side_storage", "storage_right" ]
+    	]
+    }
+}

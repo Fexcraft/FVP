@@ -1,0 +1,90 @@
+{
+  "format": 3,
+  "name": "T3 Series",
+  "texture_size_x": 512,
+  "texture_size_y": 512,
+  "texture_scale": 1,
+  "creators": [
+    "Ferdinand (FEX___96)"
+  ],
+  "type": "jtmt",
+  "textures": [
+    "default"
+  ],
+  "texture_group": "default",
+  "groups": {
+    "mid_chassis": {
+      "name": "mid_chassis",
+      "polygons": [
+        {
+          "texture_x": 392,
+          "texture_y": 248,
+          "type": "box",
+          "pos_x": -66.0,
+          "pos_y": -13.0,
+          "pos_z": 7.0,
+          "width": 20.0,
+          "height": 10.0,
+          "depth": 4.0
+        },
+        {
+          "texture_x": 462,
+          "texture_y": 240,
+          "type": "box",
+          "pos_x": -66.0,
+          "pos_y": -13.0,
+          "pos_z": -11.0,
+          "width": 20.0,
+          "height": 10.0,
+          "depth": 4.0
+        },
+        {
+          "texture_x": 316,
+          "texture_y": 341,
+          "type": "box",
+          "pos_x": -64.0,
+          "pos_y": -12.0,
+          "pos_z": -7.0,
+          "width": 2.0,
+          "height": 8.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 246,
+          "texture_y": 341,
+          "type": "box",
+          "pos_x": -50.0,
+          "pos_y": -12.0,
+          "pos_z": -7.0,
+          "width": 2.0,
+          "height": 8.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 0,
+          "texture_y": 224,
+          "type": "box",
+          "pos_x": -66.0,
+          "pos_y": -14.0,
+          "pos_z": -16.0,
+          "width": 22.0,
+          "height": 1.0,
+          "depth": 32.0
+        },
+        {
+          "texture_x": 379,
+          "texture_y": 139,
+          "type": "box",
+          "name": "axle_frontcp",
+          "pos_x": -66.0,
+          "pos_y": -2.0,
+          "off_y": -1.5,
+          "off_z": -1.5,
+          "width": 32.0,
+          "height": 3.0,
+          "depth": 3.0
+        }
+      ]
+    }
+  }
+}
