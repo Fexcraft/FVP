@@ -11,11 +11,39 @@
     	{ "id": "fuel_capacity", "type": "integer", "value": 250000 },
     	{ "id":"constructor_length", "type": "float", "value": 4 },
     	{ "id":"constructor_height", "type": "float", "value": -11 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 21 }
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 21 },
+    	{
+    		"id":"t3_door_left",
+    		"type": "boolean",
+    		"value": false,
+    		"editable": true,
+    		"seat": "driver",
+    		"external": true,
+    		"hitbox": {
+    			"external-false": [ -0.5, -32.5, 22, 2 ],
+    			"external-true": [ 16, -32.5, 26.25, 2 ],
+    			"false": [ 11.5, -32.5, 21, 2 ],
+    			"true": [ 16, -32.5, 26.25, 2 ]
+    		}
+    	},
+    	{
+    		"id":"t3_door_right",
+    		"type": "boolean",
+    		"value": false,
+    		"editable": true,
+    		"seat": "pass_front",
+    		"external": true,
+    		"hitbox": {
+    			"external-false": [ -0.5, -32.5, -22, 2 ],
+    			"external-true": [ 16, -32.5, -26.25, 2 ],
+    			"false": [ 11.5, -32.5, -21, 2 ],
+    			"true": [ 16, -32.5, -26.25, 2 ]
+    		}
+    	}
     ],
     "WheelPositions":[
-        { "x":  52, "y": -2, "z":  20, "id": "left_front_wheel", "radius": 12, "width": 12, "drive": true, "steering": true },
-        { "x":  52, "y": -2, "z": -20, "id": "right_front_wheel", "radius": 12, "width": 12, "y_rot": 180, "drive": true, "steering": true }
+        { "x":  52, "y": -2, "z":  20, "id": "left_front_wheel", "radius": 12, "width": 7, "drive": true, "steering": true },
+        { "x":  52, "y": -2, "z": -20, "id": "right_front_wheel", "radius": 12, "width": 7, "y_rot": 180, "drive": true, "steering": true }
     ],
     "LegacyData":{
     	"MaxPositiveThrottle": 1.45,

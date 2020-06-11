@@ -255,59 +255,61 @@ public class T3Model extends VehicleModel {
 		this.groups.add(label_right);
 		//
 		TurboList door_right = new TurboList("door_right");
-		door_right.add(new ModelRendererTurbo(door_right, 0, 220, textureX, textureY).addBox(0, 0, 0, 14, 16, 1)
-			.setRotationPoint(-4, -35, -21.9f).setRotationAngle(0, 0, 0)
+		door_right.add(new ModelRendererTurbo(door_right, 0, 220, textureX, textureY).addBox(-21, 0, 0, 14, 16, 1)
+			.setRotationPoint(17, -35, -21.9f).setRotationAngle(0, 0, 0)
 		);
-		door_right.add(new ModelRendererTurbo(door_right, 285, 317, textureX, textureY).addBox(0, 0, 0, 2, 14, 1)
-			.setRotationPoint(-4, -49, -21.9f).setRotationAngle(0, 0, 0)
+		door_right.add(new ModelRendererTurbo(door_right, 285, 317, textureX, textureY).addBox(-21, -14, 0, 2, 14, 1)
+			.setRotationPoint(17, -35, -21.9f).setRotationAngle(0, 0, 0)
 		);
 		door_right.add(new ModelRendererTurbo(door_right, 505, 297, textureX, textureY)
-			.addShapeBox(0, 0, 0, 2, 14, 1, 0, 2, 0, 0, -2, 0, 0, -2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(15, -49, -21.9f).setRotationAngle(0, 0, 0)
+			.addShapeBox(-2, -14, 0, 2, 14, 1, 0, 2, 0, 0, -2, 0, 0, -2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(17, -35, -21.9f).setRotationAngle(0, 0, 0)
 		);
 		door_right.add(new ModelRendererTurbo(door_right, 470, 129, textureX, textureY)
-			.addShapeBox(0, 0, 0, 19, 2, 1, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(-4, -51, -21.9f).setRotationAngle(0, 0, 0)
+			.addShapeBox(-21, -16, 0, 19, 2, 1, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(17, -35, -21.9f).setRotationAngle(0, 0, 0)
 		);
-		door_right.add(new ModelRendererTurbo(door_right, 387, 265, textureX, textureY).addBox(0, 0, 0, 1, 16, 1)
-			.setRotationPoint(16, -35, -21.9f).setRotationAngle(0, 0, 0)
+		door_right.add(new ModelRendererTurbo(door_right, 387, 265, textureX, textureY).addBox(-1, 0, 0, 1, 16, 1)
+			.setRotationPoint(17, -35, -21.9f).setRotationAngle(0, 0, 0)
 		);
-		door_right.add(new ModelRendererTurbo(door_right, 71, 112, textureX, textureY).addBox(0, 0, 0, 6, 8, 1)
-			.setRotationPoint(10, -35, -21.9f).setRotationAngle(0, 0, 0)
+		door_right.add(new ModelRendererTurbo(door_right, 71, 112, textureX, textureY).addBox(-7, 0, 0, 6, 8, 1)
+			.setRotationPoint(17, -35, -21.9f).setRotationAngle(0, 0, 0)
 		);
-		door_right.add(new ModelRendererTurbo(door_right, 449, 91, textureX, textureY).addBox(0, 0, 0, 6, 2, 1)
-			.setRotationPoint(10, -21, -21.9f).setRotationAngle(0, 0, 0)
+		door_right.add(new ModelRendererTurbo(door_right, 449, 91, textureX, textureY).addBox(-7, 14, 0, 6, 2, 1)
+			.setRotationPoint(17, -35, -21.9f).setRotationAngle(0, 0, 0)
 		);
-		door_right.add(new ModelRendererTurbo(door_right, 174, 95, textureX, textureY).addBox(0, 0, 0, 3, 1, 1)
-			.setRotationPoint(-2, -33, -22.1f).setRotationAngle(0, 0, 0)
+		door_right.add(new ModelRendererTurbo(door_right, 174, 95, textureX, textureY).addBox(-19, 2, 0, 3, 1, 1)
+			.setRotationPoint(17, -35, -22.1f).setRotationAngle(0, 0, 0)
 		);
-		door_right.add(new ModelRendererTurbo(door_right, 277, 93, textureX, textureY).addBox(0, 0, 0, 3, 1, 1)
-			.setRotationPoint(10, -33, -21.8f).setRotationAngle(0, 0, 0)
+		door_right.add(new ModelRendererTurbo(door_right, 277, 93, textureX, textureY).addBox(-7, 2, 0, 3, 1, 1)
+			.setRotationPoint(17, -35, -21.8f).setRotationAngle(0, 0, 0)
 		);
+		door_right.addProgram(new DefaultPrograms.AttributeRotator("t3_door_right", true, -60.0f, 0.0f, 1.0f, 1, 0.0f));
 		door_right.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_right);
 		//
 		TurboList door_left = new TurboList("door_left");
-		door_left.add(new ModelRendererTurbo(door_left, 421, 226, textureX, textureY).addBox(0, 0, 0, 21, 16, 1)
-			.setRotationPoint(-4, -35, 20.9f).setRotationAngle(0, 0, 0)
+		door_left.add(new ModelRendererTurbo(door_left, 421, 226, textureX, textureY).addBox(-21, 0, 0, 21, 16, 1)
+			.setRotationPoint(17, -35, 20.9f).setRotationAngle(0, 0, 0)
 		);
-		door_left.add(new ModelRendererTurbo(door_left, 48, 285, textureX, textureY).addBox(0, 0, 0, 2, 14, 1)
-			.setRotationPoint(-4, -49, 20.9f).setRotationAngle(0, 0, 0)
+		door_left.add(new ModelRendererTurbo(door_left, 48, 285, textureX, textureY).addBox(-21, -14, 0, 2, 14, 1)
+			.setRotationPoint(17, -35, 20.9f).setRotationAngle(0, 0, 0)
 		);
 		door_left.add(new ModelRendererTurbo(door_left, 13, 284, textureX, textureY)
-			.addShapeBox(0, 0, 0, 2, 14, 1, 0, 2, 0, 0, -2, 0, 0, -2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(15, -49, 20.9f).setRotationAngle(0, 0, 0)
+			.addShapeBox(-2, -14, 0, 2, 14, 1, 0, 2, 0, 0, -2, 0, 0, -2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(17, -35, 20.9f).setRotationAngle(0, 0, 0)
 		);
 		door_left.add(new ModelRendererTurbo(door_left, 470, 125, textureX, textureY)
-			.addShapeBox(0, 0, 0, 19, 2, 1, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(-4, -51, 20.9f).setRotationAngle(0, 0, 0)
+			.addShapeBox(-21, -16, 0, 19, 2, 1, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(17, -35, 20.9f).setRotationAngle(0, 0, 0)
 		);
-		door_left.add(new ModelRendererTurbo(door_left, 174, 92, textureX, textureY).addBox(0, 0, 0, 3, 1, 1)
-			.setRotationPoint(-2, -33, 21.1f).setRotationAngle(0, 0, 0)
+		door_left.add(new ModelRendererTurbo(door_left, 174, 92, textureX, textureY).addBox(-19, 2, 0, 3, 1, 1)
+			.setRotationPoint(17, -35, 21.1f).setRotationAngle(0, 0, 0)
 		);
-		door_left.add(new ModelRendererTurbo(door_left, 428, 87, textureX, textureY).addBox(0, 0, 0, 3, 1, 1)
-			.setRotationPoint(10, -33, 20.8f).setRotationAngle(0, 0, 0)
+		door_left.add(new ModelRendererTurbo(door_left, 428, 87, textureX, textureY).addBox(-7, 2, 0, 3, 1, 1)
+			.setRotationPoint(17, -35, 20.8f).setRotationAngle(0, 0, 0)
 		);
+		door_left.addProgram(new DefaultPrograms.AttributeRotator("t3_door_left", true, 0.0f, 60.0f, 1.0f, 1, 0.0f));
 		door_left.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_left);
 		//
