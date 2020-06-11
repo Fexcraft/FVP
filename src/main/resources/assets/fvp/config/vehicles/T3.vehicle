@@ -1,0 +1,36 @@
+{
+    "RegistryName": "fvp:t3",
+    "Addon": "fvtm:fvp",
+    "Name": "T3",
+    "Model": "fvp:models/vehicle/t3",
+    "PrimaryColor": "#A8A8A8",
+    "SecondaryColor": "#C2C2C2",
+    "Texture": "fvp:textures/trucks/t3.png",
+    "Attributes":[
+    	{ "id":"weight", "type": "float", "value": 4020 },
+    	{ "id": "fuel_capacity", "type": "integer", "value": 250000 },
+    	{ "id":"constructor_length", "type": "float", "value": 4 },
+    	{ "id":"constructor_height", "type": "float", "value": -11 },
+    	{ "id":"constructor_wheel_offset", "type": "float", "value": 21 }
+    ],
+    "WheelPositions":[
+        { "x":  52, "y": -2, "z":  20, "id": "left_front_wheel", "radius": 12, "width": 12, "drive": true, "steering": true },
+        { "x":  52, "y": -2, "z": -20, "id": "right_front_wheel", "radius": 12, "width": 12, "y_rot": 180, "drive": true, "steering": true }
+    ],
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.45,
+    	"MaxNegativeThrottle": 0.25,
+    	"TurnLeftModifier": 1.6,
+    	"TurnRightModifier": 1.6,
+    	"TrailerAdjustmentAxe": -1
+    },
+    "RequiredParts":[
+        "right_front_wheel",
+        "left_front_wheel",
+        "right_back_wheel",
+        "left_back_wheel",
+        "steering_wheel",
+        "interior",
+        "engine"
+    ]
+}
