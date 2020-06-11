@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t3_mirrors",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Mirrors",
+    "Model": "fvp:models/part/t3_mirrors",
+    "Category": "mirrors",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    }
+}
