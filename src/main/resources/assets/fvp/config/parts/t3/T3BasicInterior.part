@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t3_interior_basic",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Basic Interior",
+    "Model": "fvp:models/part/t3_interior_basic",
+    "Category": "interior",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    }
+}

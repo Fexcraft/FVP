@@ -15,12 +15,7 @@
     "Function": {
     	"id": "fvtm:part_slots",
     	"slots":[
-    		[ 0, 0, 0, "mid_chassis", "mid_chassis" ],
-    		[ 0, 0, 0, "rear_chassis", "rear_chassis" ],
-    		[ 0, 0, 0, "mid_fenders", "mid_fenders" ],
-    		[ 0, 0, 0, "rear_fenders", "rear_fenders" ],
-    		[ 0, 0, 0, "storage_left", "storage_left" ],
-    		[ 0, 0, 0, "storage_right", "storage_right" ]
+    		[ 0, 0, 0, "mid_chassis", "mid_chassis" ]
     	]
     }
 }
