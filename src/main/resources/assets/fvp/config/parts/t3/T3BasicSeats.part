@@ -1,0 +1,29 @@
+{
+    "RegistryName": "fvp:t3_seats_basic",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Basic Seats",
+    "Model": "fvp:models/part/t3_seats.jtmt",
+    "Category": "seats",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "35", "priority": "veryhigh"
+    	}
+    ],
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "x": 0, "y": 26, "z": -12, "name": "driver", "driver": true, "min_yaw": -120, "max_yaw": 120 },
+    		{ "x": 0, "y": 26, "z": 12, "name": "pass_front", "min_yaw": -120, "max_yaw": 120 }
+    	]
+    }
+}

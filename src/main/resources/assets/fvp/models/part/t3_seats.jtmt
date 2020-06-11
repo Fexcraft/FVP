@@ -1,0 +1,142 @@
+{
+  "format": 3,
+  "name": "T3 Series Seats",
+  "texture_size_x": 512,
+  "texture_size_y": 512,
+  "texture_scale": 1,
+  "creators": [
+    "Ferdinand (FEX___96)"
+  ],
+  "type": "jtmt",
+  "textures": [
+    "default"
+  ],
+  "texture_group": "default",
+  "groups": {
+    "seats_basic": {
+      "name": "seats_basic",
+      "polygons": [
+        {
+          "texture_x": 182,
+          "texture_y": 274,
+          "type": "box",
+          "name": "Box 248",
+          "pos_x": -2.0,
+          "pos_y": -26.0,
+          "pos_z": 5.0,
+          "width": 12.0,
+          "height": 3.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 129,
+          "texture_y": 274,
+          "type": "box",
+          "name": "Box 249",
+          "pos_x": -2.0,
+          "pos_y": -26.0,
+          "pos_z": -19.0,
+          "width": 12.0,
+          "height": 3.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 475,
+          "texture_y": 390,
+          "type": "shapebox",
+          "name": "Box 251",
+          "pos_x": -4.0,
+          "pos_y": -40.0,
+          "pos_z": -19.0,
+          "width": 2.0,
+          "height": 16.0,
+          "depth": 14.0,
+          "x0": 0.5,
+          "x1": -0.5,
+          "x2": -0.5,
+          "x3": 0.5,
+          "x4": -1.0,
+          "x5": 1.0,
+          "x6": 1.0,
+          "x7": -1.0
+        },
+        {
+          "texture_x": 45,
+          "texture_y": 366,
+          "type": "shapebox",
+          "name": "Box 252",
+          "pos_x": -4.0,
+          "pos_y": -40.0,
+          "pos_z": 5.0,
+          "width": 2.0,
+          "height": 16.0,
+          "depth": 14.0,
+          "x0": 0.5,
+          "x1": -0.5,
+          "x2": -0.5,
+          "x3": 0.5,
+          "x4": -1.0,
+          "x5": 1.0,
+          "x6": 1.0,
+          "x7": -1.0
+        },
+        {
+          "texture_x": 355,
+          "texture_y": 160,
+          "type": "shapebox",
+          "name": "Box 326",
+          "pos_x": -1.0,
+          "pos_y": -23.0,
+          "pos_z": 6.0,
+          "width": 10.0,
+          "height": 4.0,
+          "depth": 1.0,
+          "x5": -2.0,
+          "x6": -2.0
+        },
+        {
+          "texture_x": 355,
+          "texture_y": 154,
+          "type": "shapebox",
+          "name": "Box 327",
+          "pos_x": -1.0,
+          "pos_y": -23.0,
+          "pos_z": -18.0,
+          "width": 10.0,
+          "height": 4.0,
+          "depth": 1.0,
+          "x5": -2.0,
+          "x6": -2.0
+        },
+        {
+          "texture_x": 282,
+          "texture_y": 148,
+          "type": "shapebox",
+          "name": "Box 326cp",
+          "pos_x": -1.0,
+          "pos_y": -23.0,
+          "pos_z": 17.0,
+          "width": 10.0,
+          "height": 4.0,
+          "depth": 1.0,
+          "x5": -2.0,
+          "x6": -2.0
+        },
+        {
+          "texture_x": 282,
+          "texture_y": 142,
+          "type": "shapebox",
+          "name": "Box 327cp",
+          "pos_x": -1.0,
+          "pos_y": -23.0,
+          "pos_z": -7.0,
+          "width": 10.0,
+          "height": 4.0,
+          "depth": 1.0,
+          "x5": -2.0,
+          "x6": -2.0
+        }
+      ]
+    }
+  }
+}
