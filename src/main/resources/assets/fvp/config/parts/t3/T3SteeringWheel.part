@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t3_steering_wheel",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Steering Wheel",
+    "Model": "fvp:models/part/t3_steering_wheel",
+    "Category": "steering_wheel",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    }
+}
