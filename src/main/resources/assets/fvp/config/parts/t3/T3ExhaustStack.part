@@ -3,7 +3,7 @@
     "Addon": "fvtm:fvp",
     "Name": "T3 Exhaust Stack",
     "Model": "fvp:models/part/t3_exhaust_stack.jtmt",
-    "Category": "cabin",
+    "Category": "exhaust_stack",
     "Texture": "Default;fvp:textures/trucks/t3.png",
     "Installation":{
     	"Handler": "default",

@@ -3,7 +3,7 @@
     "Addon": "fvtm:fvp",
     "Name": "T3 Exhaust Stack Cover",
     "Model": "fvp:models/part/t3_exhaust_stack_cover.jtmt",
-    "Category": "cabin",
+    "Category": "exhaust_stack_cover",
     "Texture": "Default;fvp:textures/trucks/t3.png",
     "Installation":{
     	"Handler": "default",
