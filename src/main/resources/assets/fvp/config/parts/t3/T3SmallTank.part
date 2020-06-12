@@ -11,6 +11,9 @@
         "Compatible":[
             "fvp:t3"
         ],
+        "Incompatible":{
+        	"fvp:t3": [ "storage_left_l", "storage_right_l" ]
+        },
         "SlotBased": true
     },
     "Modifiers":[

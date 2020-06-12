@@ -1,0 +1,22 @@
+{
+    "RegistryName": "fvp:t3_large_tank",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Large Tank",
+    "Model": "fvp:models/part/t3_large_tank",
+    "Category": [ "side_storage_l" ],
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ],
+        "Incompatible":{
+        	"fvp:t3": [ "storage_left_s", "storage_right_s" ]
+        },
+        "SlotBased": true
+    },
+    "Modifiers":[
+    	{ "id": "fuel_capacity", "type": "additive", "target": "vehicle:fuel_capacity", "value": "100000", "priority": "veryhigh" }
+    ]
+}
