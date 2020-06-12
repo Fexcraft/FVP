@@ -1,0 +1,19 @@
+{
+    "RegistryName": "fvp:t3_small_tank",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Small Tank",
+    "Model": "fvp:models/part/t3_small_tank",
+    "Category": [ "side_storage_s" ],
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ],
+        "SlotBased": true
+    },
+    "Modifiers":[
+    	{ "id": "fuel_capacity", "type": "additive", "target": "vehicle:fuel_capacity", "value": "60000", "priority": "veryhigh" }
+    ]
+}
