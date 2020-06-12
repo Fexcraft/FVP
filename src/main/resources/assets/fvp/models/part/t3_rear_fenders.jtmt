@@ -1,0 +1,86 @@
+{
+  "format": 3,
+  "name": "T3 Series",
+  "texture_size_x": 512,
+  "texture_size_y": 512,
+  "texture_scale": 1,
+  "creators": [
+    "Ferdinand (FEX___96)"
+  ],
+  "type": "jtmt",
+  "textures": [
+    "default"
+  ],
+  "texture_group": "default",
+  "groups": {
+    "rear_fenders": {
+      "name": "rear_fenders",
+      "polygons": [
+        {
+          "texture_x": 250,
+          "texture_y": 317,
+          "type": "shapebox",
+          "pos_x": -133.0,
+          "pos_y": -12.0,
+          "pos_z": 12.0,
+          "width": 3.0,
+          "height": 2.0,
+          "depth": 14.0,
+          "x3": -2.0,
+          "x7": -2.0
+        },
+        {
+          "texture_x": 113,
+          "texture_y": 317,
+          "type": "shapebox",
+          "pos_x": -133.0,
+          "pos_y": -12.0,
+          "pos_z": -26.0,
+          "width": 3.0,
+          "height": 2.0,
+          "depth": 14.0,
+          "x0": -2.0,
+          "x4": -2.0
+        },
+        {
+          "texture_x": 58,
+          "texture_y": 422,
+          "type": "shapebox",
+          "pos_x": -131.0,
+          "pos_y": -10.0,
+          "pos_z": 12.0,
+          "width": 1.0,
+          "height": 13.0,
+          "depth": 14.0,
+          "x0": -0.2,
+          "x1": -0.2,
+          "x2": -0.2,
+          "x3": -0.2,
+          "x4": -0.2,
+          "x5": -0.2,
+          "x6": -0.2,
+          "x7": -0.2
+        },
+        {
+          "texture_x": 145,
+          "texture_y": 411,
+          "type": "shapebox",
+          "pos_x": -131.0,
+          "pos_y": -10.0,
+          "pos_z": -26.0,
+          "width": 1.0,
+          "height": 13.0,
+          "depth": 14.0,
+          "x0": -0.2,
+          "x1": -0.2,
+          "x2": -0.2,
+          "x3": -0.2,
+          "x4": -0.2,
+          "x5": -0.2,
+          "x6": -0.2,
+          "x7": -0.2
+        }
+      ]
+    }
+  }
+}
