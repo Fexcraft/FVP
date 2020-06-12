@@ -1,0 +1,23 @@
+{
+    "RegistryName": "fvp:t3_cab_sleeper",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Sleeper Cab",
+    "Model": "fvp:models/part/t3_cab_night",
+    "Category": "cabin",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    },
+    "Function": {
+    	"id": "fvtm:part_slots",
+    	"slots":[
+    		[ 0, 0, 0, "mid_chassis", "mid_chassis" ],
+	    	[ 0, 0, 0, "side_storage_l", "storage_left_l" ],
+	    	[ 0, 0, 0, "side_storage_l", "storage_right_l" ]
+    	]
+    }
+}
