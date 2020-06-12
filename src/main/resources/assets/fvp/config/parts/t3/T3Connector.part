@@ -6,10 +6,15 @@
     "Category": "connector",
     "Texture": "Default;fvp:textures/trucks/t3.png",
     "Installation":{
-    	"Handler": "part_slot",
+    	"Handler": "connector",
         "Removable": true,
         "Compatible":[
-            "fvp:t3"
-        ]
+            { "vehicle": "fvp:t3" }
+        ],
+        "Rear": {
+        	"fvp:t3": [ -80, 0, 0 ]
+        },
+        "SlotBased": true,
+        "Relative": true
     }
 }

@@ -6,17 +6,27 @@
     "Category": "rear_axle",
     "Texture": "Default;fvp:textures/trucks/t3.png",
     "Installation":{
-    	"Handler": "part_slot",
+    	"Handler": "default",
         "Removable": true,
         "Compatible":[
             "fvp:t3"
-        ]
+        ],
+        "SlotBased": true
     },
-    "Function": {
-    	"id": "fvtm:part_slots",
-    	"slots":[
-    		[ 0, 0, 0, "rear_lights", "rear_lights" ],
-    		[ 0, 0, 0, "rear_fenders", "rear_fenders" ]
-    	]
-    }
+    "Functions": [
+    	{
+	    	"id": "fvtm:part_slots",
+	    	"slots":[
+	    		[ 0, 0, 0, "rear_lights", "rear_lights" ],
+	    		[ 0, 0, 0, "rear_fenders", "rear_fenders" ]
+	    	]
+    	},
+    	{
+    		"id": "fvtm:wheel_positions",
+    	    "wheel_positions":[
+		        { "x": -114, "y": -2, "z": 13, "id": "left_back_wheel", "relative": true, "radius": 12, "width": 13 },
+		        { "x": -114, "y": -2, "z": -13, "id": "right_back_wheel", "relative": true, "radius": 12, "width": 13, "y_rot": 180 }
+	    	]
+    	}
+    ]
 }

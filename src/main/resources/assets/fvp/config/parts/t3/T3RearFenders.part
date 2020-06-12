@@ -6,10 +6,11 @@
     "Category": "rear_fenders",
     "Texture": "Default;fvp:textures/trucks/t3.png",
     "Installation":{
-    	"Handler": "part_slot",
+    	"Handler": "default",
         "Removable": true,
         "Compatible":[
             "fvp:t3"
-        ]
+        ],
+        "SlotBased": true
     }
 }

@@ -6,18 +6,28 @@
     "Category": "mid_axle",
     "Texture": "Default;fvp:textures/trucks/t3.png",
     "Installation":{
-    	"Handler": "part_slot",
+    	"Handler": "default",
         "Removable": true,
         "Compatible":[
             "fvp:t3"
-        ]
+        ],
+        "SlotBased": true
     },
-    "Function": {
-    	"id": "fvtm:part_slots",
-    	"slots":[
-    		[ 0, 0, 0, "rear_axle", "rear_axle" ],
-    		[ 0, 0, 0, "mid_fenders", "mid_fenders" ],
-    		[ 0, 0, 0, "connector", "connector" ]
-    	]
-    }
+    "Functions": [
+	    {
+	    	"id": "fvtm:part_slots",
+	    	"slots":[
+	    		[ 0, 0, 0, "rear_axle", "rear_axle" ],
+	    		[ 0, 0, 0, "mid_fenders", "mid_fenders" ],
+	    		[ 0, 0, 0, "front_connector", "front_connector" ]
+	    	]
+	    },
+    	{
+    		"id": "fvtm:wheel_positions",
+    	    "wheel_positions":[
+		        { "x": -82, "y": -2, "z": 13, "id": "left_mid_wheel", "relative": true, "radius": 12, "width": 13 },
+		        { "x": -82, "y": -2, "z": -13, "id": "right_mid_wheel", "relative": true, "radius": 12, "width": 13, "y_rot": 180 }
+	    	]
+    	}
+    ]
 }
