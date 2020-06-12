@@ -1,0 +1,172 @@
+{
+  "format": 3,
+  "name": "T3 Series",
+  "texture_size_x": 512,
+  "texture_size_y": 512,
+  "texture_scale": 1,
+  "creators": [
+    "Ferdinand (FEX___96)"
+  ],
+  "type": "jtmt",
+  "textures": [
+    "default"
+  ],
+  "texture_group": "default",
+  "groups": {
+    "mid_axle": {
+      "name": "mid_axle",
+      "polygons": [
+        {
+          "texture_x": 306,
+          "texture_y": 139,
+          "type": "box",
+          "pos_x": -98.0,
+          "pos_y": -13.0,
+          "pos_z": 7.0,
+          "width": 32.0,
+          "height": 10.0,
+          "depth": 4.0
+        },
+        {
+          "texture_x": 144,
+          "texture_y": 137,
+          "type": "box",
+          "pos_x": -98.0,
+          "pos_y": -13.0,
+          "pos_z": -11.0,
+          "width": 32.0,
+          "height": 10.0,
+          "depth": 4.0
+        },
+        {
+          "texture_x": 205,
+          "texture_y": 336,
+          "type": "box",
+          "pos_x": -91.0,
+          "pos_y": -12.0,
+          "pos_z": -7.0,
+          "width": 2.0,
+          "height": 8.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 0,
+          "texture_y": 336,
+          "type": "box",
+          "pos_x": -75.0,
+          "pos_y": -12.0,
+          "pos_z": -7.0,
+          "width": 2.0,
+          "height": 8.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 312,
+          "texture_y": 371,
+          "type": "box",
+          "name": "axle_frontcp",
+          "pos_x": -83.0,
+          "pos_y": -3.0,
+          "pos_z": -12.0,
+          "width": 2.0,
+          "height": 2.0,
+          "depth": 24.0
+        },
+        {
+          "texture_x": 175,
+          "texture_y": 292,
+          "type": "box",
+          "name": "axle_frontcp",
+          "pos_x": -85.0,
+          "pos_y": -4.0,
+          "off_z": -3.0,
+          "width": 6.0,
+          "height": 4.0,
+          "depth": 6.0
+        },
+        {
+          "texture_x": 122,
+          "texture_y": 292,
+          "type": "shapebox",
+          "name": "axle_frontcp",
+          "pos_x": -85.0,
+          "pos_y": -5.0,
+          "off_z": -3.0,
+          "width": 6.0,
+          "height": 1.0,
+          "depth": 6.0,
+          "x0": -1.0,
+          "z0": -1.0,
+          "x1": -1.0,
+          "z1": -1.0,
+          "x2": -1.0,
+          "z2": -1.0,
+          "x3": -1.0,
+          "z3": -1.0
+        },
+        {
+          "texture_x": 437,
+          "texture_y": 244,
+          "type": "shapebox",
+          "name": "axle_frontcp",
+          "pos_x": -85.0,
+          "off_z": -3.0,
+          "width": 6.0,
+          "height": 1.0,
+          "depth": 6.0,
+          "x4": -1.0,
+          "z4": -1.0,
+          "x5": -1.0,
+          "z5": -1.0,
+          "x6": -1.0,
+          "z6": -1.0,
+          "x7": -1.0,
+          "z7": -1.0
+        },
+        {
+          "texture_x": 73,
+          "texture_y": 137,
+          "type": "box",
+          "name": "axle_frontcp",
+          "pos_x": -98.0,
+          "pos_y": -2.0,
+          "off_y": -1.5,
+          "off_z": -1.5,
+          "width": 32.0,
+          "height": 3.0,
+          "depth": 3.0
+        },
+        {
+          "texture_x": 130,
+          "texture_y": 211,
+          "type": "shapebox",
+          "pos_x": -94.0,
+          "pos_y": -3.0,
+          "pos_z": -11.0,
+          "width": 24.0,
+          "height": 3.0,
+          "depth": 4.0,
+          "x4": -5.0,
+          "x5": -5.0,
+          "x6": -5.0,
+          "x7": -5.0
+        },
+        {
+          "texture_x": 421,
+          "texture_y": 210,
+          "type": "shapebox",
+          "pos_x": -94.0,
+          "pos_y": -3.0,
+          "pos_z": 7.0,
+          "width": 24.0,
+          "height": 3.0,
+          "depth": 4.0,
+          "x4": -5.0,
+          "x5": -5.0,
+          "x6": -5.0,
+          "x7": -5.0
+        }
+      ]
+    }
+  }
+}

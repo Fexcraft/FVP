@@ -16,7 +16,6 @@
     	"id": "fvtm:part_slots",
     	"slots":[
     		[ 0, 0, 0, "mid_axle", "mid_axle" ],
-    		[ 0, 0, 0, "rear_axle", "rear_axle" ],
     		[ 0, 0, 0, "side_storage", "storage_left" ],
     		[ 0, 0, 0, "side_storage", "storage_right" ]
     	]
