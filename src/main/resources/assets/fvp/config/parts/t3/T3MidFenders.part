@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t3_mid_fenders",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Mid Fenders",
+    "Model": "fvp:models/part/t3_mid_fenders.jtmt",
+    "Category": "mid_fenders",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "part_slot",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    }
+}
