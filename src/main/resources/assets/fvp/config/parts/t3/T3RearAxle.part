@@ -1,0 +1,22 @@
+{
+    "RegistryName": "fvp:t3_rear_axle",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Rear Axle",
+    "Model": "fvp:models/part/t3_rear_axle.jtmt",
+    "Category": "rear_axle",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "part_slot",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    },
+    "Function": {
+    	"id": "fvtm:part_slots",
+    	"slots":[
+    		[ 0, 0, 0, "rear_lights", "rear_lights" ],
+    		[ 0, 0, 0, "rear_fenders", "rear_fenders" ]
+    	]
+    }
+}
