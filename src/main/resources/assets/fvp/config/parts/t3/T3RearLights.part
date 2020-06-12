@@ -1,0 +1,16 @@
+{
+    "RegistryName": "fvp:t3_rear_lights",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Rear Lights",
+    "Model": "fvp:models/part/t3_rear_lights",
+    "Category": "rear_lights",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ],
+        "SlotBased": true
+    }
+}
