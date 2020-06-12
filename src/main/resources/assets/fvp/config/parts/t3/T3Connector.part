@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:t3_connector",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Connector",
+    "Model": "fvp:models/part/t3_connector.jtmt",
+    "Category": "connector",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "part_slot",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ]
+    }
+}

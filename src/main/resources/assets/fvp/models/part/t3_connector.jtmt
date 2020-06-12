@@ -1,0 +1,87 @@
+{
+  "format": 3,
+  "name": "T3 Series",
+  "texture_size_x": 512,
+  "texture_size_y": 512,
+  "texture_scale": 1,
+  "creators": [
+    "Ferdinand (FEX___96)"
+  ],
+  "type": "jtmt",
+  "textures": [
+    "default"
+  ],
+  "texture_group": "default",
+  "groups": {
+    "connector": {
+      "name": "connector",
+      "polygons": [
+        {
+          "texture_x": 429,
+          "texture_y": 276,
+          "type": "shapebox",
+          "name": "Box 218",
+          "pos_x": -78.0,
+          "pos_y": -17.0,
+          "pos_z": -10.0,
+          "width": 8.0,
+          "height": 3.0,
+          "depth": 20.0,
+          "z0": -2.0,
+          "x1": -3.0,
+          "z1": -2.0,
+          "x2": -3.0,
+          "z2": -2.0,
+          "z3": -2.0
+        },
+        {
+          "texture_x": 0,
+          "texture_y": 258,
+          "type": "shapebox",
+          "name": "Box 219",
+          "pos_x": -93.0,
+          "pos_y": -17.0,
+          "pos_z": -10.0,
+          "width": 15.0,
+          "height": 3.0,
+          "depth": 8.0,
+          "x0": -2.0,
+          "y0": -1.0,
+          "z0": -2.0,
+          "z1": -2.0,
+          "x3": -2.0,
+          "y3": -1.0
+        },
+        {
+          "texture_x": 319,
+          "texture_y": 257,
+          "type": "shapebox",
+          "name": "Box 220",
+          "pos_x": -93.0,
+          "pos_y": -17.0,
+          "pos_z": 2.0,
+          "width": 15.0,
+          "height": 3.0,
+          "depth": 8.0,
+          "x0": -2.0,
+          "y0": -1.0,
+          "z2": -2.0,
+          "x3": -2.0,
+          "y3": -1.0,
+          "z3": -2.0
+        },
+        {
+          "texture_x": 49,
+          "texture_y": 144,
+          "type": "box",
+          "pos_x": -98.0,
+          "pos_y": -14.0,
+          "pos_z": -12.0,
+          "width": 32.0,
+          "height": 1.0,
+          "depth": 24.0
+        }
+      ]
+    }
+  }
+}
