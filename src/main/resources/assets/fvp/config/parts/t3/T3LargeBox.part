@@ -1,0 +1,28 @@
+{
+    "RegistryName": "fvp:t3_large_box",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Large Box",
+    "Model": "fvp:models/part/t3_large_box",
+    "Category": [ "side_storage_l" ],
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ],
+        "SlotBased": true
+    },
+    "Functions": [
+    	{
+    		"id": "fvtm:inventory", "type": "ITEM", "capacity": 27
+    	},
+    	{
+		    "id": "fvtm:part_slots",
+		    "slots":[
+		    	[ 0, 0, 0, "side_storage_s", "storage_left_s" ],
+		    	[ 0, 0, 0, "side_storage_s", "storage_right_s" ]
+		    ]
+	    }
+    ]
+}

@@ -34,7 +34,7 @@ public class T3SmallTank extends PartModel {
 		small_tank_left.add(new ModelRendererTurbo(small_tank_left, 78, 336, textureX, textureY).addBox(0, 0, 0, 1, 10, 4)
 			.setRotationPoint(-49, -13, 11).setRotationAngle(0, 0, 0)
 		);
-		small_tank_left.addProgram(new DefaultPrograms.IDSpecificArray("storage_left", "2nd_storage_left"));
+		small_tank_left.addProgram(new DefaultPrograms.IDSpecific("storage_left_s"));
 		this.groups.add(small_tank_left);
 		//
 		TurboList small_tank_right = new TurboList("small_tank_right");
@@ -53,7 +53,7 @@ public class T3SmallTank extends PartModel {
 		small_tank_right.add(new ModelRendererTurbo(small_tank_right, 224, 327, textureX, textureY).addBox(0, 0, 0, 1, 10, 4)
 			.setRotationPoint(-49, -13, -15).setRotationAngle(0, 0, 0)
 		);
-		small_tank_right.addProgram(new DefaultPrograms.IDSpecificArray("storage_right", "2nd_storage_right"));
+		small_tank_right.addProgram(new DefaultPrograms.IDSpecificArray("storage_right_s"));
 		this.groups.add(small_tank_right);
 	}
 
