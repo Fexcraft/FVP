@@ -284,7 +284,7 @@ public class T3Model extends VehicleModel {
 		door_right.add(new ModelRendererTurbo(door_right, 277, 93, textureX, textureY).addBox(-7, 2, 0, 3, 1, 1)
 			.setRotationPoint(17, -35, -21.8f).setRotationAngle(0, 0, 0)
 		);
-		door_right.addProgram(new DefaultPrograms.AttributeRotator("t3_door_right", true, -80.0f, 0.0f, -1.0f, 1, 0.0f));
+		door_right.addProgram(new DefaultPrograms.AttributeRotator("t3_door_right", true, -60.0f, 0.0f, -1.0f, 1, 0.0f));
 		door_right.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_right);
 		//

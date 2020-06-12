@@ -3,6 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.t3;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
 
@@ -99,6 +100,7 @@ public class T3AirFilters extends PartModel {
 		air_filters_lights.add(new ModelRendererTurbo(air_filters_lights, 507, 118, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(32.6f, -23.5f, 22.5f).setRotationAngle(0, 0, 0)
 		);
+		air_filters_lights.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(air_filters_lights);
 		//
 	}
