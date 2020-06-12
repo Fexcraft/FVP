@@ -1,0 +1,18 @@
+{
+    "RegistryName": "fvp:t3_cab_sleeper_interior_basic",
+    "Addon": "fvtm:fvp",
+    "Name": "T3 Sleeper Cabin Basic Interior",
+    "Model": "fvp:models/part/t3_cab_night_interior.jtmt",
+    "Category": "cabin_interior",
+    "Texture": "Default;fvp:textures/trucks/t3.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:t3"
+        ],
+        "Requires":{
+        	"fvp:t3": "cabin"
+        }
+    }
+}

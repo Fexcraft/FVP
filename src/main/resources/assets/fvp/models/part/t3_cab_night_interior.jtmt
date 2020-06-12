@@ -1,0 +1,210 @@
+{
+  "format": 3,
+  "name": "T3 Series",
+  "texture_size_x": 512,
+  "texture_size_y": 512,
+  "texture_scale": 1,
+  "creators": [
+    "Ferdinand (FEX___96)"
+  ],
+  "type": "jtmt",
+  "textures": [
+    "default"
+  ],
+  "texture_group": "default",
+  "groups": {
+    "cab_night_interior_basic": {
+      "name": "cab_night_interior_basic",
+      "polygons": [
+        {
+          "texture_x": 230,
+          "texture_y": 233,
+          "type": "box",
+          "pos_x": -44.0,
+          "pos_y": -31.0,
+          "pos_z": -24.0,
+          "width": 20.0,
+          "height": 2.0,
+          "depth": 48.0
+        },
+        {
+          "texture_x": 39,
+          "texture_y": 363,
+          "type": "box",
+          "pos_x": -27.0,
+          "pos_y": -29.0,
+          "pos_z": -24.0,
+          "width": 2.0,
+          "height": 10.0,
+          "depth": 48.0
+        },
+        {
+          "texture_x": 31,
+          "texture_y": 422,
+          "type": "box",
+          "pos_x": -10.0,
+          "pos_y": -54.0,
+          "pos_z": -20.0,
+          "width": 1.0,
+          "height": 35.0,
+          "depth": 12.0
+        },
+        {
+          "texture_x": 463,
+          "texture_y": 421,
+          "type": "box",
+          "pos_x": -10.0,
+          "pos_y": -54.0,
+          "pos_z": 8.0,
+          "width": 1.0,
+          "height": 35.0,
+          "depth": 12.0
+        },
+        {
+          "texture_x": 344,
+          "texture_y": 263,
+          "type": "shapebox",
+          "pos_x": -27.0,
+          "pos_y": -67.0,
+          "pos_z": -24.0,
+          "off_x": -17.0,
+          "width": 18.0,
+          "height": 12.0,
+          "depth": 48.0,
+          "x5": -2.0,
+          "x6": -2.0
+        },
+        {
+          "texture_x": 0,
+          "texture_y": 409,
+          "type": "box",
+          "pos_x": -26.75,
+          "pos_y": -66.5,
+          "pos_z": -22.0,
+          "rot_z": 9.5,
+          "width": 1.0,
+          "height": 11.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 247,
+          "texture_y": 405,
+          "type": "box",
+          "pos_x": -26.75,
+          "pos_y": -66.5,
+          "pos_z": 8.0,
+          "rot_z": 9.5,
+          "width": 1.0,
+          "height": 11.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 206,
+          "texture_y": 402,
+          "type": "box",
+          "pos_x": -26.75,
+          "pos_y": -66.5,
+          "pos_z": -7.0,
+          "rot_z": 9.5,
+          "width": 1.0,
+          "height": 11.0,
+          "depth": 14.0
+        },
+        {
+          "texture_x": 207,
+          "texture_y": 205,
+          "type": "box",
+          "pos_x": -26.75,
+          "pos_y": -66.5,
+          "pos_z": -7.0,
+          "off_x": 0.25,
+          "off_y": 9.0,
+          "off_z": 5.5,
+          "rot_z": 9.5,
+          "width": 1.0,
+          "height": 1.0,
+          "depth": 3.0
+        },
+        {
+          "texture_x": 353,
+          "texture_y": 198,
+          "type": "box",
+          "pos_x": -26.75,
+          "pos_y": -66.5,
+          "pos_z": -22.0,
+          "off_x": 0.25,
+          "off_y": 9.0,
+          "off_z": 5.5,
+          "rot_z": 9.5,
+          "width": 1.0,
+          "height": 1.0,
+          "depth": 3.0
+        },
+        {
+          "texture_x": 353,
+          "texture_y": 193,
+          "type": "box",
+          "pos_x": -26.75,
+          "pos_y": -66.5,
+          "pos_z": 8.0,
+          "off_x": 0.25,
+          "off_y": 9.0,
+          "off_z": 5.5,
+          "rot_z": 9.5,
+          "width": 1.0,
+          "height": 1.0,
+          "depth": 3.0
+        },
+        {
+          "texture_x": 433,
+          "texture_y": 255,
+          "type": "shapebox",
+          "pos_x": -43.5,
+          "pos_y": -32.0,
+          "pos_z": -23.5,
+          "width": 19.0,
+          "height": 1.0,
+          "depth": 8.0,
+          "x0": -1.0,
+          "z0": -1.0,
+          "x1": -1.0,
+          "z1": -1.0,
+          "x2": -1.0,
+          "z2": -1.0,
+          "x3": -1.0,
+          "z3": -1.0
+        },
+        {
+          "texture_x": 159,
+          "texture_y": 233,
+          "type": "shapebox",
+          "pos_x": -44.0,
+          "pos_y": -32.0,
+          "pos_z": -15.0,
+          "width": 20.0,
+          "height": 1.0,
+          "depth": 39.0,
+          "x0": -0.5,
+          "z0": -0.5,
+          "x1": -0.5,
+          "z1": -0.5,
+          "x2": -0.5,
+          "z2": -0.5,
+          "x3": -0.5,
+          "z3": -0.5
+        },
+        {
+          "texture_x": 47,
+          "texture_y": 317,
+          "type": "box",
+          "pos_x": 8.0,
+          "pos_y": -55.0,
+          "pos_z": -21.0,
+          "width": 4.0,
+          "height": 1.0,
+          "depth": 42.0
+        }
+      ]
+    }
+  }
+}
