@@ -3,6 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.t3;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
 
@@ -37,6 +38,7 @@ public class T3SteeringWheel extends PartModel {
 			.addShapeBox(-1, -1.5f, -1.5f, 1, 3, 3, 0, 0, 0.2f, 0, 0, 0.2f, 0, 0, 0.2f, 0, 0, 0.2f, 0, 0, 0.2f, 0, 0, 0.2f, 0, 0, 0.2f, 0, 0, 0.2f, 0)
 			.setRotationPoint(13, -35.5f, 12).setRotationAngle(0, 0, 5)
 		);
+		steering_wheel.addProgram(new DefaultPrograms.SteeringWheel(0, 12));
 		this.groups.add(steering_wheel);
 		//
 	}
