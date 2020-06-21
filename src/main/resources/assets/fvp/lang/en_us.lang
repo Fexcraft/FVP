@@ -16,6 +16,7 @@ item.fvp:ab1.name=Autobus 1B
 item.fvp:t2.name=T2
 item.fvp:tr1.name=Universal Trailer 1
 item.fvp:c11.name=Ci Undici
+item.fvp:t3.name=T3
 
 # Wheels
 item.fvp:c1r1t1_wheel.name=C1R1 Wheel T1
