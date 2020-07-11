@@ -1,0 +1,696 @@
+{
+  "Attributes": [
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "collision_range",
+      "initial": 4.0,
+      "max": 16.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 4.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "constructor_height",
+      "initial": -11.0,
+      "max": 4096.0,
+      "min": -4096.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": -11.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "constructor_length",
+      "initial": 6.0,
+      "max": 4096.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 6.0
+    },
+    {
+      "editable": 1,
+      "external": 0,
+      "id": "constructor_show",
+      "initial": 1,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "BOOLEAN",
+      "value": 1
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "constructor_wheel_offset",
+      "initial": 23.0,
+      "max": 4096.0,
+      "min": -4096.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 23.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "front_connected",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "fuel_capacity",
+      "initial": 250000,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "modifiers": [
+        {
+          "calltype": "INITIAL",
+          "id": "fuel_capacity",
+          "origin": "s:mid_chassis:storage_right_s:1|fvp:t3_small_tank",
+          "priority": "VERYHIGH",
+          "target": "vehicle:fuel_capacity",
+          "type": "ADDITIVE",
+          "value": 60000.0,
+          "valuetype": "FLOAT"
+        }
+      ],
+      "org": 0,
+      "type": "INTEGER",
+      "value": 310000
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "fuel_primary",
+      "initial": "",
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "STRING",
+      "value": ""
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "fuel_quality",
+      "initial": 0.0,
+      "max": 10.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "fuel_secondary",
+      "initial": "",
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "STRING",
+      "value": ""
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "fuel_stored",
+      "initial": 0,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "org": 0,
+      "type": "INTEGER",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "hitbox_height",
+      "initial": 1.0,
+      "max": 16.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 1.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "hitbox_width",
+      "initial": 1.0,
+      "max": 16.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 1.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "lights",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "lights_fog",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "lights_long",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "lights_other",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "rear_connected",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "steering_angle",
+      "initial": 0.0,
+      "max": 40.0,
+      "min": -40.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
+      "editable": 1,
+      "external": 1,
+      "id": "t3_door_left",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 1,
+      "external": 1,
+      "id": "t3_door_right",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "pass_front",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "throttle",
+      "initial": 0.0,
+      "max": 10.0,
+      "min": -10.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "turn_lights",
+      "initial": -1,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "TRISTATE",
+      "value": -1
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "warning_lights",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "weight",
+      "initial": 4020.0,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "modifiers": [
+        {
+          "calltype": "INITIAL",
+          "id": "weight",
+          "origin": "seats|fvp:t3_seats_basic",
+          "priority": "VERYHIGH",
+          "target": "vehicle:weight",
+          "type": "ADDITIVE",
+          "value": 35.0,
+          "valuetype": "FLOAT"
+        }
+      ],
+      "org": 0,
+      "type": "FLOAT",
+      "value": 4055.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "wheel_angle",
+      "initial": 0.0,
+      "max": 360.0,
+      "min": -360.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    }
+  ],
+  "Locked": 0,
+  "Parts": [
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "air_filters",
+      "Part": "fvp:t3_air_filters",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "cabin",
+      "Part": "fvp:t3_cab_day",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [
+        {
+          "IsOn": 0,
+          "id": "fvtm:engine"
+        }
+      ],
+      "InstalledAs": "engine",
+      "Part": "gep:engine_diesel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "exhaust_stack",
+      "Part": "fvp:t3_exhaust_stack",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "exhaust_stack_cover",
+      "Part": "fvp:t3_exhaust_stack_cover",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "interior",
+      "Part": "fvp:t3_interior_basic",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -82.0,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": 13.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "left_back_wheel"
+        }
+      ],
+      "InstalledAs": "left_back_wheel",
+      "Part": "fvp:t3_rear_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 52.0,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": 20.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "left_front_wheel"
+        }
+      ],
+      "InstalledAs": "left_front_wheel",
+      "Part": "fvp:t2r1t1_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -50.0,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": 13.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "left_mid_wheel"
+        }
+      ],
+      "InstalledAs": "left_mid_wheel",
+      "Part": "fvp:t3_rear_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "mid_axle",
+      "Part": "fvp:t3_mid_axle",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "mid_chassis",
+      "Part": "fvp:t3_mid_chassis",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "mid_fenders",
+      "Part": "fvp:t3_mid_fenders",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "mirrors",
+      "Part": "fvp:t3_mirrors",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "rear_axle",
+      "Part": "fvp:t3_rear_axle",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "rear_fenders",
+      "Part": "fvp:t3_rear_fenders",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "rear_lights",
+      "Part": "fvp:t3_rear_lights",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -82.0,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": -13.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "right_back_wheel"
+        }
+      ],
+      "InstalledAs": "right_back_wheel",
+      "Part": "fvp:t3_rear_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 52.0,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": -20.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "right_front_wheel"
+        }
+      ],
+      "InstalledAs": "right_front_wheel",
+      "Part": "fvp:t2r1t1_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": -50.0,
+      "CurrentPos_y": -2.0,
+      "CurrentPos_z": -13.0,
+      "Functions": [
+        {
+          "id": "fvtm:wheel",
+          "wheel_pos": "right_mid_wheel"
+        }
+      ],
+      "InstalledAs": "right_mid_wheel",
+      "Part": "fvp:t3_rear_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "s:mid_axle:front_connector:0",
+      "Part": "fvp:t3_connector",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "seats",
+      "Part": "fvp:t3_seats_basic",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "steering_wheel",
+      "Part": "fvp:t3_steering_wheel",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "storage_left_s",
+      "Part": "fvp:t3_small_tank",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 32.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "storage_right_s",
+      "Part": "fvp:t3_small_tank",
+      "SelectedTexture": 0
+    }
+  ],
+  "Preset": "T3 Day Cab Blue",
+  "RGBPrimary": 3028669,
+  "RGBSecondary": 1251435,
+  "RearConnector": [
+    -3.0,
+    0.0,
+    0.0
+  ],
+  "SelectedTexture": 0,
+  "Vehicle": "fvp:t3",
+  "WheelPos": [
+    {
+      "id": "left_back_wheel",
+      "pos_x": -5.125,
+      "pos_y": -0.625,
+      "pos_z": -1.1875
+    },
+    {
+      "id": "left_front_wheel",
+      "pos_x": 3.25,
+      "pos_y": -0.625,
+      "pos_z": -1.46875
+    },
+    {
+      "id": "left_mid_wheel",
+      "pos_x": -3.125,
+      "pos_y": -0.625,
+      "pos_z": -1.1875
+    },
+    {
+      "id": "right_back_wheel",
+      "pos_x": -5.125,
+      "pos_y": -0.625,
+      "pos_z": 1.1875
+    },
+    {
+      "id": "right_front_wheel",
+      "pos_x": 3.25,
+      "pos_y": -0.625,
+      "pos_z": 1.46875
+    },
+    {
+      "id": "right_mid_wheel",
+      "pos_x": -3.125,
+      "pos_y": -0.625,
+      "pos_z": 1.1875
+    }
+  ],
+  "WheelSlots": [
+    {
+      "id": "left_back_wheel",
+      "max_radius": 14.0,
+      "max_width": 14.0,
+      "min_radius": 14.0,
+      "min_width": 14.0,
+      "x": -82.0,
+      "y": -2.0,
+      "y_rot": 0.0,
+      "z": 13.0
+    },
+    {
+      "drive": 1,
+      "id": "left_front_wheel",
+      "max_radius": 8.0,
+      "max_width": 8.0,
+      "min_radius": 8.0,
+      "min_width": 8.0,
+      "steering": 1,
+      "x": 52.0,
+      "y": -2.0,
+      "y_rot": 0.0,
+      "z": 20.0
+    },
+    {
+      "id": "left_mid_wheel",
+      "max_radius": 14.0,
+      "max_width": 14.0,
+      "min_radius": 14.0,
+      "min_width": 14.0,
+      "x": -50.0,
+      "y": -2.0,
+      "y_rot": 0.0,
+      "z": 13.0
+    },
+    {
+      "id": "right_back_wheel",
+      "max_radius": 14.0,
+      "max_width": 14.0,
+      "min_radius": 14.0,
+      "min_width": 14.0,
+      "x": -82.0,
+      "y": -2.0,
+      "y_rot": 180.0,
+      "z": -13.0
+    },
+    {
+      "drive": 1,
+      "id": "right_front_wheel",
+      "max_radius": 8.0,
+      "max_width": 8.0,
+      "min_radius": 8.0,
+      "min_width": 8.0,
+      "steering": 1,
+      "x": 52.0,
+      "y": -2.0,
+      "y_rot": 180.0,
+      "z": -20.0
+    },
+    {
+      "id": "right_mid_wheel",
+      "max_radius": 14.0,
+      "max_width": 14.0,
+      "min_radius": 14.0,
+      "min_width": 14.0,
+      "x": -50.0,
+      "y": -2.0,
+      "y_rot": 180.0,
+      "z": -13.0
+    }
+  ]
+}
