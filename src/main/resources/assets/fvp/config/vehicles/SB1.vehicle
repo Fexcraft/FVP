@@ -1,0 +1,32 @@
+{
+    "RegistryName": "fvp:sb1",
+    "Addon": "fvtm:fvp",
+    "Name": "Tram 1 (SB1)",
+    "Model": "fvp:models/vehicle/sb1",
+    "Textures": [
+        "Blank/Default;fvp:textures/trams/sb1_blank.png",
+        "Imperial;fvp:textures/trams/sb1_alt1.png",
+        "SKR Trans;fvp:textures/trams/sb1_alt2.png",
+        "Random 1;fvp:textures/trams/sb1_alt3.png"
+    ],
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 3000 },
+    	{ "id":"constructor_length", "type": "float", "value": 9 },
+    	{ "id":"constructor_height", "type": "float", "value": 0 },
+    	{ "id": "gauge", "type": "integer", "value": 30 }
+    ],
+    "WheelPositions":[
+        { "x":  56, "y": 7, "z": 0, "id": "bogie_front" },
+        { "x": -56, "y": 7, "z": 0, "id": "bogie_rear" }
+    ],
+    "RearConnector": [ -145, -10, 0 ],
+    "FrontConnector": [ 145, -10, 0 ],
+    "PreInstalled":{
+		"engine": "gep:engine_diesel",
+        "bogie_front": "fvp:bogie_st1",
+        "bogie_rear": "fvp:bogie_st1",
+        "seat": "pack5pxt:loco_seat"
+	},
+	"VehicleType": "RAIL",
+	"CouplerRange": 0.25
+}
