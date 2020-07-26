@@ -503,6 +503,8 @@ public class T3Model extends VehicleModel {
 			.setRotationPoint(68, -9.1f, -18.25f).setRotationAngle(0, 0, 0)
 		);
 		lights_front.addProgram(DefaultPrograms.FRONT_LIGHTS);
+		lights_front.addProgram(new DefaultPrograms.RectLightBeam(256, 2, 2, 72, 48, 70, -7.5f, 16.75f, 0, 0, -5, null, null));
+		lights_front.addProgram(new DefaultPrograms.RectLightBeam(256, 2, 2, 72, 48, 70, -7.5f, -16.75f, 0, 0, -5, null, null));
 		this.groups.add(lights_front);
 		//
 		TurboList lights_long = new TurboList("lights_long");
