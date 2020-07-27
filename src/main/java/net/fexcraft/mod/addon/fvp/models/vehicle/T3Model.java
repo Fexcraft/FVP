@@ -503,8 +503,8 @@ public class T3Model extends VehicleModel {
 			.setRotationPoint(68, -9.1f, -18.25f).setRotationAngle(0, 0, 0)
 		);
 		lights_front.addProgram(DefaultPrograms.FRONT_LIGHTS);
-		lights_front.addProgram(new DefaultPrograms.RectLightBeam(256, 2, 2, 72, 48, 70, -7.5f, 16.75f, 0, 0, -5, null, null));
-		lights_front.addProgram(new DefaultPrograms.RectLightBeam(256, 2, 2, 72, 48, 70, -7.5f, -16.75f, 0, 0, -5, null, null));
+		lights_front.addProgram(DefaultPrograms.RECT_LIGHTBEAM_FRONT_LIGHTS.init(256, 2, 2, 72, 48, 70, -7.5f, 16.75f, 0, 0, -5, null, null));
+		lights_front.addProgram(DefaultPrograms.RECT_LIGHTBEAM_FRONT_LIGHTS.init(256, 2, 2, 72, 48, 70, -7.5f, -16.75f, 0, 0, -5, null, null));
 		this.groups.add(lights_front);
 		//
 		TurboList lights_long = new TurboList("lights_long");
@@ -516,7 +516,9 @@ public class T3Model extends VehicleModel {
 			.addShapeBox(0, 0, 0, 2, 3, 3, 0, 0, 0, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, 0, 0, 0, 0, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, 0, 0)
 			.setRotationPoint(68, -9.1f, -22.75f).setRotationAngle(0, 0, 0)
 		);
-		lights_long.addProgram(DefaultPrograms.FOG_LIGHTS);
+		lights_long.addProgram(DefaultPrograms.LONG_LIGHTS);
+		lights_long.addProgram(DefaultPrograms.RECT_LIGHTBEAM_LONG_LIGHTS.init(720, 2, 2, 256, 128, 70, -7.5f, 16.75f, 0, 0, -8, null, null));
+		lights_long.addProgram(DefaultPrograms.RECT_LIGHTBEAM_LONG_LIGHTS.init(720, 2, 2, 256, 128, 70, -7.5f, -16.75f, 0, 0, -8, null, null));
 		this.groups.add(lights_long);
 		//
 		TurboList chassis_primary = new TurboList("chassis_primary");
