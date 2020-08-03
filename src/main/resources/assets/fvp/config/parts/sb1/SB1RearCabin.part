@@ -1,0 +1,21 @@
+{
+    "RegistryName": "fvp:sb1_rear_cabin",
+    "Addon": "fvtm:fvp",
+    "Name": "SB1 Rear Cabin",
+    "Model": "fvp:models/part/sb1_rear_cabin",
+    "Category": [ "rear_cabin" ],
+    "Texture": "Default;fvp:textures/trams/sb1_blank.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:sb1"
+        ]
+    },
+    "Function": {
+    	"id": "fvtm:seats",
+    	"seats":[
+    		{ "x": -118, "y": 28, "z": 0, "name": "driver_rear", "driver": true, "min_yaw": -180, "max_yaw": -180 }
+    	]
+    }
+}

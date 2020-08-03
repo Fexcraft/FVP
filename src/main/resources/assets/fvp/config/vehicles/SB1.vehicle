@@ -27,7 +27,9 @@
 		"engine": "gep:engine_diesel",
         "bogie_front": "fvp:bogie_st1",
         "bogie_rear": "fvp:bogie_st1",
-        "seat": "pack5pxt:loco_seat"
+        "front_cabin": "fvp:sb1_front_cabin",
+        "rear_cabin": "fvp:sb1_rear_cabin",
+        "inner": "fvp:sb1_seats"
 	},
 	"VehicleType": "RAIL",
 	"CouplerRange": 0.25

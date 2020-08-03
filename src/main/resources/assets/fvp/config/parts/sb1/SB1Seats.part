@@ -1,0 +1,199 @@
+{
+	"RegistryName": "fvp:sb1_seats",
+	"Addon": "fvtm:fvp",
+	"Name": "SB1 Passenger Seats",
+	"Model": "fvp:models/part/sb1_seats",
+	"Category": [ "inner" ],
+    "Textures": [
+        "Blank/Default;fvp:textures/trams/sb1_blank.png",
+        "Imperial;fvp:textures/trams/sb1_alt1.png",
+        "SKR Trans;fvp:textures/trams/sb1_alt2.png",
+        "Random 1;fvp:textures/trams/sb1_alt3.png"
+    ],
+	"Installation": {
+		"Handler": "default",
+		"Removable": true,
+		"Compatible": [
+			"fvp:sb1"
+		]
+	},
+	"Function": {
+		"id": "fvtm:seats",
+		"seats": [
+			{
+				"x": 6.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat1"
+			},
+			{
+				"x": -6.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat2",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 24.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat3",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 42.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat4",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 60.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat5",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 78.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat6",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 96.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat7",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -24.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat8",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -42.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat9",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -60.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat10",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -78.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat11",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -96.0,
+				"y": 28.0,
+				"z": -13.0,
+				"name": "seat12",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 6.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat13",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -6.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat14",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 24.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat15",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 42.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat16",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 60.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat17",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": 78.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat18",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -24.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat19",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -42.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat20",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -60.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat21",
+				"min_yaw": -180,
+				"max_yaw": -180
+			},
+			{
+				"x": -78.0,
+				"y": 28.0,
+				"z": 13.0,
+				"name": "seat22",
+				"min_yaw": -180,
+				"max_yaw": -180
+			}
+		]
+	}
+}
