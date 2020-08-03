@@ -238,86 +238,6 @@ public class SB1Model extends VehicleModel {
 		door_rear.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_rear);
 		//
-		TurboList front_forward = new TurboList("front_forward");
-		front_forward.add(new ModelRendererTurbo(front_forward, 326, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 3, null)
-			.setRotationPoint(140, -25, -13).setRotationAngle(0, 0, 0)
-		);
-		front_forward.add(new ModelRendererTurbo(front_forward, 353, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 3, null)
-			.setRotationPoint(140, -25, 13).setRotationAngle(0, 0, 0)
-		);
-		front_forward.addProgram(DefaultPrograms.LIGHTS_FRONT_FORWARD);
-		this.groups.add(front_forward);
-		//
-		TurboList front_backward = new TurboList("front_backward");
-		front_backward.add(new ModelRendererTurbo(front_backward, 335, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 3, null)
-			.setRotationPoint(140, -25, -9).setRotationAngle(0, 0, 0)
-		);
-		front_backward.add(new ModelRendererTurbo(front_backward, 344, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 3, null)
-			.setRotationPoint(140, -25, 9).setRotationAngle(0, 0, 0)
-		);
-		front_backward.addProgram(DefaultPrograms.LIGHTS_FRONT_BACKWARD);
-		this.groups.add(front_backward);
-		//
-		TurboList indicator_right = new TurboList("indicator_right");
-		indicator_right.add(new ModelRendererTurbo(indicator_right, 301, 14, textureX, textureY)
-			.addBox(0, 0, 0, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
-			.setRotationPoint(137, -26, -21).setRotationAngle(0, 54, 0)
-		);
-		indicator_right.add(new ModelRendererTurbo(indicator_right, 472, 90, textureX, textureY)
-			.addBox(4, 0, -14, 1, 1, 1, 0, 1f, new boolean[]{ false, false, false, true, false, false })
-			.setRotationPoint(132, -37, 0).setRotationAngle(0, 0, -20)
-		);
-		indicator_right.add(new ModelRendererTurbo(indicator_right, 453, 90, textureX, textureY)
-			.addBox(4, 0, 13, 1, 1, 1, 0, 1f, new boolean[]{ false, false, false, true, false, false })
-			.setRotationPoint(-132, -37, 0).setRotationAngle(0, 180, -20)
-		);
-		indicator_right.add(new ModelRendererTurbo(indicator_right, 301, 70, textureX, textureY)
-			.addBox(0, 0, -3, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
-			.setRotationPoint(-137, -26, -21).setRotationAngle(0, 126, 0)
-		);
-		indicator_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
-		this.groups.add(indicator_right);
-		//
-		TurboList indicator_left = new TurboList("indicator_left");
-		indicator_left.add(new ModelRendererTurbo(indicator_left, 301, 8, textureX, textureY)
-			.addBox(0, 0, -3, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
-			.setRotationPoint(137, -26, 21).setRotationAngle(0, -54, 0)
-		);
-		indicator_left.add(new ModelRendererTurbo(indicator_left, 453, 90, textureX, textureY)
-			.addBox(4, 0, 13, 1, 1, 1, 0, 1f, new boolean[]{ false, false, false, true, false, false })
-			.setRotationPoint(132, -37, 0).setRotationAngle(0, 0, -20)
-		);
-		indicator_left.add(new ModelRendererTurbo(indicator_left, 472, 90, textureX, textureY)
-			.addBox(4, 0, -14, 1, 1, 1, 0, 1f, new boolean[]{ false, false, false, true, false, false })
-			.setRotationPoint(-132, -37, 0).setRotationAngle(0, 180, -20)
-		);
-		indicator_left.add(new ModelRendererTurbo(indicator_left, 301, 64, textureX, textureY)
-			.addBox(0, 0, 0, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
-			.setRotationPoint(-137, -26, 21).setRotationAngle(0, -126, 0)
-		);
-		indicator_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
-		this.groups.add(indicator_left);
-		//
-		TurboList rear_forward = new TurboList("rear_forward");
-		rear_forward.add(new ModelRendererTurbo(rear_forward, 353, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 2, null)
-			.setRotationPoint(-141, -25, -13).setRotationAngle(0, 0, 0)
-		);
-		rear_forward.add(new ModelRendererTurbo(rear_forward, 326, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 2, null)
-			.setRotationPoint(-141, -25, 13).setRotationAngle(0, 0, 0)
-		);
-		rear_forward.addProgram(DefaultPrograms.LIGHTS_REAR_FORWARD);
-		this.groups.add(rear_forward);
-		//
-		TurboList rear_backward = new TurboList("rear_backward");
-		rear_backward.add(new ModelRendererTurbo(rear_backward, 344, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 2, null)
-			.setRotationPoint(-141, -25, -9).setRotationAngle(0, 0, 0)
-		);
-		rear_backward.add(new ModelRendererTurbo(rear_backward, 335, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 2, null)
-			.setRotationPoint(-141, -25, 9).setRotationAngle(0, 0, 0)
-		);
-		rear_backward.addProgram(DefaultPrograms.LIGHTS_REAR_BACKWARD);
-		this.groups.add(rear_backward);
-		//
 		TurboList connectors = new TurboList("connectors");
 		connectors.add(new ModelRendererTurbo(connectors, 346, 7, textureX, textureY).addCylinder(0, 0, 0, 1, 4, 8, 0.75f, 0.75f, 3, null)
 			.setRotationPoint(142, -9.5f, -2).setRotationAngle(0, 0, 0)
@@ -2502,6 +2422,86 @@ public class SB1Model extends VehicleModel {
 			.setRotationPoint(-141, -25, 9).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(body);
+		//
+		TurboList front_forward = new TurboList("front_forward");
+		front_forward.add(new ModelRendererTurbo(front_forward, 326, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 3, null)
+			.setRotationPoint(140, -25, -13).setRotationAngle(0, 0, 0)
+		);
+		front_forward.add(new ModelRendererTurbo(front_forward, 353, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 3, null)
+			.setRotationPoint(140, -25, 13).setRotationAngle(0, 0, 0)
+		);
+		front_forward.addProgram(DefaultPrograms.LIGHTS_FRONT_FORWARD);
+		this.groups.add(front_forward);
+		//
+		TurboList front_backward = new TurboList("front_backward");
+		front_backward.add(new ModelRendererTurbo(front_backward, 335, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 3, null)
+			.setRotationPoint(140, -25, -9).setRotationAngle(0, 0, 0)
+		);
+		front_backward.add(new ModelRendererTurbo(front_backward, 344, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 3, null)
+			.setRotationPoint(140, -25, 9).setRotationAngle(0, 0, 0)
+		);
+		front_backward.addProgram(DefaultPrograms.LIGHTS_FRONT_BACKWARD);
+		this.groups.add(front_backward);
+		//
+		TurboList indicator_right = new TurboList("indicator_right");
+		indicator_right.add(new ModelRendererTurbo(indicator_right, 301, 14, textureX, textureY)
+			.addBox(0, 0, 0, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
+			.setRotationPoint(137, -26, -21).setRotationAngle(0, 54, 0)
+		);
+		indicator_right.add(new ModelRendererTurbo(indicator_right, 472, 90, textureX, textureY)
+			.addBox(4, 0, -14, 1, 1, 1, 0, 1f, new boolean[]{ false, false, false, true, false, false })
+			.setRotationPoint(132, -37, 0).setRotationAngle(0, 0, -20)
+		);
+		indicator_right.add(new ModelRendererTurbo(indicator_right, 453, 90, textureX, textureY)
+			.addBox(4, 0, 13, 1, 1, 1, 0, 1f, new boolean[]{ false, false, false, true, false, false })
+			.setRotationPoint(-132, -37, 0).setRotationAngle(0, 180, -20)
+		);
+		indicator_right.add(new ModelRendererTurbo(indicator_right, 301, 70, textureX, textureY)
+			.addBox(0, 0, -3, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
+			.setRotationPoint(-137, -26, -21).setRotationAngle(0, 126, 0)
+		);
+		indicator_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
+		this.groups.add(indicator_right);
+		//
+		TurboList indicator_left = new TurboList("indicator_left");
+		indicator_left.add(new ModelRendererTurbo(indicator_left, 301, 8, textureX, textureY)
+			.addBox(0, 0, -3, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
+			.setRotationPoint(137, -26, 21).setRotationAngle(0, -54, 0)
+		);
+		indicator_left.add(new ModelRendererTurbo(indicator_left, 453, 90, textureX, textureY)
+			.addBox(4, 0, 13, 1, 1, 1, 0, 1f, new boolean[]{ false, false, false, true, false, false })
+			.setRotationPoint(132, -37, 0).setRotationAngle(0, 0, -20)
+		);
+		indicator_left.add(new ModelRendererTurbo(indicator_left, 472, 90, textureX, textureY)
+			.addBox(4, 0, -14, 1, 1, 1, 0, 1f, new boolean[]{ false, false, false, true, false, false })
+			.setRotationPoint(-132, -37, 0).setRotationAngle(0, 180, -20)
+		);
+		indicator_left.add(new ModelRendererTurbo(indicator_left, 301, 64, textureX, textureY)
+			.addBox(0, 0, 0, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
+			.setRotationPoint(-137, -26, 21).setRotationAngle(0, -126, 0)
+		);
+		indicator_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
+		this.groups.add(indicator_left);
+		//
+		TurboList rear_forward = new TurboList("rear_forward");
+		rear_forward.add(new ModelRendererTurbo(rear_forward, 353, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 2, null)
+			.setRotationPoint(-141, -25, -13).setRotationAngle(0, 0, 0)
+		);
+		rear_forward.add(new ModelRendererTurbo(rear_forward, 326, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 2, null)
+			.setRotationPoint(-141, -25, 13).setRotationAngle(0, 0, 0)
+		);
+		rear_forward.addProgram(DefaultPrograms.LIGHTS_REAR_FORWARD);
+		this.groups.add(rear_forward);
+		//
+		TurboList rear_backward = new TurboList("rear_backward");
+		rear_backward.add(new ModelRendererTurbo(rear_backward, 344, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 2, null)
+			.setRotationPoint(-141, -25, -9).setRotationAngle(0, 0, 0)
+		);
+		rear_backward.add(new ModelRendererTurbo(rear_backward, 335, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 2, null)
+			.setRotationPoint(-141, -25, 9).setRotationAngle(0, 0, 0)
+		);
+		rear_backward.addProgram(DefaultPrograms.LIGHTS_REAR_BACKWARD);
+		this.groups.add(rear_backward);
 	}
 
 }
