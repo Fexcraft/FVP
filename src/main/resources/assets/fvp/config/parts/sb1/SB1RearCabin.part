@@ -15,7 +15,7 @@
     "Function": {
     	"id": "fvtm:seats",
     	"seats":[
-    		{ "x": -118, "y": 28, "z": 0, "name": "driver_rear", "driver": true, "min_yaw": -180, "max_yaw": -180 }
+    		{ "x": -118, "y": 28, "z": 0, "name": "driver_rear", "driver": true, "min_yaw": -180, "max_yaw": 180 }
     	]
     }
 }
