@@ -29,7 +29,10 @@
         "bogie_rear": "fvp:bogie_st1",
         "front_cabin": "fvp:sb1_front_cabin",
         "rear_cabin": "fvp:sb1_rear_cabin",
-        "inner": "fvp:sb1_seats"
+        "inner": "fvp:sb1_seats",
+        "inner_frames": "fvp:sb1_frames",
+        "labels": "fvp:sb1_labels",
+        "ticket_machines": "fvp:sb1_ticket_machines"
 	},
 	"VehicleType": "RAIL",
 	"CouplerRange": 0.25

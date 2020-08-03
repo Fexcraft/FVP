@@ -1,0 +1,16 @@
+{
+    "RegistryName": "fvp:sb1_labels",
+    "Addon": "fvtm:fvp",
+    "Name": "SB1 Direction/Line Labels",
+    "Model": "fvp:models/part/sb1_labels",
+    "Category": [ "labels" ],
+    "Texture": "Default;fvp:textures/trams/sb1_blank.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:sb1"
+        ]
+    },
+    "//TODO": "string attributes for directions"
+}

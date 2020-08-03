@@ -1,0 +1,20 @@
+{
+    "RegistryName": "fvp:sb1_frames",
+    "Addon": "fvtm:fvp",
+    "Name": "SB1 Inner Frames",
+    "Model": "fvp:models/part/sb1_frames",
+    "Category": [ "inner_frames" ],
+    "Textures": [
+        "Blank/Default;fvp:textures/trams/sb1_blank.png",
+        "Imperial;fvp:textures/trams/sb1_alt1.png",
+        "SKR Trans;fvp:textures/trams/sb1_alt2.png",
+        "Random 1;fvp:textures/trams/sb1_alt3.png"
+    ],
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:sb1"
+        ]
+    }
+}
