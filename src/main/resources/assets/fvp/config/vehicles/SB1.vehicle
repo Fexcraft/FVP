@@ -32,7 +32,8 @@
         "inner": "fvp:sb1_seats",
         "inner_frames": "fvp:sb1_frames",
         "labels": "fvp:sb1_labels",
-        "ticket_machines": "fvp:sb1_ticket_machines"
+        "ticket_machines": "fvp:sb1_ticket_machines",
+        "pantograph_front": "fvp:sb1_pantograph"
 	},
 	"VehicleType": "RAIL",
 	"CouplerRange": 0.25

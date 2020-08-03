@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:sb1_pantograph",
+    "Addon": "fvtm:fvp",
+    "Name": "SB1 Pantograph",
+    "Model": "fvp:models/part/sb1_pantographs",
+    "Category": [ "pantograph_front", "pantograph_rear" ],
+    "Texture": "Blank/Default;fvp:textures/trams/sb1_blank.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:sb1"
+        ]
+    }
+}
