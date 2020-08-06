@@ -33,9 +33,9 @@
     	"lights": "fvp:c7_lights"
     },
     "LegacyData":{
-    	"MaxPositiveThrottle": 1.89,
-    	"MaxNegativeThrottle": 0.78,
-    	"TurnLeftModifier": 0.921,
-    	"TurnRightModifier": 0.921
+    	"MaxPositiveThrottle": 1.4,
+    	"MaxNegativeThrottle": 0.8,
+    	"TurnLeftModifier": 1,
+    	"TurnRightModifier": 1
     }
 }
