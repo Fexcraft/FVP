@@ -85,7 +85,7 @@ public class C8Doors extends PartModel {
 			.addShapeBox(-22, 0, 0, 16, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.9f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.9f, 0, 0, 0)
 			.setRotationPoint(25, -9, -21).setRotationAngle(0, 0, 0).setName("Box 237")
 		);
-		door_front_right.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c10_doors_fr", true, -60, 0, -0.5f, 1, 0f));
+		door_front_right.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c8_doors_fr", true, -60, 0, -0.5f, 1, 0f));
 		this.groups.add(door_front_right);
 		//
 		TurboList door_hood = new TurboList("door_hood");
@@ -120,7 +120,7 @@ public class C8Doors extends PartModel {
 			.addShapeBox(-16, -13, -1, 15, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1f, 0, 0, 0.1f)
 			.setRotationPoint(1, -9, 20).setRotationAngle(0, 0, 0).setName("Box 250")
 		);
-		door_rear_left.addPrograms(DefaultPrograms.RGB_PRIMARY, DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c8_doors_bl", true, 0, 60, 0.5f, 1, 0f));
+		door_rear_left.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c8_doors_bl", true, 0, 60, 0.5f, 1, 0f));
 		this.groups.add(door_rear_left);
 		//
 		TurboList door_rear_right = new TurboList("door_rear_right");
