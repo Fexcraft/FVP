@@ -1,0 +1,15 @@
+{
+	"RegistryName": "fvp:c7_lights",
+	"Addon": "fvtm:fvp",
+	"Name": "C7 Standard Lights",
+	"Model": "fvp:models/part/c7_lights",
+	"Category": "lights",
+	"Texture": "fvp:textures/cars/c7rs.png",
+	"Installation": {
+		"Compatible": [
+			{
+				"vehicle": "fvp:c7"
+			}
+		]
+	}
+}
