@@ -1,0 +1,23 @@
+{
+    "RegistryName": "fvp:c7r1t1_wheel",
+    "Addon": "fvtm:fvp",
+    "Name": "C7 Revision-1 Type-1 Wheel",
+    "Model": "fvp:models/part/c7r1t1",
+    "Category": "wheel",
+    "Function": "fvtm:wheel",
+    "Textures": [
+        "Default;fvp:textures/cars/c7rs.png"
+    ],
+    "Installation":{
+    	"Handler": "wheel",
+        "Removable": true,
+        "Radius": 7.2, "Width": 4
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "20", "priority": "veryhigh"
+    	}
+    ]
+}
