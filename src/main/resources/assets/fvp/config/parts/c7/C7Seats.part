@@ -1,0 +1,66 @@
+{
+	"RegistryName": "fvp:c7_seats",
+	"Name": "C7 Standard Seats",
+	"Addon": "fvtm:fvp",
+	"Model": "fvp:models/part/c7_seats",
+	"Category": "seats",
+	"Texture": "fvp:textures/cars/c7rs.png",
+	"Installation": {
+		"Compatible": [
+			{
+				"vehicle": "fvp:c7"
+			}
+		],
+		"Removable": false
+	},
+	"Function": {
+		"id": "fvtm:seats",
+		"seats": [
+			{
+				"x": 3.0,
+				"y": -0.0,
+				"z": -12.0,
+				"name": "driver",
+				"driver": true,
+				"min_yaw": -120,
+				"max_yaw": 120
+			},
+			{
+				"x": 3.0,
+				"y": -0.0,
+				"z": 12.0,
+				"name": "pass_front"
+			},
+			{
+				"x": -20.0,
+				"y": -0.0,
+				"z": -12.0,
+				"name": "pass_rear_left"
+			},
+			{
+				"x": -20.0,
+				"y": -0.0,
+				"z": 12.0,
+				"name": "pass_rear_right"
+			},
+			{
+				"x": -20.0,
+				"y": -0.0,
+				"z": -0.0,
+				"name": "pass_rear_middle"
+			},
+			{
+				"x": 37.8,
+				"y": -2.8,
+				"z": -16.8,
+				"name": "seat5"
+			},
+			{
+				"x": -37.8,
+				"y": -2.8,
+				"z": -16.8,
+				"name": "seat6"
+			}
+		]
+	}
+}

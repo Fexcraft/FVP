@@ -27,12 +27,10 @@
         "engine"
     ],
     "PreInstalled":{
-    	"interior": "fvp:c8_interior",
-    	"steering_wheel": "fvp:c8_steering_wheel",
-    	"seats": "fvp:c8_seats",
-    	"doors": "fvp:c8_doors",
-    	"bumpers": "fvp:c8_bumpers",
-    	"lights": "fvp:c8_lights"
+    	"interior": "fvp:c7_interior",
+    	"steering_wheel": "fvp:c7_steering_wheel",
+    	"seats": "fvp:c7_seats",
+    	"lights": "fvp:c7_lights"
     },
     "LegacyData":{
     	"MaxPositiveThrottle": 1.89,
