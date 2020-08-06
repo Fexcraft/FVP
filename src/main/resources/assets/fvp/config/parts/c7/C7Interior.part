@@ -1,0 +1,16 @@
+{
+	"RegistryName": "fvp:c7_interior",
+	"Addon": "fvtm:fvp",
+	"Name": "C7 Standard Interior",
+	"Model": "fvp:models/part/c7_interior",
+	"Category": "interior",
+	"Texture": "fvp:textures/cars/c7rs.png",
+	"Installation": {
+		"Compatible": [
+			{
+				"vehicle": "fvp:c7"
+			}
+		],
+		"Removable": false
+	}
+}
