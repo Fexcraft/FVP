@@ -8,7 +8,7 @@
 	"Installation": {
 		"Compatible": [
 			{
-				"vehicle": "fvp:c7"
+				"vehicle": "fvp:c7rs"
 			}
 		],
 		"Removable": false
