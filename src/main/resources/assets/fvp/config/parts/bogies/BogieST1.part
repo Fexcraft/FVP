@@ -6,7 +6,8 @@
     "Category": "bogie",
     "Texture": "fvp:textures/bogies/st1.png",
     "Installation":{
-    	"Handler": "bogie", "Height": 12
+    	"Handler": "bogie",
+    	"Height": 14
     },
     "Function": "fvtm:bogie"
 }

@@ -18,8 +18,8 @@
     	{ "id": "warning_lights", "type": "boolean", "value": false, "seat": "driver" }
     ],
     "WheelPositions":[
-        { "x":  56, "y": 7, "z": 0, "id": "bogie_front" },
-        { "x": -56, "y": 7, "z": 0, "id": "bogie_rear" }
+        { "x":  56, "y": -13, "z": 0, "id": "bogie_front" },
+        { "x": -56, "y": -13, "z": 0, "id": "bogie_rear" }
     ],
     "RearConnector": [ -145, -10, 0 ],
     "FrontConnector": [ 145, -10, 0 ],
