@@ -10,12 +10,13 @@
         "Random 1;fvp:textures/trams/sb1_alt3.png"
     ],
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 3000 },
-    	{ "id":"constructor_length", "type": "float", "value": 9 },
-    	{ "id":"constructor_height", "type": "float", "value": 0 },
+    	{ "id": "weight", "type": "float", "value": 3000 },
+    	{ "id": "constructor_length", "type": "float", "value": 9 },
+    	{ "id": "constructor_height", "type": "float", "value": 0 },
     	{ "id": "gauge", "type": "integer", "value": 30 },
     	{ "id": "turn_lights", "type": "tristate", "seat": "driver" },
-    	{ "id": "warning_lights", "type": "boolean", "value": false, "seat": "driver" }
+    	{ "id": "warning_lights", "type": "boolean", "value": false, "seat": "driver" },
+    	{ "id": "collision_range", "type": "float", "value": 8 }
     ],
     "WheelPositions":[
         { "x":  56, "y": -13, "z": 0, "id": "bogie_front" },
