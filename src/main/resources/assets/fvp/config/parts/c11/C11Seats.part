@@ -23,9 +23,9 @@
     	"id": "fvtm:seats",
     	"seats":[
     		{ "x": 1, "y": -1, "z": -10, "name": "driver", "driver": true, "min_yaw": -120, "max_yaw": 120 },
-    		{ "x": 1, "y": -1, "z": 10, "name": "pass_front" },
-    		{ "x": -18, "y": -1, "z": -8, "name": "pass_rear_left" },
-    		{ "x": -18, "y": -1, "z": 8, "name": "pass_rear_right" }
+    		{ "x": 1, "y": -1, "z": 10, "name": "pass_front", "filter": [ "players", "minecraft:wolf" ] },
+    		{ "x": -18, "y": -1, "z": -8, "name": "pass_rear_left", "filter": [ "players", "animals" ] },
+    		{ "x": -18, "y": -1, "z": 8, "name": "pass_rear_right", "filter": [ "players", "animals" ] }
     	]
     }
 }
