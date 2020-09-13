@@ -38,5 +38,13 @@
     	"left_front_wheel": "fvp:t1_front_wheel",
     	"steering_wheel": "fvp:t1_steering_wheel",
     	"lights": "fvp:t1_lights"
+    },
+    "LiftingPoints":{
+    	"left_front": [ 52, 2, 22, "none" ],
+    	"right_front": [ 52, 2, -22, "none" ],
+    	"right_rear0": [ -36, -1, -11, "right_rear1", 10 ],
+    	"right_rear1": [ -52, -1, -11, "right_rear0", 10 ],
+    	"left_rear0": [ -36, -1, 11, "left_rear1", 10 ],
+    	"left_rear1": [ -52, -1, 11, "left_rear0", 10 ]
     }
 }
