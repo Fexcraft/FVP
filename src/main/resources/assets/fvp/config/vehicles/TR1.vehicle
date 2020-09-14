@@ -23,5 +23,15 @@
     	{ "id":"constructor_wheel_offset", "type": "float", "value": 21 }
     ],
     "LegacyData":{},
-    "Trailer": true
+    "Trailer": true,
+    "LiftingPoints":{
+    	"left_front0": [ 14, -17, 22, "left_front1" ],
+    	"left_front1": [ -16, -17, 22, "left_front0" ],
+    	"left_rear0": [ -202, -18, 24, "left_rear1", 2 ],
+    	"left_rear1": [ -232, -18, 24, "left_rear0", 2 ],
+    	"right_front0": [ 14, -17, -22, "right_front1" ],
+    	"right_front1": [ -16, -17, -22, "right_front0" ],
+    	"right_rear0": [ -202, -18, -24, "right_rear1", 2 ],
+    	"right_rear1": [ -232, -18, -24, "right_rear0", 2 ]
+    }
 }
