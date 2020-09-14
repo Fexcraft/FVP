@@ -41,13 +41,13 @@
     	"TurnRightModifier": 1.1
     },
     "LiftingPoints":{
-    	"left_front0": [ 50, 2, -31, "left_front1" ],
-    	"left_front1": [ 22, 2, -31, "left_front0" ],
-    	"left_rear0": [ -24, 2, -31, "left_rear1" ],
-    	"left_rear1": [ -52, 2, -31, "left_rear0" ],
-    	"right_front0": [ 50, 2, 31, "right_front1" ],
-    	"right_front1": [ 22, 2, 31, "right_front0" ],
-    	"right_rear0": [ -24, 2, 31, "right_rear1" ],
-    	"right_rear1": [ -52, 2, 31, "right_rear0" ]
+    	"left_front0": [ 50, 2, 31, "left_front1" ],
+    	"left_front1": [ 22, 2, 31, "left_front0" ],
+    	"left_rear0": [ -24, 2, 31, "left_rear1" ],
+    	"left_rear1": [ -52, 2, 31, "left_rear0" ],
+    	"right_front0": [ 50, 2, -31, "right_front1" ],
+    	"right_front1": [ 22, 2, -31, "right_front0" ],
+    	"right_rear0": [ -24, 2, -31, "right_rear1" ],
+    	"right_rear1": [ -52, 2, -31, "right_rear0" ]
     }
 }
