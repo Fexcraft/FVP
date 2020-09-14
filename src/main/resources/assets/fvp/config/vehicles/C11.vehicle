@@ -8,9 +8,6 @@
     "Texture": "Default;fvp:textures/cars/c11.png",
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 1256 },
-    	{ "id":"constructor_length", "type": "float", "value": 3 },
-    	{ "id":"constructor_height", "type": "float", "value": -11 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 18 },
     	{
     		"id":"windshield_wipers", "type": "boolean", "value": false, "seat": "driver",
     		"hitbox": [ 13, -10, 6, 1 ]
