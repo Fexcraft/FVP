@@ -39,9 +39,9 @@
     "LiftingPoints":{
     	"left_front": [ 52, 2, 22, "none" ],
     	"right_front": [ 52, 2, -22, "none" ],
-    	"right_rear0": [ -36, -1, -11, "right_rear1", 10 ],
-    	"right_rear1": [ -52, -1, -11, "right_rear0", 10 ],
-    	"left_rear0": [ -36, -1, 11, "left_rear1", 10 ],
-    	"left_rear1": [ -52, -1, 11, "left_rear0", 10 ]
+    	"right_rear0": [ -36, -1, -11, "right_rear1", 11 ],
+    	"right_rear1": [ -52, -1, -11, "right_rear0", 11 ],
+    	"left_rear0": [ -36, -1, 11, "left_rear1", 11 ],
+    	"left_rear1": [ -52, -1, 11, "left_rear0", 11 ]
     }
 }
