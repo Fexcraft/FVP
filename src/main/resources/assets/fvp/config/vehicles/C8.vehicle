@@ -42,5 +42,11 @@
     	"MaxNegativeThrottle": 0.78,
     	"TurnLeftModifier": 0.921,
     	"TurnRightModifier": 0.921
+    },
+    "LiftingPoints":{
+    	"left_front": [ 25, 5, 22, "left_rear" ],
+    	"left_rear": [ -25, 5, 22, "left_front" ],
+    	"right_front": [ 25, 5, -22, "right_rear" ],
+    	"right_rear": [ -25, 5, -22, "right_front" ]
     }
 }
