@@ -31,5 +31,11 @@
     	"steering_wheel": "fvp:c1r1_steering_wheel",
     	"lights": "fvp:c1r1_lights",
     	"doors": "fvp:c1r1_doors"
+    },
+    "LiftingPoints":{
+    	"left_front": [ 19, 3, 19.5, "left_rear" ],
+    	"left_rear": [ -20, 3, 19.5, "left_front" ],
+    	"right_front": [ 19, 3, -19.5, "right_rear" ],
+    	"right_rear": [ -20, 3, -19.5, "right_front" ]
     }
 }
