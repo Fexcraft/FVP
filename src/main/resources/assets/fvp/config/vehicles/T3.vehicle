@@ -62,5 +62,11 @@
         "engine",
         "seats",
         "cabin"
-    ]
+    ],
+    "LiftingPoints":{
+    	"left_front": [ 32, 2.5, 24, "left_rear" ],
+    	"left_rear": [ -10, 2.5, 24, "left_front" ],
+    	"right_front": [ 32, 2.5, -24, "right_rear" ],
+    	"right_rear": [ -10, 2.5, -24, "right_front" ]
+    }
 }
