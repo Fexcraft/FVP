@@ -36,5 +36,13 @@
     "PreInstalled":{
         "steering_wheel": "fvp:t2_steering_wheel",
         "interior": "fvp:t2_interior"
+    },
+    "LiftingPoints":{
+    	"left_front": [ 60, 3, 25, "none" ],
+    	"right_front": [ 60, 3, -25, "none" ],
+    	"right_rear0": [ -5, 1.5, -10, "right_rear1", 15 ],
+    	"right_rear1": [ -30, 1.5, -10, "right_rear0", 15 ],
+    	"left_rear0": [ -5, 1.5, 10, "left_rear1", 15 ],
+    	"left_rear1": [ -30, 1.5, 10, "left_rear0", 15 ]
     }
 }
