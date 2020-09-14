@@ -7,10 +7,7 @@
     "SecondaryColor": "#C2C2C2",
     "Texture": "Default;fvp:textures/cars/c10.png",
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 1480 },
-    	{ "id":"constructor_length", "type": "float", "value": 3 },
-    	{ "id":"constructor_height", "type": "float", "value": -9 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 18 }
+    	{ "id":"weight", "type": "float", "value": 1480 }
     ],
     "WheelPositions":[
         { "x":  32, "y": 0, "z":  18, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },
