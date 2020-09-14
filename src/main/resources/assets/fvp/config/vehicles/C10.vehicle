@@ -32,9 +32,9 @@
     	"TurnRightModifier": 0.7
     },
     "LiftingPoints":{
-    	"left_front": [ 14, -4, 22, "left_rear" ],
-    	"left_rear": [ -14, -4, 22, "left_front" ],
-    	"right_front": [ 14, -4, -22, "right_rear" ],
-    	"right_rear": [ -14, -4, -22, "right_front" ]
+    	"left_front": [ 14, 4, 22, "left_rear" ],
+    	"left_rear": [ -14, 4, 22, "left_front" ],
+    	"right_front": [ 14, 4, -22, "right_rear" ],
+    	"right_rear": [ -14, 4, -22, "right_front" ]
     }
 }
