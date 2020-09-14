@@ -29,5 +29,11 @@
     	"lights": "fvp:c2_lights",
     	"interior": "fvp:c2_interior",
     	"steering_wheel": "fvp:c2_steering_wheel"
+    },
+    "LiftingPoints":{
+    	"left_front": [ 5, -7, 24, "left_rear" ],
+    	"left_rear": [ -34, -7, 24, "left_front" ],
+    	"right_front": [ 5, -7, -24, "right_rear" ],
+    	"right_rear": [ -34, -7, -24, "right_front" ]
     }
 }
