@@ -18,9 +18,6 @@
     ],
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 3548.450 },
-    	{ "id":"constructor_length", "type": "float", "value": 7 },
-    	{ "id":"constructor_height", "type": "float", "value": -10 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 27 },
     	{ "id":"ab1b_doors", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"ab1b_cargobay_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"ab1b_cargobay_right", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
@@ -42,5 +39,15 @@
     	"MaxNegativeThrottle": 0.5,
     	"TurnLeftModifier": 1.1,
     	"TurnRightModifier": 1.1
+    },
+    "LiftingPoints":{
+    	"left_front0": [ 50, 2, -31, "left_front1" ],
+    	"left_front1": [ 22, 2, -31, "left_front0" ],
+    	"left_rear0": [ -24, 2, -31, "left_rear1" ],
+    	"left_rear1": [ -52, 2, -31, "left_rear0" ],
+    	"right_front0": [ 50, 2, 31, "right_front1" ],
+    	"right_front1": [ 22, 2, 31, "right_front0" ],
+    	"right_rear0": [ -24, 2, 31, "right_rear1" ],
+    	"right_rear1": [ -52, 2, 31, "right_rear0" ]
     }
 }
