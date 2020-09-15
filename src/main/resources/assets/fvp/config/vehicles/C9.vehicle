@@ -30,8 +30,7 @@
         "left_back_wheel",
         "steering_wheel",
         "interior",
-        "seats",
-        "engine"
+        "seats"
     ],
     "LegacyData":{
     	"MaxPositiveThrottle": 1.98,

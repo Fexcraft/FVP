@@ -23,8 +23,7 @@
         "left_back_wheel",
         "steering_wheel",
         "interior",
-        "seats",
-        "engine"
+        "seats"
     ],
     "PreInstalled":{
     	"interior": "fvp:c7_interior",

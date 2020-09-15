@@ -30,8 +30,7 @@
         "right_front_wheel",
         "left_front_wheel",
         "right_back_wheel",
-        "left_back_wheel",
-        "engine"
+        "left_back_wheel"
     ],
     "PreInstalled":{
         "steering_wheel": "fvp:t2_steering_wheel",

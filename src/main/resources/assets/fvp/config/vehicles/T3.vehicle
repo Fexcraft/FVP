@@ -59,7 +59,6 @@
         "left_back_wheel",
         "steering_wheel",
         "interior",
-        "engine",
         "seats",
         "cabin"
     ],
