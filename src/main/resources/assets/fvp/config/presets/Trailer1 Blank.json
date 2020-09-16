@@ -1,26 +1,6 @@
 {
   "Attributes": [
     {
-      "editable": 0,
-      "id": "constructor_height",
-      "initial": -10.0,
-      "max": 4096.0,
-      "min": -4096.0,
-      "org": 0,
-      "type": "FLOAT",
-      "value": -10.0
-    },
-    {
-      "editable": 0,
-      "id": "constructor_length",
-      "initial": 12.0,
-      "max": 4096.0,
-      "min": 0.0,
-      "org": 0,
-      "type": "FLOAT",
-      "value": 12.0
-    },
-    {
       "editable": 1,
       "id": "constructor_show",
       "initial": 1,
@@ -29,16 +9,6 @@
       "org": 0,
       "type": "BOOLEAN",
       "value": 1
-    },
-    {
-      "editable": 0,
-      "id": "constructor_wheel_offset",
-      "initial": 21.0,
-      "max": 4096.0,
-      "min": -4096.0,
-      "org": 0,
-      "type": "FLOAT",
-      "value": 21.0
     },
     {
       "editable": 0,

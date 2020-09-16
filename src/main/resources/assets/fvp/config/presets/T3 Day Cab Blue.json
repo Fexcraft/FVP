@@ -12,28 +12,6 @@
       "value": 4.0
     },
     {
-      "editable": 0,
-      "external": 0,
-      "id": "constructor_height",
-      "initial": -11.0,
-      "max": 4096.0,
-      "min": -4096.0,
-      "org": 0,
-      "type": "FLOAT",
-      "value": -11.0
-    },
-    {
-      "editable": 0,
-      "external": 0,
-      "id": "constructor_length",
-      "initial": 6.0,
-      "max": 4096.0,
-      "min": 0.0,
-      "org": 0,
-      "type": "FLOAT",
-      "value": 6.0
-    },
-    {
       "editable": 1,
       "external": 0,
       "id": "constructor_show",
@@ -43,17 +21,6 @@
       "org": 0,
       "type": "BOOLEAN",
       "value": 1
-    },
-    {
-      "editable": 0,
-      "external": 0,
-      "id": "constructor_wheel_offset",
-      "initial": 23.0,
-      "max": 4096.0,
-      "min": -4096.0,
-      "org": 0,
-      "type": "FLOAT",
-      "value": 23.0
     },
     {
       "editable": 0,
