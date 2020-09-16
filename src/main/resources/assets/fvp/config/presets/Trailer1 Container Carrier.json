@@ -1,7 +1,41 @@
 {
   "Attributes": [
     {
+      "editable": 0,
+      "external": 0,
+      "id": "collision_range",
+      "initial": 4.0,
+      "max": 16.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 4.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "constructor_height",
+      "initial": -10.0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "constructor_length",
+      "initial": 12.0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
       "editable": 1,
+      "external": 0,
       "id": "constructor_show",
       "initial": 1,
       "max": 0.0,
@@ -12,6 +46,18 @@
     },
     {
       "editable": 0,
+      "external": 0,
+      "id": "constructor_wheel_offset",
+      "initial": 21.0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 0.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
       "id": "front_connected",
       "initial": 0,
       "max": 0.0,
@@ -22,6 +68,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "fuel_capacity",
       "initial": 20000,
       "max": 2.14748365E9,
@@ -32,6 +79,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "fuel_primary",
       "initial": "",
       "max": 0.0,
@@ -42,6 +90,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "fuel_quality",
       "initial": 0.0,
       "max": 10.0,
@@ -52,6 +101,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "fuel_secondary",
       "initial": "",
       "max": 0.0,
@@ -62,6 +112,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "fuel_stored",
       "initial": 0,
       "max": 2.14748365E9,
@@ -72,6 +123,29 @@
     },
     {
       "editable": 0,
+      "external": 0,
+      "id": "hitbox_height",
+      "initial": 1.0,
+      "max": 16.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 1.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "hitbox_width",
+      "initial": 1.0,
+      "max": 16.0,
+      "min": 0.0,
+      "org": 0,
+      "type": "FLOAT",
+      "value": 1.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
       "id": "lights",
       "initial": 0,
       "max": 0.0,
@@ -83,6 +157,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "lights_fog",
       "initial": 0,
       "max": 0.0,
@@ -94,6 +169,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "lights_long",
       "initial": 0,
       "max": 0.0,
@@ -105,6 +181,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "lights_other",
       "initial": 0,
       "max": 0.0,
@@ -116,6 +193,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "rear_connected",
       "initial": 0,
       "max": 0.0,
@@ -126,6 +204,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "steering_angle",
       "initial": 0.0,
       "max": 40.0,
@@ -136,6 +215,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "throttle",
       "initial": 0.0,
       "max": 10.0,
@@ -146,7 +226,20 @@
     },
     {
       "editable": 0,
-      "id": "turn_light_left",
+      "external": 0,
+      "id": "turn_lights",
+      "initial": -1,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "TRISTATE",
+      "value": -1
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "warning_lights",
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
@@ -157,17 +250,7 @@
     },
     {
       "editable": 0,
-      "id": "turn_light_right",
-      "initial": 0,
-      "max": 0.0,
-      "min": 0.0,
-      "org": 0,
-      "seat": "driver",
-      "type": "BOOLEAN",
-      "value": 0
-    },
-    {
-      "editable": 0,
+      "external": 0,
       "id": "weight",
       "initial": 2540.0,
       "max": 2.14748365E9,
@@ -178,6 +261,7 @@
     },
     {
       "editable": 0,
+      "external": 0,
       "id": "wheel_angle",
       "initial": 0.0,
       "max": 360.0,
@@ -329,37 +413,37 @@
       "id": "left_back_wheel",
       "pos_x": -7.90625,
       "pos_y": -0.625,
-      "pos_z": -0.6875
+      "pos_z": -1.34375
     },
     {
       "id": "left_back_wheel1",
       "pos_x": -9.71875,
       "pos_y": -0.625,
-      "pos_z": -0.6875
+      "pos_z": -1.34375
     },
     {
       "id": "left_back_wheel2",
       "pos_x": -11.53125,
       "pos_y": -0.625,
-      "pos_z": -0.6875
+      "pos_z": -1.34375
     },
     {
       "id": "right_back_wheel",
       "pos_x": -7.90625,
       "pos_y": -0.625,
-      "pos_z": 0.6875
+      "pos_z": 1.34375
     },
     {
       "id": "right_back_wheel1",
       "pos_x": -9.71875,
       "pos_y": -0.625,
-      "pos_z": 0.6875
+      "pos_z": 1.34375
     },
     {
       "id": "right_back_wheel2",
       "pos_x": -11.53125,
       "pos_y": -0.625,
-      "pos_z": 0.6875
+      "pos_z": 1.34375
     }
   ],
   "WheelSlots": [
