@@ -20,7 +20,8 @@
     	{ "id":"weight", "type": "float", "value": 3548.450 },
     	{ "id":"ab1b_doors", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"ab1b_cargobay_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
-    	{ "id":"ab1b_cargobay_right", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    	{ "id":"ab1b_cargobay_right", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id": "collision_range", "type": "float", "value": 7 }
     ],
     "RequiredParts": [
         "right_front_wheel",
