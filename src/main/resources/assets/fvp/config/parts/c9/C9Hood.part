@@ -4,7 +4,12 @@
     "Name": "C9 Standard Hood",
     "Model": "fvp:models/part/c9_hood",
     "Category": "hood",
-    "Texture": "fvp:textures/cars/c9.png",
+    "Textures": [
+        "Default;fvp:textures/cars/c9.png",
+        "Noise;fvp:textures/cars/c9_alt0.png",
+        "Rand00;fvp:textures/cars/c9_alt1.png",
+        "Rand01;fvp:textures/cars/c9_alt2.png"
+    ],
     "Installation":{
 	    "Compatible": [ { "vehicle": "fvp:sentinel" } ]
     },

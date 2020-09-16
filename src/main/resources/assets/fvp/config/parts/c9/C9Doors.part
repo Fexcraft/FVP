@@ -6,7 +6,9 @@
     "Category": "doors",
     "Textures": [
         "Default;fvp:textures/cars/c9.png",
-        "Noise;fvp:textures/cars/c9_alt0.png"
+        "Noise;fvp:textures/cars/c9_alt0.png",
+        "Rand00;fvp:textures/cars/c9_alt1.png",
+        "Rand01;fvp:textures/cars/c9_alt2.png"
     ],
     "Installation":{
     	"Handler": "default",
