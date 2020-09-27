@@ -3,9 +3,9 @@ package net.fexcraft.mod.addon.fvp.models.part.c9;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
+import net.fexcraft.mod.fvtm.model.TurboList;
 
 /** This file was exported via the FVTM Exporter V1.1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.2.9 &copy; 2019 - Fexcraft.net<br>
@@ -75,36 +75,40 @@ public class C9Doors extends PartModel {
 			.addShapeBox(-12.5f, -2, 0, 3, 1, 1, 0, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, 0, 0, 0, 0, 0, 0, -0.1f, 0, 0, -0.1f, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(17, 0, 17).setRotationAngle(0, 0, 0).setName("Box 473")
 		);
-		door_front_left.add(new ModelRendererTurbo(door_front_left, 401, 217, textureX, textureY)
+		door_front_left.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fl", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		this.groups.add(door_front_left);
+		//
+		TurboList door_front_left_mirror = new TurboList("door_front_left_mirror");
+		door_front_left_mirror.add(new ModelRendererTurbo(door_front_left_mirror, 401, 217, textureX, textureY)
 			.addShapeBox(-4.8f, 0, 3.5f, 1, 2, 3, 0, -0.4f, 0, 0, 0, 0, 0, 0, 0, 0, -0.4f, 0, 0, -0.4f, 0, 0, 0, 0, 0, 0, 0, 0, -0.4f, 0, 0)
 			.setRotationPoint(17, -6.5f, 17.5f).setRotationAngle(0, -10.000001f, 0).setName("Box 555")
 		);
-		door_front_left.add(new ModelRendererTurbo(door_front_left, 193, 209, textureX, textureY)
+		door_front_left_mirror.add(new ModelRendererTurbo(door_front_left_mirror, 193, 209, textureX, textureY)
 			.addShapeBox(-4.9f, 0, 6.5f, 1, 2, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, -0.3f, -0.5f, -0.5f, -0.3f, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, -0.3f, -0.5f, -0.5f, -0.3f, -0.5f)
 			.setRotationPoint(17, -6.5f, 17.5f).setRotationAngle(0, -10.000001f, 0).setName("Box 556")
 		);
-		door_front_left.add(new ModelRendererTurbo(door_front_left, 217, 209, textureX, textureY)
+		door_front_left_mirror.add(new ModelRendererTurbo(door_front_left_mirror, 217, 209, textureX, textureY)
 			.addShapeBox(-4.9f, 0, 2.5f, 1, 2, 1, 0, -0.5f, -0.3f, -0.5f, 0, -0.3f, -0.5f, 0, 0, 0, -0.5f, 0, 0, -0.5f, -0.3f, -0.5f, 0, -0.3f, -0.5f, 0, 0, 0, -0.5f, 0, 0)
 			.setRotationPoint(17, -6.5f, 17.5f).setRotationAngle(0, -10.000001f, 0).setName("Box 557")
 		);
-		door_front_left.add(new ModelRendererTurbo(door_front_left, 225, 209, textureX, textureY)
-			.addShapeBox(-3.8f, -5, -1.5f, 1, 5, 1, 0, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f)
+		door_front_left_mirror.add(new ModelRendererTurbo(door_front_left_mirror, 225, 209, textureX, textureY)
+			.addShapeBox(-3.8f, -5, -1.5f, 1, 4, 1, 0, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f)
 			.setRotationPoint(17, -5.5f, 17.5f).setRotationAngle(-60, 0, -45).setName("Box 558")
 		);
-		door_front_left.add(new ModelRendererTurbo(door_front_left, 169, 225, textureX, textureY)
+		door_front_left_mirror.add(new ModelRendererTurbo(door_front_left_mirror, 169, 225, textureX, textureY)
 			.addShapeBox(-3.8f, 0, 3.5f, 1, 2, 3, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0)
 			.setRotationPoint(17, -6.5f, 17.5f).setRotationAngle(0, -10.000001f, 0).setName("Box 559")
 		);
-		door_front_left.add(new ModelRendererTurbo(door_front_left, 241, 209, textureX, textureY)
+		door_front_left_mirror.add(new ModelRendererTurbo(door_front_left_mirror, 241, 209, textureX, textureY)
 			.addShapeBox(-3.9f, 0, 6.5f, 1, 2, 1, 0, 0, 0, 0, -0.9f, 0, 0, -0.4f, -0.5f, -1, 0, -0.3f, -0.5f, 0, 0, 0, -0.9f, 0, 0, -0.4f, -0.5f, -1, 0, -0.3f, -0.5f)
 			.setRotationPoint(17, -6.5f, 17.5f).setRotationAngle(0, -10.000001f, 0).setName("Box 560")
 		);
-		door_front_left.add(new ModelRendererTurbo(door_front_left, 345, 209, textureX, textureY)
+		door_front_left_mirror.add(new ModelRendererTurbo(door_front_left_mirror, 345, 209, textureX, textureY)
 			.addShapeBox(-3.9f, 0, 2.5f, 1, 2, 1, 0, 0, -0.3f, -0.5f, -0.4f, -0.5f, -1, -0.9f, 0, 0, 0, 0, 0, 0, -0.3f, -0.5f, -0.4f, -0.5f, -1, -0.9f, 0, 0, 0, 0, 0)
 			.setRotationPoint(17, -6.5f, 17.5f).setRotationAngle(0, -10.000001f, 0).setName("Box 561")
 		);
-		door_front_left.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fl", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
-		this.groups.add(door_front_left);
+		door_front_left_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fl", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		this.groups.add(door_front_left_mirror);
 		//
 		TurboList door_front_right = new TurboList("door_front_right");
 		door_front_right.add(new ModelRendererTurbo(door_front_right, 65, 169, textureX, textureY)
@@ -163,36 +167,40 @@ public class C9Doors extends PartModel {
 			.addShapeBox(-23.7f, -1, 2.7f, 1, 4, 1, 0, 0.6f, 0, 0, -0.6f, 0, 0, 0, 0, 0, 0, 0, 0, -0.2f, 0, 1.5f, 0.2f, 0, 1.5f, 0.7f, 0, -1.5f, -0.7f, 0, -1.5f)
 			.setRotationPoint(17, -7.5f, -19.5f).setRotationAngle(0, 0, 0).setName("Box 487")
 		);
-		door_front_right.add(new ModelRendererTurbo(door_front_right, 353, 209, textureX, textureY)
+		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fr", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		this.groups.add(door_front_right);
+		//
+		TurboList door_front_right_mirror = new TurboList("door_front_right_mirror");
+		door_front_right_mirror.add(new ModelRendererTurbo(door_front_right_mirror, 353, 209, textureX, textureY)
 			.addShapeBox(-4.4f, 0, -1.5f, 1, 2, 1, 0, 0, 0, 0, -0.9f, 0, 0, -0.4f, -0.5f, -1, 0, -0.3f, -0.5f, 0, 0, 0, -0.9f, 0, 0, -0.4f, -0.5f, -1, 0, -0.3f, -0.5f)
 			.setRotationPoint(17, -6.5f, -19.5f).setRotationAngle(0, 10.000001f, 0).setName("Box 562")
 		);
-		door_front_right.add(new ModelRendererTurbo(door_front_right, 393, 209, textureX, textureY)
+		door_front_right_mirror.add(new ModelRendererTurbo(door_front_right_mirror, 393, 209, textureX, textureY)
 			.addShapeBox(-5.4f, 0, -1.5f, 1, 2, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, -0.3f, -0.5f, -0.5f, -0.3f, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, -0.3f, -0.5f, -0.5f, -0.3f, -0.5f)
 			.setRotationPoint(17, -6.5f, -19.5f).setRotationAngle(0, 10.000001f, 0).setName("Box 563")
 		);
-		door_front_right.add(new ModelRendererTurbo(door_front_right, 121, 241, textureX, textureY)
+		door_front_right_mirror.add(new ModelRendererTurbo(door_front_right_mirror, 121, 241, textureX, textureY)
 			.addShapeBox(-5.3f, 0, -4.5f, 1, 2, 3, 0, -0.4f, 0, 0, 0, 0, 0, 0, 0, 0, -0.4f, 0, 0, -0.4f, 0, 0, 0, 0, 0, 0, 0, 0, -0.4f, 0, 0)
 			.setRotationPoint(17, -6.5f, -19.5f).setRotationAngle(0, 10.000001f, 0).setName("Box 564")
 		);
-		door_front_right.add(new ModelRendererTurbo(door_front_right, 145, 241, textureX, textureY)
+		door_front_right_mirror.add(new ModelRendererTurbo(door_front_right_mirror, 145, 241, textureX, textureY)
 			.addShapeBox(-4.3f, 0, -4.5f, 1, 2, 3, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0)
 			.setRotationPoint(17, -6.5f, -19.5f).setRotationAngle(0, 10.000001f, 0).setName("Box 565")
 		);
-		door_front_right.add(new ModelRendererTurbo(door_front_right, 401, 209, textureX, textureY)
+		door_front_right_mirror.add(new ModelRendererTurbo(door_front_right_mirror, 401, 209, textureX, textureY)
 			.addShapeBox(-5.4f, 0, -5.5f, 1, 2, 1, 0, -0.5f, -0.3f, -0.5f, 0, -0.3f, -0.5f, 0, 0, 0, -0.5f, 0, 0, -0.5f, -0.3f, -0.5f, 0, -0.3f, -0.5f, 0, 0, 0, -0.5f, 0, 0)
 			.setRotationPoint(17, -6.5f, -19.5f).setRotationAngle(0, 10.000001f, 0).setName("Box 566")
 		);
-		door_front_right.add(new ModelRendererTurbo(door_front_right, 49, 217, textureX, textureY)
+		door_front_right_mirror.add(new ModelRendererTurbo(door_front_right_mirror, 49, 217, textureX, textureY)
 			.addShapeBox(-4.4f, 0, -5.5f, 1, 2, 1, 0, 0, -0.3f, -0.5f, -0.4f, -0.5f, -1, -0.9f, 0, 0, 0, 0, 0, 0, -0.3f, -0.5f, -0.4f, -0.5f, -1, -0.9f, 0, 0, 0, 0, 0)
 			.setRotationPoint(17, -6.5f, -19.5f).setRotationAngle(0, 10.000001f, 0).setName("Box 567")
 		);
-		door_front_right.add(new ModelRendererTurbo(door_front_right, 185, 225, textureX, textureY)
-			.addShapeBox(-3.8f, -3.25f, 1.5f, 1, 5, 1, 0, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f)
+		door_front_right_mirror.add(new ModelRendererTurbo(door_front_right_mirror, 185, 225, textureX, textureY)
+			.addShapeBox(-3.8f, -3.25f, 1.5f, 1, 4, 1, 0, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f)
 			.setRotationPoint(17, -5.5f, -19.5f).setRotationAngle(60, 0, -45).setName("Box 568")
 		);
-		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fr", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
-		this.groups.add(door_front_right);
+		door_front_right_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fr", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		this.groups.add(door_front_right_mirror);
 		//
 		TurboList door_rear_left = new TurboList("door_rear_left");
 		door_rear_left.add(new ModelRendererTurbo(door_rear_left, 281, 225, textureX, textureY)
