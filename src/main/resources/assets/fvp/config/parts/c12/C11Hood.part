@@ -1,0 +1,18 @@
+{
+    "RegistryName": "fvp:c12_hood",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 Hood",
+    "Model": "fvp:models/part/c12_hood",
+    "Category": "hood",
+    "Texture": "Default;fvp:textures/cars/c12.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:c11"
+        ]
+    },
+    "Attributes":[
+    	{ "id":"c12_hood", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ]
+}

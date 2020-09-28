@@ -53,7 +53,8 @@
     	"s:interior:pass_storage_0:0": "fvp:c12_pass_storage",
     	"s:interior:pass_storage_1:1": "fvp:c12_pass_storage",
     	"front_lights": "fvp:c12_front_lights",
-    	"rear_lights": "fvp:c12_rear_lights"
+    	"rear_lights": "fvp:c12_rear_lights",
+    	"hood": "fvp:c12_hood"
     },
     "RequiredParts": [
         "right_front_wheel",
