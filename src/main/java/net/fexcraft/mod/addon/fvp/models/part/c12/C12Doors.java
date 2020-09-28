@@ -45,7 +45,7 @@ public class C12Doors extends PartModel {
 			.addShapeBox(-6, 0, -2.5f, 1, 10, 1, 0, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -2.125f, 0, 0, -2.125f, 0, 0, 1.875f, 0, 0, 1.875f)
 			.setRotationPoint(12.5f, -19, 22.5f).setRotationAngle(0, 0, 0)
 		);
-		door_front_left.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fl", true, 0, 75, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		door_front_left.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fl", true, 0, 75, 1f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_left);
 		//
 		TurboList door_front_left_mirror = new TurboList("door_front_left_mirror");
@@ -69,7 +69,7 @@ public class C12Doors extends PartModel {
 			.addShapeBox(-4.625f, 8.125f, 4.0625f, 1, 3, 4, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(12.5f, -19, 22.5f).setRotationAngle(0, -20, 0)
 		);
-		door_front_left_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fl", true, 0, 75, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		door_front_left_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fl", true, 0, 75, 1f, 1, 0f, false));
 		this.groups.add(door_front_left_mirror);
 		//
 		TurboList door_front_right = new TurboList("door_front_right");
@@ -99,7 +99,7 @@ public class C12Doors extends PartModel {
 			.addShapeBox(-6, 0, 1.5f, 1, 10, 1, 0, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, 1.875f, 0, 0, 1.875f, 0, 0, -2.125f, 0, 0, -2.125f)
 			.setRotationPoint(12.5f, -19, -22.5f).setRotationAngle(0, 0, 0)
 		);
-		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fr", true, -75, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fr", true, -75, 0, -1f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_right);
 		//
 		TurboList door_front_right_mirror = new TurboList("door_front_right_mirror");
@@ -123,7 +123,7 @@ public class C12Doors extends PartModel {
 			.addShapeBox(-4.625f, 8.125f, -8.25f, 1, 3, 4, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(12.5f, -19, -22.5f).setRotationAngle(0, 20, 0)
 		);
-		door_front_right_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fr", true, -75, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		door_front_right_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fr", true, -75, 0, -1f, 1, 0f, true));
 		this.groups.add(door_front_right_mirror);
 		//
 		TurboList door_rear_left = new TurboList("door_rear_left");
@@ -149,7 +149,7 @@ public class C12Doors extends PartModel {
 		door_rear_left.add(new ModelRendererTurbo(door_rear_left, 411, 30, textureX, textureY).addBox(-7, 3, -0.75f, 3, 1, 1)
 			.setRotationPoint(-8.5f, -9, 22.75f).setRotationAngle(0, 0, 0)
 		);
-		door_rear_left.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_rl", true, 0, 75, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		door_rear_left.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_rl", true, 0, 75, 1f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_rear_left);
 		//
 		TurboList door_rear_right = new TurboList("door_rear_right");
@@ -182,7 +182,7 @@ public class C12Doors extends PartModel {
 		door_boot.add(new ModelRendererTurbo(door_boot, 260, 218, textureX, textureY).addBox(-1, -8, 0, 1, 8, 24)
 			.setRotationPoint(-51.9375f, 0, -12).setRotationAngle(0, 0, 0)
 		);
-		door_boot.addProgram(new DefaultPrograms.AttributeRotator("c12_boot", true, -88, 0, -1, 2, 0f));
+		door_boot.addPrograms(new DefaultPrograms.AttributeRotator("c12_boot", true, -88, 0, -1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_boot);
 	}
 

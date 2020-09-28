@@ -35,7 +35,7 @@ public class C12Hood extends PartModel {
 			.addShapeBox(0, -1, 0, 16, 1, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.25f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.25f, 0)
 			.setRotationPoint(14.5f, -7, -13).setRotationAngle(0, 0, 0)
 		);
-		hood.addProgram(new DefaultPrograms.AttributeRotator("c12_hood", true, -45, 0, -1, 2, 0f));
+		hood.addPrograms(new DefaultPrograms.AttributeRotator("c12_hood", true, -45, 0, -1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(hood);
 	}
 
