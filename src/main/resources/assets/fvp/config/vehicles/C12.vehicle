@@ -1,0 +1,79 @@
+{
+    "RegistryName": "fvp:c12",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 [Dodici]",
+    "Model": "fvp:models/vehicle/c12",
+    "Colors":{
+    	"primary": "#fdfdfd",
+    	"cargo": "#fdfdfd",
+    	"seats": "#fdfdfd"
+    }, 
+    "Texture": "Default;fvp:textures/cars/c12.png",
+    "Attributes": [
+    	{ "id":"weight", "type": "float", "value": 1800 },
+    	{
+    		"id":"windshield_wipers", "type": "boolean", "value": false, "seat": "driver",
+    		"hitbox": [ 8.25, -9.5, 6.75, 1 ]
+    	},
+    	{
+    		"id":"turn_lights", "type": "tristate", "value": "null", "seat": "driver",
+    		"hitbox": [ 8.25, -9.5, 15.25, 1 ]
+    	},
+    	{
+    		"id":"lights", "type": "boolean", "value": false, "seat": "driver",
+    		"hitbox": [ 9, -9, 20.25, 0.5 ]
+    	},
+    	{
+    		"id":"lights_long", "type": "boolean", "value": false, "seat": "driver",
+    		"hitbox": [ 9, -7.5, 20.25, 0.5 ]
+    	},
+    	{
+    		"id":"lights_fog", "type": "boolean", "value": false, "seat": "driver",
+    		"hitbox": [ 9, -9, 18.75, 0.5 ]
+    	},
+    	{
+    		"id":"lights_extra", "type": "boolean", "value": false, "seat": "driver",
+    		"hitbox": [ 9, -7.5, 18.75, 0.5 ]
+    	},
+    	{
+    		"id":"warning_lights", "type": "boolean", "value": false, "seat": "driver",
+    		"hitbox": [ 9, -9, 3.5, 0.5 ]
+    	}
+    ],
+    "WheelPositions":[
+        { "x":  33, "y": 7, "z":  18, "id": "left_front_wheel", "radius": 9, "width": 6, "drive": true, "steering": true },
+        { "x":  33, "y": 7, "z": -18, "id": "right_front_wheel", "radius": 9, "width": 6, "y_rot": 180, "drive": true, "steering": true },
+        { "x": -39, "y": 7, "z":  18, "id": "left_back_wheel", "radius": 9,  "width": 6},
+        { "x": -39, "y": 7, "z": -18, "id": "right_back_wheel", "radius": 9, "width": 6, "y_rot": 180 }
+    ],
+    "PreInstalled":{
+    	"interior": "fvp:c12_interior",
+    	"seats": "fvp:c12_seats",
+    	"steering_wheel": "fvp:c12_steering_wheel",
+    	"s:interior:pass_storage:0": "fvp:c12_pass_storage",
+    	"s:interior:pass_storage:1": "fvp:c12_pass_storage",
+    	"front_lights": "fvp:c12_front_lights",
+    	"rear_lights": "fvp:c12_rear_lights"
+    },
+    "RequiredParts": [
+        "right_front_wheel",
+        "left_front_wheel",
+        "right_back_wheel",
+        "left_back_wheel",
+        "steering_wheel",
+        "interior",
+        "seats"
+    ],
+    "LegacyData":{
+    	"MaxPositiveThrottle": 1.5,
+    	"MaxNegativeThrottle": 0.8,
+    	"TurnLeftModifier": 1,
+    	"TurnRightModifier": 1
+    },
+    "LiftingPoints":{
+    	"left_front": [ 19, 8, 22, "left_rear" ],
+    	"left_rear": [ -26, 8, 22, "left_front" ],
+    	"right_front": [ 19, 8, -22, "right_rear" ],
+    	"right_rear": [ -26, 8, -22, "right_front" ]
+    }
+}
