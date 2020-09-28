@@ -1,0 +1,21 @@
+{
+    "RegistryName": "fvp:c12_wheel",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 Wheel",
+    "Model": "fvp:models/part/c12_wheel",
+    "Category": "wheel",
+    "Function": "fvtm:wheel",
+    "Texture": "Default;fvp:textures/wheels/c12_wheel.png",
+    "Installation":{
+    	"Handler": "wheel",
+        "Removable": true,
+        "Radius": 9, "Width": 6
+    },
+    "Modifiers":[
+    	{
+    		"id": "weight", "type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "30", "priority": "veryhigh"
+    	}
+    ]
+}
