@@ -24,18 +24,18 @@ public class C12Hood extends PartModel {
 			.setRotationPoint(14.5f, -8, -13).setRotationAngle(0, 0, 0)
 		);
 		hood.add(new ModelRendererTurbo(hood, 0, 195, textureX, textureY)
-			.addShapeBox(0, -1, 0, 12, 1, 26, 0, 0, 0, -1, -4, 0, -1, -4, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(30.5f, -8, -13).setRotationAngle(0, 0, 0)
+			.addShapeBox(16, -1, 0, 12, 1, 26, 0, 0, 0, -1, -4, 0, -1, -4, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(14.5f, -8, -13).setRotationAngle(0, 0, 0)
 		);
 		hood.add(new ModelRendererTurbo(hood, 249, 177, textureX, textureY)
-			.addShapeBox(0, -1, 0, 12, 1, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, -0.5f, 0)
-			.setRotationPoint(30.5f, -7, -13).setRotationAngle(0, 0, 0)
+			.addShapeBox(16, -1, 0, 12, 1, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.75f, 0, 0, -0.75f, 0, 0, -0.5f, 0)
+			.setRotationPoint(14.5f, -7, -13).setRotationAngle(0, 0, 0)
 		);
 		hood.add(new ModelRendererTurbo(hood, 411, 143, textureX, textureY)
 			.addShapeBox(0, -1, 0, 16, 1, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.25f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.25f, 0)
 			.setRotationPoint(14.5f, -7, -13).setRotationAngle(0, 0, 0)
 		);
-		hood.addProgram(new DefaultPrograms.AttributeRotator("c12_hood", true, -72, 0, -1, 2, 0f));
+		hood.addProgram(new DefaultPrograms.AttributeRotator("c12_hood", true, -45, 0, -1, 2, 0f));
 		this.groups.add(hood);
 	}
 

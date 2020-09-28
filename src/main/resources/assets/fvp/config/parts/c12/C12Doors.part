@@ -1,0 +1,22 @@
+{
+    "RegistryName": "fvp:c12_doors",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 Doors",
+    "Model": "fvp:models/part/c12_doors",
+    "Category": "doors",
+    "Texture": "Default;fvp:textures/cars/c12.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:c10"
+        ]
+    },
+    "Attributes":[
+    	{ "id":"c12_doors_fl", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id":"c12_doors_fr", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },
+    	{ "id":"c12_doors_bl", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_left" },
+    	{ "id":"c12_doors_br", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_right" },
+    	{ "id":"c12_boot", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    ]
+}
