@@ -1,0 +1,15 @@
+{
+	"RegistryName": "fvp:c12_front_lights",
+	"Addon": "fvtm:fvp",
+	"Name": "C12 Front Lights",
+	"Model": "fvp:models/part/c12_front_lights",
+	"Category": "front_lights",
+	"Texture": "Default;fvp:textures/cars/c12.png",
+	"Installation": {
+		"Handler": "default",
+		"Removable": true,
+		"Compatible": [
+			"fvp:c12"
+		]
+	}
+}
