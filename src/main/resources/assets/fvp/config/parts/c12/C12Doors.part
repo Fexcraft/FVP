@@ -15,8 +15,8 @@
     "Attributes":[
     	{ "id":"c12_door_fl", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"c12_door_fr", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },
-    	{ "id":"c12_door_bl", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_left" },
-    	{ "id":"c12_door_br", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_right" },
+    	{ "id":"c12_door_rl", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_left" },
+    	{ "id":"c12_door_rr", "type": "boolean", "value": false, "editable": true, "seat": "pass_rear_right" },
     	{ "id":"c12_boot", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
     ]
 }
