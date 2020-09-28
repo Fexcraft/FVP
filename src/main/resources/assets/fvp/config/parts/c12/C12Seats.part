@@ -1,0 +1,57 @@
+{
+	"RegistryName": "fvp:c12_seats",
+	"Addon": "fvtm:fvp",
+	"Name": "C12 Seats",
+	"Model": "fvp:models/part/c12_seats",
+	"Category": "seats",
+	"Texture": "Default;fvp:textures/cars/c12.png",
+	"Installation": {
+		"Handler": "default",
+		"Removable": true,
+		"Compatible": [
+			"fvp:c12"
+		]
+	},
+	"Function": {
+		"id": "fvtm:seats",
+		"seats": [
+			{
+				"x": -4.5,
+				"y": -4.5,
+				"z": -11.0,
+				"name": "driver",
+				"driver": true,
+				"min_yaw": -120,
+				"max_yaw": 120
+			},
+			{
+				"x": -4.5,
+				"y": -4.5,
+				"z": 11.0,
+				"name": "pass_front",
+				"filter": [
+					"players",
+					"animals"
+				]
+			},
+			{
+				"x": -23.5,
+				"y": -4.5,
+				"z": -12.0,
+				"name": "pass_rear_left"
+			},
+			{
+				"x": -23.5,
+				"y": -4.5,
+				"z": 12.0,
+				"name": "pass_rear_right"
+			},
+			{
+				"x": -23.5,
+				"y": -4.5,
+				"z": -0.0,
+				"name": "pass_rear_middle"
+			}
+		]
+	}
+}
