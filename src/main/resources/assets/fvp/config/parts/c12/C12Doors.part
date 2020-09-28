@@ -9,7 +9,7 @@
     	"Handler": "default",
         "Removable": true,
         "Compatible":[
-            "fvp:c10"
+            "fvp:c12"
         ]
     },
     "Attributes":[
