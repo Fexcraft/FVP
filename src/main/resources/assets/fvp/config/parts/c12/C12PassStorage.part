@@ -1,0 +1,20 @@
+{
+    "RegistryName": "fvp:c12_pass_storage",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 Passenger Storage",
+    "Model": "fvp:models/part/c12_pass_storage",
+    "Category": "pass_storage",
+    "Texture": "Default;fvp:textures/cars/c12.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": false,
+        "Compatible":[
+            "fvp:c12"
+        ],
+        "SlotBased": true
+    },
+    "Function":{
+    	"id": "fvtm:inventory", "type": "ITEM", "capacity": 4,
+    	"seats": [ "driver", "pass_front" ]
+    }
+}
