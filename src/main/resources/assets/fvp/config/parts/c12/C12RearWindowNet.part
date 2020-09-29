@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:c12_rear_window_net",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 Rear Window Net",
+    "Model": "fvp:models/part/c12_rear_window_net",
+    "Category": "rear_window_net",
+    "Texture": "Default;fvp:textures/cars/c12.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:c12"
+        ]
+    }
+}
