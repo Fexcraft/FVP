@@ -1,0 +1,27 @@
+{
+    "RegistryName": "fvp:c12_roof_lightbar",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 Root Lightbar",
+    "Model": "fvp:models/part/c12_roof_lightbar",
+    "Category": "roof_lightbar",
+    "Texture": "Default;fvp:textures/cars/c12.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:c12"
+        ]
+    },
+    "Function":{
+	    "id": "fvtm:part_slots",
+		"slots":[
+			[ 1.03125, 1.46875, 0.28125, "spotlight", "roof_lightbar0"],
+			[ 0.6875, 1.46875, 0.28125, "spotlight", "roof_lightbar1"],
+			[ 0.34375, 1.46875, 0.28125, "spotlight", "roof_lightbar2"],
+			[ 0, 1.46875, 0.28125, "spotlight", "roof_lightbar3"],
+			[ -0.34375, 1.46875, 0.28125, "spotlight", "roof_lightbar4"],
+			[ -0.6875, 1.46875, 0.28125, "spotlight", "roof_lightbar5"],
+			[ -1.03125, 1.46875, 0.28125, "spotlight", "roof_lightbar6"]	
+		]
+    }
+}
