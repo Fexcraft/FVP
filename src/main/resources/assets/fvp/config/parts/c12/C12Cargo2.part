@@ -7,7 +7,7 @@
 	"Texture": "Default;fvp:textures/cars/c12.png",
 	"Installation": {
 		"Handler": "default",
-		"Removable": false,
+		"Removable": true,
 		"Compatible": [
 			"fvp:c12"
 		]
