@@ -8,6 +8,7 @@
     "Installation":{
     	"Handler": "default",
         "Removable": true,
-        "SlotBased": true
+        "SlotBased": true,
+        "HotSwap": true
     }
 }
