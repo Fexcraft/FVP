@@ -15,13 +15,13 @@
     "Function":{
 	    "id": "fvtm:part_slots",
 		"slots":[
-			[ 1.03125, 1.46875, 0.28125, "spotlight", "roof_lightbar0"],
-			[ 0.6875, 1.46875, 0.28125, "spotlight", "roof_lightbar1"],
-			[ 0.34375, 1.46875, 0.28125, "spotlight", "roof_lightbar2"],
-			[ 0, 1.46875, 0.28125, "spotlight", "roof_lightbar3"],
-			[ -0.34375, 1.46875, 0.28125, "spotlight", "roof_lightbar4"],
-			[ -0.6875, 1.46875, 0.28125, "spotlight", "roof_lightbar5"],
-			[ -1.03125, 1.46875, 0.28125, "spotlight", "roof_lightbar6"]	
+			[ 4.5, -23.5, 16.5, "spotlight", "roof_lightbar_0"],
+			[ 4.5, -23.5, 11.0, "spotlight", "roof_lightbar_1"],
+			[ 4.5, -23.5, 5.5, "spotlight", "roof_lightbar_2"],
+			[ 4.5, -23.5, 0.0, "spotlight", "roof_lightbar_3"],
+			[ 4.5, -23.5, -5.5, "spotlight", "roof_lightbar_4"],
+			[ 4.5, -23.5, -11.0, "spotlight", "roof_lightbar_5"],
+			[ 4.5, -23.5, -16.5, "spotlight", "roof_lightbar_6"]
 		]
     }
 }
