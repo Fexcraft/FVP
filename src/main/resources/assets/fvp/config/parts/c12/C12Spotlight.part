@@ -1,0 +1,13 @@
+{
+    "RegistryName": "fvp:c12_spotlight",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 Type Spotlight",
+    "Model": "fvp:models/part/c12_spotlight",
+    "Category": [ "spotlight", "foglights", "fog_lights" ],
+    "Texture": "Default;fvp:textures/parts/c12_spotlight.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "SlotBased": true
+    }
+}

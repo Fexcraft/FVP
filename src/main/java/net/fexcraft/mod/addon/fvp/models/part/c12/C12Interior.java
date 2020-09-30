@@ -186,12 +186,7 @@ public class C12Interior extends PartModel {
 		interior_lights_extra.add(new ModelRendererTurbo(interior_lights_extra, 300, 37, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(8.875f, -8, 18.25f).setRotationAngle(0, 0, 0)
 		);
-		interior_lights_extra.addProgram(new DefaultPrograms.AlwaysGlow(){
-			@Override
-			public boolean shouldGlow(Entity ent, VehicleData data){
-				return data.getAttribute("lights_extra").getBooleanValue();
-			}
-		});
+		interior_lights_extra.addProgram(DefaultPrograms.getCustomLights("lights_extra"));
 		this.groups.add(interior_lights_extra);
 		//
 		TurboList interior_lights_fog = new TurboList("interior_lights_fog");
