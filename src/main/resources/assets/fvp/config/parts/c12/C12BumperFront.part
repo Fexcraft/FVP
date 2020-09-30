@@ -15,10 +15,10 @@
     "Function":{
 	    "id": "fvtm:part_slots",
 		"slots":[
-			[ 0.5625, 0.0625, 2.84375, "spotlight", "bumper_spotlight0"],
-			[ 0.1875, 0.0625, 2.84375, "spotlight", "bumper_spotlight1"],
-			[ -0.1875, 0.0625, 2.84375, "spotlight", "bumper_spotlight2"],
-			[ -0.5625, 0.0625, 2.84375, "spotlight", "bumper_spotlight3"]
+			[ 45.5, -1.0, 9.0, "spotlight", "bumper_spotlight_0"],
+			[ 45.5, -1.0, 3.0, "spotlight", "bumper_spotlight_1"],
+			[ 45.5, -1.0, -3.0, "spotlight", "bumper_spotlight_2"],
+			[ 45.5, -1.0, -9.0, "spotlight", "bumper_spotlight_3"]
 		]
     }
 }
