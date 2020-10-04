@@ -4,6 +4,7 @@
     "Name": "Trailer Base",
     "Model": "fvp:models/vehicle/tr1",
     "Texture": "fvp:textures/trailers/tr1_base.png",
+    "Category": "trailer",
     "WheelPositions":[
         { "x": -126.5, "y": -2, "z":  18, "id": "left_back_wheel", "radius": 12 },
         { "x": -126.5, "y": -2, "z": -18, "id": "right_back_wheel", "radius": 12, "y_rot": 180 },

@@ -9,6 +9,7 @@
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 1480 }
     ],
+    "Category": "car,sedan",
     "WheelPositions":[
         { "x":  32, "y": 0, "z":  18, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },
         { "x":  32, "y": 0, "z": -18, "id": "right_front_wheel", "radius": 8, "y_rot": 180, "drive": true, "steering": true },

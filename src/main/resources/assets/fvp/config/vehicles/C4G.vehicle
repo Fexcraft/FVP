@@ -6,6 +6,7 @@
     "PrimaryColor": "#A8A8A8",
     "SecondaryColor": "#C2C2C2",
     "Texture": "Default;fvp:textures/cars/c4.png",
+    "Category": "car,bus,van",
     "WheelPositions":[
         { "x":  45.5, "y": -7.5, "z":  19, "id": "left_front_wheel", "min_radius": 7, "max_radius": 9, "drive": true, "steering": true },
         { "x":  45.5, "y": -7.5, "z": -19, "id": "right_front_wheel", "min_radius": 7, "max_radius": 9, "y_rot": 180, "drive": true, "steering": true },

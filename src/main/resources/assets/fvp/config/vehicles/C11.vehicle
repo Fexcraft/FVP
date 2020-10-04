@@ -6,6 +6,7 @@
     "PrimaryColor": "#FFFFFF",
     "SecondaryColor": "#A8A8A8",
     "Texture": "Default;fvp:textures/cars/c11.png",
+    "Category": "car,convertible,cabriolet",
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 1256 },
     	{

@@ -4,6 +4,7 @@
     "Name": "C7 RS",
     "Model": "fvp:models/vehicle/c7rs",
     "Texture": "fvp:textures/cars/c7rs.png",
+    "Category": "car,station,kombi",
     "WheelPositions":[
         { "x":  37.8, "y": 2.8, "z":  16.8, "id": "left_front_wheel", "radius": 7.5, "drive": true, "steering": true },
         { "x":  37.8, "y": 2.8, "z": -16.8, "id": "right_front_wheel", "radius": 7.5, "y_rot": 180, "drive": true, "steering": true },

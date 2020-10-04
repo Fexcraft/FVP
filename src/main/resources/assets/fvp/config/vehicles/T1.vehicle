@@ -9,6 +9,7 @@
     	"Default;fvp:textures/trucks/t1p.png",
     	"Classic;fvp:textures/trucks/t1pc.png"
     ],
+    "Category": "truck,lorry",
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 2567.8 },
     	{ "id": "fuel_capacity", "type": "integer", "value": 100000 },

@@ -9,6 +9,7 @@
     	"seats": "#fdfdfd"
     }, 
     "Texture": "Default;fvp:textures/cars/c12.png",
+    "Category": "car,offroad",
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 1800 },
     	{
