@@ -42,10 +42,10 @@
     	}
     ],
     "WheelPositions":[
-        { "x":  33, "y": 7, "z":  18, "id": "left_front_wheel", "radius": 9, "width": 6, "drive": true, "steering": true },
-        { "x":  33, "y": 7, "z": -18, "id": "right_front_wheel", "radius": 9, "width": 6, "y_rot": 180, "drive": true, "steering": true },
-        { "x": -39, "y": 7, "z":  18, "id": "left_back_wheel", "radius": 9,  "width": 6},
-        { "x": -39, "y": 7, "z": -18, "id": "right_back_wheel", "radius": 9, "width": 6, "y_rot": 180 }
+        { "x":  33, "y": 7, "z":  18, "id": "left_front_wheel", "radius": 9, "width": 6, "braking": false, "steering": true },
+        { "x":  33, "y": 7, "z": -18, "id": "right_front_wheel", "radius": 9, "width": 6, "braking": false, "y_rot": 180, "steering": true },
+        { "x": -39, "y": 7, "z":  18, "id": "left_back_wheel", "radius": 9,  "width": 6, "drive": true },
+        { "x": -39, "y": 7, "z": -18, "id": "right_back_wheel", "radius": 9, "width": 6, "drive": true, "y_rot": 180 }
     ],
     "PreInstalled":{
     	"interior": "fvp:c12_interior",
