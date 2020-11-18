@@ -16,7 +16,7 @@ public class C12Wheel extends PartModel {
 
 	public C12Wheel(){
 		super(); textureX = 64; textureY = 32;
-		this.addToCreators("FerdinandFEX___96");
+		this.addToCreators("Ferdinand (FEX___96)");
 		//
 		TurboList wheel = new TurboList("wheel");
 		wheel.add(new ModelRendererTurbo(wheel, 54, 0, textureX, textureY).newCylinderBuilder()
