@@ -4,7 +4,7 @@
     "Name": "C12 Wheel",
     "Model": "fvp:models/part/c12_wheel",
     "Category": "wheel",
-    "Function": "fvtm:wheel",
+    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
     "Texture": "Default;fvp:textures/wheels/c12_wheel.png",
     "Installation":{
     	"Handler": "wheel",
