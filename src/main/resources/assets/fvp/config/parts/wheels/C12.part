@@ -4,7 +4,15 @@
     "Name": "C12 Wheel",
     "Model": "fvp:models/part/c12_wheel",
     "Category": "wheel",
-    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
+    "Functions": [
+    	"fvtm:wheel",
+    	{
+    		"id": "fvtm:tire",
+    		"stiffness": 8,
+    		"steering_stiffness": 7.8,
+    		"step_height": 1.2
+    	}	
+	],
     "Texture": "Default;fvp:textures/wheels/c12_wheel.png",
     "Installation":{
     	"Handler": "wheel",
