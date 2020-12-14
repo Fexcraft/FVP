@@ -11,12 +11,14 @@
         "Compatible":[
             { "vehicle": "fvp:c10" },
             { "vehicle": "fvp:sentinel", "x": -9, "y": -4 },
-            { "vehicle": "fvp:c11", "x": -1, "y": 1 }
+            { "vehicle": "fvp:c11", "x": -1, "y": 1 },
+            { "vehicle": "fvp:c12", "x": -6 }
         ],
         "Rear": {
         	"fvp:c10": [ -50.5, -1, 0 ],
         	"fvp:sentinel": [ -59.5, 4, 0 ],
-        	"fvp:c11": [ -51.5, 1, 0 ]
+        	"fvp:c11": [ -51.5, 1, 0 ],
+        	"fvp:c12": [ -56.5, -1, 0 ]
         }
     },
     "Modifiers":[
