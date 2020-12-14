@@ -8,8 +8,8 @@
     	"fvtm:wheel",
     	{
     		"id": "fvtm:tire",
-    		"stiffness": 8,
-    		"steering_stiffness": 7.8,
+    		"stiffness": 6,
+    		"steering_stiffness": 5.8,
     		"step_height": 1.2
     	}	
 	],
