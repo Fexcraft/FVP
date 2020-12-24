@@ -339,6 +339,15 @@
       "CurrentPos_y": 0.0,
       "CurrentPos_z": 0.0,
       "Functions": [],
+      "InstalledAs": "transmission",
+      "Part": "gep:automatic_transmission",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
       "InstalledAs": "doors",
       "Part": "fvp:c11_doors",
       "SelectedTexture": 0

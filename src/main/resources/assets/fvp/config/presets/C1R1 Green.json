@@ -360,6 +360,15 @@
       "CurrentPos_y": 0.0,
       "CurrentPos_z": 0.0,
       "Functions": [],
+      "InstalledAs": "transmission",
+      "Part": "gep:automatic_transmission",
+      "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
       "InstalledAs": "back_seats",
       "Part": "fvp:c1r1_back_seats",
       "SelectedTexture": 0
