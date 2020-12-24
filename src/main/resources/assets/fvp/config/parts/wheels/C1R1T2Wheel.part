@@ -4,7 +4,7 @@
     "Model": "fvp:models/part/c1_r1_t2_wheel",
     "Name": "C1R1T2 Wheel",
     "Category": "wheel",
-    "Function": "fvtm:wheel",
+    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
     "Texture": "fvp:textures/cars/c1_r1.png",
     "Installation":{
     	"Handler": "wheel",

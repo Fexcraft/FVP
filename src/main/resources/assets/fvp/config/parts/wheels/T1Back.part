@@ -4,7 +4,7 @@
     "Name": "T1 Rear Type Wheel",
     "Model": "fvp:models/part/t1_rear_wheel",
     "Category": "wheel",
-    "Function": "fvtm:wheel",
+    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
     "Textures": [
         "Default;fvp:textures/trucks/t1p.png"
     ],

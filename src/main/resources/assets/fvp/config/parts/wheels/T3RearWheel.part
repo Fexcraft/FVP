@@ -5,7 +5,7 @@
     "Model": "fvp:models/part/t3_rear_wheel",
     "Category": "wheel",
     "Texture": "fvp:textures/wheels/t3_rear_wheel.png",
-    "Function": "fvtm:wheel",
+    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
     "Installation":{
     	"Handler": "wheel",
         "Removable": true,

@@ -4,7 +4,7 @@
     "Name": "C7 Revision-1 Type-1 Wheel",
     "Model": "fvp:models/part/c7r1t1",
     "Category": "wheel",
-    "Function": "fvtm:wheel",
+    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
     "Textures": [
         "Default;fvp:textures/cars/c7rs.png"
     ],

@@ -4,7 +4,7 @@
     "Name": "C2 Revision-2 Type-1 Wheel",
     "Model": "fvp:models/part/c2r1t1",
     "Category": "wheel",
-    "Function": "fvtm:wheel",
+    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
     "Textures": [
         "Default;fvp:textures/wheels/c2r2t1_tex.png"
     ],

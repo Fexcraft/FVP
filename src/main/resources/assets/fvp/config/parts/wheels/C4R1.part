@@ -4,7 +4,7 @@
     "Name": "C4 Revision-1 Wheel",
     "Model": "fvp:models/part/c4r1_wheel",
     "Category": "wheel",
-    "Function": "fvtm:wheel",
+    "Functions": [ "fvtm:wheel", "fvtm:tire" ],
     "Texture": "Default;fvp:textures/cars/c4.png",
     "Installation":{
     	"Handler": "wheel",
