@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:dash_gauge1",
+    "Addon": "fvtm:fvp",
+    "Name": "Generic Speedometer",
+    "Model": "fvp:models/part/dash_gauge1",
+    "Category": [ "dash_gauge", "gauge" ],
+    "Description": "Shows speed up to 160.",
+    "Texture": "Default;fvp:textures/parts/dash_gauge1.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "SlotBased": true,
+        "HotSwap": true
+    }
+}

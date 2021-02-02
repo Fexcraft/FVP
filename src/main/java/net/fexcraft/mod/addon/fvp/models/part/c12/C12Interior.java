@@ -151,7 +151,7 @@ public class C12Interior extends PartModel {
 		});
 		this.groups.add(interior_dash_signal);
 		//
-		TurboList interior_dash_glow = new TurboList("interior_dash_glow");
+		/*TurboList interior_dash_glow = new TurboList("interior_dash_glow");
 		interior_dash_glow.add(new ModelRendererTurbo(interior_dash_glow, 411, 41, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 12, 1, 1, 3, new net.fexcraft.lib.common.math.Vec3f(-0.875, 0.0, 0.0))
 			.setRotationPoint(9.875f, -11, 10).setRotationAngle(15, 1, 0)
 		);
@@ -159,7 +159,7 @@ public class C12Interior extends PartModel {
 			.setRotationPoint(9.875f, -11, 12).setRotationAngle(15, 1, 0)
 		);
 		interior_dash_glow.addProgram(DefaultPrograms.LIGHTS);
-		this.groups.add(interior_dash_glow);
+		this.groups.add(interior_dash_glow);*/
 		//
 		TurboList interior_lights_on = new TurboList("interior_lights_on");
 		interior_lights_on.add(new ModelRendererTurbo(interior_lights_on, 281, 38, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)

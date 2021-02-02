@@ -1,0 +1,15 @@
+{
+    "RegistryName": "fvp:dash_gauge2",
+    "Addon": "fvtm:fvp",
+    "Name": "Generic Tachometer",
+    "Model": "fvp:models/part/dash_gauge2",
+    "Category": [ "dash_gauge", "gauge" ],
+    "Description": "Shows the current RPM.",
+    "Texture": "Default;fvp:textures/parts/dash_gauge1.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "SlotBased": true,
+        "HotSwap": true
+    }
+}

@@ -16,7 +16,9 @@
 	    "id": "fvtm:part_slots",
 	    "slots":[
 	    	[ 0, 0, 0, "pass_storage", "pass_storage_0" ],
-	    	[ 0, 0, -8, "pass_storage", "pass_storage_1" ]
+	    	[ 0, 0, -8, "pass_storage", "pass_storage_1" ],
+	    	[ 9.875, -10.5, 12, "dash_gauge", "dash_gauge_1", 2 ],
+	    	[ 9.875, -10.5, 10, "dash_gauge", "dash_gauge_2", 2 ]
 	    ]
     }
 }
