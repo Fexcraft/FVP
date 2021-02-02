@@ -8,8 +8,8 @@
   "Authors": [
     "01e4af9b-2a30-471e-addf-f6338ffce04b"
   ],
-  "Version": "2.5.0",
-  "GenerateLang": true,
-  "GenerateItemJson": true,
-  "GenerateItemIcon": true
+  "Version": "2.5.2",
+  "GenerateLang": false,
+  "GenerateItemJson": false,
+  "GenerateItemIcon": false
 }
