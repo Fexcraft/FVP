@@ -18,10 +18,7 @@
     	"lights": "fvp:tr1_lights"
     },
     "Attributes":[
-    	{ "id":"weight", "type": "float", "value": 2540 },
-    	{ "id":"constructor_length", "type": "float", "value": 12 },
-    	{ "id":"constructor_height", "type": "float", "value": -10 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 21 }
+    	{ "id":"weight", "type": "float", "value": 2540 }
     ],
     "LegacyData":{},
     "Trailer": true,

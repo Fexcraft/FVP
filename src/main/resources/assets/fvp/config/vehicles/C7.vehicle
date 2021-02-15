@@ -12,10 +12,7 @@
         { "x": -37.8, "y": 2.8, "z": -16.8, "id": "right_back_wheel", "radius": 7.5, "y_rot": 180 }
     ],
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 1324.56 },
-    	{ "id":"constructor_length", "type": "float", "value": 3 },
-    	{ "id":"constructor_height", "type": "float", "value": -11 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 17.5 }
+    	{ "id":"weight", "type": "float", "value": 1324.56 }
     ],
     "RequiredParts": [
         "right_front_wheel",

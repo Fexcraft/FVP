@@ -14,10 +14,7 @@
         { "x": -59.5, "y": -7.5, "z": -22, "id": "right_back_wheel", "radius": 8, "y_rot": 180 }
     ],
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 1120 },
-    	{ "id":"constructor_length", "type": "float", "value": 5 },
-    	{ "id":"constructor_height", "type": "float", "value": -2 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 20 }
+    	{ "id":"weight", "type": "float", "value": 1120 }
     ],
     "LegacyData":{
     	"MaxPositiveThrottle": 1.47,

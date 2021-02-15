@@ -15,9 +15,6 @@
     ],
     "Attributes": [
     	{ "id":"weight", "type": "float", "value": 1258 },
-    	{ "id":"constructor_length", "type": "float", "value": 4 },
-    	{ "id":"constructor_height", "type": "float", "value": -2 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 20 },
     	{ "id":"c4_door_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"c4_door_right", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },
     	{ "id":"c4_door_side", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },

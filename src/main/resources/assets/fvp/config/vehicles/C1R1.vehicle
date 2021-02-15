@@ -8,10 +8,7 @@
     "Texture": "fvp:textures/cars/c1_r1.png",
     "Category": "car,sedan",
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 1238.0 },
-    	{ "id":"constructor_length", "type": "float", "value": 3 },
-    	{ "id":"constructor_height", "type": "float", "value": -9 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 19 }
+    	{ "id":"weight", "type": "float", "value": 1238.0 }
     ],
     "WheelPositions":[
         { "x":  43.5, "y": 0.5, "z":  17, "id": "left_front_wheel", "radius": 9.5, "drive": true, "steering": true },

@@ -9,10 +9,7 @@
     "Category": "truck,semi",
     "Attributes":[
     	{ "id":"weight", "type": "float", "value": 3245.60 },
-    	{ "id": "fuel_capacity", "type": "integer", "value": 250000 },
-    	{ "id":"constructor_length", "type": "float", "value": 4 },
-    	{ "id":"constructor_height", "type": "float", "value": -11 },
-    	{ "id":"constructor_wheel_offset", "type": "float", "value": 21 }
+    	{ "id": "fuel_capacity", "type": "integer", "value": 250000 }
     ],
     "WheelPositions":[
         { "x":  40, "y": -2, "z":  20, "id": "left_front_wheel", "radius": 12, "drive": true, "steering": true },

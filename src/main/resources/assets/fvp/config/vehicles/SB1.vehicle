@@ -12,8 +12,6 @@
     "Category": "rail,tram,tramway",
     "Attributes": [
     	{ "id": "weight", "type": "float", "value": 3000 },
-    	{ "id": "constructor_length", "type": "float", "value": 9 },
-    	{ "id": "constructor_height", "type": "float", "value": 0 },
     	{ "id": "gauge", "type": "integer", "value": 30 },
     	{ "id": "turn_lights", "type": "tristate", "seat": "driver" },
     	{ "id": "warning_lights", "type": "boolean", "value": false, "seat": "driver" },
