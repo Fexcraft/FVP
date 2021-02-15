@@ -14,7 +14,7 @@
     	"Removable": false
     },
     "Function": {
-    	"id": "fvtm:inventory", "type": "ITEM", "capacity": 1458
+    	"id": "fvtm:inventory", "type": "ITEM", "capacity": 1458, "seats":["external"]
     },
     "Attributes":[
     	{ "id":"tr1_type1_doors", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
