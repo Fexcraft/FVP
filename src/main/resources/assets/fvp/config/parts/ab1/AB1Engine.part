@@ -10,26 +10,38 @@
     "Modifiers":[
     	{ "id": "weight", "type": "additive", "target": "vehicle:weight", "value": "500", "priority": "veryhigh" }
     ],
-    "Function": {
-    	"id": "fvtm:engine",
-    	"engine_speed": 1.4,
-    	"idle_consumption": 4,
-    	"active_consumption": 12,
-    	"consumptions": {
-    		"petrodiesel": 8,
-    		"synthetic": 7,
-    		"biodiesel": 10
-    	},
-    	"fuel_group": "diesel",
-    	"min_rpm": 500,
-	    "max_rpm": 2800,
-	    "torque_chart":{
-	        "500": 700,
-	        "1200": 950,
-	        "1900": 1600,
-	        "2100": 1500,
-	        "2800": 1200
+    "Functions": [
+    	{
+	    	"id": "fvtm:engine",
+	    	"engine_speed": 1.4,
+	    	"idle_consumption": 4,
+	    	"active_consumption": 12,
+	    	"consumptions": {
+	    		"petrodiesel": 8,
+	    		"synthetic": 7,
+	    		"biodiesel": 10
+	    	},
+	    	"fuel_group": "diesel",
+	    	"min_rpm": 500,
+		    "max_rpm": 2800,
+		    "torque_chart":{
+		        "500": 700,
+		        "1200": 950,
+		        "1900": 1600,
+		        "2100": 1500,
+		        "2800": 1200
+		    },
+		    "__comment": "example/testing values"
 	    },
-	    "__comment": "example/testing values"
-    }
+    	{
+    		"id": "fvtm_potr:emission_emitter",
+    		"emissions": [ 0.4, 0.01, 0.2 ],
+    		"engine": true
+    	},
+    	{
+    		"id": "fvtm_potr:emission_filter",
+    		"emissions": [ 0.3, 1, 1 ],
+    		"parts": [ "engine" ]
+    	}
+    ]
 }
