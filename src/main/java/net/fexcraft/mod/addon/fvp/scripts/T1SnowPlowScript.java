@@ -36,7 +36,7 @@ public class T1SnowPlowScript extends VehicleScript {
 	public void onUpdate(Entity entity, VehicleData data){
         VehicleEntity vehicle = (VehicleEntity) entity;
         if(!entity.world.isRemote){
-            if(data.getAttribute("t1_snowplow_state").getBooleanValue()){
+            if(data.getAttribute("t1_snowplow_state").boolean_value()){
                 Vec3d[] pos = new Vec3d[6];
                 pos[0] = calculate(vehicle.getRotPoint().getAxes(), entity, 2);
                 pos[1] = calculate(vehicle.getRotPoint().getAxes(), entity, 1);

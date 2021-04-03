@@ -146,7 +146,7 @@ public class C12Interior extends PartModel {
 			@Override
 			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
 				if(ent == null) return; Attribute<?> attr = data.getAttribute("turn_lights");
-				list.get(0).rotationAngleX = list.get(1).rotationAngleX = attr.getTriStateValue() == null ? 20f : attr.getTriStateValue() ? 25f : 15f;
+				list.get(0).rotationAngleX = list.get(1).rotationAngleX = attr.conditional_tristate(20f,  25f,  15f);
 			}
 		});
 		this.groups.add(interior_dash_signal);

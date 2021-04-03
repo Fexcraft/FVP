@@ -714,22 +714,27 @@ public class C4R1Model extends VehicleModel {
 
 			@Override
 			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				if(cache == null) return; attr = data.getAttribute("c4_door_side"); if(attr == null) return;
-				offx = cache.getValue("c4_side_offx"); offz = cache.getValue("c4_side_offz");
-				if(attr.getBooleanValue()){
+				if(cache == null) return;
+				attr = data.getAttribute("c4_door_side");
+				if(attr == null) return;
+				offx = cache.getValue("c4_side_offx");
+				offz = cache.getValue("c4_side_offz");
+				if(attr.boolean_value()){
 					offx = offx == null ? 0 : offx >= 2 ? 2 : offx + Static.sixteenth;
 				}
 				else{
 					offx = offx == null ? 2 : offx <= 0 ? 0 : offx - Static.sixteenth;
 				}
 				offz = offx == null ? 0 : offx > 0.5f ? Static.eighth : offx <= 0.1f ? 0 : Static.sixteenth;
-				cache.setValue("c4_side_offx", offx); cache.setValue("c4_side_offz", offz);
-				if(offx != null){ GL11.glTranslatef(-offx, 0, -offz);}
+				cache.setValue("c4_side_offx", offx);
+				cache.setValue("c4_side_offz", offz);
+				if(offx != null) GL11.glTranslatef(-offx, 0, -offz);
 			}
 
 			@Override
 			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				if(offx != null){ GL11.glTranslatef(offx, 0, offz);} offx = null;
+				if(offx != null) GL11.glTranslatef(offx, 0, offz);
+				offx = null;
 			}
 			
 		}, DefaultPrograms.RGB_PRIMARY);

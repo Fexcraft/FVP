@@ -275,7 +275,7 @@ public class TR1Type1 extends PartModel {
     	chassis_body.render(ent, data, data, us, cache);
     	float doortoggle = 0;
     	if(cache != null){
-        	doortoggle = cache.getValue("tr1_type1_doors", 0f) + (data.getAttribute("tr1_type1_doors").getBooleanValue() ? 1 : -1);
+        	doortoggle = cache.getValue("tr1_type1_doors", 0f) + data.getAttribute("tr1_type1_doors").conditional_boolean(1, -1);
         	cache.setValue("tr1_type1_door", doortoggle = doortoggle > 100 ? 100 : doortoggle < 0 ? 0 : doortoggle);
     	}
     	door_left.rotate(0, Static.rad1 * -doortoggle, 0);

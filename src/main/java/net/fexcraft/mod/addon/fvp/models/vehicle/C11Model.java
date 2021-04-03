@@ -776,12 +776,28 @@ public class C11Model extends VehicleModel {
 			.setRotationPoint(18.75f, -11.5f, -11).setRotationAngle(0, 0, -39)
 		);
 		wipers.addProgram(new TurboList.Program(){
-			private boolean ison, ret = false; private float moved;
+			private boolean ison, ret = false;
+			private float moved;
 			@Override
 			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				if(cache == null) return; ison = data.getAttribute("windshield_wipers").getBooleanValue(); moved = cache.getValue("wipers_moved", 0f);
-				if(ison && !ret){ moved += 0.5f; } if(moved >= 110 || ret || (!ison && moved > 0)){ ret = true; moved -= 0.5f; } if(moved <= 0f){ ret = false; moved = 0f;}
-				if(moved != 0f) for(ModelRendererTurbo mrt : list){ mrt.rotationAngleX = moved; } cache.setValue("wipers_moved", moved);
+				if(cache == null) return;
+				ison = data.getAttribute("windshield_wipers").boolean_value();
+				moved = cache.getValue("wipers_moved", 0f);
+				if(ison && !ret){
+					moved += 0.5f;
+				}
+				if(moved >= 110 || ret || (!ison && moved > 0)){
+					ret = true;
+					moved -= 0.5f;
+				}
+				if(moved <= 0f){
+					ret = false;
+					moved = 0f;
+				}
+				if(moved != 0f){
+					for(ModelRendererTurbo mrt : list) mrt.rotationAngleX = moved;
+				}
+				cache.setValue("wipers_moved", moved);
 			}
 			@Override
 			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
@@ -790,13 +806,13 @@ public class C11Model extends VehicleModel {
 		});
 		this.groups.add(wipers);
 		//
-		TurboList window = new TurboList("window");
+		/*TurboList window = new TurboList("window");
 		window.add(new ModelRendererTurbo(window, 389, 68, textureX, textureY)
 			.addShapeQuad(0, 0, 0, 1, 11, 0, 0, 0, 0, -1, 0, 34, -9, 0, -1, 8, 0, 35)
 			.setRotationPoint(9.5f, -22.5f, 17).setRotationAngle(0, 0, 0)
 		);
 		window.addProgram(new DefaultPrograms.Window(0x97abdb));
-		this.groups.add(window);
+		this.groups.add(window);*/
 		//
 		TurboList license_plates = new TurboList("license_plates");
 		license_plates.add(new ModelRendererTurbo(license_plates, 153, 115, textureX, textureY).addBox(0, 0, -6, 1, 3, 12)

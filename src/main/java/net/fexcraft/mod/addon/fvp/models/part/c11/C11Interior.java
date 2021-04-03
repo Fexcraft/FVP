@@ -211,11 +211,11 @@ public class C11Interior extends PartModel {
 			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
 				if(ent == null){ list.rotate(0, 0, 90, true); return; }
 				Attribute<?> attr = data.getAttribute("lights");
-				list.get(0).rotationAngleZ = attr.getBooleanValue() ? 60f : 140f;
+				list.get(0).rotationAngleZ = attr.conditional_boolean(60f,  140f);
 				attr = data.getAttribute("lights_long");
-				list.get(1).rotationAngleZ = attr.getBooleanValue() ? 60f : 140f;
+				list.get(1).rotationAngleZ = attr.conditional_boolean(60f,  140f);
 				attr = data.getAttribute("lights_fog");
-				list.get(2).rotationAngleZ = attr.getBooleanValue() ? 60f : 140f;
+				list.get(2).rotationAngleZ = attr.conditional_boolean(60f,  140f);
 			}
 			@Override
 			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
@@ -237,8 +237,8 @@ public class C11Interior extends PartModel {
 			@Override
 			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
 				if(ent == null) return; Attribute<?> attr = data.getAttribute("turn_lights");
-				list.get(0).rotationAngleX = attr.getTriStateValue() == null ? 30f : attr.getTriStateValue() ? 35f : 25f;
-				attr = data.getAttribute("windshield_wipers"); list.get(1).rotationAngleX = attr.getBooleanValue() ? 25f : 30f;
+				list.get(0).rotationAngleX = attr.conditional_tristate(30f,  35f, 25f);
+				attr = data.getAttribute("windshield_wipers"); list.get(1).rotationAngleX = attr.conditional_boolean(25f, 30f);
 			}
 			@Override
 			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
