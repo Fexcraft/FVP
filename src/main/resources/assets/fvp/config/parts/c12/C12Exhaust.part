@@ -1,0 +1,24 @@
+{
+    "RegistryName": "fvp:c12_exhaust",
+    "Addon": "fvtm:fvp",
+    "Name": "C12 Exhaust",
+    "Model": "fvp:models/part/c12_exhaust",
+    "Category": "exhaust",
+    "Texture": "Default;fvp:textures/cars/c12.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Compatible":[
+            "fvp:c12"
+        ]
+    },
+    "Attributes":[
+    	{
+    	  "id":"exhaust",
+    	  "type": "vector3",
+    	  "value": [ -51, 2, 23 ],
+    	  "editable": false,
+    	  "group": "exhaust"
+    	}
+    ]
+}
