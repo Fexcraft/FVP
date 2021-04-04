@@ -10,6 +10,32 @@
         "SKR Trans;fvp:textures/busses/ab1d.png"
     ],
     "Installation":{
-	    "Compatible": [ { "vehicle": "fvp:ab1" } ]
-    }
+	    "Compatible": [ "fvp:ab1" ]
+    },
+    "Attributes": [
+    	{
+    		"id": "ab1b_door_front",
+    		"type": "boolean",
+    		"value": false,
+    		"editable": true,
+    		"seat": "driver",
+    		"external": true,
+    		"hitbox": { 
+    			"external-true": [ 80.0, -19.5, -42.0, 2 ],
+    			"external-false": [ 92.5, -19.5, -32.0, 2 ]
+    		}
+    	},
+    	{
+    		"id": "ab1b_door_back",
+    		"type": "boolean",
+    		"value": false,
+    		"editable": true,
+    		"seat": "driver",
+    		"external": true,
+    		"hitbox": { 
+    			"external-true": [ -56.0, -19.5, -42.0, 2 ],
+    			"external-false": [ -43.5, -19.5, -32.0, 2 ]
+    		}
+    	}
+    ]
 }
