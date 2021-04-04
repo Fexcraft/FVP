@@ -27,7 +27,19 @@
     {
       "editable": 1,
       "external": 0,
-      "id": "ab1b_doors",
+      "id": "ab1b_door_front",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "org": 0,
+      "seat": "driver",
+      "type": "BOOLEAN",
+      "value": 0
+    },
+    {
+      "editable": 1,
+      "external": 0,
+      "id": "ab1b_door_back",
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
