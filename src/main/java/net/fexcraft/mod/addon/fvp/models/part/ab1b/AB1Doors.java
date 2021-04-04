@@ -42,7 +42,7 @@ public class AB1Doors extends PartModel {
 		back_door.add(new ModelRendererTurbo(back_door, 89, 105, textureX, textureY).addBox(-1, 16, 0.5f, 3, 2, 1)
 			.setRotationPoint(-54, -26, -31.5f).setRotationAngle(0, 0, 0).setName("Box 304")
 		);
-		back_door.addPrograms(new DefaultPrograms.AttributeRotator("ab1b_door_back", true, 0, 110, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		back_door.addPrograms(new DefaultPrograms.AttributeRotator("ab1b_door_back", true, 0, 110, 1f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(back_door);
 		//
 		TurboList front_door = new TurboList("front_door");
@@ -70,7 +70,7 @@ public class AB1Doors extends PartModel {
 		front_door.add(new ModelRendererTurbo(front_door, 273, 89, textureX, textureY).addBox(9, 1, -0.5f, 3, 1, 2)
 			.setRotationPoint(82, -21, -31.5f).setRotationAngle(0, 0, 0).setName("Box 296")
 		);
-		front_door.addPrograms(new DefaultPrograms.AttributeRotator("ab1b_door_front", true, 0, 110, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		front_door.addPrograms(new DefaultPrograms.AttributeRotator("ab1b_door_front", true, 0, 110, 1f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(front_door);
 	}
 
