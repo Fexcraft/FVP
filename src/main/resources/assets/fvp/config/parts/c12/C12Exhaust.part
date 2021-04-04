@@ -18,7 +18,8 @@
     	  "type": "vector3",
     	  "value": [ -51, 2, 23 ],
     	  "editable": false,
-    	  "group": "exhaust"
+    	  "group": "exhaust",
+    	  "mod-dep": "fvtm_potr"
     	}
     ]
 }
