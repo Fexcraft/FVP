@@ -120,7 +120,7 @@ public class AB1BModel extends VehicleModel {
 			.setRotationPoint(-111, -4, -23.5f).setRotationAngle(0, 0, 0).setName("Box 28")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 785, 49, textureX, textureY)
-			.addShapeBox(0, 0, 0, 28, 12, 35, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.addShapeBox(0, 0, 0, 28, 12, 35, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.5f)
 			.setRotationPoint(54, -13, -17.5f).setRotationAngle(0, 0, 0).setName("Box 29")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 169, 57, textureX, textureY).addBox(0, 0, 0, 20, 2, 46)
@@ -389,7 +389,7 @@ public class AB1BModel extends VehicleModel {
 			.setRotationPoint(87.5f, -24, 18).setRotationAngle(0, 0, 0).setName("Box 324")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 945, 177, textureX, textureY).addBox(0, 0, 0, 2, 14, 18)
-			.setRotationPoint(70, -30, 11).setRotationAngle(0, 0, -0.06981317f).setName("Box 330")
+			.setRotationPoint(70, -30, 11).setRotationAngle(0, 0, -4).setName("Box 330")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 457, 57, textureX, textureY).addBox(0, 0, 0, 2, 2, 1)
 			.setRotationPoint(80, -20, -31).setRotationAngle(0, 0, 0).setName("Box 295")
@@ -402,13 +402,13 @@ public class AB1BModel extends VehicleModel {
 			.setRotationPoint(100.5f, -8, 0).setRotationAngle(0, 0, 0).setName("Box 305")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 729, 57, textureX, textureY).addBox(0, 0, -6, 1, 3, 12)
-			.setRotationPoint(101, -1, 0).setRotationAngle(0, 0, 0.08726647f).setName("Box 310")
+			.setRotationPoint(101, -1, 0).setRotationAngle(0, 0, 5.0000005f).setName("Box 310")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 65, 65, textureX, textureY).addBox(-1, 0, -6, 1, 3, 12)
 			.setRotationPoint(-110.5f, -6.5f, 0).setRotationAngle(0, 0, 0).setName("Box 311")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 993, 65, textureX, textureY).addBox(0, 0, -6, 1, 3, 12)
-			.setRotationPoint(95.5f, -22.5f, 15).setRotationAngle(0, 0, -0.7853982f).setName("Box 312")
+			.setRotationPoint(95.5f, -22.5f, 15).setRotationAngle(0, 0, -45).setName("Box 312")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 617, 185, textureX, textureY).addBox(0, 0, 0, 2, 36, 2)
 			.setRotationPoint(57, -48, 7).setRotationAngle(0, 0, 0).setName("Box 313")
@@ -462,8 +462,10 @@ public class AB1BModel extends VehicleModel {
 			.addShapeBox(0, 0, 0, 12, 17, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(84, -21, 30.5f).setRotationAngle(0, 0, 0).setName("Box 62")
 		);
-		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 953, 81, textureX, textureY)
-			.addShapeBox(0, 0, 0, 28, 11, 1, 0, 0, 0, 0, 0, -5, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 953, 81, textureX, textureY).newBoxBuilder()
+			.setOffset(0, 0, 0).setSize(28, 11, 1)
+			.setCorners(0, 0, 0, 0, -5, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setPolygonUV(5, new float[]{ 58.0f, 1.0f, 30.0f, 6.0f, 30.0f, 12.0f, 58.0f, 12.0f }).build()
 			.setRotationPoint(54, -26, 30.5f).setRotationAngle(0, 0, 0).setName("Box 63")
 		);
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 745, 73, textureX, textureY).addBox(0, 0, 0, 28, 6, 1)
@@ -558,9 +560,6 @@ public class AB1BModel extends VehicleModel {
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 577, 121, textureX, textureY).addBox(0, 0, 0, 24, 22, 1)
 			.setRotationPoint(-108, -26, 30.5f).setRotationAngle(0, 0, 0).setName("Box 97")
 		);
-		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 793, 97, textureX, textureY).addBox(0, 0, 0, 28, 5, 1)
-			.setRotationPoint(54, -16, -17.5f).setRotationAngle(0, 0, 0).setName("Box 107")
-		);
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 857, 97, textureX, textureY).addBox(0, 0, 0, 28, 5, 1)
 			.setRotationPoint(54, -16, 16.5f).setRotationAngle(0, 0, 0).setName("Box 108")
 		);
@@ -605,9 +604,6 @@ public class AB1BModel extends VehicleModel {
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 57, 137, textureX, textureY)
 			.addShapeBox(0, 0, 0, 5, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4.8f, 0, 0, 0, 0, 0, 0, 0, 0, -4.8f, 0, 0)
 			.setRotationPoint(-61, -11, 21.5f).setRotationAngle(0, 0, 0).setName("Box 174")
-		);
-		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 161, 169, textureX, textureY).addBox(0, 0, 0, 28, 11, 1)
-			.setRotationPoint(-84, -26, 30.5f).setRotationAngle(0, 0, 0).setName("Box 176")
 		);
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 193, 137, textureX, textureY)
 			.addShapeBox(0, 0, 0, 5, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4.8f, 0, 0, -4.8f, 0, 0, 0, 0, 0)
@@ -658,6 +654,13 @@ public class AB1BModel extends VehicleModel {
 		);
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 1, 193, textureX, textureY).addBox(0, 0, 0, 14, 27, 1)
 			.setRotationPoint(59, -44, 7.5f).setRotationAngle(0, 0, 0).setName("Box 317")
+		);
+		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 161, 169, textureX, textureY).addBox(0, 0, 0, 28, 11, 1)
+			.setRotationPoint(-84, -26, 30.5f).setRotationAngle(0, 0, 0).setName("Box 176cp")
+		);
+		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 793, 97, textureX, textureY)
+			.addShapeBox(0, 0, 0, 28, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.1f, 0, 0, -0.1f, 0, 0, 0, 0, 0)
+			.setRotationPoint(54, -16, -17.5f).setRotationAngle(0, 0, 0).setName("Box 107cp")
 		);
 		chassis_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(chassis_primary);
@@ -769,6 +772,15 @@ public class AB1BModel extends VehicleModel {
 		);
 		chassis_secondary.addProgram(DefaultPrograms.RGB_SECONDARY);
 		this.groups.add(chassis_secondary);
+		//
+		TurboList exhaust = new TurboList("exhaust");
+		exhaust.add(new ModelRendererTurbo(exhaust, 1, 186, textureX, textureY).addBox(-1, 0, 0, 14, 2, 2)
+			.setRotationPoint(-111, -0.5f, 25).setRotationAngle(0, 20, -12)
+		);
+		exhaust.add(new ModelRendererTurbo(exhaust, 34, 186, textureX, textureY).addBox(-1, 0, 2.2f, 14, 2, 2)
+			.setRotationPoint(-111, -0.5f, 25).setRotationAngle(0, 20, -12)
+		);
+		this.groups.add(exhaust);
 	}
 
 }
