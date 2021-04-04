@@ -22,7 +22,8 @@
     	{ "id":"ab1b_doors", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"ab1b_cargobay_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"ab1b_cargobay_right", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
-    	{ "id": "collision_range", "type": "float", "value": 7 }
+    	{ "id": "collision_range", "type": "float", "value": 7 },
+    	{ "id": "exhaust", "type": "vector3", "value": [ -111, 0.5, 27.25 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" }
     ],
     "RequiredParts": [
         "right_front_wheel",
