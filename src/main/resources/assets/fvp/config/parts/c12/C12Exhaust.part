@@ -14,12 +14,12 @@
     },
     "Attributes":[
     	{
-    	  "id":"exhaust",
-    	  "type": "vector3",
-    	  "value": [ -51, 2, 23 ],
-    	  "editable": false,
-    	  "group": "exhaust",
-    	  "mod-dep": "fvtm_potr"
+    		"id": "exhaust",
+    		"type": "vector3",
+    		"value": [ -51, 2, 23 ],
+    		"editable": false,
+    		"group": "exhaust",
+    		"mod-dep": "fvtm_potr"
     	}
     ]
 }
