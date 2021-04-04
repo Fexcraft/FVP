@@ -26,26 +26,35 @@
     },
     {
       "editable": 1,
-      "external": 0,
+      "external": 1,
       "id": "ab1b_door_back",
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
       "origin": "doors|fvp:ab1_doors",
       "target": "vehicle",
-      "seat": "driver",
       "type": "boolean",
       "value": 0
     },
     {
       "editable": 1,
-      "external": 0,
+      "external": 1,
       "id": "ab1b_door_front",
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
       "origin": "doors|fvp:ab1_doors",
       "target": "vehicle",
+      "type": "boolean",
+      "value": 0
+    },
+    {
+      "editable": 1,
+      "external": 0,
+      "id": "ab1b_doors",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
       "seat": "driver",
       "type": "boolean",
       "value": 0
@@ -379,7 +388,7 @@
       "value": 0.0
     }
   ],
-  "LockCode": "59f4ffd7",
+  "LockCode": "db855837",
   "Locked": 0,
   "Parts": [
     {
@@ -519,8 +528,8 @@
       "SelectedTexture": 0
     }
   ],
-  "Preset": "AB1B Cyan Basic",
-  "RGB_primary": 3063175,
+  "Preset": "AB1B Yellow Basic",
+  "RGB_primary": 16767802,
   "RGB_secondary": 16448250,
   "SelectedTexture": 0,
   "Vehicle": "fvp:ab1",

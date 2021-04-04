@@ -7,9 +7,9 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
       "seat": "driver",
-      "type": "BOOLEAN",
+      "target": "vehicle",
+      "type": "boolean",
       "value": 0
     },
     {
@@ -19,21 +19,9 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
       "seat": "driver",
-      "type": "BOOLEAN",
-      "value": 0
-    },
-    {
-      "editable": 1,
-      "external": 0,
-      "id": "ab1b_door_front",
-      "initial": 0,
-      "max": 0.0,
-      "min": 0.0,
-      "org": 0,
-      "seat": "driver",
-      "type": "BOOLEAN",
+      "target": "vehicle",
+      "type": "boolean",
       "value": 0
     },
     {
@@ -43,10 +31,44 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
+      "origin": "doors|fvp:ab1_doors",
+      "target": "vehicle",
       "seat": "driver",
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 0
+    },
+    {
+      "editable": 1,
+      "external": 0,
+      "id": "ab1b_door_front",
+      "initial": 0,
+      "max": 0.0,
+      "min": 0.0,
+      "origin": "doors|fvp:ab1_doors",
+      "target": "vehicle",
+      "seat": "driver",
+      "type": "boolean",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "air_resistance",
+      "initial": 2.5,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "type": "float",
+      "value": 2.5
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "brake_force",
+      "initial": 15000.0,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "type": "float",
+      "value": 15000.0
     },
     {
       "editable": 0,
@@ -55,8 +77,8 @@
       "initial": 7.0,
       "max": 16.0,
       "min": 0.0,
-      "org": 0,
-      "type": "FLOAT",
+      "target": "vehicle",
+      "type": "float",
       "value": 7.0
     },
     {
@@ -66,9 +88,18 @@
       "initial": 1,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 1
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "differential_ratio",
+      "initial": 3.5,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "type": "float",
+      "value": 3.5
     },
     {
       "editable": 0,
@@ -77,8 +108,7 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 0
     },
     {
@@ -88,8 +118,7 @@
       "initial": 20000,
       "max": 2.14748365E9,
       "min": 0.0,
-      "org": 0,
-      "type": "INTEGER",
+      "type": "integer",
       "value": 20000
     },
     {
@@ -99,8 +128,7 @@
       "initial": "",
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
-      "type": "STRING",
+      "type": "string",
       "value": ""
     },
     {
@@ -110,8 +138,7 @@
       "initial": 0.0,
       "max": 10.0,
       "min": 0.0,
-      "org": 0,
-      "type": "FLOAT",
+      "type": "float",
       "value": 0.0
     },
     {
@@ -121,8 +148,7 @@
       "initial": "",
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
-      "type": "STRING",
+      "type": "string",
       "value": ""
     },
     {
@@ -132,8 +158,27 @@
       "initial": 0,
       "max": 2.14748365E9,
       "min": 0.0,
-      "org": 0,
-      "type": "INTEGER",
+      "type": "integer",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "gear",
+      "initial": 0,
+      "max": 64.0,
+      "min": -64.0,
+      "type": "integer",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "generated_keys",
+      "initial": 0,
+      "max": 8.0,
+      "min": 0.0,
+      "type": "integer",
       "value": 0
     },
     {
@@ -143,8 +188,7 @@
       "initial": 1.0,
       "max": 16.0,
       "min": 0.0,
-      "org": 0,
-      "type": "FLOAT",
+      "type": "float",
       "value": 1.0
     },
     {
@@ -154,8 +198,7 @@
       "initial": 1.0,
       "max": 16.0,
       "min": 0.0,
-      "org": 0,
-      "type": "FLOAT",
+      "type": "float",
       "value": 1.0
     },
     {
@@ -165,9 +208,8 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
       "seat": "driver",
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 0
     },
     {
@@ -177,9 +219,8 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
       "seat": "driver",
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 0
     },
     {
@@ -189,9 +230,8 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
       "seat": "driver",
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 0
     },
     {
@@ -201,10 +241,39 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
       "seat": "driver",
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "max_steering_angle",
+      "initial": 35.0,
+      "max": 90.0,
+      "min": -90.0,
+      "type": "float",
+      "value": 35.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "max_towing",
+      "initial": 3500.0,
+      "max": 2.14748365E9,
+      "min": 1.0,
+      "type": "float",
+      "value": 3500.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "parking_brake_force",
+      "initial": 5000.0,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "type": "float",
+      "value": 5000.0
     },
     {
       "editable": 0,
@@ -213,9 +282,38 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "roll_resistance",
+      "initial": 8.0,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "type": "float",
+      "value": 8.0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "rpm",
+      "initial": 0,
+      "max": 2.14748365E9,
+      "min": 0.0,
+      "type": "integer",
+      "value": 0
+    },
+    {
+      "editable": 0,
+      "external": 0,
+      "id": "speed",
+      "initial": 0.0,
+      "max": 2.14748365E9,
+      "min": -2.14748365E9,
+      "type": "float",
+      "value": 0.0
     },
     {
       "editable": 0,
@@ -224,8 +322,7 @@
       "initial": 0.0,
       "max": 40.0,
       "min": -40.0,
-      "org": 0,
-      "type": "FLOAT",
+      "type": "float",
       "value": 0.0
     },
     {
@@ -235,8 +332,7 @@
       "initial": 0.0,
       "max": 10.0,
       "min": -10.0,
-      "org": 0,
-      "type": "FLOAT",
+      "type": "float",
       "value": 0.0
     },
     {
@@ -246,9 +342,8 @@
       "initial": -1,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
       "seat": "driver",
-      "type": "TRISTATE",
+      "type": "tristate",
       "value": -1
     },
     {
@@ -258,9 +353,8 @@
       "initial": 0,
       "max": 0.0,
       "min": 0.0,
-      "org": 0,
       "seat": "driver",
-      "type": "BOOLEAN",
+      "type": "boolean",
       "value": 0
     },
     {
@@ -270,21 +364,9 @@
       "initial": 3548.45,
       "max": 2.14748365E9,
       "min": 0.0,
-      "modifiers": [
-        {
-          "calltype": "INITIAL",
-          "id": "weight",
-          "origin": "engine|fvp:ab1_engine",
-          "priority": "VERYHIGH",
-          "target": "vehicle:weight",
-          "type": "ADDITIVE",
-          "value": 500.0,
-          "valuetype": "FLOAT"
-        }
-      ],
-      "org": 0,
-      "type": "FLOAT",
-      "value": 4048.45
+      "target": "vehicle",
+      "type": "float",
+      "value": 3548.45
     },
     {
       "editable": 0,
@@ -293,22 +375,13 @@
       "initial": 0.0,
       "max": 360.0,
       "min": -360.0,
-      "org": 0,
-      "type": "FLOAT",
+      "type": "float",
       "value": 0.0
     }
   ],
+  "LockCode": "db3f0596",
   "Locked": 0,
   "Parts": [
-    {
-      "CurrentPos_x": 0.0,
-      "CurrentPos_y": 0.0,
-      "CurrentPos_z": 0.0,
-      "Functions": [],
-      "InstalledAs": "transmission",
-      "Part": "gep:automatic_transmission",
-      "SelectedTexture": 0
-    },
     {
       "CurrentPos_x": 0.0,
       "CurrentPos_y": 0.0,
@@ -356,6 +429,9 @@
       "CurrentPos_z": 25.0,
       "Functions": [
         {
+          "id": "fvtm:tire"
+        },
+        {
           "id": "fvtm:wheel",
           "wheel_pos": "left_back_wheel"
         }
@@ -369,6 +445,9 @@
       "CurrentPos_y": -2.0,
       "CurrentPos_z": 25.0,
       "Functions": [
+        {
+          "id": "fvtm:tire"
+        },
         {
           "id": "fvtm:wheel",
           "wheel_pos": "left_front_wheel"
@@ -393,6 +472,9 @@
       "CurrentPos_z": -25.0,
       "Functions": [
         {
+          "id": "fvtm:tire"
+        },
+        {
           "id": "fvtm:wheel",
           "wheel_pos": "right_back_wheel"
         }
@@ -406,6 +488,9 @@
       "CurrentPos_y": -2.0,
       "CurrentPos_z": -25.0,
       "Functions": [
+        {
+          "id": "fvtm:tire"
+        },
         {
           "id": "fvtm:wheel",
           "wheel_pos": "right_front_wheel"
@@ -423,11 +508,20 @@
       "InstalledAs": "steering_wheel",
       "Part": "fvp:ab1_steering_wheel",
       "SelectedTexture": 0
+    },
+    {
+      "CurrentPos_x": 0.0,
+      "CurrentPos_y": 0.0,
+      "CurrentPos_z": 0.0,
+      "Functions": [],
+      "InstalledAs": "transmission",
+      "Part": "gep:automatic_transmission",
+      "SelectedTexture": 0
     }
   ],
   "Preset": "AB1B Imperial Blue",
-  "RGBPrimary": 16777215,
-  "RGBSecondary": 16448250,
+  "RGB_primary": 16777215,
+  "RGB_secondary": 16448250,
   "SelectedTexture": 1,
   "Vehicle": "fvp:ab1",
   "WheelPos": [
@@ -461,20 +555,22 @@
       "id": "left_back_wheel",
       "max_radius": 8.0,
       "max_width": 8.0,
-      "min_radius": 8.0,
-      "min_width": 8.0,
+      "min_radius": 1.0,
+      "min_tire_radius": 1.0,
+      "min_tire_width": 1.0,
       "x": -70.0,
       "y": -2.0,
       "y_rot": 0.0,
       "z": 25.0
     },
     {
-      "drive": 1,
       "id": "left_front_wheel",
       "max_radius": 8.0,
       "max_width": 8.0,
-      "min_radius": 8.0,
-      "min_width": 8.0,
+      "min_radius": 1.0,
+      "min_tire_radius": 1.0,
+      "min_tire_width": 1.0,
+      "powered": "",
       "steering": 1,
       "x": 68.0,
       "y": -2.0,
@@ -485,20 +581,22 @@
       "id": "right_back_wheel",
       "max_radius": 8.0,
       "max_width": 8.0,
-      "min_radius": 8.0,
-      "min_width": 8.0,
+      "min_radius": 1.0,
+      "min_tire_radius": 1.0,
+      "min_tire_width": 1.0,
       "x": -70.0,
       "y": -2.0,
       "y_rot": 180.0,
       "z": -25.0
     },
     {
-      "drive": 1,
       "id": "right_front_wheel",
       "max_radius": 8.0,
       "max_width": 8.0,
-      "min_radius": 8.0,
-      "min_width": 8.0,
+      "min_radius": 1.0,
+      "min_tire_radius": 1.0,
+      "min_tire_width": 1.0,
+      "powered": "",
       "steering": 1,
       "x": 68.0,
       "y": -2.0,
