@@ -11,5 +11,12 @@
         "Compatible":[
             "fvp:t3"
         ]
-    }
+    },
+    "Functions": [
+    	{
+    		"id": "fvtm_potr:emission_filter",
+    		"emissions": [ 0.25, 1, 0.2 ],
+    		"parts": [ "engine" ]
+    	}
+    ]
 }

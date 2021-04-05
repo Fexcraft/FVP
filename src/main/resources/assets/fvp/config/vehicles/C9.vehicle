@@ -18,7 +18,8 @@
         { "x": -33, "y": 0, "z": -16, "id": "right_back_wheel", "radius": 7, "y_rot": 180 }
     ],
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 1500 }
+    	{ "id":"weight", "type": "float", "value": 1500 },
+    	{ "id": "exhaust", "type": "vector3", "value": [ -57, 7.5, -14 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" }
     ],
     "RequiredParts": [
         "right_front_wheel",

@@ -18,7 +18,8 @@
     	{ "id":"c5_doors_fl", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"c5_doors_fr", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },
     	{ "id":"c5_doors_bl", "type": "boolean", "value": false, "editable": true, "seat": "pass_back_left" },
-    	{ "id":"c5_doors_br", "type": "boolean", "value": false, "editable": true, "seat": "pass_back_right" }
+    	{ "id":"c5_doors_br", "type": "boolean", "value": false, "editable": true, "seat": "pass_back_right" },
+    	{ "id": "exhaust", "type": "vector3", "value": [ -42, 6, -16 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" }
     ],
     "PreInstalled":{
     	"interior": "fvp:c5_interior",

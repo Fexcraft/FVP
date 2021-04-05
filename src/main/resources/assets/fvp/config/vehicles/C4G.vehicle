@@ -18,7 +18,8 @@
     	{ "id":"c4_door_left", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
     	{ "id":"c4_door_right", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },
     	{ "id":"c4_door_side", "type": "boolean", "value": false, "editable": true, "seat": "pass_front" },
-    	{ "id":"c4_door_back", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    	{ "id":"c4_door_back", "type": "boolean", "value": false, "editable": true, "seat": "driver" },
+    	{ "id": "exhaust", "type": "vector3", "value": [ -62, -7, 20 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" }
     ],
     "PreInstalled":{
     	"interior": "fvp:c4_interior",

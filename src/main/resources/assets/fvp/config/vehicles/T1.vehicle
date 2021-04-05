@@ -20,7 +20,8 @@
         { "x":  35, "y": 0, "z":  17, "id": "left_front_wheel", "radius": 10, "drive": true, "steering": true },
         { "x":  35, "y": 0, "z": -17, "id": "right_front_wheel", "radius": 10, "y_rot": 180, "drive": true, "steering": true },
         { "x": -71, "y": 0, "z":  17, "id": "left_back_wheel", "radius": 10 },
-        { "x": -71, "y": 0, "z": -17, "id": "right_back_wheel", "radius": 10, "y_rot": 180 }
+        { "x": -71, "y": 0, "z": -17, "id": "right_back_wheel", "radius": 10, "y_rot": 180 },
+    	{ "id": "exhaust", "type": "vector3", "value": [ 20, -2, 23 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" }
     ],
     "LegacyData":{
     	"MaxPositiveThrottle": 1.2,

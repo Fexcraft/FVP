@@ -15,7 +15,8 @@
     	{ "id": "gauge", "type": "integer", "value": 30 },
     	{ "id": "turn_lights", "type": "tristate", "seat": "driver" },
     	{ "id": "warning_lights", "type": "boolean", "value": false, "seat": "driver" },
-    	{ "id": "collision_range", "type": "float", "value": 8 }
+    	{ "id": "collision_range", "type": "float", "value": 8 },
+    	{ "id": "exhaust", "type": "vector3", "value": [ 0, -50, 0 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" }
     ],
     "WheelPositions":[
         { "x":  56, "y": -13, "z": 0, "id": "bogie_front" },

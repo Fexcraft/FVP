@@ -32,6 +32,10 @@
     	{
     		"id":"warning_lights", "type": "boolean", "value": false, "seat": "driver",
     		"hitbox": [ 14.0, -10.5, 4.5, 0.125 ]
+    	},
+    	{
+    		"id": "exhaust", "type": "vector3", "value": [ -50.5, 4.25, -11.75 ],
+    		"editable": false, "group": "exhaust", "mod-dep": "fvtm_potr"
     	}
     ],
     "WheelPositions":[
