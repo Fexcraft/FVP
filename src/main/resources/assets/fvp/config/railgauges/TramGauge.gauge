@@ -1,0 +1,13 @@
+{
+    "RegistryName": "fvp:tram_30",
+    "Addon": "fvtm:fvp",
+    "Model": "fvp:models/gauges/tram_30",
+    "Name": "Tram Gauge (30pxt)",
+    "Width": 30,
+    "Height": 1,
+    "BlockHeight": 0,
+    "BlockSpace": 1,
+    "Compatible": [],
+    "TiesTexture": "fvtm:textures/blocks/standard_gauge.png",
+    "ModelTexture": "fvtm:textures/blocks/30px_standard_gauge.png"
+}
