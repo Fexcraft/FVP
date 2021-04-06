@@ -11,6 +11,17 @@
     "Installation":{
 	    "Compatible": [ { "vehicle": "fvp:ab1" } ]
     },
+
+    "Modifiers":[
+    	{
+    		"id": "weight",
+    		"type": "additive",
+    		"target": "vehicle:weight",
+    		"value": "500",
+    		"priority": "veryhigh",
+    		"impl": "integer"
+    	}
+    ],
     "Function": {
     	"id": "fvtm:seats",
     	"seats":[
