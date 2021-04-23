@@ -2490,7 +2490,7 @@ public class SB1Model extends VehicleModel {
 		rear_forward.add(new ModelRendererTurbo(rear_forward, 326, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 2, null)
 			.setRotationPoint(-141, -25, 13).setRotationAngle(0, 0, 0)
 		);
-		rear_forward.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
+		rear_forward.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(rear_forward);
 		//
 		TurboList rear_backward = new TurboList("rear_backward");
@@ -2500,7 +2500,7 @@ public class SB1Model extends VehicleModel {
 		rear_backward.add(new ModelRendererTurbo(rear_backward, 335, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 2, null)
 			.setRotationPoint(-141, -25, 9).setRotationAngle(0, 0, 0)
 		);
-		rear_backward.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
+		rear_backward.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(rear_backward);
 	}
 
