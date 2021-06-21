@@ -167,7 +167,7 @@ public class C9Doors extends PartModel {
 			.addShapeBox(-23.7f, -1, 2.7f, 1, 4, 1, 0, 0.6f, 0, 0, -0.6f, 0, 0, 0, 0, 0, 0, 0, 0, -0.2f, 0, 1.5f, 0.2f, 0, 1.5f, 0.7f, 0, -1.5f, -0.7f, 0, -1.5f)
 			.setRotationPoint(17, -7.5f, -19.5f).setRotationAngle(0, 0, 0).setName("Box 487")
 		);
-		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fr", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
+		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fr", true, -60, 0, -0.5f, 1, 0f, false), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_right);
 		//
 		TurboList door_front_right_mirror = new TurboList("door_front_right_mirror");
@@ -199,7 +199,7 @@ public class C9Doors extends PartModel {
 			.addShapeBox(-3.8f, -3.25f, 1.5f, 1, 4, 1, 0, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f)
 			.setRotationPoint(17, -5.5f, -19.5f).setRotationAngle(60, 0, -45).setName("Box 568")
 		);
-		door_front_right_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fr", true, -60, 0, -0.5f, 1, 0f));
+		door_front_right_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c9_doors_fr", true, -60, 0, -0.5f, 1, 0f, false));
 		this.groups.add(door_front_right_mirror);
 		//
 		TurboList door_rear_left = new TurboList("door_rear_left");
