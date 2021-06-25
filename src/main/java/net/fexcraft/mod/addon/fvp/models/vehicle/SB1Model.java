@@ -74,7 +74,7 @@ public class SB1Model extends VehicleModel {
 		);
 		door_front0.addProgram(DefaultPrograms.RGB_PRIMARY);
 		door_front0.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -1, 0, -0.125f / 2, 2));
-		door_front0.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -8, 0, -1 / 2, 0));
+		door_front0.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -8, 0, -1f / 2, 0));
 		this.groups.add(door_front0);
 		//
 		TurboList door_front1 = new TurboList("door_front1");
@@ -133,7 +133,7 @@ public class SB1Model extends VehicleModel {
 		);
 		door_front1.addProgram(DefaultPrograms.RGB_PRIMARY);
 		door_front1.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -1, 0, -0.125f / 2, 2));
-		door_front1.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, 0, 8, 1 / 2, 0));
+		door_front1.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, 0, 8, 1f / 2, 0));
 		this.groups.add(door_front1);
 		//
 		TurboList door_rear0 = new TurboList("door_rear0");
@@ -192,7 +192,7 @@ public class SB1Model extends VehicleModel {
 		);
 		door_rear0.addProgram(DefaultPrograms.RGB_PRIMARY);
 		door_rear0.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -1, 0, -0.125f / 2, 2));
-		door_rear0.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -8, 0, -1 / 2, 0));
+		door_rear0.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -8, 0, -1f / 2, 0));
 		this.groups.add(door_rear0);
 		//
 		TurboList door_rear1 = new TurboList("door_rear1");
@@ -251,7 +251,7 @@ public class SB1Model extends VehicleModel {
 		);
 		door_rear1.addProgram(DefaultPrograms.RGB_PRIMARY);
 		door_rear1.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -1, 0, -0.125f / 2, 2));
-		door_rear1.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, 0, 8, 1 / 2, 0));
+		door_rear1.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, 0, 8, 1f / 2, 0));
 		this.groups.add(door_rear1);
 		//
 		door_front0.translate(0, -12, 0);
