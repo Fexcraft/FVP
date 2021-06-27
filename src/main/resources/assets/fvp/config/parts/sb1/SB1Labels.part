@@ -12,5 +12,8 @@
             "fvp:sb1"
         ]
     },
-    "//TODO": "string attributes for directions"
+    "Attributes":[
+    	{ "id":"sb1_line_number", "type": "string", "value": "001", "editable": true, "seat": [ "driver_front", "driver_rear" ], "sync": true },
+    	{ "id":"sb1_destination", "type": "string", "value": "Main Station", "editable": true, "seat": [ "driver_front", "driver_rear" ], "sync": true }
+    ]
 }

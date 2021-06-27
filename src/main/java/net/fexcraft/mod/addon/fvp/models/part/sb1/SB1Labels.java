@@ -3,6 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.sb1;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
+import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 import net.fexcraft.mod.fvtm.model.TurboList;
 
@@ -156,8 +157,11 @@ public class SB1Labels extends PartModel {
 			.setDetachedUV(1).build()
 			.setRotationPoint(-130, -65, 17).setRotationAngle(0, 0, 0)
 		);
+		labels_line.addProgram(new DefaultPrograms.AttributeTextRenderer("sb1_line_number", -130.1f, -64, -14, 0, 0, 0, 4, true).setLightAttribute("lights").setColor(0xffffff));
+		labels_line.addProgram(new DefaultPrograms.AttributeTextRenderer("sb1_line_number", 130.1f, -64, 14, 0, 180, 0, 4, true).setLightAttribute("lights").setColor(0xffffff));
+		labels_line.addProgram(new DefaultPrograms.AttributeTextRenderer("sb1_destination", -134.05f, -57, -15, 0, 0, 0, 5, false).setLightAttribute("lights").setColor(0xcdcdcd));
+		labels_line.addProgram(new DefaultPrograms.AttributeTextRenderer("sb1_destination", 134.05f, -57, 15, 0, 180, 0, 5, false).setLightAttribute("lights").setColor(0xcdcdcd));
 		this.groups.add(labels_line);
-		//
 	}
 
 }
