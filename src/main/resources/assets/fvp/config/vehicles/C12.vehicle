@@ -79,5 +79,8 @@
     	"left_rear": [ -26, 8, 22, "left_front" ],
     	"right_front": [ 19, 8, -22, "right_rear" ],
     	"right_rear": [ -26, 8, -22, "right_front" ]
-    }
+    },
+    "PartSlots":[
+    	[ 43.6, 4.5, 0, "license_plate", "license_plate_front"]
+    ]
 }

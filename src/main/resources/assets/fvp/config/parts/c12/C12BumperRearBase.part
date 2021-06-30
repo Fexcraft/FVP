@@ -15,7 +15,8 @@
     "Function":{
 	    "id": "fvtm:part_slots",
 		"slots":[
-			[ 0, 0, 0, "bumper_rear_upper", "bumper_rear_upper"]
+			[ 0, 0, 0, "bumper_rear_upper", "bumper_rear_upper"],
+			[ -54.6, 3.5, 0, "license_plate", "license_plate_rear", 4, [ 0, 180, 0 ] ]
 		]
     }
 }
