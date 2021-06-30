@@ -9,6 +9,7 @@
     ],
     "Texture": "fvp:textures/cars/c9.png",
     "Installation":{
-    	"Compatible": [ { "vehicle": "fvp:sentinel" } ]
+    	"Compatible": [ { "vehicle": "fvp:sentinel" } ],
+    	"Removable": false
     }
 }

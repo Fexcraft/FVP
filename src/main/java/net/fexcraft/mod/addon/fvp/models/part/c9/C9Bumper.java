@@ -34,11 +34,11 @@ public class C9Bumper extends PartModel {
 			.setRotationPoint(50.7f, 4, -18).setRotationAngle(0, 0, 0)
 			.setTextured(true).setLines(false).setName("Box 206")
 		);
-		bumper_front.add(new ModelRendererTurbo(bumper_front, 353, 97, textureX, textureY)
+		/*bumper_front.add(new ModelRendererTurbo(bumper_front, 353, 97, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 3, 10, 0, -0.8f, 0, 0, 0, 0, 0, 0, 0, 0, -0.8f, 0, 0, -0.8f, 0, 0, 0, 0, 0, 0, 0, 0, -0.8f, 0, 0)
 			.setRotationPoint(50.800007f, 5, -5).setRotationAngle(0, 0, 0)
 			.setTextured(true).setLines(false).setName("Box 207")
-		);
+		);*/
 		bumper_front.add(new ModelRendererTurbo(bumper_front, 73, 65, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 4, 1, 0, 0, 0, 0, 0, -0.3f, 0, -0.4f, -0.3f, -0.2f, 0.4f, 0, -0.2f, 0, -0.6f, 0, 0, -0.9f, 0, -0.4f, -0.9f, -0.2f, 0.4f, -0.6f, -0.2f)
 			.setRotationPoint(48.900005f, 4, 18).setRotationAngle(0, 0, 0)

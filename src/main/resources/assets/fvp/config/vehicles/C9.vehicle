@@ -39,12 +39,17 @@
     "PreInstalled":{
     	"interior": "fvp:c9_interior",
     	"seats": "fvp:c9_seats",
-    	"steering_wheel": "fvp:c9_steering_wheel"
+    	"steering_wheel": "fvp:c9_steering_wheel",
+    	"front_bumper": "fvp:c9_bumper",
+    	"rear_bumper": "fvp:c9_bumper"
     },
     "LiftingPoints":{
     	"left_front": [ 20, 5, 18, "left_rear" ],
     	"left_rear": [ -21, 5, 18, "left_front" ],
     	"right_front": [ 20, 5, -18, "right_rear" ],
     	"right_rear": [ -21, 5, -18, "right_front" ]
-    }
+    },
+    "PartSlots":[
+    	[ 51.7625, -1.8, 0, "license_plate", "license_plate_front"]
+    ]
 }
