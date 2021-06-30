@@ -18,7 +18,8 @@
     	"lights": "fvp:tr1_lights"
     },
     "Attributes":[
-    	{ "id":"weight", "type": "float", "value": 2540 }
+    	{ "id":"weight", "type": "float", "value": 2540 },
+    	{ "id": "collision_range", "type": "float", "value": 16 }
     ],
     "LegacyData":{},
     "Trailer": true,
