@@ -8,13 +8,10 @@
     "Installation":{
     	"Handler": "default",
         "Removable": true,
-        "Compatible":[
-            { "vehicle": "fvp:c10", "x": 0, "y": 0, "z": 0 }
-        ]
+        "Compatible":[ "fvp:c10" ],
+        "SwivelPoint": "c10_trunk",
+        "SwivelPointRequired": true
     },
-    "Attributes":[
-    	{ "id":"c10_trunk", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
-    ],
     "Modifiers":[
     	{
     		"id": "weight", "type": "additive",
