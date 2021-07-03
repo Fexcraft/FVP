@@ -25,7 +25,8 @@ public class C10Trunk extends PartModel {
 		trunk_glow.add(new ModelRendererTurbo(trunk_glow, 338, 58, textureX, textureY).addBox(-13.25f, 0.375f, 2.5f, 1, 1, 2)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, -15)
 		);
-		trunk_glow.addProgram(new DefaultPrograms.AttributeRotator("c10_trunk", true, 0, 72, 1, 2, -15f));
+		//trunk_glow.addProgram(new DefaultPrograms.AttributeRotator("c10_trunk", true, 0, 72, 1, 2, -15f));
+		trunk_glow.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(trunk_glow);
 		//
 		TurboList trunk_primary = new TurboList("trunk_primary");
@@ -77,8 +78,10 @@ public class C10Trunk extends PartModel {
 		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 473, 105, textureX, textureY).addBox(-12.5f, 4, -6, 2, 4, 12)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
 		);
-		trunk_primary.addPrograms(new DefaultPrograms.AttributeRotator("c10_trunk", true, 0, 72, 1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
+		//trunk_primary.addPrograms(new DefaultPrograms.AttributeRotator("c10_trunk", true, 0, 72, 1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
+		trunk_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(trunk_primary);
+		translate(36, 13, 0);
 	}
 
 }
