@@ -7,8 +7,9 @@
     "SecondaryColor": "#C2C2C2",
     "Texture": "Default;fvp:textures/cars/c10.png",
     "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 1480 },
-    	{ "id": "exhaust", "type": "vector3", "value": [ -49, 2, 20 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" }
+    	{ "id": "weight", "type": "float", "value": 1480 },
+    	{ "id": "exhaust", "type": "vector3", "value": [ -49, 2, 20 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" },
+    	{ "id": "c10_trunk", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
     ],
     "Category": "car,sedan",
     "WheelPositions":[
@@ -17,6 +18,9 @@
         { "x": -32, "y": 0, "z":  18, "id": "left_back_wheel", "radius": 8 },
         { "x": -32, "y": 0, "z": -18, "id": "right_back_wheel", "radius": 8, "y_rot": 180 }
     ],
+    "PreInstalled":{
+    	"trunk": "fvp:c10_trunk"
+    },
     "RequiredParts": [
         "right_front_wheel",
         "left_front_wheel",
@@ -40,5 +44,22 @@
     },
     "PartSlots":[
     	[ 50.15, 1.8, 0, "license_plate", "license_plate_front", 4, [ 0, 0, 12 ] ]
-    ]
+    ],
+	"SwivelPoints":[
+		{
+			"id": "c10_trunk",
+			"parent": "vehicle",
+			"pos": [ -36, 13, 0 ],
+			"movers":[
+				{
+					"attribute": "c10_trunk",
+					"var": "pitch",
+					"speed": 1,
+					"bool_based": true,
+					"min": 0,
+					"max": 72
+				}
+			]
+		}
+	]
 }
