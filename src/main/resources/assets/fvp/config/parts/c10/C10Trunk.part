@@ -18,5 +18,11 @@
     		"target": "vehicle:weight",
     		"value": "36.78", "priority": "veryhigh"
     	}
-    ]
+    ],
+    "Function":{
+	    "id": "fvtm:part_slots",
+		"slots":[
+			[ -12.55, -6, 0, "license_plate", "license_plate_rear", 4, [ 0, 180, 0 ] ]
+		]
+    }
 }
