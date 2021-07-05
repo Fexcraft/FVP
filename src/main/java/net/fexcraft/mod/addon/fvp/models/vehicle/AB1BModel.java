@@ -401,12 +401,12 @@ public class AB1BModel extends VehicleModel {
 			.addShapeBox(0, -2, -2, 1, 4, 4, 0, 0, -0.5f, -0.5f, 0, -1, -1, 0, -1, -1, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -1, -1, 0, -1, -1, 0, -0.5f, -0.5f)
 			.setRotationPoint(100.5f, -8, 0).setRotationAngle(0, 0, 0).setName("Box 305")
 		);
-		chassis_core.add(new ModelRendererTurbo(chassis_core, 729, 57, textureX, textureY).addBox(0, 0, -6, 1, 3, 12)
+		/*chassis_core.add(new ModelRendererTurbo(chassis_core, 729, 57, textureX, textureY).addBox(0, 0, -6, 1, 3, 12)
 			.setRotationPoint(101, -1, 0).setRotationAngle(0, 0, 5.0000005f).setName("Box 310")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 65, 65, textureX, textureY).addBox(-1, 0, -6, 1, 3, 12)
 			.setRotationPoint(-110.5f, -6.5f, 0).setRotationAngle(0, 0, 0).setName("Box 311")
-		);
+		);*/
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 993, 65, textureX, textureY).addBox(0, 0, -6, 1, 3, 12)
 			.setRotationPoint(95.5f, -22.5f, 15).setRotationAngle(0, 0, -45).setName("Box 312")
 		);
