@@ -53,6 +53,6 @@
     },
     "PartSlots":[
     	[ 101.4, 0.5, 0, "license_plate", "license_plate_front", 4, [ 0, 0, 15 ] ],
-    	[ -111.1, -5, 0, "license_plate", "license_plate_front", 4, [ 0, 180, 0 ] ]
+    	[ -111.1, -5, 0, "license_plate", "license_plate_rear", 4, [ 0, 180, 0 ] ]
     ]
 }
