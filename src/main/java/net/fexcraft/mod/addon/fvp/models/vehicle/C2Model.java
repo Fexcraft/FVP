@@ -40,9 +40,9 @@ public class C2Model extends VehicleModel {
 			.addShapeBox(0, 0, 0, 4, 5, 50, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, -1, -1, 0, 0, 0)
 			.setRotationPoint(42, -12, -25).setRotationAngle(0, 0, 0).setName("Box 11")
 		);
-		chassis_core.add(new ModelRendererTurbo(chassis_core, 185, 1, textureX, textureY).addBox(0, 0, 0, 1, 3, 16)
+		/*chassis_core.add(new ModelRendererTurbo(chassis_core, 185, 1, textureX, textureY).addBox(0, 0, 0, 1, 3, 16)
 			.setRotationPoint(-83.2f, -11.5f, -8).setRotationAngle(0, 0, 0).setName("license plate rear")
-		);
+		);*/
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 409, 137, textureX, textureY).addBox(0, 0, 0, 1, 4, 44)
 			.setRotationPoint(17, -23, -22).setRotationAngle(0, 0, 0).setName("Box 25")
 		);
@@ -87,9 +87,9 @@ public class C2Model extends VehicleModel {
 			.addShapeBox(0, 0, 0, 4, 5, 50, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1)
 			.setRotationPoint(-83, -12, -25).setRotationAngle(0, 0, 0).setName("Box 74")
 		);
-		chassis_core.add(new ModelRendererTurbo(chassis_core, 401, 81, textureX, textureY).addBox(0, 0, 0, 1, 3, 16)
+		/*chassis_core.add(new ModelRendererTurbo(chassis_core, 401, 81, textureX, textureY).addBox(0, 0, 0, 1, 3, 16)
 			.setRotationPoint(45.2f, -11.5f, -8).setRotationAngle(0, 0, 0).setName("license plate front")
-		);
+		);*/
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 465, 49, textureX, textureY)
 			.addShapeBox(0, 0, 0, 12, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0)
 			.setRotationPoint(-82, -8, -14).setRotationAngle(0, 0, 0).setName("Box 102")
