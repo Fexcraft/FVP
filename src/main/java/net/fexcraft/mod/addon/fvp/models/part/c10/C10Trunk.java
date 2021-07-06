@@ -16,16 +16,18 @@ public class C10Trunk extends PartModel {
 
 	public C10Trunk(){
 		super(); textureX = 512; textureY = 256;
-		this.addToCreators("Ferdinand");
+		this.addToCreators("Ferdinand (FEX___96)");
 		//
+
 		TurboList trunk_glow = new TurboList("trunk_glow");
-		trunk_glow.add(new ModelRendererTurbo(trunk_glow, 395, 59, textureX, textureY).addBox(-13.25f, 0.375f, -4.5f, 1, 1, 2)
+		trunk_glow.add(new ModelRendererTurbo(trunk_glow, 395, 59, textureX, textureY)
+			.addShapeBox(-13.25f, 0.375f, -4.5f, 1, 1, 2, 0, 0, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, 0, 0, 0, 0, -0.2f, 0, -0.6f, -0.2f, 0, -0.6f, -0.2f, 0, 0, -0.2f, 0)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, -15)
 		);
-		trunk_glow.add(new ModelRendererTurbo(trunk_glow, 338, 58, textureX, textureY).addBox(-13.25f, 0.375f, 2.5f, 1, 1, 2)
+		trunk_glow.add(new ModelRendererTurbo(trunk_glow, 338, 58, textureX, textureY)
+			.addShapeBox(-13.25f, 0.375f, 2.5f, 1, 1, 2, 0, 0, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, 0, 0, 0, 0, -0.2f, 0, -0.6f, -0.2f, 0, -0.6f, -0.2f, 0, 0, -0.2f, 0)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, -15)
 		);
-		//trunk_glow.addProgram(new DefaultPrograms.AttributeRotator("c10_trunk", true, 0, 72, 1, 2, -15f));
 		trunk_glow.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(trunk_glow);
 		//
@@ -43,24 +45,15 @@ public class C10Trunk extends PartModel {
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
 		);
 		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 336, 90, textureX, textureY)
-			.addShapeBox(-13, 11, -14, 3, 1, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0)
-			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
-		);
-		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 41, 107, textureX, textureY).addBox(-13, 8, -14, 3, 3, 28)
-			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
-		);
-		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 133, 90, textureX, textureY).addBox(-13, 4, -14, 3, 4, 8)
-			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
-		);
-		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 39, 90, textureX, textureY).addBox(-13, 4, 6, 3, 4, 8)
+			.addShapeBox(-13, 11, -14, 3, 1, 28, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, -1, 0, 0, -1.5f, 0, 0, -1.5f, 0, 0, -1, 0, 0)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
 		);
 		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 133, 90, textureX, textureY)
-			.addShapeBox(-13, 1, -14, 3, 3, 28, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.addShapeBox(-13, 1, -14, 3, 3, 28, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
 		);
 		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 0, 120, textureX, textureY)
-			.addShapeBox(-12, 0, -14, 2, 1, 28, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.addShapeBox(-12, 0, -14, 2, 1, 28, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
 		);
 		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 245, 113, textureX, textureY)
@@ -75,10 +68,22 @@ public class C10Trunk extends PartModel {
 			.addShapeBox(-11, -1, -5, 1, 1, 10, 0, -1, -0.25f, 0, 0, -0.5f, 0, 0, -0.5f, 0, -1, -0.25f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
 		);
-		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 473, 105, textureX, textureY).addBox(-12.5f, 4, -6, 2, 4, 12)
+		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 133, 90, textureX, textureY)
+			.addShapeBox(-13, 4, -14, 3, 4, 8, 0, 0, 0, 0, -2, 0, 0, -2, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, -2, 0, 0, -2, 0, -0.5f, 0, 0, -0.5f)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
 		);
-		//trunk_primary.addPrograms(new DefaultPrograms.AttributeRotator("c10_trunk", true, 0, 72, 1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
+		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 39, 90, textureX, textureY)
+			.addShapeBox(-13, 4, 6, 3, 4, 8, 0, 0, 0, -0.5f, -2, 0, -0.5f, -2, 0, 0, 0, 0, 0, 0, 0, -0.5f, -2, 0, -0.5f, -2, 0, 0, 0, 0, 0)
+			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
+		);
+		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 473, 105, textureX, textureY)
+			.addShapeBox(-12.5f, 4, -6, 2, 4, 12, 0, 0, 0, 0.5f, -1.5f, 0, 0.5f, -1.5f, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0.5f, -1.5f, 0, 0.5f, -1.5f, 0, 0.5f, 0, 0, 0.5f)
+			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
+		);
+		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 41, 107, textureX, textureY)
+			.addShapeBox(-13, 8, -14, 3, 3, 28, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0)
+			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)
+		);
 		trunk_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(trunk_primary);
 		translate(36, 13, 0);
