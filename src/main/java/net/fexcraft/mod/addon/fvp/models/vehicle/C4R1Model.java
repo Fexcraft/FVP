@@ -162,9 +162,9 @@ public class C4R1Model extends VehicleModel {
 		chassis.add(new ModelRendererTurbo(chassis, 59, 141, textureX, textureY).addBox(0, 0, 0, 1, 4, 5)
 			.setRotationPoint(39.8f, -30, -24.5f).setRotationAngle(0, -150, 0).setName("Box 108")
 		);
-		chassis.add(new ModelRendererTurbo(chassis, 480, 148, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
+		/*chassis.add(new ModelRendererTurbo(chassis, 480, 148, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
 			.setRotationPoint(-64.2f, -11, -6).setRotationAngle(0, 0, 0).setName("Box 121")
-		);
+		);*/
 		chassis.add(new ModelRendererTurbo(chassis, 99, 132, textureX, textureY).addBox(0, 0, 0, 3, 7, 7)
 			.setRotationPoint(-59, -13, -24).setRotationAngle(0, 0, 0).setName("Box 122")
 		);
@@ -185,9 +185,9 @@ public class C4R1Model extends VehicleModel {
 		chassis.add(new ModelRendererTurbo(chassis, 337, 4, textureX, textureY).addBox(0, 0, 0, 64, 5, 1)
 			.setRotationPoint(-32, -12, -24).setRotationAngle(0, 0, 0).setName("Box 127")
 		);
-		chassis.add(new ModelRendererTurbo(chassis, 439, 147, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
+		/*chassis.add(new ModelRendererTurbo(chassis, 439, 147, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
 			.setRotationPoint(63.2f, -11, -6).setRotationAngle(0, 0, 0).setName("Box 128")
-		);
+		);*/
 		chassis.add(new ModelRendererTurbo(chassis, 207, 106, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 2, 1, 0, 0, -4, 0, 0, 0, 0, 0, 0, 0, 0, -4, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0)
 			.setRotationPoint(36, -18, 23).setRotationAngle(0, 0, 0).setName("Box 139")
