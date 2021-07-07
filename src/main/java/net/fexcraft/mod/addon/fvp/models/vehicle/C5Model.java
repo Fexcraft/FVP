@@ -253,12 +253,12 @@ public class C5Model extends VehicleModel {
 			.addShapeBox(0, 0, 0, 1, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, -2, 0, 0, -2, 0, 0, 2, 0, 0)
 			.setRotationPoint(-35, -3, 23).setRotationAngle(0, 0, 0).setName("Box 354")
 		);
-		chassis_core.add(new ModelRendererTurbo(chassis_core, 57, 169, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
+		/*chassis_core.add(new ModelRendererTurbo(chassis_core, 57, 169, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
 			.setRotationPoint(61.7f, 2.5f, -6).setRotationAngle(0, 0, 7).setName("license plate front")
 		);
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 1, 177, textureX, textureY).addBox(0, 0, 0, 1, 3, 12)
 			.setRotationPoint(-41.2f, -2.5f, -6).setRotationAngle(0, 0, 0).setName("license plate rear")
-		);
+		);*/
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 449, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, 0, -2, 0, 0, -0.5f, 0, 0, 0, 0, 0, 2, 0, 0, -2, 0, 0, -0.5f, 0, 0, 0, 0, 0, 2)
 			.setRotationPoint(32, -11, 21.5f).setRotationAngle(0, 0, 0).setName("Box 462")
