@@ -400,10 +400,10 @@ public class C7_RSModel extends VehicleModel {
 			.setRotationPoint(54, -7.4f, -0.8f).setRotationAngle(0, 0, 0).setName("Box 99")
 		);
 		chassis_body.add(new ModelRendererTurbo(chassis_body, -1, -1, textureX, textureY).addBox(0, 0, 0, 1, 1, 1));
-		chassis_body.add(new ModelRendererTurbo(chassis_body, 259, 80, textureX, textureY)
+		/*chassis_body.add(new ModelRendererTurbo(chassis_body, 259, 80, textureX, textureY)
 			.addShapeBox(0, 0, 4.8f, 1.2f, 3.6000001f, 12, 0, -0.96000004f, 0, 0, 0, 0, 0, 0, 0, 0, -0.96000004f, 0, 0, -0.96000004f, 0, 0, 0, 0, 0, 0, 0, 0, -0.96000004f, 0, 0)
 			.setRotationPoint(54.2f, -1, -10.8f).setRotationAngle(0, 0, 1.5f).setName("Box 258")
-		);
+		);*/
 		this.groups.add(chassis_body);
 		//
 		TurboList chassis_primary = new TurboList("chassis_primary");
@@ -839,10 +839,10 @@ public class C7_RSModel extends VehicleModel {
 			.addShapeBox(-7.2000003f, 15.6f, 4.8f, 1.2f, 1.2f, 14.400001f, 0, -0.6f, -0.48000002f, -0.6f, 0, 0, 0, 0, 0, 0, -0.6f, -0.48000002f, -0.6f, -0.6f, 0, -0.6f, 0, 0, 0, 0, 0, 0, -0.6f, 0, -0.6f)
 			.setRotationPoint(-49.2f, -24.2f, -12).setRotationAngle(0, 0, 0).setName("Box 257")
 		);
-		door_trunk_primary.add(new ModelRendererTurbo(door_trunk_primary, 259, 80, textureX, textureY)
+		/*door_trunk_primary.add(new ModelRendererTurbo(door_trunk_primary, 259, 80, textureX, textureY)
 			.addShapeBox(-7.2000003f, 15.6f, 4.8f, 1.2f, 3.6000001f, 12, 0, -0.96000004f, 0, 0, 0, 0, 0, 0, 0, 0, -0.96000004f, 0, 0, -0.96000004f, 0, 0, 0, 0, 0, 0, 0, 0, -0.96000004f, 0, 0)
 			.setRotationPoint(-49.2f, -23, -10.8f).setRotationAngle(0, 0, 0).setName("Box 258")
-		);
+		);*/
 		door_trunk_primary.add(new ModelRendererTurbo(door_trunk_primary, 243, 119, textureX, textureY)
 			.addShapeBox(-6, 13.200001f, 0, 2.4f, 13, 33.600002f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-49.2f, -25.2f, -16.800001f).setRotationAngle(0, 0, 0).setName("Box 252cp")
