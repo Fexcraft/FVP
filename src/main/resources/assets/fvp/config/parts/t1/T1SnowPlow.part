@@ -4,7 +4,17 @@
     "Model": "fvp:models/part/t1_snow_plow",
     "Name": "T1 FT1 Snow Plow",
     "Category": "front_tool",
-    "Scripts":[ "net.fexcraft.mod.addon.fvp.scripts.T1SnowPlowScript.class" ],
+    "Script":{
+		"class": "net.fexcraft.mod.addon.gep.scripts.GeneralSnowPlowScript.class",
+		"data":{
+			"pos": [ 70, 4, 0 ],
+			"out": [ 70, 4, 48 ],
+			"width": 5,
+			"attribute": "t1_snowplow",
+			"accuracy": 0.5,
+			"accumulate": true
+		}
+	},
     "Texture": "fvp:textures/parts/t1_ft1.png",
     "Installation":{
 	    "Compatible": [ { "vehicle": "fvp:t1p" } ]
@@ -13,6 +23,6 @@
     	{ "id": "weight", "type": "additive", "target": "vehicle:weight", "value": "210", "priority": "veryhigh" }
     ],
     "Attributes":[
-    	{ "id":"t1_snowplow_state", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
+    	{ "id":"t1_snowplow", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
     ]
 }

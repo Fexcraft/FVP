@@ -24,7 +24,7 @@ public class T1SnowPlow extends PartModel {
 			.addShapeBox(9, -8, -24.5f, 1, 2, 4, 0, 0, -0.2f, -0.2f, -0.8f, -0.45f, -0.45f, -0.8f, -0.45f, -0.45f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.45f, -0.45f, -0.8f, -0.45f, -0.45f, 0, -0.2f, -0.2f)
 			.setRotationPoint(58, -5, 0).setRotationAngle(0, 0, -0).setName("Box 13")
 		);
-		lights.addPrograms(DefaultPrograms.LIGHTS, new DefaultPrograms.AttributeRotator("t1_snowplow_state", true, 0, 20, 1, 2, -20f));
+		lights.addPrograms(DefaultPrograms.LIGHTS, new DefaultPrograms.AttributeRotator("t1_snowplow", true, 0, 20, 1, 2, -20f));
 		this.groups.add(lights);
 		//
 		TurboList base = new TurboList("base");
@@ -77,7 +77,7 @@ public class T1SnowPlow extends PartModel {
 			.addShapeBox(8, -8, -24.5f, 1, 2, 4, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(58, -5, 0).setRotationAngle(0, 0, -0).setName("Box 11")
 		);
-		moving.addProgram(new DefaultPrograms.AttributeRotator("t1_snowplow_state", true, 0, 20, 1, 2, -20f));
+		moving.addProgram(new DefaultPrograms.AttributeRotator("t1_snowplow", true, 0, 20, 1, 2, -20f));
 		this.groups.add(moving);
     }
 
