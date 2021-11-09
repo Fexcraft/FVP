@@ -24,11 +24,23 @@
     ],
 	"Function":	{
 		"id": "fvtm:particle_emitter",
-		"particle": "gep:smoke_normal",
-		"frequency": 10,
-		"pos": [ -51, 2, 23 ],
-		"direction": [ -1, 0.1, -0.1 ],
-		"speed": 0.02,
-		"condition": "gep:engine_on"
+		"emitters":[
+			{
+				"particle": "gep:smoke_normal",
+				"frequency": 10,
+				"pos": [ -51, 2, 23 ],
+				"direction": [ -1, 0.1, -0.1 ],
+				"speed": 0.02,
+				"condition": "gep:engine_on"
+			},
+			{
+				"particle": "gep:smoke_normal",
+				"frequency": 10,
+				"pos": [ -51, 2, 23 ],
+				"direction": [ -1, 0.1, -0.1 ],
+				"speed": 0.02,
+				"condition": "gep:engine_throttle_0.5"
+			}
+		]
 	}
 }
