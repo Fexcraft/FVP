@@ -15,5 +15,26 @@
     "Attributes":[
     	{ "id": "exhaust_0", "type": "vector3", "value": [ -11, -72, 23 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" },
     	{ "id": "exhaust_1", "type": "vector3", "value": [ -11, -72, -23 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" }
-    ]
+    ],
+	"Function":		{
+		"id": "fvtm:particle_emitter",
+		"emitters":[
+			{
+				"particle": "gep:smoke_normal",
+				"frequency": 10,
+				"pos": [ -11, -72, 23 ],
+				"direction": [ -1, 0.5, 0 ],
+				"speed": 0.02,
+				"condition": "gep:engine_on"
+			},
+			{
+				"particle": "gep:smoke_normal",
+				"frequency": 10,
+				"pos": [ -11, -72, -23 ],
+				"direction": [ -1, 0.5, 0 ],
+				"speed": 0.02,
+				"condition": "gep:engine_on"
+			}
+		]
+	}
 }
