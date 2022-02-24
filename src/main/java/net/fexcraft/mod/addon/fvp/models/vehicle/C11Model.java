@@ -404,14 +404,14 @@ public class C11Model extends VehicleModel {
 			.addShapeBox(0, 0, 0, 2, 11, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, -9, 0, 0, 9, 0, 0, 9, 0, 0, -9, 0, 0)
 			.setRotationPoint(8.5f, -22.5f, -19).setRotationAngle(0, 0, 0)
 		);
-		primary.add(new ModelRendererTurbo(primary, 496, 31, textureX, textureY)
+		/*primary.add(new ModelRendererTurbo(primary, 496, 31, textureX, textureY)
 			.addShapeQuad(0, 0, 0, 2, 2, 0, 0, -0.5f, 1.25f, -2, 0, 0, 0, 0, 2.5f, 0, 0, 0)
 			.setRotationPoint(48, -9, -19).setRotationAngle(0, 0, 0)
 		);
 		primary.add(new ModelRendererTurbo(primary, 507, 23, textureX, textureY)
 			.addShapeQuad(0, 0, 0, 2, 2, 0, 0, 0, 0, -2, -0.5f, -1.25f, -2, 0, 0, -2, 0, -2.5f)
 			.setRotationPoint(48, -9, 19).setRotationAngle(0, 0, 0)
-		);
+		);*/
 		primary.add(new ModelRendererTurbo(primary, 287, 120, textureX, textureY)
 			.addShapeBox(0, -1, 0, 1, 2, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(41, 5, -21).setRotationAngle(0, 0, 0)
