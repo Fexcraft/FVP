@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.1 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C7R1T1Wheel extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList wheel = new TurboList("wheel");
+		ModelGroup wheel = new ModelGroup("wheel");
 		wheel.add(new ModelRendererTurbo(wheel, 0, 123, textureX, textureY)
 			.addShapeBox(-7.2000003f, -7.2000003f, -1.2f, 2.4f, 4.8f, 4.8f, 0, -4.8f, 0, 0, 2.4f, -2.4f, 0, 2.4f, -2.4f, 0, -4.8f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(0, 0, 1.2f).setRotationAngle(0, 0, 0).setName("Box 114")

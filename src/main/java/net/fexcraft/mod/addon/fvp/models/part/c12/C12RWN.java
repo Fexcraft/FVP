@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c12;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class C12RWN extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList rear_window_net = new TurboList("rear_window_net");
+		ModelGroup rear_window_net = new ModelGroup("rear_window_net");
 		rear_window_net.add(new ModelRendererTurbo(rear_window_net, 412, 170, textureX, textureY).addBox(0, 0, 0, 0.5f, 1, 40)
 			.setRotationPoint(-29.5f, -10.5f, -20).setRotationAngle(0, 0, 13)
 		);

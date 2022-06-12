@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C12Seats extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList seats = new TurboList("seats");
+		ModelGroup seats = new ModelGroup("seats");
 		seats.add(new ModelRendererTurbo(seats, 149, 43, textureX, textureY).addBox(0, 0, 0, 13, 6, 41)
 			.setRotationPoint(-26.5f, 1, -20.5f).setRotationAngle(0, 0, 0)
 		);

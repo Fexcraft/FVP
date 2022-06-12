@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,21 +18,21 @@ public class TR1Lights extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList indicator_left = new TurboList("indicator_left");
+		ModelGroup indicator_left = new ModelGroup("indicator_left");
 		indicator_left.add(new ModelRendererTurbo(indicator_left, 505, 33, textureX, textureY).addBox(0, 0, 0, 1, 4, 1)
 			.setRotationPoint(-236, -20.5f, 24).setRotationAngle(0, 0, 0).setName("Box 371")
 		);
 		indicator_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
 		this.groups.add(indicator_left);
 		//
-		TurboList indicator_right = new TurboList("indicator_right");
+		ModelGroup indicator_right = new ModelGroup("indicator_right");
 		indicator_right.add(new ModelRendererTurbo(indicator_right, 1, 41, textureX, textureY).addBox(0, 0, 0, 1, 4, 1)
 			.setRotationPoint(-236, -20.5f, -25).setRotationAngle(0, 0, 0).setName("Box 372")
 		);
 		indicator_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
 		this.groups.add(indicator_right);
 		//
-		TurboList lights = new TurboList("lights");
+		ModelGroup lights = new ModelGroup("lights");
 		lights.add(new ModelRendererTurbo(lights, 33, 49, textureX, textureY).addBox(0, 0, 0, 3, 1, 1)
 			.setRotationPoint(-232, -20, -25.5f).setRotationAngle(0, 0, 0).setName("Box 79")
 		);
@@ -144,7 +144,7 @@ public class TR1Lights extends PartModel {
 		lights.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(lights);
 		//
-		TurboList lights_brake = new TurboList("lights_brake");
+		ModelGroup lights_brake = new ModelGroup("lights_brake");
 		lights_brake.add(new ModelRendererTurbo(lights_brake, 505, 1, textureX, textureY).addBox(0, 0, 0, 1, 4, 2)
 			.setRotationPoint(-236, -20.5f, -24).setRotationAngle(0, 0, 0).setName("Box 118")
 		);
@@ -160,7 +160,7 @@ public class TR1Lights extends PartModel {
 		lights_brake.addProgram(DefaultPrograms.REVERSE_LIGHTS);
 		this.groups.add(lights_brake);
 		//
-		TurboList lights_rear = new TurboList("lights_rear");
+		ModelGroup lights_rear = new ModelGroup("lights_rear");
 		lights_rear.add(new ModelRendererTurbo(lights_rear, 1, 97, textureX, textureY).addBox(0, 0, 0, 1, 2, 7)
 			.setRotationPoint(-236, -20.5f, -22).setRotationAngle(0, 0, 0).setName("Box 119")
 		);

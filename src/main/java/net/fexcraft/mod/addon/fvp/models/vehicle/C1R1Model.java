@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.2 of<br>
@@ -18,7 +18,7 @@ public class C1R1Model extends VehicleModel {
 		super(); textureX = 512; textureY = 512;
 		addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 1, 1, textureX, textureY).addBox(-32, 1, -21, 64, 1, 42).setName("Box 0"));
 		chassis.add(new ModelRendererTurbo(chassis, 177, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 10, 2, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0)
@@ -339,7 +339,7 @@ public class C1R1Model extends VehicleModel {
 		chassis.add(new ModelRendererTurbo(chassis, 0, 0, textureX, textureY).addBox(-0.5f, -0.5f, 0, 1, 1, 2).setName("Box 705"));
 		this.groups.add(chassis);
 		//
-		TurboList chassis_primary = new TurboList("chassis_primary");
+		ModelGroup chassis_primary = new ModelGroup("chassis_primary");
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 97, 113, textureX, textureY).addBox(0, 0, 0, 3, 11, 42)
 			.setRotationPoint(25, -10, -21).setRotationAngle(0, 0, -0).setName("Box 439")
 		);

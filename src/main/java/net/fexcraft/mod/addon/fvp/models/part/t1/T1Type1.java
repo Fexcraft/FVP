@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T1Type1 extends PartModel {
 		super(); textureX = 1024; textureY = 1024;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 465, 145, textureX, textureY)
 			.addShapeBox(0, 0, 0, 124, 1, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1)
 			.setRotationPoint(-102, -12, -25.5f).setRotationAngle(0, 0, 0).setName("Box 219")
@@ -94,7 +94,7 @@ public class T1Type1 extends PartModel {
 		);
 		this.groups.add(chassis);
 		//
-		TurboList chassis_lights = new TurboList("chassis_lights");
+		ModelGroup chassis_lights = new ModelGroup("chassis_lights");
 		chassis_lights.add(new ModelRendererTurbo(chassis_lights, 449, 161, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(-101.5f, -60, 24.3f).setRotationAngle(0.017453292f, 0, 0).setName("Box 687")
@@ -202,7 +202,7 @@ public class T1Type1 extends PartModel {
 		chassis_lights.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(chassis_lights);
 		//
-		TurboList chassis_primary = new TurboList("chassis_primary");
+		ModelGroup chassis_primary = new ModelGroup("chassis_primary");
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 465, 201, textureX, textureY).addBox(0, 0, 0, 124, 48, 1)
 			.setRotationPoint(-102, -60, -25.5f).setRotationAngle(0, 0, 0).setName("Box 0")
 		);
@@ -218,7 +218,7 @@ public class T1Type1 extends PartModel {
 		chassis_primary.addProgram(DefaultPrograms.RGB_SECONDARY);
 		this.groups.add(chassis_primary);
 		//
-		TurboList doors_close = new TurboList("doors_close");
+		ModelGroup doors_close = new ModelGroup("doors_close");
 		doors_close.add(new ModelRendererTurbo(doors_close, 953, 233, textureX, textureY).addBox(0, 0, 0, 1, 48, 25)
 			.setRotationPoint(-102.5f, -60, -25).setRotationAngle(0, 0, 0).setName("Box 6")
 		);
@@ -258,7 +258,7 @@ public class T1Type1 extends PartModel {
 		doors_close.addProgram(new DefaultPrograms.AttributeVisible("t1_type1_door", false));
 		this.groups.add(doors_close);
 		//
-		TurboList doors_close_lights = new TurboList("doors_close_lights");
+		ModelGroup doors_close_lights = new ModelGroup("doors_close_lights");
 		doors_close_lights.add(new ModelRendererTurbo(doors_close_lights, 377, 89, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(-102.7f, -60, -25).setRotationAngle(0.017453292f, 0, 0).setName("Box 14")
@@ -310,7 +310,7 @@ public class T1Type1 extends PartModel {
 		doors_close_lights.addPrograms(new DefaultPrograms.AttributeVisible("t1_type1_door", false), DefaultPrograms.LIGHTS);
 		this.groups.add(doors_close_lights);
 		//
-		TurboList doors_open = new TurboList("doors_open");
+		ModelGroup doors_open = new ModelGroup("doors_open");
 		doors_open.add(new ModelRendererTurbo(doors_open, 721, 257, textureX, textureY)
 			.addShapeBox(0, 0, 0, 16, 2, 46, 0, 0, -1.5f, 0, 0, 0, 0, 0, 0, 0, 0, -1.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-120.5f, 8, -23).setRotationAngle(0, 0, 0).setName("Box 645")
@@ -356,7 +356,7 @@ public class T1Type1 extends PartModel {
 		doors_open.addProgram(new DefaultPrograms.AttributeVisible("t1_type1_door", true));
 		this.groups.add(doors_open);
 		//
-		TurboList doors_open_lights = new TurboList("doors_open_lights");
+		ModelGroup doors_open_lights = new ModelGroup("doors_open_lights");
 		doors_open_lights.add(new ModelRendererTurbo(doors_open_lights, 921, 105, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f)
 			.setRotationPoint(-102.3f, -60, -47).setRotationAngle(0.017453292f, 0, 0).setName("Box 650")
@@ -408,7 +408,7 @@ public class T1Type1 extends PartModel {
 		doors_open_lights.addPrograms(new DefaultPrograms.AttributeVisible("t1_type1_door", true), DefaultPrograms.LIGHTS);
 		this.groups.add(doors_open_lights);
 		//
-		TurboList lights_front = new TurboList("lights_front");
+		ModelGroup lights_front = new ModelGroup("lights_front");
 		lights_front.add(new ModelRendererTurbo(lights_front, 921, 177, textureX, textureY)
 			.addShapeBox(0, 0, 0, 3, 3, 5, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0)
 			.setRotationPoint(49.5f, -42.5f, 7.5f).setRotationAngle(0, 0, 0).setName("Box 715")
@@ -420,7 +420,7 @@ public class T1Type1 extends PartModel {
 		lights_front.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(lights_front);
 		//
-		TurboList lights_front_glow = new TurboList("lights_front_glow");
+		ModelGroup lights_front_glow = new ModelGroup("lights_front_glow");
 		lights_front_glow.add(new ModelRendererTurbo(lights_front_glow, 153, 177, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 2, 4, 0, 0, -0.1f, -0.1f, -0.6f, -0.3f, -0.3f, -0.6f, -0.3f, -0.3f, 0, -0.1f, -0.1f, 0, -0.1f, -0.1f, -0.6f, -0.3f, -0.3f, -0.6f, -0.3f, -0.3f, 0, -0.1f, -0.1f)
 			.setRotationPoint(52.5f, -42.25f, 8).setRotationAngle(0, 0, 0).setName("Box 713")

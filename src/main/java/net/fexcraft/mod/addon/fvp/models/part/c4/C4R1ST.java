@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.7-test &copy; 2019 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C4R1ST extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList steering = new TurboList("steering");
+		ModelGroup steering = new ModelGroup("steering");
 		steering.add(new ModelRendererTurbo(steering, 451, 11, textureX, textureY).addHollowCylinder(-1.05f, 0, 0, 4, 3, 1.1f, 11, 0, 1, 1, 2)
 			.setRotationPoint(33, -27, 13).setRotationAngle(0, 0, 15)
 		);

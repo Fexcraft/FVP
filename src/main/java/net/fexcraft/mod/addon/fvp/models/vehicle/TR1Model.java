@@ -3,13 +3,9 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.data.root.Colorable;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
 import net.fexcraft.mod.fvtm.data.vehicle.VehicleEntity;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -22,7 +18,7 @@ public class TR1Model extends VehicleModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList body = new TurboList("body");
+		ModelGroup body = new ModelGroup("body");
 		body.add(new ModelRendererTurbo(body, 1, 1, textureX, textureY).addBox(-2, 0, -2, 4, 8, 4)
 			.setRotationPoint(0, -19, 0).setRotationAngle(0, 0.7853982f, 0).setName("Box 221")
 		);
@@ -125,7 +121,7 @@ public class TR1Model extends VehicleModel {
 		);
 		this.groups.add(body);
 		//
-		TurboList feet = new TurboList("feet");
+		ModelGroup feet = new ModelGroup("feet");
 		feet.add(new ModelRendererTurbo(feet, 465, 49, textureX, textureY).addBox(-2, 0, -2, 4, 24, 4)
 			.setRotationPoint(-47, -17, -19).setRotationAngle(0, 0, 0).setName("Box 32")
 		);
@@ -138,15 +134,15 @@ public class TR1Model extends VehicleModel {
 		feet.add(new ModelRendererTurbo(feet, 25, 65, textureX, textureY).addBox(-3, 24, -3, 6, 3, 6)
 			.setRotationPoint(-47, -17, 19).setRotationAngle(0, 0, 0).setName("Box 36")
 		);
-		feet.addProgram(new TurboList.Program(){
+		feet.addProgram(new ModelGroup.Program(){
 			@Override
-			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				boolean notthere = ent == null || ((VehicleEntity)ent).getFrontCoupledEntity() == null;
+			public void preRender(ModelGroup list, ModelRenderData data){
+				boolean notthere = data.entity == null || ((VehicleEntity)data.entity).getFrontCoupledEntity() == null;
 				for(ModelRendererTurbo turbo : feet){ turbo.rotationAngleZ = notthere ? 0 : 90f; }
 			}
 			@Override
-			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				//
+			public boolean isPostRender(){
+				return false;
 			}
 		});
 		this.groups.add(feet);

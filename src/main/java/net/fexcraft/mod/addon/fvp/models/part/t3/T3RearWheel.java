@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.5.2 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T3RearWheel extends PartModel {
 		super(); textureX = 256; textureY = 128;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList wheel1 = new TurboList("wheel1");
+		ModelGroup wheel1 = new ModelGroup("wheel1");
 		wheel1.add(new ModelRendererTurbo(wheel1, 97, 0, textureX, textureY).addHollowCylinder(0, 0, 0, 24, 18, 5, 16, 0, 0.5f, 0.5f, 1,
 			null, new boolean[]{ true, true, false, false }));
 		wheel1.add(new ModelRendererTurbo(wheel1, 48, 78, textureX, textureY)
@@ -186,7 +186,7 @@ public class T3RearWheel extends PartModel {
 		wheel1.addProgram(DefaultPrograms.WHEEL_AUTO_ALL);
 		this.groups.add(wheel1);
 		//
-		TurboList wheel2 = new TurboList("wheel2");
+		ModelGroup wheel2 = new ModelGroup("wheel2");
 		wheel2.add(new ModelRendererTurbo(wheel2, 0, 0, textureX, textureY).addHollowCylinder(0, 0, 0, 24, 18, 5, 16, 0, 0.5f, 0.5f, 1,
 			null, new boolean[]{ true, true, false, false })
 			.setRotationPoint(0, 0, 6.5f).setRotationAngle(0, 0, 0)
@@ -369,7 +369,7 @@ public class T3RearWheel extends PartModel {
 		wheel2.addProgram(DefaultPrograms.WHEEL_AUTO_ALL);
 		this.groups.add(wheel2);
 		//
-		TurboList inner = new TurboList("inner");
+		ModelGroup inner = new ModelGroup("inner");
 		inner.add(new ModelRendererTurbo(inner, 231, 0, textureX, textureY).addCylinder(0, 0, 0, 4, 5, 16, 1, 1, 1, null)
 			.setRotationPoint(0, 0, 3.5f).setRotationAngle(0, 0, 0)
 		);

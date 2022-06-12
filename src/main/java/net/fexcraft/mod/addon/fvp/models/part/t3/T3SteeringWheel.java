@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.5.2 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T3SteeringWheel extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList steering_wheel = new TurboList("steering_wheel");
+		ModelGroup steering_wheel = new ModelGroup("steering_wheel");
 		steering_wheel.add(new ModelRendererTurbo(steering_wheel, 91, 271, textureX, textureY)
 			.addShapeBox(-1, -1.5f, -5.5f, 1, 3, 4, 0, -0.1f, 0, 0, -0.1f, 0, 0, 0, 0, 0, 0, 0, 0, -0.1f, -1, 0, -0.1f, -1, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(13, -35.5f, 12).setRotationAngle(0, 0, 5)

@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T1Type4 extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList body_core = new TurboList("body_core");
+		ModelGroup body_core = new ModelGroup("body_core");
 		body_core.add(new ModelRendererTurbo(body_core, 1, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 4, 42, 0, 0, 0, -4, 0, 0, -4, 0, 0, -4, 0, 0, -4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(9, -16, -21).setRotationAngle(0, 0, 0).setName("Box 0")
@@ -248,7 +248,7 @@ public class T1Type4 extends PartModel {
 		);
 		this.groups.add(body_core);
 		//
-		TurboList body_secondary = new TurboList("body_secondary");
+		ModelGroup body_secondary = new ModelGroup("body_secondary");
 		body_secondary.add(new ModelRendererTurbo(body_secondary, 249, 1, textureX, textureY).addBox(0, 0, 0, 116, 1, 12)
 			.setRotationPoint(-98, -14, -6).setRotationAngle(0, 0, 0).setName("Box 3")
 		);

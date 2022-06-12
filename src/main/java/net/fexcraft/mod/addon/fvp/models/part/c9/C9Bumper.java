@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C9Bumper extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList bumper_front = new TurboList("bumper_front");
+		ModelGroup bumper_front = new ModelGroup("bumper_front");
 		bumper_front.add(new ModelRendererTurbo(bumper_front, 169, 97, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 4, 14, 0, 0, 0, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, 0, 0, 0, -0.6f, 0, 0, -0.9f, 0, 0, -0.9f, 0, 0, -0.6f, 0)
 			.setRotationPoint(50.7f, 4, -7).setRotationAngle(0, 0, 0)
@@ -62,7 +62,7 @@ public class C9Bumper extends PartModel {
 		bumper_front.addProgram(new DefaultPrograms.IDSpecific("front_bumper"));
 		this.groups.add(bumper_front);
 		//
-		TurboList bumper_rear = new TurboList("bumper_rear");
+		ModelGroup bumper_rear = new ModelGroup("bumper_rear");
 		bumper_rear.add(new ModelRendererTurbo(bumper_rear, 345, 129, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 3, 6, 0, -0.8f, 0, 0, 0, 0, 0, 0, 0, 0, -0.8f, 0, 0, -0.8f, 0, 0, 0, 0, 0, 0, 0, 0, -0.8f, 0, 0)
 			.setRotationPoint(-54.1f, 0, -3).setRotationAngle(0, 0, 0)

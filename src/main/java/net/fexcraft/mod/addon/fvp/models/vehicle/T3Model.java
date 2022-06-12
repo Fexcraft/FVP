@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
@@ -18,13 +18,13 @@ public class T3Model extends VehicleModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList axle_front = new TurboList("axle_front");
+		ModelGroup axle_front = new ModelGroup("axle_front");
 		axle_front.add(new ModelRendererTurbo(axle_front, 206, 405, textureX, textureY).addBox(0, 0, -36, 2, 2, 36)
 			.setRotationPoint(51, -3, 18).setRotationAngle(0, 0, 0).setName("axle_front")
 		);
 		this.groups.add(axle_front);
 		//
-		TurboList label_left = new TurboList("label_left");
+		ModelGroup label_left = new ModelGroup("label_left");
 		label_left.add(new ModelRendererTurbo(label_left, 333, 185, textureX, textureY)
 			.addShapeBox(0, 0, 0, 14, 3, 1, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0)
 			.setRotationPoint(56, -30.5f, 14.55f).setRotationAngle(0, 9.5f, 4)
@@ -139,7 +139,7 @@ public class T3Model extends VehicleModel {
 		);
 		this.groups.add(label_left);
 		//
-		TurboList label_right = new TurboList("label_right");
+		ModelGroup label_right = new ModelGroup("label_right");
 		label_right.add(new ModelRendererTurbo(label_right, 303, 80, textureX, textureY)
 			.addShapeBox(0, 0, 0, 14, 3, 1, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, -0.375f, 0)
 			.setRotationPoint(56, -30.5f, -15.55f).setRotationAngle(0, -9.5f, 4)
@@ -254,7 +254,7 @@ public class T3Model extends VehicleModel {
 		);
 		this.groups.add(label_right);
 		//
-		TurboList door_right = new TurboList("door_right");
+		ModelGroup door_right = new ModelGroup("door_right");
 		door_right.add(new ModelRendererTurbo(door_right, 0, 220, textureX, textureY).addBox(-21, 0, 0, 14, 16, 1)
 			.setRotationPoint(17, -35, -21.9f).setRotationAngle(0, 0, 0)
 		);
@@ -288,7 +288,7 @@ public class T3Model extends VehicleModel {
 		door_right.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_right);
 		//
-		TurboList door_left = new TurboList("door_left");
+		ModelGroup door_left = new ModelGroup("door_left");
 		door_left.add(new ModelRendererTurbo(door_left, 421, 226, textureX, textureY).addBox(-21, 0, 0, 21, 16, 1)
 			.setRotationPoint(17, -35, 20.9f).setRotationAngle(0, 0, 0)
 		);
@@ -313,7 +313,7 @@ public class T3Model extends VehicleModel {
 		door_left.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_left);
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 404, 65, textureX, textureY).addBox(0, 0, 0, 48, 10, 4)
 			.setRotationPoint(-14, -13, -11).setRotationAngle(0, 0, 0)
 		);
@@ -469,7 +469,7 @@ public class T3Model extends VehicleModel {
 		);
 		this.groups.add(chassis);
 		//
-		TurboList lights_turn_left = new TurboList("lights_turn_left");
+		ModelGroup lights_turn_left = new ModelGroup("lights_turn_left");
 		lights_turn_left.add(new ModelRendererTurbo(lights_turn_left, 183, 211, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 2, 0, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(51.5f, -17.3f, 23.8f).setRotationAngle(0, 0, 0)
@@ -481,7 +481,7 @@ public class T3Model extends VehicleModel {
 		lights_turn_left.addProgram(DefaultPrograms.TURN_SIGNAL_LEFT);
 		this.groups.add(lights_turn_left);
 		//
-		TurboList lights_turn_right = new TurboList("lights_turn_right");
+		ModelGroup lights_turn_right = new ModelGroup("lights_turn_right");
 		lights_turn_right.add(new ModelRendererTurbo(lights_turn_right, 475, 180, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 2, 0, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(51.5f, -17.3f, -25.8f).setRotationAngle(0, 0, 0)
@@ -493,7 +493,7 @@ public class T3Model extends VehicleModel {
 		lights_turn_right.addProgram(DefaultPrograms.TURN_SIGNAL_RIGHT);
 		this.groups.add(lights_turn_right);
 		//
-		TurboList lights_front = new TurboList("lights_front");
+		ModelGroup lights_front = new ModelGroup("lights_front");
 		lights_front.add(new ModelRendererTurbo(lights_front, 352, 244, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 3, 3, 0, 0, 0, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, 0, 0, 0, 0, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, 0, 0)
 			.setRotationPoint(68, -9.1f, 15.25f).setRotationAngle(0, 0, 0)
@@ -507,7 +507,7 @@ public class T3Model extends VehicleModel {
 		lights_front.addProgram(DefaultPrograms.RECT_LIGHTBEAM_FRONT_LIGHTS.init(256, 2, 2, 72, 48, 70, -7.5f, -16.75f, 0, 0, -3, null, null));
 		this.groups.add(lights_front);
 		//
-		TurboList lights_long = new TurboList("lights_long");
+		ModelGroup lights_long = new ModelGroup("lights_long");
 		lights_long.add(new ModelRendererTurbo(lights_long, 491, 232, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 3, 3, 0, 0, 0, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, 0, 0, 0, 0, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, 0, 0)
 			.setRotationPoint(68, -9.1f, 19.75f).setRotationAngle(0, 0, 0)
@@ -521,7 +521,7 @@ public class T3Model extends VehicleModel {
 		lights_long.addProgram(DefaultPrograms.RECT_LIGHTBEAM_LONG_LIGHTS.init(720, 2, 2, 256, 128, 70, -7.5f, -21.25f, 0, 0, -5, null, null));
 		this.groups.add(lights_long);
 		//
-		TurboList chassis_primary = new TurboList("chassis_primary");
+		ModelGroup chassis_primary = new ModelGroup("chassis_primary");
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 239, 119, textureX, textureY).addBox(0, 0, 0, 33, 20, 2)
 			.setRotationPoint(-12, -19, -22).setRotationAngle(0, 0, 0)
 		);
@@ -678,7 +678,7 @@ public class T3Model extends VehicleModel {
 		chassis_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(chassis_primary);
 		//
-		TurboList chassis_secondary = new TurboList("chassis_secondary");
+		ModelGroup chassis_secondary = new ModelGroup("chassis_secondary");
 		chassis_secondary.add(new ModelRendererTurbo(chassis_secondary, 174, 88, textureX, textureY).addBox(0, 0, 0, 46, 2, 10)
 			.setRotationPoint(-12, 0.5f, 16).setRotationAngle(0, 0, 0)
 		);

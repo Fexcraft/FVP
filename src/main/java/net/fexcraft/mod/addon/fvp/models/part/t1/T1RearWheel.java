@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.t1;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
@@ -18,7 +18,7 @@ public class T1RearWheel extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList wheel_rear = new TurboList("wheel_rear");
+		ModelGroup wheel_rear = new ModelGroup("wheel_rear");
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 249, 145, textureX, textureY).addBox(-8, -3, 0, 16, 6, 2).setName("Box 231"));
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 209, 121, textureX, textureY).addBox(-3, 3, 0, 6, 5, 2).setName("Box 232"));
 		wheel_rear.add(new ModelRendererTurbo(wheel_rear, 161, 129, textureX, textureY).addBox(-3, -8, 0, 6, 5, 2).setName("Box 233"));

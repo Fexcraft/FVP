@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.2.8 &copy; 2019 - Fexcraft.net<br>
@@ -19,7 +19,7 @@ public class C10Trunk extends PartModel {
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
 
-		TurboList trunk_glow = new TurboList("trunk_glow");
+		ModelGroup trunk_glow = new ModelGroup("trunk_glow");
 		trunk_glow.add(new ModelRendererTurbo(trunk_glow, 395, 59, textureX, textureY)
 			.addShapeBox(-13.25f, 0.375f, -4.5f, 1, 1, 2, 0, 0, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, 0, 0, 0, 0, -0.2f, 0, -0.6f, -0.2f, 0, -0.6f, -0.2f, 0, 0, -0.2f, 0)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, -15)
@@ -31,7 +31,7 @@ public class C10Trunk extends PartModel {
 		trunk_glow.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(trunk_glow);
 		//
-		TurboList trunk_primary = new TurboList("trunk_primary");
+		ModelGroup trunk_primary = new ModelGroup("trunk_primary");
 		trunk_primary.add(new ModelRendererTurbo(trunk_primary, 144, 55, textureX, textureY)
 			.addShapeBox(-10, -1, -14, 10, 1, 9, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-36, -13, 0).setRotationAngle(0, 0, 0)

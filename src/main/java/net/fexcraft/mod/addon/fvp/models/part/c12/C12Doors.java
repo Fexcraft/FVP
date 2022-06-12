@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C12Doors extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList door_front_left = new TurboList("door_front_left");
+		ModelGroup door_front_left = new ModelGroup("door_front_left");
 		door_front_left.add(new ModelRendererTurbo(door_front_left, 145, 20, textureX, textureY)
 			.addShapeBox(-20, 0, 0, 20, 15, 1, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(12.5f, -9, 22.5f).setRotationAngle(0, 0, 0)
@@ -48,7 +48,7 @@ public class C12Doors extends PartModel {
 		door_front_left.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fl", true, 0, 75, 1f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_left);
 		//
-		TurboList door_front_left_mirror = new TurboList("door_front_left_mirror");
+		ModelGroup door_front_left_mirror = new ModelGroup("door_front_left_mirror");
 		door_front_left_mirror.add(new ModelRendererTurbo(door_front_left_mirror, 291, 30, textureX, textureY)
 			.addShapeBox(-6.25f, 0.25f, -0.5f, 1, 1, 6, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, -0.5f, -0.25f, -0.25f, -0.5f, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(12.5f, -19, 21.5f).setRotationAngle(0, 0, 0)
@@ -72,7 +72,7 @@ public class C12Doors extends PartModel {
 		door_front_left_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fl", true, 0, 75, 1f, 1, 0f, false));
 		this.groups.add(door_front_left_mirror);
 		//
-		TurboList door_front_right = new TurboList("door_front_right");
+		ModelGroup door_front_right = new ModelGroup("door_front_right");
 		door_front_right.add(new ModelRendererTurbo(door_front_right, 0, 20, textureX, textureY)
 			.addShapeBox(-20, 0, -1, 20, 15, 1, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(12.5f, -9, -22.5f).setRotationAngle(0, 0, 0)
@@ -102,7 +102,7 @@ public class C12Doors extends PartModel {
 		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fr", true, -75, 0, -1f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_right);
 		//
-		TurboList door_front_right_mirror = new TurboList("door_front_right_mirror");
+		ModelGroup door_front_right_mirror = new ModelGroup("door_front_right_mirror");
 		door_front_right_mirror.add(new ModelRendererTurbo(door_front_right_mirror, 403, 27, textureX, textureY)
 			.addShapeBox(-6.25f, 0.25f, -5.5f, 1, 1, 6, 0, -0.25f, -0.25f, -0.5f, -0.25f, -0.25f, -0.5f, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(12.5f, -19, -21.5f).setRotationAngle(0, 0, 0)
@@ -126,7 +126,7 @@ public class C12Doors extends PartModel {
 		door_front_right_mirror.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_fr", true, -75, 0, -1f, 1, 0f, true));
 		this.groups.add(door_front_right_mirror);
 		//
-		TurboList door_rear_left = new TurboList("door_rear_left");
+		ModelGroup door_rear_left = new ModelGroup("door_rear_left");
 		door_rear_left.add(new ModelRendererTurbo(door_rear_left, 381, 2, textureX, textureY)
 			.addShapeBox(-18, 0, 0, 18, 15, 1, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, -0.5f, 0, 0, -0.5f, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0)
 			.setRotationPoint(-8.5f, -9, 22.5f).setRotationAngle(0, 0, 0)
@@ -152,7 +152,7 @@ public class C12Doors extends PartModel {
 		door_rear_left.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_rl", true, 0, 75, 1f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_rear_left);
 		//
-		TurboList door_rear_right = new TurboList("door_rear_right");
+		ModelGroup door_rear_right = new ModelGroup("door_rear_right");
 		door_rear_right.add(new ModelRendererTurbo(door_rear_right, 265, 2, textureX, textureY)
 			.addShapeBox(-18, 0, -1, 18, 15, 1, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0.5f, 0, 0, 0.5f, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0)
 			.setRotationPoint(-8.5f, -9, -22.5f).setRotationAngle(0, 0, 0)
@@ -178,7 +178,7 @@ public class C12Doors extends PartModel {
 		door_rear_right.addPrograms(new DefaultPrograms.AttributeRotator("c12_door_rr", true, -75, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_rear_right);
 		//
-		TurboList door_boot = new TurboList("door_boot");
+		ModelGroup door_boot = new ModelGroup("door_boot");
 		door_boot.add(new ModelRendererTurbo(door_boot, 260, 218, textureX, textureY).addBox(-1, -8, 0, 1, 8, 24)
 			.setRotationPoint(-51.9375f, 0, -12).setRotationAngle(0, 0, 0)
 		);

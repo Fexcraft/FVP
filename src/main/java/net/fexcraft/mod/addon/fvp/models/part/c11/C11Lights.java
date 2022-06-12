@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.3.5 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C11Lights extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList lights_off = new TurboList("lights_off");
+		ModelGroup lights_off = new ModelGroup("lights_off");
 		lights_off.add(new ModelRendererTurbo(lights_off, 421, 89, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
 			.setRotationPoint(49, 4.25f, -17).setRotationAngle(0, 0, 0)
 		);
@@ -75,7 +75,7 @@ public class C11Lights extends PartModel {
 		);
 		this.groups.add(lights_off);
 		//
-		TurboList fog_lights = new TurboList("fog_lights");
+		ModelGroup fog_lights = new ModelGroup("fog_lights");
 		fog_lights.add(new ModelRendererTurbo(fog_lights, 225, 88, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 2, 0, 0, 0, 0, -0.875f, 0, 0, -0.875f, 0, 0, 0, 0, 0, 0, 0, 0, -0.875f, 0, 0, -0.875f, 0, 0, 0, 0, 0)
 			.setRotationPoint(50, 4.25f, -17).setRotationAngle(0, 0, 0)
@@ -87,7 +87,7 @@ public class C11Lights extends PartModel {
 		fog_lights.addProgram(DefaultPrograms.FOG_LIGHTS);
 		this.groups.add(fog_lights);
 		//
-		TurboList front_lights = new TurboList("front_lights");
+		ModelGroup front_lights = new ModelGroup("front_lights");
 		front_lights.add(new ModelRendererTurbo(front_lights, 0, 101, textureX, textureY).addBox(0, 0, -0.25f, 2, 4, 7)
 			.setRotationPoint(47.5f, -5, -18.75f).setRotationAngle(0, 0, 0)
 		);
@@ -97,7 +97,7 @@ public class C11Lights extends PartModel {
 		front_lights.addProgram(DefaultPrograms.FRONT_LIGHTS);
 		this.groups.add(front_lights);
 		//
-		TurboList reverse_lights = new TurboList("reverse_lights");
+		ModelGroup reverse_lights = new ModelGroup("reverse_lights");
 		reverse_lights.add(new ModelRendererTurbo(reverse_lights, 312, 54, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 2, 1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, -0.5f, -1, 0, -0.5f, 0.125f, 0, -0.5f, 0.5f, 0, -0.5f, 0.5f)
 			.setRotationPoint(-49.875f, -7, -20.5f).setRotationAngle(0, 0, 0)
@@ -109,7 +109,7 @@ public class C11Lights extends PartModel {
 		reverse_lights.addProgram(DefaultPrograms.REVERSE_LIGHTS);
 		this.groups.add(reverse_lights);
 		//
-		TurboList turn_left = new TurboList("turn_left");
+		ModelGroup turn_left = new ModelGroup("turn_left");
 		turn_left.add(new ModelRendererTurbo(turn_left, 303, 96, textureX, textureY)
 			.addShapeBox(0, 0, -0.25f, 2, 4, 3, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -2.75f, 0, 0, -0.5f, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, -2.75f, 0, 0, -0.5f)
 			.setRotationPoint(48, -5, 19.25f).setRotationAngle(0, 0, 0)
@@ -121,7 +121,7 @@ public class C11Lights extends PartModel {
 		turn_left.addProgram(DefaultPrograms.TURN_SIGNAL_LEFT);
 		this.groups.add(turn_left);
 		//
-		TurboList turn_right = new TurboList("turn_right");
+		ModelGroup turn_right = new ModelGroup("turn_right");
 		turn_right.add(new ModelRendererTurbo(turn_right, 392, 95, textureX, textureY)
 			.addShapeBox(0, 0, -0.25f, 2, 4, 3, 0, 0, 0, 0, -0.5f, 0, -2.25f, -0.5f, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, -0.5f, 0, -2.25f, -0.5f, 0, -0.5f, 0, 0, -0.5f)
 			.setRotationPoint(48, -5, -21.25f).setRotationAngle(0, 0, 0)
@@ -133,7 +133,7 @@ public class C11Lights extends PartModel {
 		turn_right.addProgram(DefaultPrograms.TURN_SIGNAL_RIGHT);
 		this.groups.add(turn_right);
 		//
-		TurboList rear_lights = new TurboList("rear_lights");
+		ModelGroup rear_lights = new ModelGroup("rear_lights");
 		rear_lights.add(new ModelRendererTurbo(rear_lights, 429, 95, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 3, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-49.875f, -7, -19).setRotationAngle(0, 0, 0)

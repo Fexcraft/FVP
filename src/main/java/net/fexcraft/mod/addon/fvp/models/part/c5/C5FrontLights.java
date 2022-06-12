@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.1-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C5FrontLights extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList lights_front = new TurboList("lights_front");
+		ModelGroup lights_front = new ModelGroup("lights_front");
 		lights_front.add(new ModelRendererTurbo(lights_front, 201, 25, textureX, textureY).addBox(0, 0, 0, 2, 3, 5)
 			.setRotationPoint(59.9f, -6, -21.9f).setRotationAngle(0, 0, 0).setName("Box 85")
 		);
@@ -36,7 +36,7 @@ public class C5FrontLights extends PartModel {
 		lights_front.addProgram(DefaultPrograms.FRONT_LIGHTS);
 		this.groups.add(lights_front);
 		//
-		TurboList lights_rear = new TurboList("lights_rear");
+		ModelGroup lights_rear = new ModelGroup("lights_rear");
 		lights_rear.add(new ModelRendererTurbo(lights_rear, 233, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0)
 			.setRotationPoint(-40.9f, -6, 21.9f).setRotationAngle(0, 0, 0).setName("Box 138")

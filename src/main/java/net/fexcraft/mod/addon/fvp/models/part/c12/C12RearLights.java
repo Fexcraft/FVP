@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C12RearLights extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList lights_static_rear = new TurboList("lights_static_rear");
+		ModelGroup lights_static_rear = new ModelGroup("lights_static_rear");
 		lights_static_rear.add(new ModelRendererTurbo(lights_static_rear, 87, 61, textureX, textureY).addCylinder(0, 0, 0, 2, 1, 10, 0.75f, 0.75f, 2, null)
 			.setRotationPoint(-53.0625f, -6.5f, 19.75f).setRotationAngle(0, 0, 0)
 		);
@@ -57,7 +57,7 @@ public class C12RearLights extends PartModel {
 		);
 		this.groups.add(lights_static_rear);
 		//
-		TurboList lights_rear = new TurboList("lights_rear");
+		ModelGroup lights_rear = new ModelGroup("lights_rear");
 		lights_rear.add(new ModelRendererTurbo(lights_rear, 294, 58, textureX, textureY).addCylinder(0, 0, 0, 2, 1, 10, 1, 1, 2, null)
 			.setRotationPoint(-53.125f, -6.5f, 19.75f).setRotationAngle(18, 0, 0)
 		);
@@ -67,7 +67,7 @@ public class C12RearLights extends PartModel {
 		lights_rear.addProgram(DefaultPrograms.REAR_LIGHTS);
 		this.groups.add(lights_rear);
 		//
-		TurboList lights_reverse = new TurboList("lights_reverse");
+		ModelGroup lights_reverse = new ModelGroup("lights_reverse");
 		lights_reverse.add(new ModelRendererTurbo(lights_reverse, 181, 39, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
 			.setRotationPoint(-53.125f, -3, -20.75f).setRotationAngle(0, 0, 0)
 		);
@@ -77,7 +77,7 @@ public class C12RearLights extends PartModel {
 		lights_reverse.addProgram(DefaultPrograms.REVERSE_LIGHTS);
 		this.groups.add(lights_reverse);
 		//
-		TurboList lights_brake = new TurboList("lights_brake");
+		ModelGroup lights_brake = new ModelGroup("lights_brake");
 		lights_brake.add(new ModelRendererTurbo(lights_brake, 150, 38, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
 			.setRotationPoint(-53.125f, -4, 18.75f).setRotationAngle(0, 0, 0)
 		);
@@ -100,7 +100,7 @@ public class C12RearLights extends PartModel {
 		lights_brake.addProgram(DefaultPrograms.BRAKE_LIGHTS);
 		this.groups.add(lights_brake);
 		//
-		TurboList lights_turn_left_rear = new TurboList("lights_turn_left_rear");
+		ModelGroup lights_turn_left_rear = new ModelGroup("lights_turn_left_rear");
 		lights_turn_left_rear.add(new ModelRendererTurbo(lights_turn_left_rear, 501, 45, textureX, textureY).newCylinderBuilder()
 			.setPosition(0, 0, 0).setRadius(2, 0.001f).setLength(1).setSegments(10, 5).setScale(0.5f, 0.5f).setDirection(2)
 			.setTopOffset(null).setTopRotation(new net.fexcraft.lib.common.math.Vec3f(0.0, 0.0, 0.0)).build()
@@ -109,7 +109,7 @@ public class C12RearLights extends PartModel {
 		lights_turn_left_rear.addProgram(DefaultPrograms.TURN_SIGNAL_LEFT);
 		this.groups.add(lights_turn_left_rear);
 		//
-		TurboList lights_turn_right_rear = new TurboList("lights_turn_right_rear");
+		ModelGroup lights_turn_right_rear = new ModelGroup("lights_turn_right_rear");
 		lights_turn_right_rear.add(new ModelRendererTurbo(lights_turn_right_rear, 375, 45, textureX, textureY).newCylinderBuilder()
 			.setPosition(0, 0, 0).setRadius(2, 0.001f).setLength(1).setSegments(10, 5).setScale(0.5f, 0.5f).setDirection(2)
 			.setTopOffset(null).setTopRotation(new net.fexcraft.lib.common.math.Vec3f(0.0, 0.0, 0.0)).build()

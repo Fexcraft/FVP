@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.2.8 &copy; 2019 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C10Hood extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand");
 		//
-		TurboList hood = new TurboList("hood");
+		ModelGroup hood = new ModelGroup("hood");
 		hood.add(new ModelRendererTurbo(hood, 393, 124, textureX, textureY)
 			.addShapeBox(20, 1, -5, 1, 1, 10, 0, 0, 0.75f, 0, 1, -1, 0, 1, -1, 0, 0, 0.75f, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0)
 			.setRotationPoint(26, -13, 0).setRotationAngle(0, 0, 0)

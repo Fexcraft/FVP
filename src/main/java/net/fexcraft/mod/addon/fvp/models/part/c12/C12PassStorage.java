@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c12;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class C12PassStorage extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList pass_storage_1 = new TurboList("pass_storage_1");
+		ModelGroup pass_storage_1 = new ModelGroup("pass_storage_1");
 		pass_storage_1.add(new ModelRendererTurbo(pass_storage_1, 463, 0, textureX, textureY).addBox(-1, -3, 0, 1, 3, 7)
 			.setRotationPoint(9.875f, -5.875f, -12).setRotationAngle(0, 0, 0)
 		);

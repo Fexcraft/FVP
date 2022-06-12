@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.5.2 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T3AirFilters extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList air_filters = new TurboList("air_filters");
+		ModelGroup air_filters = new ModelGroup("air_filters");
 		air_filters.add(new ModelRendererTurbo(air_filters, 286, 192, textureX, textureY).addBox(0, 0, 0, 1, 6, 2)
 			.setRotationPoint(32.4f, -28, 22).setRotationAngle(0, 0, 0)
 		);
@@ -81,7 +81,7 @@ public class T3AirFilters extends PartModel {
 		);
 		this.groups.add(air_filters);
 		//
-		TurboList air_filters_lights = new TurboList("air_filters_lights");
+		ModelGroup air_filters_lights = new ModelGroup("air_filters_lights");
 		air_filters_lights.add(new ModelRendererTurbo(air_filters_lights, 464, 95, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(32.6f, -23.5f, -23.5f).setRotationAngle(0, 0, 0)
 		);

@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c4;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
@@ -18,7 +18,7 @@ public class C4R1Wheel extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList wheel = new TurboList("wheel");
+		ModelGroup wheel = new ModelGroup("wheel");
 		wheel.add(new ModelRendererTurbo(wheel, 282, 12, textureX, textureY).addHollowCylinder(0, 0, 1, 9, 6, 3, 16, 0, 1, 1, 1, null));
 		wheel.add(new ModelRendererTurbo(wheel, 35, 38, textureX, textureY)
 			.addShapeBox(2.5f, -1.5f, 1.5f, 4, 3, 1, 0, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0)

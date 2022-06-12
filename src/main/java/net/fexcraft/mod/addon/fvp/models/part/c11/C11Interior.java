@@ -4,13 +4,9 @@ package net.fexcraft.mod.addon.fvp.models.part.c11;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.data.attribute.Attribute;
-import net.fexcraft.mod.fvtm.data.root.Colorable;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.3.5 &copy; 2020 - Fexcraft.net<br>
@@ -23,7 +19,7 @@ public class C11Interior extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList interior = new TurboList("interior");
+		ModelGroup interior = new ModelGroup("interior");
 		interior.add(new ModelRendererTurbo(interior, 86, 56, textureX, textureY)
 			.addShapeBox(0, 0, 0, 18, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0)
 			.setRotationPoint(1, 2, -2).setRotationAngle(0, 0, 0)
@@ -154,7 +150,7 @@ public class C11Interior extends PartModel {
 		);
 		this.groups.add(interior);
 		//
-		TurboList interior_lights = new TurboList("interior_lights");
+		ModelGroup interior_lights = new ModelGroup("interior_lights");
 		interior_lights.add(new ModelRendererTurbo(interior_lights, 0, 60, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 1, 0, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f)
 			.setRotationPoint(13.875f, -11, 15).setRotationAngle(0, 0, 0)
@@ -193,7 +189,7 @@ public class C11Interior extends PartModel {
 		interior_lights.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(interior_lights);
 		//
-		TurboList light_toggle = new TurboList("light_toggle");
+		ModelGroup light_toggle = new ModelGroup("light_toggle");
 		light_toggle.add(new ModelRendererTurbo(light_toggle, 435, 40, textureX, textureY)
 			.addShapeBox(-0.125f, -0.625f, 0, 1, 1, 1, 0, 0, 0, -0.25f, -0.75f, 0, -0.25f, -0.75f, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, -0.75f, 0, -0.25f, -0.75f, 0, -0.25f, 0, 0, -0.25f)
 			.setRotationPoint(15, -9.75f, 16.125f).setRotationAngle(0, 0, 90)
@@ -206,25 +202,28 @@ public class C11Interior extends PartModel {
 			.addShapeBox(-0.125f, -0.625f, 0, 1, 1, 1, 0, 0, 0, -0.25f, -0.75f, 0, -0.25f, -0.75f, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.25f, -0.75f, 0, -0.25f, -0.75f, 0, -0.25f, 0, 0, -0.25f)
 			.setRotationPoint(15, -7.75f, 16.125f).setRotationAngle(0, 0, 90)
 		);
-		light_toggle.addProgram(new TurboList.Program(){
+		light_toggle.addProgram(new ModelGroup.Program(){
 			@Override
-			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				if(ent == null){ list.rotate(0, 0, 90, true); return; }
-				Attribute<?> attr = data.getAttribute("lights");
+			public void preRender(ModelGroup list, ModelRenderData data){
+				if(data.entity == null){
+					list.rotate(0, 0, 90, true);
+					return;
+				}
+				Attribute<?> attr = data.vehicle.getAttribute("lights");
 				list.get(0).rotationAngleZ = attr.conditional_boolean(60f,  140f);
-				attr = data.getAttribute("lights_long");
+				attr = data.vehicle.getAttribute("lights_long");
 				list.get(1).rotationAngleZ = attr.conditional_boolean(60f,  140f);
-				attr = data.getAttribute("lights_fog");
+				attr = data.vehicle.getAttribute("lights_fog");
 				list.get(2).rotationAngleZ = attr.conditional_boolean(60f,  140f);
 			}
 			@Override
-			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				//
+			public boolean isPostRender(){
+				return false;
 			}
 		});
 		this.groups.add(light_toggle);
 		//
-		TurboList levers = new TurboList("levers");
+		ModelGroup levers = new ModelGroup("levers");
 		levers.add(new ModelRendererTurbo(levers, 217, 103, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 5, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(12, -8.5f, 10).setRotationAngle(30, 0, 15)
@@ -233,16 +232,18 @@ public class C11Interior extends PartModel {
 			.addShapeBox(-1, 0, 0, 1, 1, 5, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(12, -8.5f, 10).setRotationAngle(30, 180, -15)
 		);
-		levers.addProgram(new TurboList.Program(){
+		levers.addProgram(new ModelGroup.Program(){
 			@Override
-			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				if(ent == null) return; Attribute<?> attr = data.getAttribute("turn_lights");
+			public void preRender(ModelGroup list, ModelRenderData data){
+				if(data.entity == null) return;
+				Attribute<?> attr = data.vehicle.getAttribute("turn_lights");
 				list.get(0).rotationAngleX = attr.conditional_tristate(30f,  35f, 25f);
-				attr = data.getAttribute("windshield_wipers"); list.get(1).rotationAngleX = attr.conditional_boolean(25f, 30f);
+				attr = data.vehicle.getAttribute("windshield_wipers");
+				list.get(1).rotationAngleX = attr.conditional_boolean(25f, 30f);
 			}
 			@Override
-			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				//
+			public boolean isPostRender(){
+				return false;
 			}
 		});
 		this.groups.add(levers);

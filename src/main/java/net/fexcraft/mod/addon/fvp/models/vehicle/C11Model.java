@@ -3,13 +3,9 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.data.root.Colorable;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.3.5 &copy; 2020 - Fexcraft.net<br>
@@ -22,7 +18,7 @@ public class C11Model extends VehicleModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, 434, 104, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 11, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, -9, 0, 0, 9, 0, 0, 9, 0, 0, -9, 0, 0)
 			.setRotationPoint(8.5f, -22.5f, 18).setRotationAngle(0, 0, 0)
@@ -452,7 +448,7 @@ public class C11Model extends VehicleModel {
 		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
 		//
-		TurboList outer_chassis = new TurboList("outer_chassis");
+		ModelGroup outer_chassis = new ModelGroup("outer_chassis");
 		outer_chassis.add(new ModelRendererTurbo(outer_chassis, 267, 45, textureX, textureY).addBox(0, 0, 0, 20, 1, 7)
 			.setRotationPoint(22, -8, -19).setRotationAngle(0, 0, 0)
 		);
@@ -623,7 +619,7 @@ public class C11Model extends VehicleModel {
 		);
 		this.groups.add(outer_chassis);
 		//
-		TurboList inner_chassis = new TurboList("inner_chassis");
+		ModelGroup inner_chassis = new ModelGroup("inner_chassis");
 		inner_chassis.add(new ModelRendererTurbo(inner_chassis, 198, 102, textureX, textureY).addBox(0, 0, 0, 2, 2, 8)
 			.setRotationPoint(31, 1, 8).setRotationAngle(0, 0, 0)
 		);
@@ -737,7 +733,7 @@ public class C11Model extends VehicleModel {
 		);
 		this.groups.add(inner_chassis);
 		//
-		TurboList exhaust = new TurboList("exhaust");
+		ModelGroup exhaust = new ModelGroup("exhaust");
 		exhaust.add(new ModelRendererTurbo(exhaust, 179, 50, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 1.5f, 1.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-50.5f, 3.5f, -12.5f).setRotationAngle(0, 0, 0)
@@ -758,7 +754,7 @@ public class C11Model extends VehicleModel {
 		);
 		this.groups.add(exhaust);
 		//
-		TurboList wipers = new TurboList("wipers");
+		ModelGroup wipers = new ModelGroup("wipers");
 		wipers.add(new ModelRendererTurbo(wipers, 117, 112, textureX, textureY)
 			.addShapeBox(0.125f, -1, 0, 1, 1, 8, 0, 0, -0.5625f, 0, -0.5f, -0.5625f, 0, -0.875f, -0.5625f, 0, 0, -0.5625f, 0, 0, -0.0625f, 0, -0.5f, -0.0625f, 0, -0.875f, -0.0625f, 0, 0, -0.0625f, 0)
 			.setRotationPoint(18.75f, -11.5f, 3.5f).setRotationAngle(0, 0, -39)
@@ -775,14 +771,14 @@ public class C11Model extends VehicleModel {
 			.addShapeBox(-0.375f, -1, 1.5f, 1, 1, 12, 0, -0.25f, -0.5f, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, -0.25f, -0.5f, 0, -0.25f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, -0.25f, 0, 0)
 			.setRotationPoint(18.75f, -11.5f, -11).setRotationAngle(0, 0, -39)
 		);
-		wipers.addProgram(new TurboList.Program(){
+		wipers.addProgram(new ModelGroup.Program(){
 			private boolean ison, ret = false;
 			private float moved;
 			@Override
-			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				if(cache == null) return;
-				ison = data.getAttribute("windshield_wipers").boolean_value();
-				moved = cache.getValue("wipers_moved", 0f);
+			public void preRender(ModelGroup list, ModelRenderData data){
+				if(data.cache == null) return;
+				ison = data.vehicle.getAttribute("windshield_wipers").boolean_value();
+				moved = data.cache.getValue("wipers_moved", 0f);
 				if(ison && !ret){
 					moved += 0.5f;
 				}
@@ -797,10 +793,10 @@ public class C11Model extends VehicleModel {
 				if(moved != 0f){
 					for(ModelRendererTurbo mrt : list) mrt.rotationAngleX = moved;
 				}
-				cache.setValue("wipers_moved", moved);
+				data.cache.setValue("wipers_moved", moved);
 			}
 			@Override
-			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
+			public void postRender(ModelGroup list, ModelRenderData data){
 				if(moved != 0f) for(ModelRendererTurbo mrt : list){ mrt.rotationAngleX = 0; }
 			}
 		});

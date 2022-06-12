@@ -3,11 +3,8 @@ package net.fexcraft.mod.addon.fvp.models.part.t2;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -16,13 +13,13 @@ import net.minecraft.entity.Entity;
 @fModel(registryname = "fvp:models/part/t2_rear_fenders")
 public class T2RearFenders extends PartModel {
 	
-	private TurboList fender_left, fender_right;
+	private ModelGroup fender_left, fender_right;
 
 	public T2RearFenders(){
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		fender_left = new TurboList("fender_left");
+		fender_left = new ModelGroup("fender_left");
 		fender_left.add(new ModelRendererTurbo(fender_left, 185, 49, textureX, textureY).addBox(0, 0, 0, 2, 8, 14)
 			.setRotationPoint(-35, -6, 12).setRotationAngle(0, 0, 0).setName("Box 28")
 		);
@@ -59,7 +56,7 @@ public class T2RearFenders extends PartModel {
 		);
 		this.groups.add(fender_left);
 		//
-		fender_right = new TurboList("fender_right");
+		fender_right = new ModelGroup("fender_right");
 		fender_right.add(new ModelRendererTurbo(fender_right, 129, 73, textureX, textureY).addBox(0, 0, 0, 2, 8, 14)
 			.setRotationPoint(-62, -6, -26).setRotationAngle(0, 0, 0).setName("Box 35")
 		);
@@ -97,17 +94,22 @@ public class T2RearFenders extends PartModel {
 		this.groups.add(fender_right);
 	}
     @Override
-    public void render(VehicleData data, String us){
-        switch(us){
-            case "rear_fender_left":{ fender_left.render(null, data, data, us, null); return; }
-            case "rear_fender_right":{ fender_right.render(null, data, data, us, null); return; }
-            default:{ fender_left.render(null, data, data, us, null);  fender_right.render(null, data, data, us, null); return; }
+    public void render(ModelRenderData data){
+        switch(data.part_category){
+            case "rear_fender_left":{
+            	fender_left.render(data);
+            	return;
+            }
+            case "rear_fender_right":{
+            	fender_right.render(data);
+            	return;
+            }
+            default:{
+            	fender_left.render(data);
+            	fender_right.render(data);
+            	return;
+            }
         }
-    }
-
-    @Override
-    public void render(VehicleData data, String us, Entity vehicle, RenderCache cache){
-        this.render(data, us);
     }
 
 }

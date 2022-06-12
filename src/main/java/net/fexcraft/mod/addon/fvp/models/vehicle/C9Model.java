@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.1 of<br>
@@ -18,7 +18,7 @@ public class C9Model extends VehicleModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList chassis_core = new TurboList("chassis_core");
+		ModelGroup chassis_core = new ModelGroup("chassis_core");
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 1, 1, textureX, textureY).addBox(0, 0, 0, 48, 2, 37)
 			.setRotationPoint(-24.5f, 10, -18.5f).setRotationAngle(0, 0, 0).setName("Box 0")
 		);
@@ -273,7 +273,7 @@ public class C9Model extends VehicleModel {
 		);
 		this.groups.add(chassis_core);
 		//
-		TurboList chassis_primary = new TurboList("chassis_primary");
+		ModelGroup chassis_primary = new ModelGroup("chassis_primary");
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 289, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 12, 3, 37, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1)
 			.setRotationPoint(-53, 8, -18.5f).setRotationAngle(0, 0, 0).setName("Box 4")

@@ -4,13 +4,9 @@ package net.fexcraft.mod.addon.fvp.models.part.c12;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.data.attribute.Attribute;
-import net.fexcraft.mod.fvtm.data.root.Colorable;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -23,7 +19,7 @@ public class C12Interior extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList interior = new TurboList("interior");
+		ModelGroup interior = new ModelGroup("interior");
 		interior.add(new ModelRendererTurbo(interior, 463, 17, textureX, textureY)
 			.addShapeBox(0, 0, 0, 3, 10, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0)
 			.setRotationPoint(10.5f, -7, -2.5f).setRotationAngle(0, 0, 0)
@@ -102,7 +98,7 @@ public class C12Interior extends PartModel {
 		);
 		this.groups.add(interior);
 		//
-		TurboList interior_dash = new TurboList("interior_dash");
+		ModelGroup interior_dash = new ModelGroup("interior_dash");
 		interior_dash.add(new ModelRendererTurbo(interior_dash, 347, 43, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 2, 12, 0, 0, 0, -1, 0, -1, -1, 0, -1, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(10, -12, 5).setRotationAngle(0, 0, 0)
@@ -115,21 +111,21 @@ public class C12Interior extends PartModel {
 		);
 		this.groups.add(interior_dash);
 		//
-		TurboList interior_dash_left = new TurboList("interior_dash_left");
+		ModelGroup interior_dash_left = new ModelGroup("interior_dash_left");
 		interior_dash_left.add(new ModelRendererTurbo(interior_dash_left, 403, 41, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 8, 0.5f, 0.5f, 3, new net.fexcraft.lib.common.math.Vec3f(-0.875, 0.0, 0.0))
 			.setRotationPoint(9.875f, -10.5f, 16).setRotationAngle(22.5f, 1, 0)
 		);
 		interior_dash_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
 		this.groups.add(interior_dash_left);
 		//
-		TurboList interior_dash_right = new TurboList("interior_dash_right");
+		ModelGroup interior_dash_right = new ModelGroup("interior_dash_right");
 		interior_dash_right.add(new ModelRendererTurbo(interior_dash_right, 26, 40, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 8, 0.5f, 0.5f, 3, new net.fexcraft.lib.common.math.Vec3f(-0.875, 0.0, 0.0))
 			.setRotationPoint(9.875f, -10.5f, 6).setRotationAngle(22.5f, 1, 0)
 		);
 		interior_dash_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
 		this.groups.add(interior_dash_right);
 		//
-		TurboList interior_dash_signal = new TurboList("interior_dash_signal");
+		ModelGroup interior_dash_signal = new ModelGroup("interior_dash_signal");
 		interior_dash_signal.add(new ModelRendererTurbo(interior_dash_signal, 19, 38, textureX, textureY).addBox(0, -0.25f, 0, 0.25f, 0.5f, 5)
 			.setRotationPoint(8, -8, 11).setRotationAngle(20, 0, 8)
 		);
@@ -142,10 +138,11 @@ public class C12Interior extends PartModel {
 		interior_dash_signal.add(new ModelRendererTurbo(interior_dash_signal, 285, 38, textureX, textureY).addBox(-0.125f, -0.375f, 5, 0.5f, 0.75f, 1)
 			.setRotationPoint(8, -8, 11).setRotationAngle(160, 0, 8)
 		);
-		interior_dash_signal.addProgram(new TurboList.Program(){
+		interior_dash_signal.addProgram(new ModelGroup.Program(){
 			@Override
-			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				if(ent == null) return; Attribute<?> attr = data.getAttribute("turn_lights");
+			public void preRender(ModelGroup list, ModelRenderData data){
+				if(data.entity == null) return;
+				Attribute<?> attr = data.vehicle.getAttribute("turn_lights");
 				list.get(0).rotationAngleX = list.get(1).rotationAngleX = attr.conditional_tristate(20f,  25f,  15f);
 			}
 		});
@@ -161,42 +158,42 @@ public class C12Interior extends PartModel {
 		interior_dash_glow.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(interior_dash_glow);*/
 		//
-		TurboList interior_lights_on = new TurboList("interior_lights_on");
+		ModelGroup interior_lights_on = new ModelGroup("interior_lights_on");
 		interior_lights_on.add(new ModelRendererTurbo(interior_lights_on, 281, 38, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(8.875f, -9.5f, 19.75f).setRotationAngle(0, 0, 0)
 		);
 		interior_lights_on.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(interior_lights_on);
 		//
-		TurboList interior_lights_long = new TurboList("interior_lights_long");
+		ModelGroup interior_lights_long = new ModelGroup("interior_lights_long");
 		interior_lights_long.add(new ModelRendererTurbo(interior_lights_long, 41, 38, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(8.875f, -8, 19.75f).setRotationAngle(0, 0, 0)
 		);
 		interior_lights_long.addProgram(DefaultPrograms.LONG_LIGHTS);
 		this.groups.add(interior_lights_long);
 		//
-		TurboList interior_lights_warning = new TurboList("interior_lights_warning");
+		ModelGroup interior_lights_warning = new ModelGroup("interior_lights_warning");
 		interior_lights_warning.add(new ModelRendererTurbo(interior_lights_warning, 508, 37, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(8.875f, -9.5f, 3).setRotationAngle(0, 0, 0)
 		);
 		//interior_lights_warning.addProgram(DefaultPrograms.WARNING_LIGHTS);
 		this.groups.add(interior_lights_warning);
 		//
-		TurboList interior_lights_extra = new TurboList("interior_lights_extra");
+		ModelGroup interior_lights_extra = new ModelGroup("interior_lights_extra");
 		interior_lights_extra.add(new ModelRendererTurbo(interior_lights_extra, 300, 37, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(8.875f, -8, 18.25f).setRotationAngle(0, 0, 0)
 		);
 		interior_lights_extra.addProgram(DefaultPrograms.getCustomLights("lights_extra"));
 		this.groups.add(interior_lights_extra);
 		//
-		TurboList interior_lights_fog = new TurboList("interior_lights_fog");
+		ModelGroup interior_lights_fog = new ModelGroup("interior_lights_fog");
 		interior_lights_fog.add(new ModelRendererTurbo(interior_lights_fog, 0, 43, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(8.875f, -9.5f, 18.25f).setRotationAngle(0, 0, 0)
 		);
 		interior_lights_fog.addProgram(DefaultPrograms.FOG_LIGHTS);
 		this.groups.add(interior_lights_fog);
 		//
-		TurboList interior_gear_lever = new TurboList("interior_gear_lever");
+		ModelGroup interior_gear_lever = new ModelGroup("interior_gear_lever");
 		interior_gear_lever.add(new ModelRendererTurbo(interior_gear_lever, 20, 38, textureX, textureY)
 			.addShapeBox(-0.25f, -3, -0.25f, 0.5f, 3, 0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(5.5f, 3, 0).setRotationAngle(0, 0, 0)
@@ -207,7 +204,7 @@ public class C12Interior extends PartModel {
 		);
 		this.groups.add(interior_gear_lever);
 		//
-		TurboList interior_brake_lever = new TurboList("interior_brake_lever");
+		ModelGroup interior_brake_lever = new ModelGroup("interior_brake_lever");
 		interior_brake_lever.add(new ModelRendererTurbo(interior_brake_lever, 0, 38, textureX, textureY)
 			.addShapeBox(-0.625f, -2, -0.25f, 0.5f, 2, 0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-6, 2.5f, 0).setRotationAngle(0, 0, 80)

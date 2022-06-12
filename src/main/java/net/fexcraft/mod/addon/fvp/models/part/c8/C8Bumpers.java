@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c8;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class C8Bumpers extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList bumpers = new TurboList("bumpers");
+		ModelGroup bumpers = new ModelGroup("bumpers");
 		bumpers.add(new ModelRendererTurbo(bumpers, 318, 129, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 4, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0)
 			.setRotationPoint(56, 1, -16).setRotationAngle(0, 0, 0).setName("Box 49")

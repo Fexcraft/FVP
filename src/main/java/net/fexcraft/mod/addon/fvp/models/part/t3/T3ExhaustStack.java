@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.t3;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.5.2 &copy; 2020 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class T3ExhaustStack extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList exhaust_stack = new TurboList("exhaust_stack");
+		ModelGroup exhaust_stack = new ModelGroup("exhaust_stack");
 		exhaust_stack.add(new ModelRendererTurbo(exhaust_stack, 192, 233, textureX, textureY).addCylinder(0, 0, 0, 1, 12, 12, 1, 1, 4, null)
 			.setRotationPoint(-8, -60, 23).setRotationAngle(0, 0, 0)
 		);

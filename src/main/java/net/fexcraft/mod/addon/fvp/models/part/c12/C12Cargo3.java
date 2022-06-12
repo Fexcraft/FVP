@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C12Cargo3 extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList cargo_3 = new TurboList("cargo_3");
+		ModelGroup cargo_3 = new ModelGroup("cargo_3");
 		cargo_3.add(new ModelRendererTurbo(cargo_3, 381, 0, textureX, textureY)
 			.addShapeBox(0, 0, 0, 19, 1, 1.5f, 0, -1, 0, -1, 1, 0, -1, 1, 0, 0, -0.5f, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, -1.5f, 0.5f, 0, -1)
 			.setRotationPoint(-48, -21, -20).setRotationAngle(0, 0, 0)
@@ -66,7 +66,7 @@ public class C12Cargo3 extends PartModel {
 		cargo_3.addProgram(DefaultPrograms.getRGBChannel("cargo"));
 		this.groups.add(cargo_3);
 		//
-		TurboList cargo3_closed = new TurboList("cargo3_closed");
+		ModelGroup cargo3_closed = new ModelGroup("cargo3_closed");
 		cargo3_closed.add(new ModelRendererTurbo(cargo3_closed, 96, 95, textureX, textureY).addBox(0, 0, 0, 1, 1, 24)
 			.setRotationPoint(-52.9375f, -9, -12).setRotationAngle(0, 0, 0)
 		);
@@ -83,7 +83,7 @@ public class C12Cargo3 extends PartModel {
 		cargo3_closed.addPrograms(DefaultPrograms.getRGBChannel("cargo"), new DefaultPrograms.AttributeVisible("c12_boot", false));
 		this.groups.add(cargo3_closed);
 		//
-		TurboList cargo3_open = new TurboList("cargo3_open");
+		ModelGroup cargo3_open = new ModelGroup("cargo3_open");
 		cargo3_open.add(new ModelRendererTurbo(cargo3_open, 363, 96, textureX, textureY).addBox(0, 0, 0, 2, 2, 40)
 			.setRotationPoint(-49.5f, -19, -20).setRotationAngle(0, 0, 0)
 		);

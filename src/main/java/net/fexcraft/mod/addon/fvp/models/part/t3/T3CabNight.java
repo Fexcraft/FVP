@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.5.2 &copy; 2020 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class T3CabNight extends PartModel {
 	public T3CabNight(){
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
-		TurboList cab_night = new TurboList("cab_night");
+		ModelGroup cab_night = new ModelGroup("cab_night");
 		cab_night.add(new ModelRendererTurbo(cab_night, 71, 122, textureX, textureY).addBox(0, 0, 0, 32, 10, 4)
 			.setRotationPoint(-46, -13, -11).setRotationAngle(0, 0, 0)
 		);
@@ -55,7 +55,7 @@ public class T3CabNight extends PartModel {
 		);
 		this.groups.add(cab_night);
 		//
-		TurboList cab_night_lights = new TurboList("cab_night_lights");
+		ModelGroup cab_night_lights = new ModelGroup("cab_night_lights");
 		cab_night_lights.add(new ModelRendererTurbo(cab_night_lights, 383, 132, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 1, 1, 0, -0.25f, -0.25f, -0.5f, -0.25f, -0.25f, -0.5f, 0, 0, 0, 0, 0, 0, -0.25f, -0.25f, -0.5f, -0.25f, -0.25f, -0.5f, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-45, -16.5f, -27).setRotationAngle(0, 0, 0)
@@ -123,7 +123,7 @@ public class T3CabNight extends PartModel {
 		cab_night_lights.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(cab_night_lights);
 		//
-		TurboList cab_night_primary = new TurboList("cab_night_primary");
+		ModelGroup cab_night_primary = new ModelGroup("cab_night_primary");
 		cab_night_primary.add(new ModelRendererTurbo(cab_night_primary, 65, 186, textureX, textureY).addBox(0, 0, 0, 30, 35, 2)
 			.setRotationPoint(-46, -54, -26).setRotationAngle(0, 0, 0)
 		);

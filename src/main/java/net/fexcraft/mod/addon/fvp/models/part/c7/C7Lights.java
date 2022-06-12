@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.1 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C7Lights extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList lights_front = new TurboList("lights_front");
+		ModelGroup lights_front = new ModelGroup("lights_front");
 		lights_front.add(new ModelRendererTurbo(lights_front, 276, 97, textureX, textureY)
 			.addShapeBox(0, 0, 0, 3.6f, 3.6f, 3.6f, 0, 0, -0.24000001f, 0, -0.36f, -0.24000001f, 0, -0.36f, -0.24000001f, -0.96f, 0, -0.24000001f, 0, 0, -0.24000001f, 0, -0.36f, -0.24000001f, 0, -0.36f, -0.24000001f, -0.96f, 0, -0.24000001f, 0)
 			.setRotationPoint(51.600002f, -7.4f, 16.800001f).setRotationAngle(0, 0, 0).setName("Box 75")
@@ -30,7 +30,7 @@ public class C7Lights extends PartModel {
 		lights_front.addProgram(DefaultPrograms.FRONT_LIGHTS);
 		this.groups.add(lights_front);
 		//
-		TurboList lights_indicator_left = new TurboList("lights_indicator_left");
+		ModelGroup lights_indicator_left = new ModelGroup("lights_indicator_left");
 		lights_indicator_left.add(new ModelRendererTurbo(lights_indicator_left, 442, 54, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 2.4f, 1.2f, 0, 0, 0, 0, 0, 0, 0, 0, -0.6f, -0.6f, 0, -0.6f, -0.6f, 0, 0, 0, 0, 0, 0, 0, -0.6f, -0.6f, 0, -0.6f, -0.6f)
 			.setRotationPoint(25.4f, -1.4f, 21).setRotationAngle(0, 0, 0).setName("Box 42")
@@ -46,7 +46,7 @@ public class C7Lights extends PartModel {
 		lights_indicator_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
 		this.groups.add(lights_indicator_left);
 		//
-		TurboList lights_indicator_right = new TurboList("lights_indicator_right");
+		ModelGroup lights_indicator_right = new ModelGroup("lights_indicator_right");
 		lights_indicator_right.add(new ModelRendererTurbo(lights_indicator_right, 505, 49, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 2.4f, 1.2f, 0, 0, -0.6f, -0.6f, 0, -0.6f, -0.6f, 0, 0, 0, 0, 0, 0, 0, -0.6f, -0.6f, 0, -0.6f, -0.6f, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(25.4f, -1.4f, -22.2f).setRotationAngle(0, 0, 0).setName("Box 43")
@@ -62,7 +62,7 @@ public class C7Lights extends PartModel {
 		lights_indicator_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
 		this.groups.add(lights_indicator_right);
 		//
-		TurboList lights_rear = new TurboList("lights_rear");
+		ModelGroup lights_rear = new ModelGroup("lights_rear");
 		lights_rear.add(new ModelRendererTurbo(lights_rear, 66, 39, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2.4f, 4.8f, 2.4f, 0, 0.12f, 0, -1.46f, 0, 0, -0.68f, 0, 0, 0, 0.12f, 0, 0, 0.12f, 0, -1.22f, 0, 0, -0.26f, 0, 0, 0, 0.12f, 0, 0)
 			.setRotationPoint(-55.2f, -7.4f, -21.6f).setRotationAngle(0, 0, 0).setName("Box 106")

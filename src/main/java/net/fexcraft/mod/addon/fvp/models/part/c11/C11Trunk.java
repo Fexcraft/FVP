@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.3.5 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C11Trunk extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList trunk = new TurboList("trunk");
+		ModelGroup trunk = new ModelGroup("trunk");
 		trunk.add(new ModelRendererTurbo(trunk, 392, 131, textureX, textureY)
 			.addShapeBox(-18, 0, 0, 2, 4, 35, 0, -0.5f, -1.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -1.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-32, -11, -17.5f).setRotationAngle(0, 0, 0)

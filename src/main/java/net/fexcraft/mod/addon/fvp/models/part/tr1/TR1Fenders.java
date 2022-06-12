@@ -3,11 +3,8 @@ package net.fexcraft.mod.addon.fvp.models.part.tr1;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -16,13 +13,13 @@ import net.minecraft.entity.Entity;
 @fModel(registryname = "fvp:models/part/tr_fenders")
 public class TR1Fenders extends PartModel {
 	
-	private TurboList fenders_left, fenders_right;
+	private ModelGroup fenders_left, fenders_right;
 
 	public TR1Fenders(){
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		fenders_left = new TurboList("fenders_left");
+		fenders_left = new ModelGroup("fenders_left");
 		fenders_left.add(new ModelRendererTurbo(fenders_left, 145, 169, textureX, textureY)
 			.addShapeBox(0, 0, 0, 17, 1, 12, 0, -2, 0, 0, -2, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-135, -16, 14).setRotationAngle(0, 0, 0).setName("Box 58")
@@ -103,7 +100,7 @@ public class TR1Fenders extends PartModel {
 		);
 		this.groups.add(fenders_left);
 		//
-		fenders_right = new TurboList("fenders_right");
+		fenders_right = new ModelGroup("fenders_right");
 		fenders_right.add(new ModelRendererTurbo(fenders_right, 273, 81, textureX, textureY)
 			.addShapeBox(0, 0, 0, 17, 1, 12, 0, -2, 0, 0, -2, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-135, -16, -26).setRotationAngle(0, 0, 0).setName("Box 37")
@@ -186,17 +183,12 @@ public class TR1Fenders extends PartModel {
 	}
     
     @Override
-    public void render(VehicleData data, String us){
-        switch(us){
-            case "fender_left": fenders_left.render(null, data, data, us, null); return;
-            case "fender_right": fenders_right.render(null, data, data, us, null); return;
+    public void render(ModelRenderData data){
+        switch(data.part_category){
+            case "fender_left": fenders_left.render(data); return;
+            case "fender_right": fenders_right.render(data); return;
             default: return;
         }
-    }
-
-    @Override
-    public void render(VehicleData data, String us, Entity vehicle, RenderCache cache){
-        super.render(data, us);
     }
 
 }

@@ -7,13 +7,9 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.mc.utils.Static;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.data.attribute.Attribute;
-import net.fexcraft.mod.fvtm.data.root.Colorable;
-import net.fexcraft.mod.fvtm.data.root.RenderCache;
-import net.fexcraft.mod.fvtm.data.vehicle.VehicleData;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
-import net.minecraft.entity.Entity;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.7-test &copy; 2019 - Fexcraft.net<br>
@@ -26,7 +22,7 @@ public class C4R1Model extends VehicleModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 169, 205, textureX, textureY).addBox(0, 0, 0, 3, 3, 38)
 			.setRotationPoint(-47, -9, -19).setRotationAngle(0, 0, 0).setName("Box 88")
 		);
@@ -341,7 +337,7 @@ public class C4R1Model extends VehicleModel {
 		);
 		this.groups.add(chassis);
 		//
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, 220, 130, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 7, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -4, 0, 0, -4, 0, 0, 0, 0)
 			.setRotationPoint(-55, -19, -23).setRotationAngle(0, 0, 0).setName("Box 38")
@@ -610,7 +606,7 @@ public class C4R1Model extends VehicleModel {
 		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
 		//
-		TurboList door_back = new TurboList("door_back");
+		ModelGroup door_back = new ModelGroup("door_back");
 		door_back.add(new ModelRendererTurbo(door_back, 0, 242, textureX, textureY).addBox(-1, 0, 0, 1, 26, 42)
 			.setRotationPoint(-60, -39, -21).setRotationAngle(0, 0, 0).setName("Box 219")
 		);
@@ -626,7 +622,7 @@ public class C4R1Model extends VehicleModel {
 		door_back.addPrograms(new DefaultPrograms.AttributeRotator("c4_door_back", true, 0, 120, 0.5f, 2, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_back);
 		//
-		TurboList door_left = new TurboList("door_left");
+		ModelGroup door_left = new ModelGroup("door_left");
 		door_left.add(new ModelRendererTurbo(door_left, 0, 80, textureX, textureY)
 			.addShapeBox(-24, 0, 0, 20, 7, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(36, -19, 22).setRotationAngle(0, 0, 0).setName("Box 173")
@@ -653,7 +649,7 @@ public class C4R1Model extends VehicleModel {
 		door_left.addPrograms(new DefaultPrograms.AttributeRotator("c4_door_left", true, 0, 72, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_left);
 		//
-		TurboList door_right = new TurboList("door_right");
+		ModelGroup door_right = new ModelGroup("door_right");
 		door_right.add(new ModelRendererTurbo(door_right, 0, 29, textureX, textureY)
 			.addShapeBox(-24, 0, -1, 20, 7, 1, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(36, -19, -22).setRotationAngle(0, 0, 0).setName("Box 180cp")
@@ -685,7 +681,7 @@ public class C4R1Model extends VehicleModel {
 		door_right.addPrograms(new DefaultPrograms.AttributeRotator("c4_door_right", true, -72, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_right);
 		//
-		TurboList door_side = new TurboList("door_side");
+		ModelGroup door_side = new ModelGroup("door_side");
 		door_side.add(new ModelRendererTurbo(door_side, 89, 48, textureX, textureY).addBox(0, 0, -1, 36, 14, 1)
 			.setRotationPoint(-27, -26, -22).setRotationAngle(0, 0, 0).setName("Box 235")
 		);
@@ -707,18 +703,18 @@ public class C4R1Model extends VehicleModel {
 		door_side.add(new ModelRendererTurbo(door_side, 229, 106, textureX, textureY).addBox(0, 0, -1.5f, 3, 1, 2)
 			.setRotationPoint(4, -23, -22).setRotationAngle(0, 0, 0).setName("Box 246")
 		);
-		door_side.addPrograms(new TurboList.Program(){
+		door_side.addPrograms(new ModelGroup.Program(){
 			
 			private Attribute<?> attr;
 			private Float offx, offz;
 
 			@Override
-			public void preRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
-				if(cache == null) return;
-				attr = data.getAttribute("c4_door_side");
+			public void preRender(ModelGroup list, ModelRenderData data){
+				if(data.cache == null) return;
+				attr = data.vehicle.getAttribute("c4_door_side");
 				if(attr == null) return;
-				offx = cache.getValue("c4_side_offx");
-				offz = cache.getValue("c4_side_offz");
+				offx = data.cache.getValue("c4_side_offx");
+				offz = data.cache.getValue("c4_side_offz");
 				if(attr.boolean_value()){
 					offx = offx == null ? 0 : offx >= 2 ? 2 : offx + Static.sixteenth;
 				}
@@ -726,13 +722,13 @@ public class C4R1Model extends VehicleModel {
 					offx = offx == null ? 2 : offx <= 0 ? 0 : offx - Static.sixteenth;
 				}
 				offz = offx == null ? 0 : offx > 0.5f ? Static.eighth : offx <= 0.1f ? 0 : Static.sixteenth;
-				cache.setValue("c4_side_offx", offx);
-				cache.setValue("c4_side_offz", offz);
+				data.cache.setValue("c4_side_offx", offx);
+				data.cache.setValue("c4_side_offz", offz);
 				if(offx != null) GL11.glTranslatef(-offx, 0, -offz);
 			}
 
 			@Override
-			public void postRender(TurboList list, Entity ent, VehicleData data, Colorable color, String part, RenderCache cache){
+			public void postRender(ModelGroup list, ModelRenderData data){
 				if(offx != null) GL11.glTranslatef(offx, 0, offz);
 				offx = null;
 			}

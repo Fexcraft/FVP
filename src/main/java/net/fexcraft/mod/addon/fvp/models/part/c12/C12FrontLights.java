@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C12FrontLights extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList lights_static_front = new TurboList("lights_static_front");
+		ModelGroup lights_static_front = new ModelGroup("lights_static_front");
 		lights_static_front.add(new ModelRendererTurbo(lights_static_front, 160, 60, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 10, 1, 1, 2, null)
 			.setRotationPoint(42.5625f, -4.5f, -19.5f).setRotationAngle(0, 0, 0)
 		);
@@ -55,7 +55,7 @@ public class C12FrontLights extends PartModel {
 		);
 		this.groups.add(lights_static_front);
 		//
-		TurboList lights_front = new TurboList("lights_front");
+		ModelGroup lights_front = new ModelGroup("lights_front");
 		lights_front.add(new ModelRendererTurbo(lights_front, 0, 62, textureX, textureY).addCylinder(0, 0, 0, 2, 2, 10, 1, 1, 2, null)
 			.setRotationPoint(41.625f, -4, -15.5f).setRotationAngle(18, 0, 0)
 		);
@@ -65,7 +65,7 @@ public class C12FrontLights extends PartModel {
 		lights_front.addProgram(DefaultPrograms.FRONT_LIGHTS);
 		this.groups.add(lights_front);
 		//
-		TurboList lights_long = new TurboList("lights_long");
+		ModelGroup lights_long = new ModelGroup("lights_long");
 		lights_long.add(new ModelRendererTurbo(lights_long, 267, 61, textureX, textureY).addCylinder(0, 0, 0, 2, 1, 10, 0.75f, 0.75f, 2, null)
 			.setRotationPoint(42.625f, -4.5f, -19.5f).setRotationAngle(18, 0, 0)
 		);
@@ -75,7 +75,7 @@ public class C12FrontLights extends PartModel {
 		lights_long.addProgram(DefaultPrograms.LONG_LIGHTS);
 		this.groups.add(lights_long);
 		//
-		TurboList lights_fog = new TurboList("lights_fog");
+		ModelGroup lights_fog = new ModelGroup("lights_fog");
 		lights_fog.add(new ModelRendererTurbo(lights_fog, 149, 43, textureX, textureY).addBox(0, 0, 0, 1, 1, 1)
 			.setRotationPoint(42.625f, -2.5f, -18.25f).setRotationAngle(0, 0, 0)
 		);
@@ -85,14 +85,14 @@ public class C12FrontLights extends PartModel {
 		lights_fog.addProgram(DefaultPrograms.FOG_LIGHTS);
 		this.groups.add(lights_fog);
 		//
-		TurboList lights_turn_left_front = new TurboList("lights_turn_left_front");
+		ModelGroup lights_turn_left_front = new ModelGroup("lights_turn_left_front");
 		lights_turn_left_front.add(new ModelRendererTurbo(lights_turn_left_front, 397, 41, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
 			.setRotationPoint(42.625f, -2.5f, 18.75f).setRotationAngle(0, 0, 0)
 		);
 		lights_turn_left_front.addProgram(DefaultPrograms.TURN_SIGNAL_LEFT);
 		this.groups.add(lights_turn_left_front);
 		//
-		TurboList lights_turn_right_front = new TurboList("lights_turn_right_front");
+		ModelGroup lights_turn_right_front = new ModelGroup("lights_turn_right_front");
 		lights_turn_right_front.add(new ModelRendererTurbo(lights_turn_right_front, 391, 41, textureX, textureY).addBox(0, 0, 0, 1, 1, 2)
 			.setRotationPoint(42.625f, -2.5f, -20.75f).setRotationAngle(0, 0, 0)
 		);

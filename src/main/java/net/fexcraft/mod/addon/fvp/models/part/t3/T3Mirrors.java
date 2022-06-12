@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.t3;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.5.2 &copy; 2020 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class T3Mirrors extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList mirror_left = new TurboList("mirror_left");
+		ModelGroup mirror_left = new ModelGroup("mirror_left");
 		mirror_left.add(new ModelRendererTurbo(mirror_left, 187, 255, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 1, 4, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(18, -35, 21.875f).setRotationAngle(0, -8, 0)
@@ -39,7 +39,7 @@ public class T3Mirrors extends PartModel {
 		);
 		this.groups.add(mirror_left);
 		//
-		TurboList mirror_right = new TurboList("mirror_right");
+		ModelGroup mirror_right = new ModelGroup("mirror_right");
 		mirror_right.add(new ModelRendererTurbo(mirror_right, 230, 274, textureX, textureY)
 			.addShapeBox(0, 0, -4, 1, 1, 5, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(18, -35, -21.875f).setRotationAngle(0, 36, 0)

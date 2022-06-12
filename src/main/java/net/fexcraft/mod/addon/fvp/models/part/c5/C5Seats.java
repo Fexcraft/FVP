@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c5;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.1-test &copy; 2018 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class C5Seats extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList seats = new TurboList("seats");
+		ModelGroup seats = new ModelGroup("seats");
 		seats.add(new ModelRendererTurbo(seats, 233, 65, textureX, textureY).addBox(0, 0, 0, 10, 1, 1)
 			.setRotationPoint(-12, 4, 10).setRotationAngle(0, 0, 0).setName("Box 218")
 		);

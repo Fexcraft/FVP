@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T2Lights extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList lights_front = new TurboList("lights_front");
+		ModelGroup lights_front = new ModelGroup("lights_front");
 		lights_front.add(new ModelRendererTurbo(lights_front, 449, 73, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 8, 6, 0, 0, 0, 0, -0.2f, 0, 0, -0.2f, 0, -3, 0, 0, 0, 0, 0, 0, -0.2f, 0, 0, -0.2f, 0, -3, 0, 0, 0)
 			.setRotationPoint(66, -24, 20).setRotationAngle(0, 0, 0).setName("Box 206")
@@ -30,7 +30,7 @@ public class T2Lights extends PartModel {
 		lights_front.addProgram(DefaultPrograms.FRONT_LIGHTS);
 		this.groups.add(lights_front);
 		//
-		TurboList lights_rear = new TurboList("lights_rear");
+		ModelGroup lights_rear = new ModelGroup("lights_rear");
 		lights_rear.add(new ModelRendererTurbo(lights_rear, 57, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 3, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-64, -12.5f, -23).setRotationAngle(0, 0, 0).setName("Box 137")
@@ -42,14 +42,14 @@ public class T2Lights extends PartModel {
 		lights_rear.addProgram(DefaultPrograms.REAR_LIGHTS);
 		this.groups.add(lights_rear);
 		//
-		TurboList lights_rear_chassis = new TurboList("lights_rear_chassis");
+		ModelGroup lights_rear_chassis = new ModelGroup("lights_rear_chassis");
 		lights_rear_chassis.add(new ModelRendererTurbo(lights_rear_chassis, 17, 177, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 2, 48, 0, 0, 0, 0, 0, 0, -8, 0, 0, -8, 0, 0, 0, 0, 0, 0, 0, 0, -8, 0, 0, -8, 0, 0, 0)
 			.setRotationPoint(-63, -12, -24).setRotationAngle(0, 0, 0).setName("Box 136")
 		);
 		this.groups.add(lights_rear_chassis);
 		//
-		TurboList lights_turn_left = new TurboList("lights_turn_left");
+		ModelGroup lights_turn_left = new ModelGroup("lights_turn_left");
 		lights_turn_left.add(new ModelRendererTurbo(lights_turn_left, 89, 73, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 3, 6, 0, 0, 0, 0, -0.2f, 0, 0, -0.2f, 0, -3, 0, 0, 0, 0, 0, 0, -0.2f, 0, 0, -0.2f, 0, -3, 0, 0, 0)
 			.setRotationPoint(66, -16, 20).setRotationAngle(0, 0, 0).setName("Box 204")
@@ -61,7 +61,7 @@ public class T2Lights extends PartModel {
 		lights_turn_left.addProgram(DefaultPrograms.TURN_SIGNAL_LEFT);
 		this.groups.add(lights_turn_left);
 		//
-		TurboList lights_turn_right = new TurboList("lights_turn_right");
+		ModelGroup lights_turn_right = new ModelGroup("lights_turn_right");
 		lights_turn_right.add(new ModelRendererTurbo(lights_turn_right, 153, 73, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 3, 6, 0, 0, 0, 0, -0.2f, 0, -3, -0.2f, 0, 0, 0, 0, 0, 0, 0, 0, -0.2f, 0, -3, -0.2f, 0, 0, 0, 0, 0)
 			.setRotationPoint(66, -16, -26).setRotationAngle(0, 0, 0).setName("Box 208")

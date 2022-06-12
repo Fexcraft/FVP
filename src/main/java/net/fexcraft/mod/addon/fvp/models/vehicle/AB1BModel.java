@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
@@ -18,7 +18,7 @@ public class AB1BModel extends VehicleModel {
 		super(); textureX = 1024; textureY = 1024;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList cargo_bay_left = new TurboList("cargo_bay_left");
+		ModelGroup cargo_bay_left = new ModelGroup("cargo_bay_left");
 		cargo_bay_left.add(new ModelRendererTurbo(cargo_bay_left, 657, 33, textureX, textureY).addBox(0, 0, -1, 24, 9, 1)
 			.setRotationPoint(24, -13, 31.5f).setRotationAngle(0, 0, 0).setName("Box 42")
 		);
@@ -31,7 +31,7 @@ public class AB1BModel extends VehicleModel {
 		cargo_bay_left.addPrograms(new DefaultPrograms.AttributeRotator("ab1b_cargobay_left", true, 0, 170, 1f, 0, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(cargo_bay_left);
 		//
-		TurboList cargo_bay_right = new TurboList("cargo_bay_right");
+		ModelGroup cargo_bay_right = new ModelGroup("cargo_bay_right");
 		cargo_bay_right.add(new ModelRendererTurbo(cargo_bay_right, 745, 57, textureX, textureY).addBox(0, 0, 0, 24, 9, 1)
 			.setRotationPoint(-34, -13, -31.5f).setRotationAngle(0, 0, 0).setName("Box 49")
 		);
@@ -44,7 +44,7 @@ public class AB1BModel extends VehicleModel {
 		cargo_bay_right.addPrograms(new DefaultPrograms.AttributeRotator("ab1b_cargobay_right", true, -170, 0, -1f, 0, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(cargo_bay_right);
 		//
-		TurboList chassis_core = new TurboList("chassis_core");
+		ModelGroup chassis_core = new ModelGroup("chassis_core");
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 217, 1, textureX, textureY).addBox(0, 0, 0, 166, 2, 46)
 			.setRotationPoint(-112, -3, -23).setRotationAngle(0, 0, 0).setName("Box 6")
 		);
@@ -421,7 +421,7 @@ public class AB1BModel extends VehicleModel {
 		);
 		this.groups.add(chassis_core);
 		//
-		TurboList chassis_primary = new TurboList("chassis_primary");
+		ModelGroup chassis_primary = new ModelGroup("chassis_primary");
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 753, 113, textureX, textureY).addBox(0, 0, 0, 90, 13, 1)
 			.setRotationPoint(-38, -26, 30.5f).setRotationAngle(0, 0, 0).setName("Box 35")
 		);
@@ -665,7 +665,7 @@ public class AB1BModel extends VehicleModel {
 		chassis_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(chassis_primary);
 		//
-		TurboList chassis_secondary = new TurboList("chassis_secondary");
+		ModelGroup chassis_secondary = new ModelGroup("chassis_secondary");
 		chassis_secondary.add(new ModelRendererTurbo(chassis_secondary, 1017, 49, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 24, 1, 0, 2, 0, -1, -2, 0, -1, -2, 0, 1, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(95, -45, -31.5f).setRotationAngle(0, 0, 0).setName("Box 113")
@@ -773,7 +773,7 @@ public class AB1BModel extends VehicleModel {
 		chassis_secondary.addProgram(DefaultPrograms.RGB_SECONDARY);
 		this.groups.add(chassis_secondary);
 		//
-		TurboList exhaust = new TurboList("exhaust");
+		ModelGroup exhaust = new ModelGroup("exhaust");
 		exhaust.add(new ModelRendererTurbo(exhaust, 1, 186, textureX, textureY).addBox(-1, 0, 0, 14, 2, 2)
 			.setRotationPoint(-111, -0.5f, 25).setRotationAngle(0, 20, -12)
 		);

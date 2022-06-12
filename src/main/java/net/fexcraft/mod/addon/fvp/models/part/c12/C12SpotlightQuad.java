@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.6 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C12SpotlightQuad extends PartModel {
 		super(); textureX = 16; textureY = 32;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList body = new TurboList("body");
+		ModelGroup body = new ModelGroup("body");
 		body.add(new ModelRendererTurbo(body, 0, 19, textureX, textureY).addBox(0, -1.5f, 1.5f, 1, 3, 0.5f));
 		body.add(new ModelRendererTurbo(body, 11, 9, textureX, textureY).addBox(0, -1.5f, -2, 1, 3, 0.5f));
 		body.add(new ModelRendererTurbo(body, 7, 0, textureX, textureY).addBox(-0.5f, -0.5f, -0.5f, 1, 1, 1));
@@ -31,13 +31,13 @@ public class C12SpotlightQuad extends PartModel {
 		);
 		this.groups.add(body);
 		//
-		TurboList inner = new TurboList("inner");
+		ModelGroup inner = new ModelGroup("inner");
 		inner.add(new ModelRendererTurbo(inner, 9, 4, textureX, textureY)
 			.addShapeBox(0.25f, -1, -1, 0.5f, 2, 2, 0, 0, 0.25f, 0.25f, 0, 0, 0, 0, 0, 0, 0, 0.25f, 0.25f, 0, 0.25f, 0.25f, 0, 0, 0, 0, 0, 0, 0, 0.25f, 0.25f)
 		);
 		this.groups.add(inner);
 		//
-		TurboList glow = new TurboList("glow");
+		ModelGroup glow = new ModelGroup("glow");
 		glow.add(new ModelRendererTurbo(glow, 0, 12, textureX, textureY)
 			.addShapeBox(0.25f, -1.5f, -1.5f, 0.75f, 3, 3, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0, 0, 0, 0, 0, -0.5f, -0.5f, 0, -0.5f, -0.5f, 0, 0, 0)
 		);

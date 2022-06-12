@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.3.5 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C11Roof extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList roof_open = new TurboList("roof_open");
+		ModelGroup roof_open = new ModelGroup("roof_open");
 		roof_open.add(new ModelRendererTurbo(roof_open, 274, 39, textureX, textureY).addBox(0, 0, 0, 19, 1, 1)
 			.setRotationPoint(-22, -11.5f, 18).setRotationAngle(0, 0, 20)
 		);
@@ -48,7 +48,7 @@ public class C11Roof extends PartModel {
 		roof_open.addProgram(new DefaultPrograms.AttributeVisible("c11_roof", false));
 		this.groups.add(roof_open);
 		//
-		TurboList roof_close = new TurboList("roof_close");
+		ModelGroup roof_close = new ModelGroup("roof_close");
 		roof_close.add(new ModelRendererTurbo(roof_close, 385, 95, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 11, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-5, -22.5f, 18).setRotationAngle(0, 0, 0)

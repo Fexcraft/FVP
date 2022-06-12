@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
@@ -18,7 +18,7 @@ public class SB1Model extends VehicleModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList door_front0 = new TurboList("door_front0");
+		ModelGroup door_front0 = new ModelGroup("door_front0");
 		door_front0.add(new ModelRendererTurbo(door_front0, -1, -1, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 1).setSize(8, 2, 1)
 			.setCorners(0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -77,7 +77,7 @@ public class SB1Model extends VehicleModel {
 		door_front0.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -8, 0, -1f / 2, 0));
 		this.groups.add(door_front0);
 		//
-		TurboList door_front1 = new TurboList("door_front1");
+		ModelGroup door_front1 = new ModelGroup("door_front1");
 		door_front1.add(new ModelRendererTurbo(door_front1, 241, 387, textureX, textureY).newBoxBuilder()
 			.setOffset(-8, 0, 0).setSize(8, 18, 1)
 			.removePolygons(3)
@@ -136,7 +136,7 @@ public class SB1Model extends VehicleModel {
 		door_front1.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, 0, 8, 1f / 2, 0));
 		this.groups.add(door_front1);
 		//
-		TurboList door_rear0 = new TurboList("door_rear0");
+		ModelGroup door_rear0 = new ModelGroup("door_rear0");
 		door_rear0.add(new ModelRendererTurbo(door_rear0, -1, -1, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 1).setSize(8, 2, 1)
 			.setCorners(0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -195,7 +195,7 @@ public class SB1Model extends VehicleModel {
 		door_rear0.addProgram(new DefaultPrograms.AttributeTranslator("sb1_doors", true, -8, 0, -1f / 2, 0));
 		this.groups.add(door_rear0);
 		//
-		TurboList door_rear1 = new TurboList("door_rear1");
+		ModelGroup door_rear1 = new ModelGroup("door_rear1");
 		door_rear1.add(new ModelRendererTurbo(door_rear1, -1, -1, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 1).setSize(8, 2, 1)
 			.setCorners(0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -259,7 +259,7 @@ public class SB1Model extends VehicleModel {
 		door_rear0.translate(0, -12, 0);
 		door_rear1.translate(0, -12, 0);
 		//
-		TurboList connectors = new TurboList("connectors");
+		ModelGroup connectors = new ModelGroup("connectors");
 		connectors.add(new ModelRendererTurbo(connectors, 346, 7, textureX, textureY).addCylinder(0, 0, 0, 1, 4, 8, 0.75f, 0.75f, 3, null)
 			.setRotationPoint(142, -9.5f, -2).setRotationAngle(0, 0, 0)
 		);
@@ -292,7 +292,7 @@ public class SB1Model extends VehicleModel {
 		);
 		this.groups.add(connectors);
 		//
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, -1, -1, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 0).setSize(2, 12, 3)
 			.setCorners(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, -2, 0, 0, -2, 0, -2, 1, 0, 0)
@@ -1400,7 +1400,7 @@ public class SB1Model extends VehicleModel {
 		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
 		//
-		TurboList secondary = new TurboList("secondary");
+		ModelGroup secondary = new ModelGroup("secondary");
 		secondary.add(new ModelRendererTurbo(secondary, -1, -1, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 0).setSize(2, 22, 1)
 			.setCorners(0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -1624,7 +1624,7 @@ public class SB1Model extends VehicleModel {
 		secondary.addProgram(DefaultPrograms.RGB_SECONDARY);
 		this.groups.add(secondary);
 		//
-		TurboList buffers = new TurboList("buffers");
+		ModelGroup buffers = new ModelGroup("buffers");
 		buffers.add(new ModelRendererTurbo(buffers, 326, 11, textureX, textureY)
 			.addBox(0, 0, 0, 3, 4, 32, 0, 1f, new boolean[]{ false, true, false, false, true, true })
 			.setRotationPoint(138, -16, -16).setRotationAngle(0, 0, 0)
@@ -1687,7 +1687,7 @@ public class SB1Model extends VehicleModel {
 		);
 		this.groups.add(buffers);
 		//
-		TurboList body = new TurboList("body");
+		ModelGroup body = new ModelGroup("body");
 		body.add(new ModelRendererTurbo(body, -1, -1, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 0).setSize(54, 12, 44)
 			.setCorners(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, -2, 0, 0, -2)
@@ -2444,7 +2444,7 @@ public class SB1Model extends VehicleModel {
 		);
 		this.groups.add(body);
 		//
-		TurboList front_forward = new TurboList("front_forward");
+		ModelGroup front_forward = new ModelGroup("front_forward");
 		front_forward.add(new ModelRendererTurbo(front_forward, 326, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 3, null)
 			.setRotationPoint(140, -25, -13).setRotationAngle(0, 0, 0)
 		);
@@ -2454,7 +2454,7 @@ public class SB1Model extends VehicleModel {
 		front_forward.addProgram(DefaultPrograms.LIGHTS_RAIL_FORWARD);
 		this.groups.add(front_forward);
 		//
-		TurboList front_backward = new TurboList("front_backward");
+		ModelGroup front_backward = new ModelGroup("front_backward");
 		front_backward.add(new ModelRendererTurbo(front_backward, 335, 1, textureX, textureY).addCylinder(0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 3, null)
 			.setRotationPoint(140, -25, -9).setRotationAngle(0, 0, 0)
 		);
@@ -2464,7 +2464,7 @@ public class SB1Model extends VehicleModel {
 		front_backward.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(front_backward);
 		//
-		TurboList indicator_right = new TurboList("indicator_right");
+		ModelGroup indicator_right = new ModelGroup("indicator_right");
 		indicator_right.add(new ModelRendererTurbo(indicator_right, 301, 14, textureX, textureY)
 			.addBox(0, 0, 0, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
 			.setRotationPoint(137, -26, -21).setRotationAngle(0, 54, 0)
@@ -2484,7 +2484,7 @@ public class SB1Model extends VehicleModel {
 		indicator_right.addProgram(DefaultPrograms.INDICATOR_LIGHT_RIGHT);
 		this.groups.add(indicator_right);
 		//
-		TurboList indicator_left = new TurboList("indicator_left");
+		ModelGroup indicator_left = new ModelGroup("indicator_left");
 		indicator_left.add(new ModelRendererTurbo(indicator_left, 301, 8, textureX, textureY)
 			.addBox(0, 0, -3, 1, 2, 3, 0, 1f, new boolean[]{ false, true, false, false, false, false })
 			.setRotationPoint(137, -26, 21).setRotationAngle(0, -54, 0)
@@ -2504,7 +2504,7 @@ public class SB1Model extends VehicleModel {
 		indicator_left.addProgram(DefaultPrograms.INDICATOR_LIGHT_LEFT);
 		this.groups.add(indicator_left);
 		//
-		TurboList rear_forward = new TurboList("rear_forward");
+		ModelGroup rear_forward = new ModelGroup("rear_forward");
 		rear_forward.add(new ModelRendererTurbo(rear_forward, 353, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 1, 0.875f, 2, null)
 			.setRotationPoint(-141, -25, -13).setRotationAngle(0, 0, 0)
 		);
@@ -2514,7 +2514,7 @@ public class SB1Model extends VehicleModel {
 		rear_forward.addProgram(DefaultPrograms.LIGHTS_RAIL_BACKWARD);
 		this.groups.add(rear_forward);
 		//
-		TurboList rear_backward = new TurboList("rear_backward");
+		ModelGroup rear_backward = new ModelGroup("rear_backward");
 		rear_backward.add(new ModelRendererTurbo(rear_backward, 344, 1, textureX, textureY).addCylinder(-0.125f, 0, 0, 2, 1, 12, 0.875f, 0.75f, 2, null)
 			.setRotationPoint(-141, -25, -9).setRotationAngle(0, 0, 0)
 		);

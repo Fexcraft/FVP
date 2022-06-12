@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T1Type2 extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList chassis_core = new TurboList("chassis_core");
+		ModelGroup chassis_core = new ModelGroup("chassis_core");
 		chassis_core.add(new ModelRendererTurbo(chassis_core, 1, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 8, 54, 0, 0, 0, -2, 0, 0, -2, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(18, -22, -27).setRotationAngle(0, 0, 0).setName("Box 0")
@@ -303,7 +303,7 @@ public class T1Type2 extends PartModel {
 		);
 		this.groups.add(chassis_core);
 		//
-		TurboList chassis_lights = new TurboList("chassis_lights");
+		ModelGroup chassis_lights = new ModelGroup("chassis_lights");
 		chassis_lights.add(new ModelRendererTurbo(chassis_lights, 489, 1, textureX, textureY)
 			.addShapeBox(0, 0, 0, 5, 3, 1, 0, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, 0, 0, 0, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(12.5f, -21.5f, -25.5f).setRotationAngle(0, 0, 0).setName("Box 70")
@@ -327,7 +327,7 @@ public class T1Type2 extends PartModel {
 		chassis_lights.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(chassis_lights);
 		//
-		TurboList chassis_primary = new TurboList("chassis_primary");
+		ModelGroup chassis_primary = new ModelGroup("chassis_primary");
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 169, 97, textureX, textureY)
 			.addShapeBox(0, 0, 0, 110, 5, 2, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(-99, -19, -27).setRotationAngle(0, 0, 0).setName("Box 32")
@@ -347,7 +347,7 @@ public class T1Type2 extends PartModel {
 		chassis_primary.addProgram(DefaultPrograms.RGB_SECONDARY);
 		this.groups.add(chassis_primary);
 		//
-		TurboList tracks_in = new TurboList("tracks_in");
+		ModelGroup tracks_in = new ModelGroup("tracks_in");
 		tracks_in.add(new ModelRendererTurbo(tracks_in, 345, 217, textureX, textureY).addBox(0, 0, 0, 48, 1, 8)
 			.setRotationPoint(-47, -4, -19.5f).setRotationAngle(0, 0, 0).setName("Box 60")
 		);
@@ -371,7 +371,7 @@ public class T1Type2 extends PartModel {
 		tracks_in.addProgram(new DefaultPrograms.AttributeVisible("t1_type2_tracks", false));
 		this.groups.add(tracks_in);
 		//
-		TurboList tracks_out = new TurboList("tracks_out");
+		ModelGroup tracks_out = new ModelGroup("tracks_out");
 		tracks_out.add(new ModelRendererTurbo(tracks_out, 1, 209, textureX, textureY)
 			.addShapeBox(0, 0, 0, 48, 1, 8, 0, 0, -22, 0, 0, 0, 0, 0, 0, 0, 0, -22, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0)
 			.setRotationPoint(-151, -13.5f, -22).setRotationAngle(0, 0, 0).setName("Box 58")

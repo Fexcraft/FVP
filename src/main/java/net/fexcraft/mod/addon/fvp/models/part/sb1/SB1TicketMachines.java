@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.sb1;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.1 &copy; 2020 - Fexcraft.net<br>
@@ -16,7 +16,7 @@ public class SB1TicketMachines extends PartModel {
 	public SB1TicketMachines(){
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
-		TurboList ticket_machines = new TurboList("ticket_machines");
+		ModelGroup ticket_machines = new ModelGroup("ticket_machines");
 		ticket_machines.add(new ModelRendererTurbo(ticket_machines, 349, 128, textureX, textureY).addBox(0, 0, 0, 3, 8, 4)
 			.setRotationPoint(-93.5f, -47, -10).setRotationAngle(0, 0, 0)
 		);

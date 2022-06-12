@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T2Doors extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList door_left = new TurboList("door_left");
+		ModelGroup door_left = new ModelGroup("door_left");
 		door_left.add(new ModelRendererTurbo(door_left, 425, 89, textureX, textureY)
 			.addShapeBox(-26, -20, -1, 3, 20, 2, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(64, -32, 25).setRotationAngle(0, 0, 0).setName("Box 230")
@@ -45,7 +45,7 @@ public class T2Doors extends PartModel {
 		door_left.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("t2_door_left", true, 0, 80, 0.5f, 1, 0f));
 		this.groups.add(door_left);
 		//
-		TurboList door_right = new TurboList("door_right");
+		ModelGroup door_right = new ModelGroup("door_right");
 		door_right.add(new ModelRendererTurbo(door_right, 1, 73, textureX, textureY)
 			.addShapeBox(-2, -10, -1, 2, 10, 2, 0, 0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, 0.25f, 0.25f, 0, 0.25f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(64, -32, -25).setRotationAngle(0, 0, 0).setName("Box 235")

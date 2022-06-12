@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
@@ -18,7 +18,7 @@ public class C7_RSModel extends VehicleModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList chassis_body = new TurboList("chassis_body");
+		ModelGroup chassis_body = new ModelGroup("chassis_body");
 		chassis_body.add(new ModelRendererTurbo(chassis_body, 350, 5, textureX, textureY)
 			.addShapeBox(0, 0, 0, 60.000004f, 2.4f, 2.4f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1.08f, 0, 0, -1.08f, 0, 0, -1.08f, 0, 0, -1.08f, 0, 0)
 			.setRotationPoint(-30.000002f, 2.2f, -21.6f).setRotationAngle(0, 0, 0).setName("Box 1")
@@ -406,7 +406,7 @@ public class C7_RSModel extends VehicleModel {
 		);*/
 		this.groups.add(chassis_body);
 		//
-		TurboList chassis_primary = new TurboList("chassis_primary");
+		ModelGroup chassis_primary = new ModelGroup("chassis_primary");
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 310, 56, textureX, textureY)
 			.addShapeBox(0, 0, 0, 13.200001f, 2.4f, 3.6000001f, 0, 0, 0, 0, 0, -0.6f, 0, 0, -1.8000001f, 0, 0, -1.2f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(38.4f, -12, 15.6f).setRotationAngle(0, 0, 0).setName("Box 44")
@@ -722,7 +722,7 @@ public class C7_RSModel extends VehicleModel {
 		chassis_primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(chassis_primary);
 		//
-		TurboList door_front_left = new TurboList("door_front_left");
+		ModelGroup door_front_left = new ModelGroup("door_front_left");
 		door_front_left.add(new ModelRendererTurbo(door_front_left, 282, 131, textureX, textureY)
 			.addShapeBox(-19.2f, 0, -1.2f, 20.400002f, 13.2f, 1.2f, 0, 0, 0.9f, 0, 0, -0.4f, 0, 0, -0.9f, 0, 0, 0.9f, 0, -1.2f, 0, -1.2f, 0, 0, -1.2f, 0, 0, 1.2f, -1.2f, 0, 1.2f)
 			.setRotationPoint(18, -11, 20.400002f).setRotationAngle(0, 0, 0).setName("Box 242")
@@ -742,7 +742,7 @@ public class C7_RSModel extends VehicleModel {
 		door_front_left.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c7_doors_fl", true, 0, 60, 0.5f, 1, 0f));
 		this.groups.add(door_front_left);
 		//
-		TurboList door_front_right = new TurboList("door_front_right");
+		ModelGroup door_front_right = new ModelGroup("door_front_right");
 		door_front_right.add(new ModelRendererTurbo(door_front_right, 166, 125, textureX, textureY)
 			.addShapeBox(-19.2f, 0, -1.2f, 20.400002f, 13.2f, 1.2f, 0, 0, 0.9f, 0, 0, -0.9f, 0, 0, -1.4f, 0, 0, 0.9f, 0, -1.2f, 0, 1.2f, 0, 0, 1.2f, 0, 0, -1.2f, -1.2f, 0, -1.2f)
 			.setRotationPoint(18, -11, -19.2f).setRotationAngle(0, 0, 0).setName("Box 244")
@@ -762,7 +762,7 @@ public class C7_RSModel extends VehicleModel {
 		door_front_right.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c7_doors_fr", true, -60, 0, -0.5f, 1, 0f));
 		this.groups.add(door_front_right);
 		//
-		TurboList door_hood = new TurboList("door_hood");
+		ModelGroup door_hood = new ModelGroup("door_hood");
 		door_hood.add(new ModelRendererTurbo(door_hood, 110, 39, textureX, textureY)
 			.addShapeBox(12, 0, 0, 13.200001f, 1.2f, 31.2f, 0, 0, 0, 0, 0, -0.6f, 0, 0, -0.6f, 0, 0, 0, 0, 0, 0, 0, 0, 0.6f, 0, 0, 0.6f, 0, 0, 0, 0)
 			.setRotationPoint(26.400002f, -12, -15.6f).setRotationAngle(0, 0, 0).setName("Box 59")
@@ -782,7 +782,7 @@ public class C7_RSModel extends VehicleModel {
 		door_hood.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c7_hood", true, -70, 0, -1, 2, 0f));
 		this.groups.add(door_hood);
 		//
-		TurboList door_rear_left = new TurboList("door_rear_left");
+		ModelGroup door_rear_left = new ModelGroup("door_rear_left");
 		door_rear_left.add(new ModelRendererTurbo(door_rear_left, 464, 26, textureX, textureY)
 			.addShapeBox(-20.400002f, 0, 1.2f, 21.6f, 14.2f, 1.2f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1.2f, 0, -1.2f, 0, 0, -1.2f, 0, 0, 1.2f, -1.2f, 0, 1.2f)
 			.setRotationPoint(-6, -12, 18).setRotationAngle(0, 0, 0).setName("Box 246")
@@ -798,7 +798,7 @@ public class C7_RSModel extends VehicleModel {
 		door_rear_left.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c7_doors_bl", true, 0, 60, 0.5f, 1, 0f));
 		this.groups.add(door_rear_left);
 		//
-		TurboList door_rear_right = new TurboList("door_rear_right");
+		ModelGroup door_rear_right = new ModelGroup("door_rear_right");
 		door_rear_right.add(new ModelRendererTurbo(door_rear_right, 464, 10, textureX, textureY)
 			.addShapeBox(-20.400002f, 0, 1.2f, 21.6f, 14.2f, 1.2f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1.2f, 0, 1.2f, 0, 0, 1.2f, 0, 0, -1.2f, -1.2f, 0, -1.2f)
 			.setRotationPoint(-6, -12, -21.6f).setRotationAngle(0, 0, 0).setName("Box 247")
@@ -814,7 +814,7 @@ public class C7_RSModel extends VehicleModel {
 		door_rear_right.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c7_doors_br", true, -60, 0, -0.5f, 1, 0f));
 		this.groups.add(door_rear_right);
 		//
-		TurboList door_trunk = new TurboList("door_trunk");
+		ModelGroup door_trunk = new ModelGroup("door_trunk");
 		door_trunk.add(new ModelRendererTurbo(door_trunk, 77, 111, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2.4f, 12.2f, 1.2f, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5.4f, 0, -1.2f, -4.8f, 0, -1.2f, -4.8f, 0, 1.2f, 5.4f, 0, 1.2f)
 			.setRotationPoint(-49.2f, -23.2f, 15.6f).setRotationAngle(0, 0, 0).setName("Box 255")
@@ -826,7 +826,7 @@ public class C7_RSModel extends VehicleModel {
 		door_trunk.addPrograms(new DefaultPrograms.AttributeRotator("c7_trunk", true, 0, 75, 1, 2, 0f));
 		this.groups.add(door_trunk);
 		//
-		TurboList door_trunk_primary = new TurboList("door_trunk_primary");
+		ModelGroup door_trunk_primary = new ModelGroup("door_trunk_primary");
 		door_trunk_primary.add(new ModelRendererTurbo(door_trunk_primary, 202, 112, textureX, textureY)
 			.addShapeBox(-3.6000001f, 13.200001f, 0, 1.2f, 1.2f, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1.08f, 0, 0, -1.08f, 0, 0, 0, 0, 0)
 			.setRotationPoint(-49.2f, -25.2f, -18).setRotationAngle(0, 0, 0).setName("Box 253")
@@ -850,7 +850,7 @@ public class C7_RSModel extends VehicleModel {
 		door_trunk_primary.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c7_trunk", true, 0, 75, 1, 2, 0f));
 		this.groups.add(door_trunk_primary);
 		//
-		TurboList label = new TurboList("label");
+		ModelGroup label = new ModelGroup("label");
 		label.add(new ModelRendererTurbo(label, 193, 40, textureX, textureY)
 			.addShapeBox(0, 0, 0, 0.2f, 1.4f, 0.2f, 0, 0, -0.2f, 0, 0, 0, 0, 0, 0, 0, 0, -0.2f, 0, 0, -0.2f, 0, 0, 0, 0, 0, 0, 0, 0, -0.2f, 0)
 			.setRotationPoint(-52, -10.7f, -20.7f).setRotationAngle(0, 0, 0)

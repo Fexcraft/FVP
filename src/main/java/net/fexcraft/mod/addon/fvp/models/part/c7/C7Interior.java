@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c7;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.1 &copy; 2020 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class C7Interior extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList interior = new TurboList("interior");
+		ModelGroup interior = new ModelGroup("interior");
 		interior.add(new ModelRendererTurbo(interior, 413, 10, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4.8f, 5.8f, 12, 0, 0, 0, 0, 0, -1.2f, 0, 0, -1.2f, 0, 0, 0, 0, 0, 0, 0, 0, 1.2f, 0, 0, 1.2f, 0, 0, 0, 0)
 			.setRotationPoint(18, -13.2f, 4.8f).setRotationAngle(0, 0, 0).setName("Box 259")

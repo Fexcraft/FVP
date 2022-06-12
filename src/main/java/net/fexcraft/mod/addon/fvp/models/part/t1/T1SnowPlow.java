@@ -4,18 +4,18 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 @fModel(registryname = "fvp:models/part/t1_snow_plow")
 public class T1SnowPlow extends PartModel {
 	
-	private TurboList body, snowplow;
+	private ModelGroup body, snowplow;
 
     public T1SnowPlow(){
     	super(); textureX = 512; textureY = 128;
         addToCreators("Ferdinand (FEX___96)");
         
-		TurboList lights = new TurboList("lights");
+		ModelGroup lights = new ModelGroup("lights");
 		lights.add(new ModelRendererTurbo(lights, 201, 1, textureX, textureY)
 			.addShapeBox(13, -8, 21.5f, 1, 2, 4, 0, 0, -0.2f, -0.2f, -0.8f, -0.45f, -0.45f, -0.8f, -0.45f, -0.45f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, -0.8f, -0.45f, -0.45f, -0.8f, -0.45f, -0.45f, 0, -0.2f, -0.2f)
 			.setRotationPoint(58, -5, 0).setRotationAngle(0, 0, -0).setName("Box 12")
@@ -27,14 +27,14 @@ public class T1SnowPlow extends PartModel {
 		lights.addPrograms(DefaultPrograms.LIGHTS, new DefaultPrograms.AttributeRotator("t1_snowplow", true, 0, 20, 1, 2, -20f));
 		this.groups.add(lights);
 		//
-		TurboList base = new TurboList("base");
+		ModelGroup base = new ModelGroup("base");
 		base.add(new ModelRendererTurbo(base, 185, 1, textureX, textureY)
 			.addShapeBox(0, 0, -24, 4, 7, 48, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, -1, -1, 0, -1, -1, 0, 0, 0)
 			.setRotationPoint(56, -4.5f, 0).setRotationAngle(0, 0, -0).setName("Box 9")
 		);
 		this.groups.add(base);
 		//
-		TurboList moving = new TurboList("moving");
+		ModelGroup moving = new ModelGroup("moving");
 		moving.add(new ModelRendererTurbo(moving, 1, 1, textureX, textureY)
 			.addShapeBox(5, -3, -27.5f, 2, 6, 56, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, -5, 0, 0)
 			.setRotationPoint(58, -5, 0).setRotationAngle(0, 0, -0).setName("Box 0")

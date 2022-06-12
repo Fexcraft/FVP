@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.VehicleModel;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
@@ -18,7 +18,7 @@ public class C12Model extends VehicleModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList body = new TurboList("body");
+		ModelGroup body = new ModelGroup("body");
 		body.add(new ModelRendererTurbo(body, 455, 96, textureX, textureY).addBox(0, 0, 0, 2, 13, 26)
 			.setRotationPoint(40.5f, -7, -13).setRotationAngle(0, 0, 0)
 		);
@@ -124,7 +124,7 @@ public class C12Model extends VehicleModel {
 		);
 		this.groups.add(body);
 		//
-		TurboList primary = new TurboList("primary");
+		ModelGroup primary = new ModelGroup("primary");
 		primary.add(new ModelRendererTurbo(primary, 28, 84, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5, 0, 0, 5, 0, 0, 5, 0, 0, -5, 0, 0)
 			.setRotationPoint(8.5f, -19, -0.5f).setRotationAngle(0, 0, 0)
@@ -400,7 +400,7 @@ public class C12Model extends VehicleModel {
 		primary.addProgram(DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(primary);
 		//
-		TurboList front_label = new TurboList("front_label");
+		ModelGroup front_label = new ModelGroup("front_label");
 		front_label.add(new ModelRendererTurbo(front_label, 301, 20, textureX, textureY)
 			.addShapeBox(6, 0, 0, 0.375f, 1.5f, 0.375f, 0, 0, 0, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, 0, 0, 0, 0, 0, 0, -0.375f, 0, 0, -0.375f, 0, 0, 0, 0)
 			.setRotationPoint(43.25f, -4.375f, -4.25f).setRotationAngle(0, -90, 0)
@@ -467,14 +467,14 @@ public class C12Model extends VehicleModel {
 		);
 		this.groups.add(front_label);
 		//
-		TurboList front_icon = new TurboList("front_icon");
+		ModelGroup front_icon = new ModelGroup("front_icon");
 		front_icon.add(new ModelRendererTurbo(front_icon, 463, 0, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 2, 2, 0, 0, 0, 0, 0, -0.125f, -0.125f, 0, -0.125f, -0.125f, 0, 0, 0, 0, 0, 0, 0, -0.125f, -0.125f, 0, -0.125f, -0.125f, 0, 0, 0)
 			.setRotationPoint(42.25f, 0.3125f, -1).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(front_icon);
 		//
-		TurboList suspension_body = new TurboList("suspension_body");
+		ModelGroup suspension_body = new ModelGroup("suspension_body");
 		suspension_body.add(new ModelRendererTurbo(suspension_body, 145, 0, textureX, textureY).addBox(0, 0, 0, 5, 4, 16)
 			.setRotationPoint(30.5f, 3, -8).setRotationAngle(0, 0, 0)
 		);
@@ -509,101 +509,101 @@ public class C12Model extends VehicleModel {
 		);
 		this.groups.add(suspension_body);
 		//
-		TurboList suspension_beam_fl = new TurboList("suspension_beam_fl");
+		ModelGroup suspension_beam_fl = new ModelGroup("suspension_beam_fl");
 		suspension_beam_fl.add(new ModelRendererTurbo(suspension_beam_fl, 164, 67, textureX, textureY)
 			.addShapeBox(-1.5f, -1.5f, 0, 3, 3, 10, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(33, 4.5f, 8).setRotationAngle(-14, 0, 0)
 		);
 		this.groups.add(suspension_beam_fl);
 		//
-		TurboList suspension_beam_fr = new TurboList("suspension_beam_fr");
+		ModelGroup suspension_beam_fr = new ModelGroup("suspension_beam_fr");
 		suspension_beam_fr.add(new ModelRendererTurbo(suspension_beam_fr, 449, 65, textureX, textureY)
 			.addShapeBox(-1.5f, -1.5f, -10, 3, 3, 10, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(33, 4.5f, -8).setRotationAngle(14, 0, 0)
 		);
 		this.groups.add(suspension_beam_fr);
 		//
-		TurboList suspension_beam_rl = new TurboList("suspension_beam_rl");
+		ModelGroup suspension_beam_rl = new ModelGroup("suspension_beam_rl");
 		suspension_beam_rl.add(new ModelRendererTurbo(suspension_beam_rl, 148, 64, textureX, textureY)
 			.addShapeBox(-1.5f, -1.5f, 0, 3, 3, 10, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(-39, 4.5f, 8).setRotationAngle(-14, 0, 0)
 		);
 		this.groups.add(suspension_beam_rl);
 		//
-		TurboList suspension_beam_rr = new TurboList("suspension_beam_rr");
+		ModelGroup suspension_beam_rr = new ModelGroup("suspension_beam_rr");
 		suspension_beam_rr.add(new ModelRendererTurbo(suspension_beam_rr, 347, 57, textureX, textureY)
 			.addShapeBox(-1.5f, -1.5f, -10, 3, 3, 10, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
 			.setRotationPoint(-39, 4.5f, -8).setRotationAngle(14, 0, 0)
 		);
 		this.groups.add(suspension_beam_rr);
 		//
-		TurboList suspension_spring_fl = new TurboList("suspension_spring_fl");
+		ModelGroup suspension_spring_fl = new ModelGroup("suspension_spring_fl");
 		suspension_spring_fl.add(new ModelRendererTurbo(suspension_spring_fl, 67, 66, textureX, textureY).addCylinder(0, 0, 0, 1, 9, 16, 1, 1, 4, null)
 			.setRotationPoint(33, -5, 14.5f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_spring_fl);
 		//
-		TurboList suspension_spring_fr = new TurboList("suspension_spring_fr");
+		ModelGroup suspension_spring_fr = new ModelGroup("suspension_spring_fr");
 		suspension_spring_fr.add(new ModelRendererTurbo(suspension_spring_fr, 499, 65, textureX, textureY).addCylinder(0, 0, 0, 1, 9, 16, 1, 1, 4, null)
 			.setRotationPoint(33, -5, -14).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_spring_fr);
 		//
-		TurboList suspension_spring_rl = new TurboList("suspension_spring_rl");
+		ModelGroup suspension_spring_rl = new ModelGroup("suspension_spring_rl");
 		suspension_spring_rl.add(new ModelRendererTurbo(suspension_spring_rl, 152, 64, textureX, textureY).addCylinder(0, 0, 0, 1, 8, 16, 1, 1, 4, null)
 			.setRotationPoint(-39, -4, 14.5f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_spring_rl);
 		//
-		TurboList suspension_spring_rr = new TurboList("suspension_spring_rr");
+		ModelGroup suspension_spring_rr = new ModelGroup("suspension_spring_rr");
 		suspension_spring_rr.add(new ModelRendererTurbo(suspension_spring_rr, 148, 64, textureX, textureY).addCylinder(0, 0, 0, 1, 8, 16, 1, 1, 4, null)
 			.setRotationPoint(-39, -4, -14).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_spring_rr);
 		//
-		TurboList suspension_buffer_fl = new TurboList("suspension_buffer_fl");
+		ModelGroup suspension_buffer_fl = new ModelGroup("suspension_buffer_fl");
 		suspension_buffer_fl.add(new ModelRendererTurbo(suspension_buffer_fl, 27, 36, textureX, textureY).addBox(0, 0, 0, 3, 1, 3)
 			.setRotationPoint(31.5f, 4, 13).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_buffer_fl);
 		//
-		TurboList suspension_buffer_fr = new TurboList("suspension_buffer_fr");
+		ModelGroup suspension_buffer_fr = new ModelGroup("suspension_buffer_fr");
 		suspension_buffer_fr.add(new ModelRendererTurbo(suspension_buffer_fr, 403, 34, textureX, textureY).addBox(0, 0, 0, 3, 1, 3)
 			.setRotationPoint(31.5f, 4, -15.5f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_buffer_fr);
 		//
-		TurboList suspension_buffer_rl = new TurboList("suspension_buffer_rl");
+		ModelGroup suspension_buffer_rl = new ModelGroup("suspension_buffer_rl");
 		suspension_buffer_rl.add(new ModelRendererTurbo(suspension_buffer_rl, 381, 32, textureX, textureY).addBox(0, 0, 0, 3, 1, 3)
 			.setRotationPoint(-40.5f, 4, 13).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_buffer_rl);
 		//
-		TurboList suspension_buffer_rr = new TurboList("suspension_buffer_rr");
+		ModelGroup suspension_buffer_rr = new ModelGroup("suspension_buffer_rr");
 		suspension_buffer_rr.add(new ModelRendererTurbo(suspension_buffer_rr, 493, 29, textureX, textureY).addBox(0, 0, 0, 3, 1, 3)
 			.setRotationPoint(-40.5f, 4, -15.5f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_buffer_rr);
 		//
-		TurboList suspension_wheel_fl = new TurboList("suspension_wheel_fl");
+		ModelGroup suspension_wheel_fl = new ModelGroup("suspension_wheel_fl");
 		suspension_wheel_fl.add(new ModelRendererTurbo(suspension_wheel_fl, 289, 49, textureX, textureY).addCylinder(0, 0, 0, 2, 1, 16, 1, 1.25f, 0, new net.fexcraft.lib.common.math.Vec3f(0.0, 0.0, -0.75))
 			.setRotationPoint(33, 7, 17.75f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_wheel_fl);
 		//
-		TurboList suspension_wheel_fr = new TurboList("suspension_wheel_fr");
+		ModelGroup suspension_wheel_fr = new ModelGroup("suspension_wheel_fr");
 		suspension_wheel_fr.add(new ModelRendererTurbo(suspension_wheel_fr, 296, 43, textureX, textureY).addCylinder(0, 0, 0, 2, 1, 16, 1, 1.25f, 1, new net.fexcraft.lib.common.math.Vec3f(0.0, 0.0, 0.75))
 			.setRotationPoint(33, 7, -18.75f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_wheel_fr);
 		//
-		TurboList suspension_wheel_rl = new TurboList("suspension_wheel_rl");
+		ModelGroup suspension_wheel_rl = new ModelGroup("suspension_wheel_rl");
 		suspension_wheel_rl.add(new ModelRendererTurbo(suspension_wheel_rl, 265, 21, textureX, textureY).addCylinder(0, 0, 0, 2, 1, 16, 1, 1.25f, 0, new net.fexcraft.lib.common.math.Vec3f(0.0, 0.0, -0.75))
 			.setRotationPoint(-39, 7, 17.75f).setRotationAngle(0, 0, 0)
 		);
 		this.groups.add(suspension_wheel_rl);
 		//
-		TurboList suspension_wheel_rr = new TurboList("suspension_wheel_rr");
+		ModelGroup suspension_wheel_rr = new ModelGroup("suspension_wheel_rr");
 		suspension_wheel_rr.add(new ModelRendererTurbo(suspension_wheel_rr, 381, 18, textureX, textureY).addCylinder(0, 0, 0, 2, 1, 16, 1, 1.25f, 1, new net.fexcraft.lib.common.math.Vec3f(0.0, 0.0, 0.75))
 			.setRotationPoint(-39, 7, -18.75f).setRotationAngle(0, 0, 0)
 		);

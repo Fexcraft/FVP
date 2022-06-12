@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c1r1;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
@@ -18,7 +18,7 @@ public class C1R1Doors extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand");
 		//
-		TurboList door_back_left = new TurboList("door_back_left");
+		ModelGroup door_back_left = new ModelGroup("door_back_left");
 		door_back_left.add(new ModelRendererTurbo(door_back_left, 1, 249, textureX, textureY)
 			.addShapeBox(-27, 0, -0.5f, 27, 10, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
 			.setRotationPoint(-2.5f, -10, 20.5f).setRotationAngle(0, 0, 0).setName("Box 570")
@@ -58,7 +58,7 @@ public class C1R1Doors extends PartModel {
 		door_back_left.addPrograms(new DefaultPrograms.AttributeRotator("c1r1_doors_bl", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_back_left);
 		//
-		TurboList door_back_right = new TurboList("door_back_right");
+		ModelGroup door_back_right = new ModelGroup("door_back_right");
 		door_back_right.add(new ModelRendererTurbo(door_back_right, 193, 249, textureX, textureY)
 			.addShapeBox(-27, 0, -0.5f, 27, 10, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
 			.setRotationPoint(-2.5f, -10, -20.5f).setRotationAngle(0, 0, 0).setName("Box 572")
@@ -98,7 +98,7 @@ public class C1R1Doors extends PartModel {
 		door_back_right.addPrograms(new DefaultPrograms.AttributeRotator("c1r1_doors_br", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_back_right);
 		//
-		TurboList door_front_left = new TurboList("door_front_left");
+		ModelGroup door_front_left = new ModelGroup("door_front_left");
 		door_front_left.add(new ModelRendererTurbo(door_front_left, 417, 241, textureX, textureY)
 			.addShapeBox(-27, 0, -0.5f, 27, 10, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
 			.setRotationPoint(25, -10, 20.5f).setRotationAngle(0, 0, 0).setName("Box 569")
@@ -138,7 +138,7 @@ public class C1R1Doors extends PartModel {
 		door_front_left.addPrograms(new DefaultPrograms.AttributeRotator("c1r1_doors_fl", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_left);
 		//
-		TurboList door_front_right = new TurboList("door_front_right");
+		ModelGroup door_front_right = new ModelGroup("door_front_right");
 		door_front_right.add(new ModelRendererTurbo(door_front_right, 81, 249, textureX, textureY)
 			.addShapeBox(-27, 0, -0.5f, 27, 10, 1, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.5f, 0, 0, 0, 0, 0, 0, 0, 0, -0.5f, 0, 0)
 			.setRotationPoint(25, -10, -20.5f).setRotationAngle(0, 0, 0).setName("Box 571")
@@ -178,7 +178,7 @@ public class C1R1Doors extends PartModel {
 		door_front_right.addPrograms(new DefaultPrograms.AttributeRotator("c1r1_doors_fr", true, -60, 0, -0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_front_right);
 		//
-		TurboList trunk = new TurboList("trunk");
+		ModelGroup trunk = new ModelGroup("trunk");
 		trunk.add(new ModelRendererTurbo(trunk, 105, 209, textureX, textureY)
 			.addShapeBox(-22, 0, -13, 22, 2, 26, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0)
 			.setRotationPoint(-32, -12, 0).setRotationAngle(0, 0, 0).setName("Box 526")

@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.5.2 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class T3SmallTank extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList small_tank_left = new TurboList("small_tank_left");
+		ModelGroup small_tank_left = new ModelGroup("small_tank_left");
 		small_tank_left.add(new ModelRendererTurbo(small_tank_left, 482, 180, textureX, textureY).addCylinder(0, 0, 0, 7, 16, 8, 1, 1, 3, null)
 			.setRotationPoint(-63, -8, 19).setRotationAngle(22.5f, 0, 0)
 		);
@@ -37,7 +37,7 @@ public class T3SmallTank extends PartModel {
 		small_tank_left.addProgram(new DefaultPrograms.IDSpecific("storage_left_s"));
 		this.groups.add(small_tank_left);
 		//
-		TurboList small_tank_right = new TurboList("small_tank_right");
+		ModelGroup small_tank_right = new ModelGroup("small_tank_right");
 		small_tank_right.add(new ModelRendererTurbo(small_tank_right, 174, 54, textureX, textureY).addCylinder(0, 0, 0, 7, 16, 8, 1, 1, 3, null)
 			.setRotationPoint(-63, -8, -19).setRotationAngle(22.5f, 0, 0)
 		);

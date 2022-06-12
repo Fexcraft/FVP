@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1.4 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.1 &copy; 2020 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class SB1Labels extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList label_front = new TurboList("label_front");
+		ModelGroup label_front = new ModelGroup("label_front");
 		label_front.add(new ModelRendererTurbo(label_front, 374, 1, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 0).setSize(1, 5, 30)
 			.removePolygons(1, 2, 4, 5)
@@ -59,7 +59,7 @@ public class SB1Labels extends PartModel {
 		);
 		this.groups.add(label_front);
 		//
-		TurboList label_rear = new TurboList("label_rear");
+		ModelGroup label_rear = new ModelGroup("label_rear");
 		label_rear.add(new ModelRendererTurbo(label_rear, 374, 1, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 0).setSize(1, 5, 30)
 			.removePolygons(0, 2, 4, 5)
@@ -108,7 +108,7 @@ public class SB1Labels extends PartModel {
 		);
 		this.groups.add(label_rear);
 		//
-		TurboList labels_line = new TurboList("labels_line");
+		ModelGroup labels_line = new ModelGroup("labels_line");
 		labels_line.add(new ModelRendererTurbo(labels_line, 290, 9, textureX, textureY).newBoxBuilder()
 			.setOffset(0, 0, 0).setSize(1, 4, 6)
 			.removePolygons(3, 4, 5)

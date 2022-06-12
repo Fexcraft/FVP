@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class TR1Type1 extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList chassis_body = new TurboList("chassis_body");
+		ModelGroup chassis_body = new ModelGroup("chassis_body");
 		chassis_body.add(new ModelRendererTurbo(chassis_body, 1, 1, textureX, textureY).addBox(0, 0, 0, 128, 48, 1)
 			.setRotationPoint(-236, -72, -26).setRotationAngle(0, 0, 0).setName("Box 0")
 		);
@@ -60,7 +60,7 @@ public class TR1Type1 extends PartModel {
 		);
 		this.groups.add(chassis_body);
 		//
-		TurboList door_left = new TurboList("door_left");
+		ModelGroup door_left = new ModelGroup("door_left");
 		door_left.add(new ModelRendererTurbo(door_left, 321, 81, textureX, textureY).addBox(-0.5f, 0, -25, 1, 48, 25)
 			.setRotationPoint(-235.5f, -72, 25).setRotationAngle(0, 0, 0).setName("Box 14")
 		);
@@ -88,7 +88,7 @@ public class TR1Type1 extends PartModel {
 		door_left.addProgram(new DefaultPrograms.AttributeRotator("tr1_type1_doors", true, 0, 100, 1, 1, null));
 		this.groups.add(door_left);
 		//
-		TurboList door_right = new TurboList("door_right");
+		ModelGroup door_right = new ModelGroup("door_right");
 		door_right.add(new ModelRendererTurbo(door_right, 265, 33, textureX, textureY).addBox(-0.5f, 0, 0, 1, 48, 25)
 			.setRotationPoint(-235.5f, -72, -25).setRotationAngle(0, 0, 0).setName("Box 13")
 		);
@@ -116,7 +116,7 @@ public class TR1Type1 extends PartModel {
 		door_right.addProgram(new DefaultPrograms.AttributeRotator("tr1_type1_doors", true, -100, 0, -1, 1, null));
 		this.groups.add(door_right);
 		//
-		TurboList lights = new TurboList("lights");
+		ModelGroup lights = new ModelGroup("lights");
 		lights.add(new ModelRendererTurbo(lights, 497, 9, textureX, textureY).addBox(0, 0, 0, 4, 1, 1)
 			.setRotationPoint(-234, -73.5f, 25.2f).setRotationAngle(0, 0, 0).setName("Box 39")
 		);
@@ -222,7 +222,7 @@ public class TR1Type1 extends PartModel {
 		lights.addProgram(DefaultPrograms.LIGHTS);
 		this.groups.add(lights);
 		//
-		TurboList lights_door_left = new TurboList("lights_door_left");
+		ModelGroup lights_door_left = new ModelGroup("lights_door_left");
 		lights_door_left.add(new ModelRendererTurbo(lights_door_left, 473, 1, textureX, textureY).addBox(-0.7f, 1, -9, 1, 1, 8)
 			.setRotationPoint(-235.5f, -72, 25).setRotationAngle(0, 0, 0).setName("Box 29")
 		);
@@ -242,7 +242,7 @@ public class TR1Type1 extends PartModel {
 		lights_door_left.addProgram(new DefaultPrograms.AttributeRotator("tr1_type1_doors", true, 0, 100, 1, 1, null));
 		this.groups.add(lights_door_left);
 		//
-		TurboList lights_door_right = new TurboList("lights_door_right");
+		ModelGroup lights_door_right = new ModelGroup("lights_door_right");
 		lights_door_right.add(new ModelRendererTurbo(lights_door_right, 417, 9, textureX, textureY).addBox(-0.7f, 1, 1, 1, 1, 8)
 			.setRotationPoint(-235.5f, -72, -25).setRotationAngle(0, 0, 0).setName("Box 30")
 		);

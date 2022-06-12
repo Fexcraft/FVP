@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C8Interior extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList interior = new TurboList("interior");
+		ModelGroup interior = new ModelGroup("interior");
 		interior.add(new ModelRendererTurbo(interior, 115, 101, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 4, 42, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0)
 			.setRotationPoint(21, -9, -21).setRotationAngle(0, 0, 0)
@@ -219,7 +219,7 @@ public class C8Interior extends PartModel {
 		);
 		this.groups.add(interior);
 		//
-		TurboList interior_glow = new TurboList("interior_glow");
+		ModelGroup interior_glow = new ModelGroup("interior_glow");
 		interior_glow.add(new ModelRendererTurbo(interior_glow, 27, 26, textureX, textureY)
 			.addShapeBox(0, 0, -1, 1, 1, 1, 0, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f, 0, -0.2f, -0.2f)
 			.setRotationPoint(19.6f, -10, 16).setRotationAngle(0, 0, 0.17453294f)

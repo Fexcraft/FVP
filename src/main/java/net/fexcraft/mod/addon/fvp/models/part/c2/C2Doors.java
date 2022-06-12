@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c2;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
@@ -18,7 +18,7 @@ public class C2Doors extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList door_left = new TurboList("door_left");
+		ModelGroup door_left = new ModelGroup("door_left");
 		door_left.add(new ModelRendererTurbo(door_left, 65, 89, textureX, textureY).addBox(-22, 0, 0, 23, 13, 1)
 			.setRotationPoint(12, -25, 23).setRotationAngle(0, 0, 0).setName("Box 104")
 		);
@@ -31,7 +31,7 @@ public class C2Doors extends PartModel {
 		door_left.addPrograms(new DefaultPrograms.AttributeRotator("c2_door_left", true, 0, 60, 0.5f, 1, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_left);
 		//
-		TurboList door_rear = new TurboList("door_rear");
+		ModelGroup door_rear = new ModelGroup("door_rear");
 		door_rear.add(new ModelRendererTurbo(door_rear, 425, 209, textureX, textureY).addBox(0, -14, 0, 1, 14, 40)
 			.setRotationPoint(-81.5f, -12, -20).setRotationAngle(0, 0, 0).setName("Box 110")
 		);
@@ -41,7 +41,7 @@ public class C2Doors extends PartModel {
 		door_rear.addPrograms(new DefaultPrograms.AttributeRotator("c2_door_rear", true, -90, 0, -1, 2, 0f), DefaultPrograms.RGB_PRIMARY);
 		this.groups.add(door_rear);
 		//
-		TurboList door_right = new TurboList("door_right");
+		ModelGroup door_right = new ModelGroup("door_right");
 		door_right.add(new ModelRendererTurbo(door_right, 177, 89, textureX, textureY).addBox(-22, 0, -1, 23, 13, 1)
 			.setRotationPoint(12, -25, -23).setRotationAngle(0, 0, 0).setName("Box 105")
 		);

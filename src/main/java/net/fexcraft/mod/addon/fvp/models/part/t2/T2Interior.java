@@ -3,7 +3,7 @@ package net.fexcraft.mod.addon.fvp.models.part.t2;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 import net.fexcraft.mod.fvtm.model.PartModel;
 
 /** This file was exported via the FVTM Exporter V1.2 of<br>
@@ -17,7 +17,7 @@ public class T2Interior extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand");
 		//
-		TurboList interior = new TurboList("interior");
+		ModelGroup interior = new ModelGroup("interior");
 		interior.add(new ModelRendererTurbo(interior, 25, 361, textureX, textureY)
 			.addShapeBox(0, 0, 0, 8, 14, 48, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, -3, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0)
 			.setRotationPoint(58, -33, -24).setRotationAngle(0, 0, 0).setName("Box 176")

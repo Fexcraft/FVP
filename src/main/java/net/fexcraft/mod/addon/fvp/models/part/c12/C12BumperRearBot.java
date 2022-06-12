@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c12;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class C12BumperRearBot extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList bumper_rear_bot = new TurboList("bumper_rear_bot");
+		ModelGroup bumper_rear_bot = new ModelGroup("bumper_rear_bot");
 		bumper_rear_bot.add(new ModelRendererTurbo(bumper_rear_bot, 411, 211, textureX, textureY).addBox(0, 0, 0, 0.5f, 3.5f, 32)
 			.setRotationPoint(-53.5f, 0, -16).setRotationAngle(0, 0, 0)
 		);

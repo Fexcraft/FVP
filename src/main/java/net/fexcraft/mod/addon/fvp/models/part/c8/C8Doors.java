@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.4-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class C8Doors extends PartModel {
 		super(); textureX = 512; textureY = 512;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList door_front_left = new TurboList("door_front_left");
+		ModelGroup door_front_left = new ModelGroup("door_front_left");
 		door_front_left.add(new ModelRendererTurbo(door_front_left, 266, 33, textureX, textureY).addBox(-22, 0, 0, 22, 10, 1)
 			.setRotationPoint(25, -9, 21).setRotationAngle(0, 0, 0).setName("Box 241")
 		);
@@ -53,7 +53,7 @@ public class C8Doors extends PartModel {
 		door_front_left.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c8_doors_fl", true, 0, 60, 0.5f, 1, 0f));
 		this.groups.add(door_front_left);
 		//
-		TurboList door_front_right = new TurboList("door_front_right");
+		ModelGroup door_front_right = new ModelGroup("door_front_right");
 		door_front_right.add(new ModelRendererTurbo(door_front_right, 234, 17, textureX, textureY).addBox(-22, 0, -1, 22, 10, 1)
 			.setRotationPoint(25, -9, -21).setRotationAngle(0, 0, 0).setName("Box 236")
 		);
@@ -88,7 +88,7 @@ public class C8Doors extends PartModel {
 		door_front_right.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c8_doors_fr", true, -60, 0, -0.5f, 1, 0f));
 		this.groups.add(door_front_right);
 		//
-		TurboList door_hood = new TurboList("door_hood");
+		ModelGroup door_hood = new ModelGroup("door_hood");
 		door_hood.add(new ModelRendererTurbo(door_hood, 396, 8, textureX, textureY)
 			.addShapeBox(0, 0, -16, 22, 1, 32, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 			.setRotationPoint(29, -10, 0).setRotationAngle(0, 0, 0).setName("Box 125")
@@ -100,7 +100,7 @@ public class C8Doors extends PartModel {
 		door_hood.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c8_hood", true, -70, 0, -1, 2, 0f));
 		this.groups.add(door_hood);
 		//
-		TurboList door_rear_left = new TurboList("door_rear_left");
+		ModelGroup door_rear_left = new ModelGroup("door_rear_left");
 		door_rear_left.add(new ModelRendererTurbo(door_rear_left, 473, 18, textureX, textureY).addBox(-17, 0, 0, 17, 10, 2)
 			.setRotationPoint(1, -9, 20).setRotationAngle(0, 0, 0).setName("Box 246")
 		);
@@ -123,7 +123,7 @@ public class C8Doors extends PartModel {
 		door_rear_left.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c8_doors_bl", true, 0, 60, 0.5f, 1, 0f));
 		this.groups.add(door_rear_left);
 		//
-		TurboList door_rear_right = new TurboList("door_rear_right");
+		ModelGroup door_rear_right = new ModelGroup("door_rear_right");
 		door_rear_right.add(new ModelRendererTurbo(door_rear_right, 281, 13, textureX, textureY).addBox(-17, 0, -2, 17, 10, 2)
 			.setRotationPoint(1, -9, -20).setRotationAngle(0, 0, 0).setName("Box 251")
 		);
@@ -146,7 +146,7 @@ public class C8Doors extends PartModel {
 		door_rear_right.addPrograms(DefaultPrograms.RGB_PRIMARY, new DefaultPrograms.AttributeRotator("c8_doors_br", true, -60, 0, -0.5f, 1, 0f));
 		this.groups.add(door_rear_right);
 		//
-		TurboList door_trunk = new TurboList("door_trunk");
+		ModelGroup door_trunk = new ModelGroup("door_trunk");
 		door_trunk.add(new ModelRendererTurbo(door_trunk, 396, 130, textureX, textureY)
 			.addShapeBox(-26, 2, -16, 2, 3, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0)
 			.setRotationPoint(-31, -11, 0).setRotationAngle(0, 0, 0).setName("Box 104")

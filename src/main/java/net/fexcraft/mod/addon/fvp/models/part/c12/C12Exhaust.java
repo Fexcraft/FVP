@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.part.c12;
 import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.6.5 &copy; 2020 - Fexcraft.net<br>
@@ -17,7 +17,7 @@ public class C12Exhaust extends PartModel {
 		super(); textureX = 512; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList exhaust = new TurboList("exhaust");
+		ModelGroup exhaust = new ModelGroup("exhaust");
 		exhaust.add(new ModelRendererTurbo(exhaust, 267, 43, textureX, textureY).addBox(0, 0, 0, 5, 2, 12)
 			.setRotationPoint(-48.5f, 1, -6).setRotationAngle(0, 0, 0)
 		);

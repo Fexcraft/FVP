@@ -5,7 +5,7 @@ import net.fexcraft.lib.mc.api.registry.fModel;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
 import net.fexcraft.mod.fvtm.model.PartModel;
-import net.fexcraft.mod.fvtm.model.TurboList;
+import net.fexcraft.mod.fvtm.model.ModelGroup;
 
 /** This file was exported via the FVTM Exporter V1 of<br>
  *  FMT (Fex's Modelling Toolbox) v.1.0.1-test &copy; 2018 - Fexcraft.net<br>
@@ -18,7 +18,7 @@ public class BogieST1Model extends PartModel {
 		super(); textureX = 256; textureY = 256;
 		this.addToCreators("Ferdinand (FEX___96)");
 		//
-		TurboList axle0 = new TurboList("axle0");
+		ModelGroup axle0 = new ModelGroup("axle0");
 		axle0.add(new ModelRendererTurbo(axle0, 233, 1, textureX, textureY)
 			.addShapeBox(-1.5f, 6, -1, 3, 2, 2, 0, -0.3f, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, 0.1f, 0, 0, 0.1f, 0, 0, 0.1f, 0, 0, 0.1f, 0, 0)
 			.setRotationPoint(16, 4, -16).setRotationAngle(0, 0, 0).setName("Box 0")
@@ -287,7 +287,7 @@ public class BogieST1Model extends PartModel {
 		axle0.addPrograms(DefaultPrograms.BOGIE_AUTO, DefaultPrograms.BOGIE_AXLE_WHEEL);
 		this.groups.add(axle0);
 		//
-		TurboList axle1 = new TurboList("axle1");
+		ModelGroup axle1 = new ModelGroup("axle1");
 		axle1.add(new ModelRendererTurbo(axle1, 137, 65, textureX, textureY)
 			.addShapeBox(-1.5f, 6, -1, 3, 2, 2, 0, -0.3f, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, -0.3f, 0, 0, 0.1f, 0, 0, 0.1f, 0, 0, 0.1f, 0, 0, 0.1f, 0, 0)
 			.setRotationPoint(-16, 4, -16).setRotationAngle(0, 0, 0).setName("Box 67")
@@ -556,7 +556,7 @@ public class BogieST1Model extends PartModel {
 		axle1.addPrograms(DefaultPrograms.BOGIE_AUTO, DefaultPrograms.BOGIE_AXLE_WHEEL);
 		this.groups.add(axle1);
 		//
-		TurboList chassis = new TurboList("chassis");
+		ModelGroup chassis = new ModelGroup("chassis");
 		chassis.add(new ModelRendererTurbo(chassis, 113, 113, textureX, textureY)
 			.addShapeBox(-4, 0, 0, 8, 5, 13, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 3, 0)
 			.setRotationPoint(0, 0, 5).setRotationAngle(0, 0, 0).setName("Box 149")
