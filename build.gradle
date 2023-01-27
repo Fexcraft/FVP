@@ -57,9 +57,9 @@ minecraft {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
-    
-    compile project(':FCL')
-    compile project(':FVTM')
+
+    implementation project(':FCL')
+    implementation project(':FVTM')
 
 }
 
