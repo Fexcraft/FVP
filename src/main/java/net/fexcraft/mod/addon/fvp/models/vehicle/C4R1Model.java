@@ -4,7 +4,7 @@ package net.fexcraft.mod.addon.fvp.models.vehicle;
 import org.lwjgl.opengl.GL11;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
-import net.fexcraft.lib.mc.utils.Static;
+import net.fexcraft.lib.mc.utils.Statics;
 import net.fexcraft.lib.tmt.ModelRendererTurbo;
 import net.fexcraft.mod.fvtm.data.attribute.Attribute;
 import net.fexcraft.mod.fvtm.model.DefaultPrograms;
@@ -716,12 +716,12 @@ public class C4R1Model extends VehicleModel {
 				offx = data.cache.getValue("c4_side_offx");
 				offz = data.cache.getValue("c4_side_offz");
 				if(attr.boolean_value()){
-					offx = offx == null ? 0 : offx >= 2 ? 2 : offx + Static.sixteenth;
+					offx = offx == null ? 0 : offx >= 2 ? 2 : offx + Statics.sixteenth;
 				}
 				else{
-					offx = offx == null ? 2 : offx <= 0 ? 0 : offx - Static.sixteenth;
+					offx = offx == null ? 2 : offx <= 0 ? 0 : offx - Statics.sixteenth;
 				}
-				offz = offx == null ? 0 : offx > 0.5f ? Static.eighth : offx <= 0.1f ? 0 : Static.sixteenth;
+				offz = offx == null ? 0 : offx > 0.5f ? Statics.eighth : offx <= 0.1f ? 0 : Statics.sixteenth;
 				data.cache.setValue("c4_side_offx", offx);
 				data.cache.setValue("c4_side_offz", offz);
 				if(offx != null) GL11.glTranslatef(-offx, 0, -offz);
