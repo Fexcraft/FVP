@@ -35,6 +35,20 @@
 			"seat": "controller"
 		}
 	],
+	"SwivelPoints":[
+		{
+			"id": "base",
+			"parent": "vehicle",
+			"pos": [ 0, 8.5, 0 ],
+			"movers":[
+				{
+					"attribute": "base_rot",
+					"var": "yaw",
+					"speed": 0.1
+				}
+			]
+		}
+	],
     "WheelPositions":[
         { "x":  26, "y": 0, "z":  23, "id": "left_front_wheel", "radius": 16, "drive": true, "steering": true },
         { "x":  26, "y": 0, "z": -23, "id": "right_front_wheel", "radius": 16, "y_rot": 180, "drive": true, "steering": true },
@@ -67,19 +81,5 @@
     	"right_front": [ 26, 3, -23, "right_front" ],
     	"right_rear0": [ -26, 1.5, -23, "right_rear" ],
     	"left_rear0": [ -26, 1.5, 23, "left_rear" ]
-    },
-	"SwivelPoints":[
-		{
-			"id": "base",
-			"parent": "vehicle",
-			"pos": [ 0, 8.5, 0 ],
-			"movers":[
-				{
-					"attribute": "base_rot",
-					"var": "yaw",
-					"speed": 0.5
-				}
-			]
-		}
-	]
+    }
 }
