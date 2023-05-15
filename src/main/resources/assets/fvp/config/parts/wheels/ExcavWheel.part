@@ -1,0 +1,19 @@
+{
+    "RegistryName": "excav_wheel",
+    "Name": "Excavator Wheel",
+    "Addon": "fvp",
+    "Model": "null",
+    "Category": "wheel",
+    "Functions": [
+    	"fvtm:wheel",
+    	{
+    		"id": "fvtm:tire",
+    		"step_height": 2
+    	}	
+    ],
+    "Installation":{
+    	"Handler": "wheel",
+        "Removable": true,
+        "Radius": 16, "Width": 6
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "RegistryName": "excav_arm",
+    "Addon": "fvp",
+    "Model": "fvp:models/part/excav_arm.fmf",
+    "Name": "Excavator Arm",
+    "Category": "arm",
+    "Installation":{
+    	"Handler": "default",
+		"Removable": false,
+    	"SwivelPoint": "arm",
+		"SwivelPointRequired": true
+    }
+}
