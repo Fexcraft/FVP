@@ -33,6 +33,30 @@
 				"decelerate": -5
 			},
 			"seat": "controller"
+		},
+		{
+			"id": "stick_rot",
+			"type": "integer",
+			"value": 0,
+			"min": -24,
+			"max": 60,
+			"passenger_keys":{
+				"gear_up": 6,
+				"gear_down": -6
+			},
+			"seat": "controller"
+		},
+		{
+			"id": "bucket_rot",
+			"type": "integer",
+			"value": 0,
+			"min": -40,
+			"max": 110,
+			"passenger_keys":{
+				"roll_left": 10,
+				"roll_right": -10
+			},
+			"seat": "controller"
 		}
 	],
 	"SwivelPoints":[
@@ -74,7 +98,9 @@
 		"left_back_wheel": "fvp:excav_wheel",
 		"engine": "gep:engine_diesel",
 		"chassis": "fvp:excav_chassis",
-		"arm": "fvp:excav_arm"
+		"arm": "fvp:excav_arm",
+		"stick": "fvp:excav_stick",
+		"bucket": "fvp:excav_bucket"
     },
     "LiftingPoints":{
     	"left_front": [ 26, 3, 23, "left_front" ],

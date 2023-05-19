@@ -1,0 +1,13 @@
+{
+    "RegistryName": "excav_bucket",
+    "Addon": "fvp",
+    "Model": "fvp:models/part/excav_bucket.fmf",
+    "Name": "Excavator Bucket",
+    "Category": "bucket",
+    "Installation":{
+    	"Handler": "default",
+		"Removable": false,
+    	"SwivelPoint": "bucket",
+		"SwivelPointRequired": true
+    }
+}

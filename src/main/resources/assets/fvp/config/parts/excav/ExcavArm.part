@@ -9,5 +9,19 @@
 		"Removable": false,
     	"SwivelPoint": "arm",
 		"SwivelPointRequired": true
-    }
+    },
+	"SwivelPoints":[
+		{
+			"id": "stick",
+			"parent": "arm",
+			"pos": [ 26.75, 118.75, 0 ],
+			"movers":[
+				{
+					"attribute": "stick_rot",
+					"var": "pitch",
+					"speed": 0.5
+				}
+			]
+		}
+	]
 }
