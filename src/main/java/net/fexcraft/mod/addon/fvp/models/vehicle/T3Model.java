@@ -503,8 +503,6 @@ public class T3Model extends VehicleModel {
 			.setRotationPoint(68, -9.1f, -18.25f).setRotationAngle(0, 0, 0)
 		);
 		lights_front.addProgram(DefaultPrograms.FRONT_LIGHTS);
-		lights_front.addProgram(DefaultPrograms.RECT_LIGHTBEAM_FRONT_LIGHTS.init(256, 2, 2, 72, 48, 70, -7.5f, 16.75f, 0, 0, -3, null, null));
-		lights_front.addProgram(DefaultPrograms.RECT_LIGHTBEAM_FRONT_LIGHTS.init(256, 2, 2, 72, 48, 70, -7.5f, -16.75f, 0, 0, -3, null, null));
 		this.groups.add(lights_front);
 		//
 		ModelGroup lights_long = new ModelGroup("lights_long");
@@ -517,9 +515,10 @@ public class T3Model extends VehicleModel {
 			.setRotationPoint(68, -9.1f, -22.75f).setRotationAngle(0, 0, 0)
 		);
 		lights_long.addProgram(DefaultPrograms.LONG_LIGHTS);
-		lights_long.addProgram(DefaultPrograms.RECT_LIGHTBEAM_LONG_LIGHTS.init(720, 2, 2, 256, 128, 70, -7.5f, 21.25f, 0, 0, -5, null, null));
-		lights_long.addProgram(DefaultPrograms.RECT_LIGHTBEAM_LONG_LIGHTS.init(720, 2, 2, 256, 128, 70, -7.5f, -21.25f, 0, 0, -5, null, null));
 		this.groups.add(lights_long);
+		//
+		this.groups.add(new ModelGroup("lb_front"));
+		this.groups.add(new ModelGroup("lb_long"));
 		//
 		ModelGroup chassis_primary = new ModelGroup("chassis_primary");
 		chassis_primary.add(new ModelRendererTurbo(chassis_primary, 239, 119, textureX, textureY).addBox(0, 0, 0, 33, 20, 2)
