@@ -65,5 +65,13 @@
     	"left_rear": [ -10, 2.5, 24, "left_front" ],
     	"right_front": [ 32, 2.5, -24, "right_rear" ],
     	"right_rear": [ -10, 2.5, -24, "right_front" ]
-    }
+    },
+	"ModelData": {
+		"Programs": [
+			"lb_front fvtm:rlb_front_lights 256 2 2 72 48 70 -7.5f 16.75f 0 0 -3",
+			"lb_front fvtm:rlb_front_lights 256 2 2 72 48 70 -7.5f -16.75f 0 0 -3",
+			"lb_long fvtm:rlb_long_lights 720 2 2 256 128 70 -7.5f 21.25f 0 0 -5",
+			"lb_long fvtm:rlb_long_lights 720 2 2 256 128 70 -7.5f -21.25f 0 0 -5"
+		]
+	}
 }
