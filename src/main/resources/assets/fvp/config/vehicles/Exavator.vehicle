@@ -50,8 +50,8 @@
 			"id": "bucket_rot",
 			"type": "integer",
 			"value": 0,
-			"min": -40,
-			"max": 110,
+			"min": -160,
+			"max": 160,
 			"passenger_keys":{
 				"roll_left": 10,
 				"roll_right": -10
