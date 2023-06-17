@@ -39,7 +39,7 @@
 		{
 			"id": "arm",
 			"parent": "base",
-			"pos": [ -5, 18.5, 7 ],
+			"pos": [ -5, -18.5, -7 ],
 			"movers":[
 				{
 					"attribute": "arm_rot",
