@@ -1,6 +1,7 @@
 //FMT-Marker FVTM-1
 package net.fexcraft.mod.addon.fvp.models.vehicle;
 
+import net.fexcraft.mod.fvtm.model.ModelRenderData;
 import org.lwjgl.opengl.GL11;
 
 import net.fexcraft.lib.mc.api.registry.fModel;
