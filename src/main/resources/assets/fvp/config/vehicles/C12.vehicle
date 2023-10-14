@@ -1,74 +1,128 @@
 {
-    "RegistryName": "fvp:c12",
-    "Addon": "fvtm:fvp",
-    "Name": "C12 [Dodici]",
-    "Model": "fvp:models/vehicle/c12",
-    "Colors":{
-    	"primary": "#fdfdfd",
-    	"cargo": "#fdfdfd",
-    	"seats": "#fdfdfd"
+    "ID": "c12",
+    "Addon": "fvp",
+    "Name": "FVP Docici [C12]",
+    "Model": "fvp:models/vehicle/c12.fmf",
+    "ColorChannels":{
+    	"primary": "#fdfdfd"
     }, 
     "Texture": "Default;fvp:textures/cars/c12.png",
-    "Category": "car,offroad",
-    "Attributes": [
-    	{ "id":"weight", "type": "float", "value": 1800 },
-    	{
-    		"id":"windshield_wipers", "type": "boolean", "value": false, "seat": "driver",
-    		"hitbox": [ 8.25, -9.5, 6.75, 1 ]
-    	},
-    	{
-    		"id":"turn_lights", "type": "tristate", "value": "null", "seat": "driver",
-    		"hitbox": [ 8.25, -9.5, 15.25, 1 ]
-    	},
-    	{
-    		"id":"lights", "type": "boolean", "value": false, "seat": "driver",
-    		"hitbox": [ 9, -9, 20.25, 0.5 ]
-    	},
-    	{
-    		"id":"lights_long", "type": "boolean", "value": false, "seat": "driver",
-    		"hitbox": [ 9, -7.5, 20.25, 0.5 ]
-    	},
-    	{
-    		"id":"lights_fog", "type": "boolean", "value": false, "seat": "driver",
-    		"hitbox": [ 9, -9, 18.75, 0.5 ]
-    	},
-    	{
-    		"id":"lights_extra", "type": "boolean", "value": false, "seat": "driver",
-    		"hitbox": [ 9, -7.5, 18.75, 0.5 ]
-    	},
-    	{
-    		"id":"warning_lights", "type": "boolean", "value": false, "seat": "driver",
-    		"hitbox": [ 9, -9, 3.5, 0.5 ]
-    	}
-    ],
-    "WheelPositions":[
-        { "x":  33, "y": 7, "z":  18, "id": "left_front_wheel", "radius": 9, "width": 6, "braking": false, "steering": true },
-        { "x":  33, "y": 7, "z": -18, "id": "right_front_wheel", "radius": 9, "width": 6, "braking": false, "y_rot": 180, "steering": true },
-        { "x": -39, "y": 7, "z":  18, "id": "left_back_wheel", "radius": 9,  "width": 6, "drive": true },
-        { "x": -39, "y": 7, "z": -18, "id": "right_back_wheel", "radius": 9, "width": 6, "drive": true, "y_rot": 180 }
-    ],
-    "PreInstalled":{
-    	"interior": "fvp:c12_interior",
-    	"seats": "fvp:c12_seats",
-    	"steering_wheel": "fvp:c12_steering_wheel",
-    	"s:interior:pass_storage_0:0": "fvp:c12_pass_storage",
-    	"s:interior:pass_storage_1:1": "fvp:c12_pass_storage",
-    	"front_lights": "fvp:c12_front_lights",
-    	"rear_lights": "fvp:c12_rear_lights",
-    	"exhaust": "fvp:c12_exhaust",
-    	"doors": "fvp:c12_doors",
-    	"hood": "fvp:c12_hood"
-    },
-    "RequiredParts": [
-        "right_front_wheel",
-        "left_front_wheel",
-        "right_back_wheel",
-        "left_back_wheel",
-        "steering_wheel",
-        "interior",
-        "seats"
-    ],
-    "LegacyData":{
+    "Categories": [
+		"car", "offroad"
+	],
+	"Attributes": {
+		"weight": {
+			"type": "float",
+			"value": 1000
+		},
+		"windshield_wipers": {
+			"type": "boolean",
+			"value": false,
+			"access": "driver",
+			"interact": {
+				"default": [ 0.515625, 0.59375, -0.421875, 0.0625 ]
+			}
+		},
+		"turn_lights": {
+			"type": "tristate",
+			"value": "null",
+			"access": "driver",
+			"interact": {
+				"default": [ 0.515625, 0.59375, -0.953125, 0.0625 ]
+			}
+		},
+		"lights": {
+			"type": "boolean",
+			"value": false,
+			"access": "driver",
+			"interact": {
+				"default": [ 0.5625, 0.5625, -1.265625, 0.03125 ]
+			}
+		},
+		"lights_long": {
+			"type": "boolean",
+			"value": false,
+			"access": "driver",
+			"interact": {
+				"default": [ 0.5625, 0.46875, -1.265625, 0.03125 ]
+			}
+		},
+		"lights_fog": {
+			"type": "boolean",
+			"value": false,
+			"access": "driver",
+			"interact": {
+				"default": [ 0.5625, 0.5625, -1.171875, 0.03125 ]
+			}
+		},
+		"lights_extra": {
+			"type": "boolean",
+			"value": false,
+			"access": "driver",
+			"interact": {
+				"default": [ 0.5625, 0.46875, -1.171875, 0.03125 ]
+			}
+		},
+		"warning_lights": {
+			"type": "boolean",
+			"value": false,
+			"access": "driver",
+			"interact": {
+				"default": [ 0.5625, 0.5625, -0.21875, 0.03125 ]
+			}
+		}
+	},
+	"WheelPositions": {
+		"left_front_wheel": {
+			"pos": [ 2.0625, -0.4375, -1.125 ],
+			"hubsize": 4,
+			"radius": 9,
+			"width": 6,
+			"steering": true
+		},
+		"right_front_wheel": {
+			"pos": [ 2.0625, -0.4375, 1.125 ],
+			"hubsize": 4,
+			"radius": 9,
+			"width": 6,
+			"steering": true,
+			"mirror": true
+		},
+		"left_back_wheel": {
+			"pos": [ -2.4375, -0.4375, -1.125 ],
+			"hubsize": 4,
+			"radius": 9,
+			"width": 6,
+			"powered": true
+		},
+		"right_back_wheel": {
+			"pos": [ -2.4375, -0.4375, 1.125 ],
+			"hubsize": 4,
+			"radius": 9,
+			"width": 6,
+			"powered": true,
+			"mirror": true
+		}
+	},
+	"InstalledParts": {
+		"interior": "fvp:c12_interior",
+		"seats": "fvp:c12_seats",
+		"steering_wheel": "fvp:c12_steering_wheel",
+		"interior:pass_storage_0:0": "fvp:c12_pass_storage",
+		"interior:pass_storage_1:1": "fvp:c12_pass_storage",
+		"front_lights": "fvp:c12_front_lights",
+		"rear_lights": "fvp:c12_rear_lights",
+		"exhaust": "fvp:c12_exhaust",
+		"doors": "fvp:c12_doors",
+		"hood": "fvp:c12_hood"
+	},
+	"PartSlots":[
+		[ 0, 0, 0, "interior", "interior"],
+		[ 0, 0, 0, "seats", "seats"],
+		[ 0, 0, 0, "steering_wheel", "steering_wheel"],
+		[ 43.6, 4.5, 0, "license_plate", "license_plate_front"]
+	],
+    "SimplePhysics":{
     	"MaxPositiveThrottle": 1.5,
     	"MaxNegativeThrottle": 0.8,
     	"TurnLeftModifier": 1,
@@ -79,8 +133,5 @@
     	"left_rear": [ -26, 8, 22, "left_front" ],
     	"right_front": [ 19, 8, -22, "right_rear" ],
     	"right_rear": [ -26, 8, -22, "right_front" ]
-    },
-    "PartSlots":[
-    	[ 43.6, 4.5, 0, "license_plate", "license_plate_front"]
-    ]
+    }
 }
