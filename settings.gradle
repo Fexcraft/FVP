@@ -1,4 +1,0 @@
-include ':FCL'
-project(':FCL').projectDir = new File(settingsDir, '../FCL')
-include ':FVTM'
-project(':FVTM').projectDir = new File(settingsDir, '../FVTM')
