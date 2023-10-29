@@ -121,13 +121,15 @@
 		"right_front_wheel": "fvp:c12_wheel",
 		"left_back_wheel": "fvp:c12_wheel",
 		"right_back_wheel": "fvp:c12_wheel"
+		"vehicle:engine": "gep:engine_diesel"
 	},
-	"PartSlots":[
-		[ 0, 0, 0, "interior", "interior"],
-		[ 0, 0, 0, "seats", "seats"],
-		[ 0, 0, 0, "steering_wheel", "steering_wheel"],
-		[ 43.6, 4.5, 0, "license_plate", "license_plate_front"]
-	],
+	"PartSlots":{
+		"engine":[]
+		"interior":[]
+		"seats":[]
+		"steering_wheel":[]
+		"license_plate_front": [ 43.6, 4.5, 0, "license_plate" ]
+	},
     "SimplePhysics":{
     	"MaxPositiveThrottle": 1.5,
     	"MaxNegativeThrottle": 0.8,
