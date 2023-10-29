@@ -1,29 +1,27 @@
 {
-    "RegistryName": "fvp:c12_wheel",
-    "Addon": "fvtm:fvp",
+    "ID": "c12_wheel",
+    "Addon": "fvp",
     "Name": "C12 Wheel",
     "Model": "fvp:models/part/c12_wheel",
     "Category": "wheel",
-    "Functions": [
-    	"fvtm:wheel",
-    	{
-    		"id": "fvtm:tire",
+	"Functions":{
+		"fvtm:wheel": {},
+		"fvtm:tire":{
     		"stiffness": 6,
     		"steering_stiffness": 5.8,
     		"step_height": 1.2
-    	}	
-	],
+		}
+		
+	}
     "Texture": "Default;fvp:textures/wheels/c12_wheel.png",
     "Installation":{
     	"Handler": "wheel",
         "Removable": true,
-        "Radius": 9, "Width": 6
+        "Radius": 0.5625,
+		"Width": 0.375,
+		"HubSize": 0.25
     },
-    "Modifiers":[
-    	{
-    		"id": "weight", "type": "additive",
-    		"target": "vehicle:weight",
-    		"value": "30", "priority": "veryhigh"
-    	}
-    ]
+	"AttributeModifiers":{
+		"weight": "+30"
+	}
 }
