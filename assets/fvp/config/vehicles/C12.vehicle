@@ -75,36 +75,36 @@
 	"WheelPositions": {
 		"left_front_wheel": {
 			"pos": [ 2.0625, -0.4375, -1.125 ],
-			"hubsize": 4,
-			"radius": 9,
-			"width": 6,
+			"hubsize": 0.25,
+			"radius": 0.5625,
+			"width": 0.375,
 			"steering": true
 		},
 		"right_front_wheel": {
 			"pos": [ 2.0625, -0.4375, 1.125 ],
-			"hubsize": 4,
-			"radius": 9,
-			"width": 6,
+			"hubsize": 0.25,
+			"radius": 0.5625,
+			"width": 0.375,
 			"steering": true,
 			"mirror": true
 		},
 		"left_back_wheel": {
 			"pos": [ -2.4375, -0.4375, -1.125 ],
-			"hubsize": 4,
-			"radius": 9,
-			"width": 6,
+			"hubsize": 0.25,
+			"radius": 0.5625,
+			"width": 0.375,
 			"powered": true
 		},
 		"right_back_wheel": {
 			"pos": [ -2.4375, -0.4375, 1.125 ],
-			"hubsize": 4,
-			"radius": 9,
-			"width": 6,
+			"hubsize": 0.25,
+			"radius": 0.5625,
+			"width": 0.375,
 			"powered": true,
 			"mirror": true
 		}
 	},
-	"InstalledParts": {
+	"InstalledParts0": {
 		"interior": "fvp:c12_interior",
 		"seats": "fvp:c12_seats",
 		"steering_wheel": "fvp:c12_steering_wheel",
@@ -115,6 +115,12 @@
 		"exhaust": "fvp:c12_exhaust",
 		"doors": "fvp:c12_doors",
 		"hood": "fvp:c12_hood"
+	},
+	"InstalledParts": {
+		"left_front_wheel": "fvp:c12_wheel",
+		"right_front_wheel": "fvp:c12_wheel",
+		"left_back_wheel": "fvp:c12_wheel",
+		"right_back_wheel": "fvp:c12_wheel"
 	},
 	"PartSlots":[
 		[ 0, 0, 0, "interior", "interior"],
