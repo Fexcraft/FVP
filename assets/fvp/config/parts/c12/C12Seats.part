@@ -1,8 +1,8 @@
 {
-	"RegistryName": "fvp:c12_seats",
-	"Addon": "fvtm:fvp",
+	"ID": "c12_seats",
+	"Addon": "fvp",
 	"Name": "C12 Seats",
-	"Model": "fvp:models/part/c12_seats",
+	"Model": "fvp:models/part/c12_seats.fmf",
 	"Category": "seats",
 	"Texture": "Default;fvp:textures/cars/c12.png",
 	"Installation": {
@@ -12,46 +12,31 @@
 			"fvp:c12"
 		]
 	},
-	"Function": {
-		"id": "fvtm:seats",
-		"seats": [
-			{
-				"x": -4.5,
-				"y": -4.5,
-				"z": -11.0,
-				"name": "driver",
+	"Functions":{
+		"fvtm:seats":{
+			"driver": {
+				"pos": [ -0.6875, -0.09375, 0.28125 ],
 				"driver": true,
 				"min_yaw": -120,
 				"max_yaw": 120
+
 			},
-			{
-				"x": -4.5,
-				"y": -4.5,
-				"z": 11.0,
-				"name": "pass_front",
+			"pass_front": {
+				"pos": [ 0.6875, -0.09375, 0.28125 ],
 				"filter": [
 					"players",
 					"animals"
 				]
 			},
-			{
-				"x": -23.5,
-				"y": -4.5,
-				"z": -12.0,
-				"name": "pass_rear_left"
+			"pass_rear_left": {
+				"pos": [ 0.75, -0.09375, 1.46875 ]
 			},
-			{
-				"x": -23.5,
-				"y": -4.5,
-				"z": 12.0,
-				"name": "pass_rear_right"
+			"pass_rear_right": {
+				"pos": [ -0.75, -0.09375, 1.46875 ]
 			},
-			{
-				"x": -23.5,
-				"y": -4.5,
-				"z": -0.0,
-				"name": "pass_rear_middle"
+			"pass_rear_middle": {
+				"pos": [ 0, -0.09375, 1.46875 ]
 			}
-		]
+		}
 	}
 }
