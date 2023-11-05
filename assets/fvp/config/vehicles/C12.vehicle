@@ -120,14 +120,15 @@
 		"left_front_wheel": "fvp:c12_wheel",
 		"right_front_wheel": "fvp:c12_wheel",
 		"left_back_wheel": "fvp:c12_wheel",
-		"right_back_wheel": "fvp:c12_wheel"
-		"vehicle:engine": "gep:engine_diesel"
+		"right_back_wheel": "fvp:c12_wheel",
+		"vehicle:engine": "gep:engine_diesel",
+		"vehicle:seats": "fvp:c12_seats"
 	},
 	"PartSlots":{
-		"engine":[]
-		"interior":[]
-		"seats":[]
-		"steering_wheel":[]
+		"engine":[],
+		"interior":[],
+		"seats":[],
+		"steering_wheel":[],
 		"license_plate_front": [ 43.6, 4.5, 0, "license_plate" ]
 	},
     "SimplePhysics":{
