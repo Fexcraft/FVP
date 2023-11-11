@@ -74,14 +74,14 @@
 	},
 	"WheelPositions": {
 		"left_front_wheel": {
-			"pos": [ 2.0625, -0.4375, -1.125 ],
+			"pos": [ -1.125, -0.4375, -2.0625 ],
 			"hubsize": 0.25,
 			"radius": 0.5625,
 			"width": 0.375,
 			"steering": true
 		},
 		"right_front_wheel": {
-			"pos": [ 2.0625, -0.4375, 1.125 ],
+			"pos": [ 1.125, -0.4375, -2.0625 ],
 			"hubsize": 0.25,
 			"radius": 0.5625,
 			"width": 0.375,
@@ -89,14 +89,14 @@
 			"mirror": true
 		},
 		"left_back_wheel": {
-			"pos": [ -2.4375, -0.4375, -1.125 ],
+			"pos": [ -1.125, -0.4375, 2.4375 ],
 			"hubsize": 0.25,
 			"radius": 0.5625,
 			"width": 0.375,
 			"powered": true
 		},
 		"right_back_wheel": {
-			"pos": [ -2.4375, -0.4375, 1.125 ],
+			"pos": [ 1.125, -0.4375, 2.4375 ],
 			"hubsize": 0.25,
 			"radius": 0.5625,
 			"width": 0.375,
