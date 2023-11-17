@@ -129,7 +129,7 @@
 		"interior":[],
 		"seats":[],
 		"steering_wheel":[],
-		"license_plate_front": [ 43.6, 4.5, 0, "license_plate" ]
+		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ]
 	},
     "SimplePhysics":{
     	"MaxPositiveThrottle": 1.5,
