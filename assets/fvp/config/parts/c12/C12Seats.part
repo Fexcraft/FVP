@@ -16,9 +16,7 @@
 		"fvtm:seats":{
 			"driver": {
 				"pos": [ -0.6875, -0.09375, 0.28125 ],
-				"driver": true,
-				"min_yaw": -120,
-				"max_yaw": 120
+				"driver": true
 
 			},
 			"pass_front": {
