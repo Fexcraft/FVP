@@ -122,7 +122,8 @@
 		"left_back_wheel": "fvp:c12_wheel",
 		"right_back_wheel": "fvp:c12_wheel",
 		"vehicle:engine": "gep:engine_diesel",
-		"vehicle:seats": "fvp:c12_seats"
+		"vehicle:seats": "fvp:c12_seats",
+		"vehicle:interior": "fvp:c12_interior"
 	},
 	"PartSlots":{
 		"engine":[],
