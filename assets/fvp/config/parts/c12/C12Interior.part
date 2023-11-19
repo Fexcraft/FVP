@@ -1,8 +1,8 @@
 {
-    "RegistryName": "fvp:c12_interior",
-    "Addon": "fvtm:fvp",
+    "ID": "c12_interior",
+    "Addon": "fvp",
     "Name": "C12 Interior",
-    "Model": "fvp:models/part/c12_interior",
+    "Model": "fvp:models/part/c12_interior.fmf",
     "Category": "interior",
     "Texture": "Default;fvp:textures/cars/c12.png",
     "Installation":{
@@ -12,13 +12,12 @@
             "fvp:c12"
         ]
     },
-    "Function":{
-	    "id": "fvtm:part_slots",
-	    "slots":[
-	    	[ 0, 0, 0, "pass_storage", "pass_storage_0" ],
-	    	[ 0, 0, -8, "pass_storage", "pass_storage_1" ],
-	    	[ 9.875, -10.5, 12, "dash_gauge", "dash_gauge_1", 2 ],
-	    	[ 9.875, -10.5, 10, "dash_gauge", "dash_gauge_2", 2 ]
-	    ]
+    "Functions":{
+	    "fvtm:part_slots": {
+	    	"pass_storage_0": [ 0, 0, 0, "pass_storage" ],
+	    	"pass_storage_1": [ 0.5, 0, 0, "pass_storage" ],
+	    	"dash_gauge_1": [ -0.75, -10.5, -0.6171875, "dash_gauge", 2 ],
+	    	"dash_gauge_2": [ -0.625, -10.5, -0.6171875, "dash_gauge", 2 ]
+	    }
     }
 }
