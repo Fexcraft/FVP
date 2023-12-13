@@ -123,12 +123,15 @@
 		"right_back_wheel": "fvp:c12_wheel",
 		"vehicle:engine": "gep:engine_diesel",
 		"vehicle:seats": "fvp:c12_seats",
-		"vehicle:interior": "fvp:c12_interior"
+		"vehicle:doors": "fvp:c12_doors",
+		"vehicle:interior": "fvp:c12_interior",
+		"vehicle:steering_wheel": "fvp:c12_steering_wheel"
 	},
 	"PartSlots":{
 		"engine":[],
 		"interior":[],
 		"seats":[],
+		"doors":[],
 		"steering_wheel":[],
 		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ]
 	},
