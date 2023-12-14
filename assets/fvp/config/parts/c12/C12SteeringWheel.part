@@ -5,7 +5,7 @@
     "Model": "fvp:models/part/c12_steering_wheel.fmf",
     "ModelData":{
     	"Programs": [
-    		"steering_wheel fvtm:steering_base 2 2"
+    		"steering_wheel fvtm:steering_base 2 12"
     	]
     }
     "Category": "steering_wheel",
