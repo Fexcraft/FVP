@@ -124,6 +124,7 @@
 		"vehicle:engine": "gep:engine_diesel",
 		"vehicle:seats": "fvp:c12_seats",
 		"vehicle:doors": "fvp:c12_doors",
+		"vehicle:hood": "fvp:c12_hood",
 		"vehicle:interior": "fvp:c12_interior",
 		"vehicle:steering_wheel": "fvp:c12_steering_wheel"
 	},
@@ -132,6 +133,7 @@
 		"interior":[],
 		"seats":[],
 		"doors":[],
+		"hood":[],
 		"steering_wheel":[],
 		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ]
 	},
