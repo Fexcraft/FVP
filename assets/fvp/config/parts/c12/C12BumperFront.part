@@ -8,6 +8,7 @@
     "Installation":{
     	"Handler": "default",
         "Removable": true,
+        "Swappable": true,
         "Compatible":[
             "fvp:c12"
         ]
