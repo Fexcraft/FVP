@@ -1,8 +1,8 @@
 {
-    "RegistryName": "fvp:c12_bumper_front",
-    "Addon": "fvtm:fvp",
+    "ID": "c12_bumper_front",
+    "Addon": "fvp",
     "Name": "C12 Front Bumper",
-    "Model": "fvp:models/part/c12_bumper_front",
+    "Model": "fvp:models/part/c12_front_bumper.fmf",
     "Category": "bumper_front",
     "Texture": "Default;fvp:textures/cars/c12.png",
     "Installation":{
@@ -11,14 +11,5 @@
         "Compatible":[
             "fvp:c12"
         ]
-    },
-    "Function":{
-	    "id": "fvtm:part_slots",
-		"slots":[
-			[ 45.5, -1.0, 9.0, "spotlight", "bumper_spotlight_0"],
-			[ 45.5, -1.0, 3.0, "spotlight", "bumper_spotlight_1"],
-			[ 45.5, -1.0, -3.0, "spotlight", "bumper_spotlight_2"],
-			[ 45.5, -1.0, -9.0, "spotlight", "bumper_spotlight_3"]
-		]
     }
 }
