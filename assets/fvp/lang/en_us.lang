@@ -4,7 +4,6 @@
 itemGroup.fvtm:fvp=Fex's Vehicle Pack
 
 # Vehicles
-item.fvp:c2.name=C2
 item.fvp:c4.name=C4 (Van)
 item.fvp:c5.name=C5 Classic
 item.fvp:c8.name=C8
@@ -18,7 +17,6 @@ item.fvp:c11.name=Ci Undici
 item.fvp:t3.name=T3
 
 # Wheels
-item.fvp:c2r2t1_wheel.name=C2R2T1 Wheel
 item.fvp:c4r1_wheel.name=C4R1 Wheel
 item.fvp:t1_back_wheel.name=T1 Back Wheel
 item.fvp:t1_front_wheel.name=T1 Front Wheel
@@ -34,10 +32,6 @@ item.fvp:c10_seats.name=C10 Seats
 item.fvp:c10_steering_wheel.name=C10 Steering Wheel
 item.fvp:c10_trailer_hitch.name=C10 Trailer Hitch
 item.fvp:c10_trunk.name=C10 Trunk
-item.fvp:c2_doors.name=C2 Doors
-item.fvp:c2_interior.name=C2 Interior
-item.fvp:c2_lights.name=C2 Lights
-item.fvp:c2_steering_wheel.name=C2 Steering Wheel
 item.fvp:c4_front_seats.name=C4 Front Seats
 item.fvp:c4_interior.name=C4 Interior
 item.fvp:c4_lights.name=C4 Lights
