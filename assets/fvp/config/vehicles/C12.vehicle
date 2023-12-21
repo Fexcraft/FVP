@@ -136,7 +136,8 @@
 		"hood":[],
 		"steering_wheel":[],
 		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ],
-		"bumper_front": [ 0.0, -0.25, -2.75 ]
+		"bumper_front": [ 0.0, -0.25, -2.75 ],
+		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.5 ]
 	},
     "SimplePhysics":{
     	"MaxPositiveThrottle": 1.5,
