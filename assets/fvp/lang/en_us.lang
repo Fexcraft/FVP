@@ -4,8 +4,7 @@
 itemGroup.fvtm:fvp=Fex's Vehicle Pack
 
 # Vehicles
-item.fvp:c8.name=C8
-item.fvp:sentinel.name=C9
+item.fvp:c9.name=C9
 item.fvp:c10.name=Ci Dieci
 item.fvp:t1p.name=T1P
 item.fvp:ab1.name=Autobus 1B
@@ -53,12 +52,6 @@ item.fvp:ab1_engine.name=AB1 Engine
 item.fvp:ab1_lights.name=AB1 Generic Lights
 item.fvp:ab1_passenger_seats.name=AB1 Passenger Seats
 item.fvp:ab1_steering_wheel.name=AB1 Steering Wheel
-item.fvp:c8_bumpers.name=C8 Bumpers
-item.fvp:c8_doors.name=C8 Doors, Trunk and Hood
-item.fvp:c8_interior.name=C8 Interior
-item.fvp:c8_lights.name=C8 Lights
-item.fvp:c8_seats.name=C8 Seats
-item.fvp:c8_steering_wheel.name=C8 Steering Wheel
 item.fvp:t2_doors.name=T2 Doors
 item.fvp:t2_interior.name=T2 Interior
 item.fvp:t2_lights.name=T2 Lights
