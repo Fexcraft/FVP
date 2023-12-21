@@ -1,26 +1,28 @@
 {
-	"RegistryName": "fvp:c12_cargo2",
-	"Addon": "fvtm:fvp",
+	"ID": "c12_cargo2",
+	"Addon": "fvp",
 	"Name": "C12 Cargo 2 Upgrade",
-	"Model": "fvp:models/part/c12_cargo2",
+	"Model": "fvp:models/part/c12_cargo2.fmf",
 	"Category": "cargo",
 	"Texture": "Default;fvp:textures/cars/c12.png",
 	"Installation": {
 		"Handler": "default",
 		"Removable": true,
+		"Swappable": true,
 		"Compatible": [
 			"fvp:c12"
 		]
 	},
-	"Function": {
-		"id": "fvtm:inventory",
-		"type": "ITEM",
-		"capacity": 45,
-		"seats": [
-			"pass_rear_middle",
-			"pass_rear_right",
-			"pass_rear_left",
-			"external"
-		]
+	"Functions": {
+		"fvtm:inventory":{
+			"type": "ITEM",
+			"capacity": 45,
+			"seats": [
+				"pass_rear_middle",
+				"pass_rear_right",
+				"pass_rear_left",
+				"external"
+			]
+		}
 	}
 }
