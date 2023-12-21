@@ -127,6 +127,7 @@
 		"vehicle:hood": "fvp:c12_hood",
 		"vehicle:interior": "fvp:c12_interior",
 		"vehicle:steering_wheel": "fvp:c12_steering_wheel"
+		"vehicle:exhaust": "fvp:c12_exhaust"
 	},
 	"PartSlots":{
 		"engine":[],
@@ -137,7 +138,8 @@
 		"steering_wheel":[],
 		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ],
 		"bumper_front": [ 0.0, -0.25, -2.75 ],
-		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.5 ]
+		"cargo": [ 0.0, 0.0, 2.5, "cargo", 1.0 ],
+        "exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ]
 	},
     "SimplePhysics":{
     	"MaxPositiveThrottle": 1.5,
