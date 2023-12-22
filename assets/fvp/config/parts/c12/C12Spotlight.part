@@ -1,14 +1,18 @@
 {
-    "RegistryName": "fvp:c12_spotlight",
-    "Addon": "fvtm:fvp",
+    "ID": "c12_spotlight",
+    "Addon": "fvp",
     "Name": "C12 Type Spotlight",
-    "Model": "fvp:models/part/c12_spotlight",
+    "Model": "fvp:models/part/c12_spotlight.fmf",
+    "ModelData":{
+    	"Programs":[
+    		"glow fvtm:attribute_lights lights_extra"
+    	]
+    },
     "Category": [ "spotlight", "foglights", "fog_lights" ],
     "Texture": "Default;fvp:textures/parts/c12_spotlight.png",
     "Installation":{
     	"Handler": "default",
         "Removable": true,
-        "SlotBased": true,
-        "HotSwap": true
+        "Swappable": true
     }
 }
