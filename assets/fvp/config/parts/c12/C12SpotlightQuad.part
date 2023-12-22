@@ -1,14 +1,18 @@
 {
-    "RegistryName": "fvp:c12_spotlight_quad",
-    "Addon": "fvtm:fvp",
+    "ID": "c12_spotlight_quad",
+    "Addon": "fvp",
     "Name": "C12 Type Quad Spotlight",
-    "Model": "fvp:models/part/c12_spotlight_quad",
+    "Model": "fvp:models/part/c12_spotlight_quad.fmf",
+    "ModelData":{
+    	"Programs":[
+    		"glow fvtm:attribute_lights lights_extra"
+    	]
+    },
     "Category": [ "spotlight", "foglights", "fog_lights" ],
     "Texture": "Default;fvp:textures/parts/c12_spotlight_quad.png",
     "Installation":{
     	"Handler": "default",
         "Removable": true,
-        "SlotBased": true,
-        "HotSwap": true
+        "Swappable": true
     }
 }
