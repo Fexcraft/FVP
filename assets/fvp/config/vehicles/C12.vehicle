@@ -114,8 +114,9 @@
 		"vehicle:doors": "fvp:c12_doors",
 		"vehicle:hood": "fvp:c12_hood",
 		"vehicle:interior": "fvp:c12_interior",
-		"vehicle:steering_wheel": "fvp:c12_steering_wheel"
-		"vehicle:exhaust": "fvp:c12_exhaust"
+		"vehicle:steering_wheel": "fvp:c12_steering_wheel",
+		"interior:pass_storage_0": "fvp:c12_pass_storage",
+		"interior:pass_storage_1": "fvp:c12_pass_storage"
 	},
 	"PartSlots":{
 		"engine":[],
@@ -128,7 +129,7 @@
 		"bumper_front": [ 0.0, -0.25, -2.75 ],
 		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.75 ],
         "exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ],
-        "roof_lightbar": [ 0.0, 1.375, -0.25, "roof_lightbar", 0.25 ]
+        "roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ]
 	},
     "SimplePhysics":{
     	"MaxPositiveThrottle": 1.5,
