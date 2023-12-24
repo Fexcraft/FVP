@@ -1,27 +1,27 @@
 {
-    "RegistryName": "fvp:c12_roof_lightbar",
-    "Addon": "fvtm:fvp",
+    "ID": "c12_roof_lightbar",
+    "Addon": "fvp",
     "Name": "C12 Root Lightbar",
-    "Model": "fvp:models/part/c12_roof_lightbar",
+    "Model": "fvp:models/part/c12_roof_lightbar.fmf",
     "Category": "roof_lightbar",
     "Texture": "Default;fvp:textures/cars/c12.png",
     "Installation":{
     	"Handler": "default",
         "Removable": true,
+        "Swappable": true,
         "Compatible":[
             "fvp:c12"
         ]
     },
-    "Function":{
-	    "id": "fvtm:part_slots",
-		"slots":[
-			[ 4.5, -23.5, 16.5, "spotlight", "roof_lightbar_0"],
-			[ 4.5, -23.5, 11.0, "spotlight", "roof_lightbar_1"],
-			[ 4.5, -23.5, 5.5, "spotlight", "roof_lightbar_2"],
-			[ 4.5, -23.5, 0.0, "spotlight", "roof_lightbar_3"],
-			[ 4.5, -23.5, -5.5, "spotlight", "roof_lightbar_4"],
-			[ 4.5, -23.5, -11.0, "spotlight", "roof_lightbar_5"],
-			[ 4.5, -23.5, -16.5, "spotlight", "roof_lightbar_6"]
-		]
+    "Functions":{
+	    "fvtm:part_slots": {
+		    "roof_lightbar_0": [ -1.03125, 0.09375, -0.0625, "spotlight", 0.25 ], 
+		    "roof_lightbar_1": [ -0.6875, 0.09375, -0.0625, "spotlight", 0.25 ], 
+		    "roof_lightbar_2": [ -0.34375, 0.09375, -0.0625, "spotlight", 0.25 ], 
+		    "roof_lightbar_3": [ 0.0, 0.09375, -0.0625, "spotlight", 0.25 ], 
+		    "roof_lightbar_4": [ 0.34375, 0.09375, -0.0625, "spotlight", 0.25 ], 
+		    "roof_lightbar_5": [ 0.6875, 0.09375, -0.0625, "spotlight", 0.25 ], 
+		    "roof_lightbar_6": [ 1.03125, 0.09375, -0.0625, "spotlight", 0.25 ]
+	    }
     }
 }
