@@ -104,18 +104,6 @@
 			"mirror": true
 		}
 	},
-	"InstalledParts0": {
-		"interior": "fvp:c12_interior",
-		"seats": "fvp:c12_seats",
-		"steering_wheel": "fvp:c12_steering_wheel",
-		"interior:pass_storage_0:0": "fvp:c12_pass_storage",
-		"interior:pass_storage_1:1": "fvp:c12_pass_storage",
-		"front_lights": "fvp:c12_front_lights",
-		"rear_lights": "fvp:c12_rear_lights",
-		"exhaust": "fvp:c12_exhaust",
-		"doors": "fvp:c12_doors",
-		"hood": "fvp:c12_hood"
-	},
 	"InstalledParts": {
 		"left_front_wheel": "fvp:c12_wheel",
 		"right_front_wheel": "fvp:c12_wheel",
@@ -139,7 +127,8 @@
 		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ],
 		"bumper_front": [ 0.0, -0.25, -2.75 ],
 		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.75 ],
-        "exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ]
+        "exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ],
+        "roof_lightbar": [ 0.0, 1.375, -0.25, "roof_lightbar", 0.25 ]
 	},
     "SimplePhysics":{
     	"MaxPositiveThrottle": 1.5,
