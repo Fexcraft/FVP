@@ -1,0 +1,18 @@
+{
+    "ID": "taxi_roof_lights",
+    "Addon": "fvp",
+    "Name": "Taxi (Roof) Lights",
+    "Model": "fvp:models/part/taxi_roof_lights.fmf",
+    "ModelData":{
+    	"Programs":[
+    		"light fvtm:attribute_lights lights_other"
+    	]
+    },
+    "Category": "roof_lights",
+    "Texture": "Default;fvp:textures/parts/taxi_roof_lights.png",
+    "Installation":{
+    	"Handler": "default",
+        "Removable": true,
+        "Swappable": true
+    }
+}
