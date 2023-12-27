@@ -1,22 +1,21 @@
 {
-    "RegistryName": "fvp:c12_bumper_rear_base",
-    "Addon": "fvtm:fvp",
+    "ID": "c12_bumper_rear_base",
+    "Addon": "fvp",
     "Name": "C12 Rear Base Bumper",
-    "Model": "fvp:models/part/c12_bumper_rear_bot",
-    "Category": "bumper_rear_base",
+    "Model": "fvp:models/part/c12_bumper_rear.fmf",
+    "Category": "bumper_rear",
     "Texture": "Default;fvp:textures/cars/c12.png",
     "Installation":{
     	"Handler": "default",
-        "Removable": true,
+        "Removable": false,
+        "Swappable": true,
         "Compatible":[
             "fvp:c12"
         ]
     },
-    "Function":{
-	    "id": "fvtm:part_slots",
-		"slots":[
-			[ 0, 0, 0, "bumper_rear_upper", "bumper_rear_upper"],
-			[ -54.6, 3.5, 0, "license_plate", "license_plate_rear", 4, [ 0, 180, 0 ] ]
-		]
+    "Functions":{
+	    "fvtm:part_slots": {,
+        	"bumper_rear_upper": [ 0, 0, 0, "bumper_rear_upper", 0.25 ]
+	    }
     }
 }
