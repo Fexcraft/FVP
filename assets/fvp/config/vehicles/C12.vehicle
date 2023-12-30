@@ -115,6 +115,8 @@
 		"vehicle:hood": "fvp:c12_hood",
 		"vehicle:interior": "fvp:c12_interior",
 		"vehicle:steering_wheel": "fvp:c12_steering_wheel",
+		"vehicle:lights_front": "fvp:c12_front_lights",
+		"vehicle:lights_rear": "fvp:c12_rear_lights",
 		"interior:pass_storage_0": "fvp:c12_pass_storage",
 		"interior:pass_storage_1": "fvp:c12_pass_storage"
 		"vehicle:bumper_rear": "fvp:c12_bumper_rear_base",
@@ -126,6 +128,8 @@
 		"doors":[],
 		"hood":[],
 		"steering_wheel":[],
+        "lights_front": [ -1.125, 0.25, -2.71875 ], 
+        "lights_rear": [ -1.25, 0.25, 3.3125 ]
 		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ],
 		"bumper_front": [ 0.0, -0.25, -2.75 ],
 		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.75 ],
