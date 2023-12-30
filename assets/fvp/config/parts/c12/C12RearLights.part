@@ -1,13 +1,23 @@
 {
-	"RegistryName": "fvp:c12_rear_lights",
-	"Addon": "fvtm:fvp",
+	"ID": "c12_rear_lights",
+	"Addon": "fvp",
 	"Name": "C12 Rear Lights",
-	"Model": "fvp:models/part/c12_rear_lights",
-	"Category": "rear_lights",
+	"Model": "fvp:models/part/c12_lights_rear.fmf",
+	"ModelData":{
+		"Programs":[
+			"lights_rear fvtm:back_lights",
+			"lights_reverse fvtm:reverse_lights",
+			"lights_brake fvtm:brake_lights",
+			"lights_turn_left_rear fvtm:turn_signal_left"
+			"lights_turn_right_rear fvtm:turn_signal_right"
+		]
+	},
+	"Category": "lights_rear",
 	"Texture": "Default;fvp:textures/cars/c12.png",
 	"Installation": {
 		"Handler": "default",
-		"Removable": true,
+		"Removable": false,
+		"Swappable": true,
 		"Compatible": [
 			"fvp:c12"
 		]
