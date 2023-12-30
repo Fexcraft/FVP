@@ -1,13 +1,23 @@
 {
-	"RegistryName": "fvp:c12_front_lights",
-	"Addon": "fvtm:fvp",
+	"ID": "c12_front_lights",
+	"Addon": "fvp",
 	"Name": "C12 Front Lights",
-	"Model": "fvp:models/part/c12_front_lights",
-	"Category": "front_lights",
+	"Model": "fvp:models/part/c12_lights_front.fmf",
+	"ModelData":{
+		"Programs":[
+			"lights_front fvtm:front_lights",
+			"lights_long fvtm:long_lights",
+			"lights_fog fvtm:fog_lights",
+			"lights_turn_left_front fvtm:turn_signal_left"
+			"lights_turn_right_front fvtm:turn_signal_right"
+		]
+	},
+	"Category": "lights_front",
 	"Texture": "Default;fvp:textures/cars/c12.png",
 	"Installation": {
 		"Handler": "default",
-		"Removable": true,
+		"Removable": false,
+		"Swappable": true,
 		"Compatible": [
 			"fvp:c12"
 		]
