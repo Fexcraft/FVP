@@ -6,6 +6,7 @@
     "ModelData":{
     	"Programs":[
     		"hood fvtm:attribute_rotator c12_hood true 0 70 1 0"
+    		"hood fvtm:rgb_primary"
     	]
     },
     "Category": "hood",
