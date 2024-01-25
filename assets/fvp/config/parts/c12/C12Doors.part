@@ -9,6 +9,7 @@
     		"door_front_right fvtm:rgb_primary"
     		"door_rear_left fvtm:rgb_primary"
     		"door_rear_right fvtm:rgb_primary"
+    		"door_boot fvtm:rgb_primary"
     		"door_boot fvtm:attribute_rotator c12_boot true 0 90 1 0"
     		"door_front_left fvtm:attribute_rotator c12_door_fl true -60 0 -1 1"
     		"door_front_right fvtm:attribute_rotator c12_door_fr true 0 60 1 1"
