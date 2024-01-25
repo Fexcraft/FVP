@@ -6,7 +6,10 @@
 	"ModelData":{
 		"Programs":[
 			"cargo3_closed fvtm:attribute_visible c12_boot false",
-			"cargo3_open fvtm:attribute_visible c12_boot true"
+			"cargo3_open fvtm:attribute_visible c12_boot true",
+			"cargo_3 fvtm:rgb_secondary",
+			"cargo3_open fvtm:rgb_secondary",
+			"cargo3_closed fvtm:rgb_secondary"
 		]
 	},
 	"Category": "cargo",
