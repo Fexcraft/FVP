@@ -3,8 +3,15 @@
     "Addon": "fvp",
     "Name": "FVP Docici [C12]",
     "Model": "fvp:models/vehicle/c12.fmf",
+    "ModelData":{
+    	"Programs":[
+    		"primary fvtm:rgb_primary"
+    	]
+    },
     "ColorChannels":{
-    	"primary": "#fdfdfd"
+    	"primary": "#fdfdfd",
+    	"secondary": "#fdfdfd",
+    	"seats": "#fdfdfd"
     }, 
     "Texture": "Default;fvp:textures/cars/c12.png",
     "Categories": [
