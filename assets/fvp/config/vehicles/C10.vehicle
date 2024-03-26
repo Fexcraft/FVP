@@ -23,9 +23,38 @@
     "Categories": [
     	"car", "sedan"
     ],
-    "WheelPositions":{
-    	
-    },
+	"WheelPositions": {
+		"left_front_wheel": {
+			"pos": [ -1.125, -0.4375, -2.0625 ],
+			"hubsize": 0.125,
+			"radius": 0.5,
+			"width": 0.25,
+			"steering": true
+		},
+		"right_front_wheel": {
+			"pos": [ 1.125, -0.4375, -2.0625 ],
+			"hubsize": 0.125,
+			"radius": 0.5,
+			"width": 0.25,
+			"steering": true,
+			"mirror": true
+		},
+		"left_back_wheel": {
+			"pos": [ -1.125, -0.4375, 2.4375 ],
+			"hubsize": 0.125,
+			"radius": 0.5,
+			"width": 0.25,
+			"powered": true
+		},
+		"right_back_wheel": {
+			"pos": [ 1.125, -0.4375, 2.4375 ],
+			"hubsize": 0.125,
+			"radius": 0.5,
+			"width": 0.25,
+			"powered": true,
+			"mirror": true
+		}
+	},
 	"InstalledParts": {
 		"left_front_wheel": "fvp:c2r1_wheel",
 		"right_front_wheel": "fvp:c2r1_wheel",
