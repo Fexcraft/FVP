@@ -1,65 +1,50 @@
 {
-    "RegistryName": "fvp:c10",
+    "ID": "fvp:c10",
     "Addon": "fvtm:fvp",
     "Name": "C10 [Dekagra]",
-    "Model": "fvp:models/vehicle/c10",
-    "PrimaryColor": "#A8A8A8",
-    "SecondaryColor": "#C2C2C2",
+    "Model": "fvp:models/vehicle/c10.fmf",
+    "ColorChannels":{
+    	"primary": "#A8A8A8",
+    	"secondary": "#C2C2C2"
+    }, 
     "Texture": "Default;fvp:textures/cars/c10.png",
-    "Attributes": [
-    	{ "id": "weight", "type": "float", "value": 1480 },
-    	{ "id": "exhaust", "type": "vector3", "value": [ -49, 2, 20 ], "editable": false, "group": "exhaust", "mod-dep": "fvtm_potr" },
-    	{ "id": "c10_trunk", "type": "boolean", "value": false, "editable": true, "seat": "driver" }
-    ],
-    "Category": "car,sedan",
-    "WheelPositions":[
-        { "x":  32, "y": 0, "z":  18, "id": "left_front_wheel", "radius": 8, "drive": true, "steering": true },
-        { "x":  32, "y": 0, "z": -18, "id": "right_front_wheel", "radius": 8, "y_rot": 180, "drive": true, "steering": true },
-        { "x": -32, "y": 0, "z":  18, "id": "left_back_wheel", "radius": 8 },
-        { "x": -32, "y": 0, "z": -18, "id": "right_back_wheel", "radius": 8, "y_rot": 180 }
-    ],
-    "PreInstalled":{
-    	"trunk": "fvp:c10_trunk"
-    },
-    "RequiredParts": [
-        "right_front_wheel",
-        "left_front_wheel",
-        "right_back_wheel",
-        "left_back_wheel",
-        "steering_wheel",
-        "interior",
-        "seats"
-    ],
-    "LegacyData":{
-    	"MaxPositiveThrottle": 1.98,
-    	"MaxNegativeThrottle": 0.89,
-    	"TurnLeftModifier": 0.7,
-    	"TurnRightModifier": 0.7
-    },
-    "LiftingPoints":{
-    	"left_front": [ 14, 4, 22, "left_rear" ],
-    	"left_rear": [ -14, 4, 22, "left_front" ],
-    	"right_front": [ 14, 4, -22, "right_rear" ],
-    	"right_rear": [ -14, 4, -22, "right_front" ]
-    },
-    "PartSlots":[
-    	[ 50.15, 1.8, 0, "license_plate", "license_plate_front", 4, [ 0, 0, 12 ] ]
-    ],
-	"SwivelPoints":[
-		{
-			"id": "c10_trunk",
-			"parent": "vehicle",
-			"pos": [ -36, 13, 0 ],
-			"movers":[
-				{
-					"attribute": "c10_trunk",
-					"var": "pitch",
-					"speed": 1,
-					"bool_based": true,
-					"min": 0,
-					"max": 72
-				}
-			]
+    "Attributes": {
+		"weight": {
+			"type": "float",
+			"value": 1280
+		},
+    	"c12_door_fl": {
+			"type": "boolean",
+			"value": false,
+			"editable": true,
+			"access": "driver"
 		}
-	]
+    },
+    "Categories": [
+    	"car", "sedan"
+    ],
+    "WheelPositions":{
+    	
+    },
+	"InstalledParts": {
+		"left_front_wheel": "fvp:c2r1_wheel",
+		"right_front_wheel": "fvp:c2r1_wheel",
+		"left_back_wheel": "fvp:c2r1_wheel",
+		"right_back_wheel": "fvp:c2r1_wheel",
+		"vehicle:engine": "gep:engine_diesel",
+	}
+	"PartSlots":{
+		"engine":[],
+		"interior":[],
+		"seats":[],
+		"doors":[],
+		"hood":[],
+		"steering_wheel":[]
+	},
+    "SimplePhysics":{
+    	"MaxPositiveThrottle": 1.2,
+    	"MaxNegativeThrottle": 0.7,
+    	"TurnLeftModifier": 1.1,
+    	"TurnRightModifier": 1.1
+    }
 }
