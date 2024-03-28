@@ -24,7 +24,7 @@
             "fvp:c10"
         ]
     },
-    "Attributes":[
+    "Attributes":{
     	"c10_door_fl": {
 			"type": "boolean",
 			"value": false,
@@ -49,5 +49,5 @@
 			"editable": true,
 			"access": "pass_rear_right"
 		}
-    ]
+    }
 }
