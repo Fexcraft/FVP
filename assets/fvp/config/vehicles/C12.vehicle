@@ -126,7 +126,6 @@
 		"vehicle:lights_rear": "fvp:c12_rear_lights",
 		"interior:pass_storage_0": "fvp:c12_pass_storage",
 		"interior:pass_storage_1": "fvp:c12_pass_storage"
-		"vehicle:bumper_rear": "fvp:c12_bumper_rear_base",
 	},
 	"PartSlots":{
 		"engine":[],
@@ -135,8 +134,8 @@
 		"doors":[],
 		"hood":[],
 		"steering_wheel":[],
-        "lights_front": [ -1.125, 0.25, -2.71875 ], 
-        "lights_rear": [ -1.25, 0.25, 3.3125 ]
+        "lights_front": [ -1.125, 0.25, -2.71875 ],
+        "lights_rear": [ -1.25, 0.25, 3.3125 ],
 		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ],
 		"bumper_front": [ 0.0, -0.25, -2.75 ],
 		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.75 ],
@@ -144,6 +143,39 @@
         "roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ], 
         "rear_window": [ 0.0, 0.875, 1.8125, "rear_window", 0.5 ],
         "bumper_rear": [ 0.0, -0.0625, 3.3125 ]
+	},
+	"Catalog":{
+		"blue":{
+			"name": "Factory Blue",
+			"colors":{
+				"primary": "4066ff"
+			}
+		},
+		"green":{
+			"name": "Factory Green",
+			"colors":{
+				"primary": "0e5e05"
+			}
+		},
+		"offroad_basic":{
+			"name": "Offroad Basic",
+			"description":[
+				"Basic offroad variant of the C12",
+				"Does not include preinstalled spotlights."
+			],
+			"colors":{
+				"primary": "8f2d00",
+				"secondary": "ab3702"
+			},
+			"parts": {
+				"vehicle:roof_lights": "fvp:c12_roof_lightbar",
+				"vehicle:rear_window": "fvp:c12_rear_window_net",
+				"vehicle:bumper_front": "fvp:c12_bumper_front",
+				"vehicle:bumper_rear": "fvp:c12_bumper_rear_base",
+				"bumper_rear:bumper_rear_upper": "fvp:c12_bumper_rear_upper",
+				"vehicle:cargo": "fvp:c12_cargo3"
+			}
+		}
 	},
     "SimplePhysics":{
     	"MaxPositiveThrottle": 1.5,
