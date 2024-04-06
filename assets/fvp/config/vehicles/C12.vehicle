@@ -111,22 +111,6 @@
 			"mirror": true
 		}
 	},
-	"InstalledParts": {
-		"left_front_wheel": "fvp:c12_wheel",
-		"right_front_wheel": "fvp:c12_wheel",
-		"left_back_wheel": "fvp:c12_wheel",
-		"right_back_wheel": "fvp:c12_wheel",
-		"vehicle:engine": "gep:engine_diesel",
-		"vehicle:seats": "fvp:c12_seats",
-		"vehicle:doors": "fvp:c12_doors",
-		"vehicle:hood": "fvp:c12_hood",
-		"vehicle:interior": "fvp:c12_interior",
-		"vehicle:steering_wheel": "fvp:c12_steering_wheel",
-		"vehicle:lights_front": "fvp:c12_front_lights",
-		"vehicle:lights_rear": "fvp:c12_rear_lights",
-		"interior:pass_storage_0": "fvp:c12_pass_storage",
-		"interior:pass_storage_1": "fvp:c12_pass_storage"
-	},
 	"PartSlots":{
 		"engine":[],
 		"interior":[],
@@ -143,6 +127,22 @@
         "roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ], 
         "rear_window": [ 0.0, 0.875, 1.8125, "rear_window", 0.5 ],
         "bumper_rear": [ 0.0, -0.0625, 3.3125 ]
+	},
+	"InstalledParts": {
+		"left_front_wheel": "fvp:c12_wheel",
+		"right_front_wheel": "fvp:c12_wheel",
+		"left_back_wheel": "fvp:c12_wheel",
+		"right_back_wheel": "fvp:c12_wheel",
+		"vehicle:engine": "gep:engine_diesel",
+		"vehicle:seats": "fvp:c12_seats",
+		"vehicle:doors": "fvp:c12_doors",
+		"vehicle:hood": "fvp:c12_hood",
+		"vehicle:interior": "fvp:c12_interior",
+		"vehicle:steering_wheel": "fvp:c12_steering_wheel",
+		"vehicle:lights_front": "fvp:c12_front_lights",
+		"vehicle:lights_rear": "fvp:c12_rear_lights",
+		"interior:pass_storage_0": "fvp:c12_pass_storage",
+		"interior:pass_storage_1": "fvp:c12_pass_storage"
 	},
 	"Catalog":{
 		"blue":{
@@ -168,13 +168,44 @@
 				"secondary": "ab3702"
 			},
 			"parts": {
-				"vehicle:roof_lights": "fvp:c12_roof_lightbar",
 				"vehicle:rear_window": "fvp:c12_rear_window_net",
 				"vehicle:bumper_front": "fvp:c12_bumper_front",
 				"vehicle:bumper_rear": "fvp:c12_bumper_rear_base",
 				"bumper_rear:bumper_rear_upper": "fvp:c12_bumper_rear_upper",
 				"vehicle:cargo": "fvp:c12_cargo3"
-			}
+			},
+			"recipe":[
+				"minecraft:iron_block"
+			]
+		},
+		"offroad_classic":{
+			"name": "Offroad Classic",
+			"description":[
+				"Classic offroad variant of the C12",
+				"Include preinstalled spotlights."
+			],
+			"colors":{
+				"primary": "993e2c"
+			},
+			"parts": {
+				"vehicle:roof_lights": "fvp:c12_roof_lightbar",
+				"vehicle:rear_window": "fvp:c12_rear_window_net",
+				"vehicle:bumper_front": "fvp:c12_bumper_front",
+				"vehicle:bumper_rear": "fvp:c12_bumper_rear_base",
+				"bumper_rear:bumper_rear_upper": "fvp:c12_bumper_rear_upper",
+				"bumper_front:bumper_spotlight_0": "fvp:c12_spotlight",
+				"bumper_front:bumper_spotlight_1": "fvp:c12_spotlight",
+				"bumper_front:bumper_spotlight_2": "fvp:c12_spotlight",
+				"bumper_front:bumper_spotlight_3": "fvp:c12_spotlight",
+				"roof_lights:roof_lightbar_1": "fvp:c12_spotlight",
+				"roof_lights:roof_lightbar_2": "fvp:c12_spotlight",
+				"roof_lights:roof_lightbar_4": "fvp:c12_spotlight",
+				"roof_lights:roof_lightbar_5": "fvp:c12_spotlight",
+				"vehicle:cargo": "fvp:c12_cargo2"
+			},
+			"recipe":[
+				"minecraft:iron_block"
+			]
 		}
 	},
     "SimplePhysics":{
