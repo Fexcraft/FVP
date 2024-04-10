@@ -12,7 +12,7 @@
     	"primary": "#fdfdfd",
     	"secondary": "#fdfdfd",
     	"seats": "#fdfdfd"
-    }, 
+    },
     "Texture": "Default;fvp:textures/cars/c12.png",
     "Categories": [
 		"car", "offroad"
@@ -27,7 +27,7 @@
 			"value": false,
 			"access": "driver",
 			"interact": {
-				"default": [ 0.515625, 0.59375, -0.421875, 0.0625 ]
+				"default": [ -0.421875, 0.59375, -0.515625, 0.0625 ]
 			}
 		},
 		"turn_lights": {
@@ -35,7 +35,7 @@
 			"value": "null",
 			"access": "driver",
 			"interact": {
-				"default": [ 0.515625, 0.59375, -0.953125, 0.0625 ]
+				"default": [ -0.953125, 0.59375, -0.515625, 0.0625 ]
 			}
 		},
 		"lights": {
@@ -43,7 +43,7 @@
 			"value": false,
 			"access": "driver",
 			"interact": {
-				"default": [ 0.5625, 0.5625, -1.265625, 0.03125 ]
+				"default": [ -1.265625, 0.5625, -0.5625, 0.03125 ]
 			}
 		},
 		"lights_long": {
@@ -51,7 +51,7 @@
 			"value": false,
 			"access": "driver",
 			"interact": {
-				"default": [ 0.5625, 0.46875, -1.265625, 0.03125 ]
+				"default": [ -1.265625, 0.46875, -0.5625, 0.03125 ]
 			}
 		},
 		"lights_fog": {
@@ -59,7 +59,7 @@
 			"value": false,
 			"access": "driver",
 			"interact": {
-				"default": [ 0.5625, 0.5625, -1.171875, 0.03125 ]
+				"default": [ -1.171875, 0.5625, -0.5625, 0.03125 ]
 			}
 		},
 		"lights_extra": {
@@ -67,7 +67,7 @@
 			"value": false,
 			"access": "driver",
 			"interact": {
-				"default": [ 0.5625, 0.46875, -1.171875, 0.03125 ]
+				"default": [ -1.171875, 0.46875, -0.5625, 0.03125 ]
 			}
 		},
 		"warning_lights": {
@@ -75,7 +75,7 @@
 			"value": false,
 			"access": "driver",
 			"interact": {
-				"default": [ 0.5625, 0.5625, -0.21875, 0.03125 ]
+				"default": [ -0.21875, 0.5625, -0.5625, 0.03125 ]
 			}
 		}
 	},
@@ -124,7 +124,7 @@
 		"bumper_front": [ 0.0, -0.25, -2.75 ],
 		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.75 ],
         "exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ],
-        "roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ], 
+        "roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ],
         "rear_window": [ 0.0, 0.875, 1.8125, "rear_window", 0.5 ],
         "bumper_rear": [ 0.0, -0.0625, 3.3125 ]
 	},
