@@ -1,0 +1,19 @@
+{
+    "ID": "excav_wheel",
+    "Name": "Excavator Wheel",
+    "Addon": "fvp",
+    "Model": "null",
+    "Category": "wheel",
+	"Functions":{
+		"fvtm:wheel": {},
+		"fvtm:tire":{
+    		"step_height": 2
+		}
+	},
+    "Installation":{
+    	"Handler": "wheel",
+        "Removable": true,
+        "Radius": 1,
+		"Width": 0.375
+    }
+}
