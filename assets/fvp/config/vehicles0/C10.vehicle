@@ -66,8 +66,8 @@
 		"left_back_wheel": "fvp:c2r1_wheel",
 		"right_back_wheel": "fvp:c2r1_wheel",
 		"vehicle:engine": "gep:engine_diesel",
-		"vehicle:doors": "fvp:c10_doors",
-	}
+		"vehicle:doors": "fvp:c10_doors"
+	},
 	"PartSlots":{
 		"engine":[],
 		"interior":[],
