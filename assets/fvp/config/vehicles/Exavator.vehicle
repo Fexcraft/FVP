@@ -35,7 +35,7 @@
         },
         "access": "controller"
       },
-      "art_rot":{
+      "arm_rot":{
         "type": "integer",
         "value": 0,
         "min": 0,
