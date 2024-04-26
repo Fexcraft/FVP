@@ -84,14 +84,14 @@
 	},
     "WheelPositions":{
 		"left_front_wheel": {
-			"pos": [ -1.5, 0, -1.5 ],
+			"pos": [ -1.5, 0.375, -1.5 ],
 			"radius": 1,
 			"width": 0.375,
 			"steering": true,
 			"drive": true
 		},
 		"right_front_wheel": {
-			"pos": [ 1.5, 0, -1.5 ],
+			"pos": [ 1.5, 0.375, -1.5 ],
 			"radius": 1,
 			"width": 0.375,
 			"steering": true,
@@ -99,14 +99,14 @@
 			"mirror": true
 		},
 		"left_back_wheel": {
-			"pos": [ -1.5, 0, 1.5 ],
+			"pos": [ -1.5, 0.375, 1.5 ],
 			"radius": 1,
 			"width": 0.375,
 			"steering": true,
 			"drive": true
 		},
 		"right_back_wheel": {
-			"pos": [ 1.5, 0, 1.5 ],
+			"pos": [ 1.5, 0.375, 1.5 ],
 			"radius": 1,
 			"width": 0.375,
 			"steering": true,
@@ -122,13 +122,17 @@
     },
 	"PartSlots": {
 		"engine": [],
-		"chassis": []
+		"chassis": {
+			"point": "base",
+			"radius": 1
+		}
 	},
     "InstalledParts":{
 		"right_front_wheel": "fvp:excav_wheel",
 		"left_front_wheel": "fvp:excav_wheel",
 		"right_back_wheel": "fvp:excav_wheel",
 		"left_back_wheel": "fvp:excav_wheel",
-		"vehicle:engine": "gep:engine_diesel"
+		"vehicle:engine": "gep:engine_diesel",
+		"vehicle:chassis": "fvp:excav_chassis"
     }
 }
