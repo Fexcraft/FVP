@@ -1,0 +1,46 @@
+{
+    "ID": "excav_chassis",
+    "Addon": "fvp",
+    "Model": "fvp:models/part/excav_chassis.fmf",
+	"ModelData": {
+		"Programs": [
+			"#cabin_windows fvtm:hide"
+		]
+	},
+    "Name": "Excavator Chassis",
+    "Category": "chassis",
+    "Installation":{
+    	"Handler": "default",
+		"Removable": false
+    },
+	"Functions": {
+		"fvtm:seats": {
+			"driver": {
+				"pos": [ 1.125, 0.78125, 0.5 ],
+				"swivel_point": "base",
+				"min_yaw": -180,
+				"max_yaw": 180,
+				"driver": true
+			},
+			"controller": {
+				"pos": [ 1.125, 0.78125, 0 ],
+				"swivel_point": "base",
+				"min_yaw": -180,
+				"max_yaw": 180
+			}
+		}
+	},
+    "SwivelPoints": {
+        "arm": {
+            "pos": [ 0.4375, 1.15625, 0.3125 ],
+            "parent": "arm",
+			"movers": [
+				{
+					"attribute": "arm_rot",
+					"var": "pitch",
+					"speed": 0.5
+				}
+			]
+		}
+	}
+}
