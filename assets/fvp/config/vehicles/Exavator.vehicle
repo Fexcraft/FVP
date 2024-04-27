@@ -22,7 +22,7 @@
       },
       "fuel_capacity": {
         "type": "integer",
-        "value": 25000
+        "value": 280000
       },
       "base_rot":{
         "type": "integer",
@@ -125,6 +125,14 @@
 		"arm": {
 			"point": "arm",
 			"radius": 1
+		},
+		"stick": {
+			"point": "stick",
+			"radius": 1
+		},
+		"bucket": {
+			"point": "bucket",
+			"radius": 1
 		}
 	},
     "InstalledParts":{
@@ -132,8 +140,10 @@
 		"left_front_wheel": "fvp:excav_wheel",
 		"right_back_wheel": "fvp:excav_wheel",
 		"left_back_wheel": "fvp:excav_wheel",
-		"vehicle:engine": "gep:engine_diesel",
+		"vehicle:engine": "fvp:excav_engine",
 		"vehicle:chassis": "fvp:excav_chassis",
-		"vehicle:arm": "fvp:excav_arm"
+		"vehicle:arm": "fvp:excav_arm",
+		"vehicle:stick": "fvp:excav_stick",
+		"vehicle:bucket": "fvp:excav_bucket"
     }
 }
