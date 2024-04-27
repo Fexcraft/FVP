@@ -125,6 +125,10 @@
 		"chassis": {
 			"point": "base",
 			"radius": 1
+		},
+		"arm": {
+			"point": "arm",
+			"radius": 1
 		}
 	},
     "InstalledParts":{
@@ -133,6 +137,7 @@
 		"right_back_wheel": "fvp:excav_wheel",
 		"left_back_wheel": "fvp:excav_wheel",
 		"vehicle:engine": "gep:engine_diesel",
-		"vehicle:chassis": "fvp:excav_chassis"
+		"vehicle:chassis": "fvp:excav_chassis",
+		"vehicle:arm": "fvp:excav_arm"
     }
 }
