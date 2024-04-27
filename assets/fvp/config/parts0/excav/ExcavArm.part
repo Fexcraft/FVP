@@ -1,21 +1,18 @@
 {
-    "RegistryName": "excav_arm",
+    "ID": "excav_arm",
     "Addon": "fvp",
     "Model": "fvp:models/part/excav_arm.fmf",
     "Name": "Excavator Arm",
     "Category": "arm",
     "Installation":{
     	"Handler": "default",
-		"Removable": false,
-    	"SwivelPoint": "arm",
-		"SwivelPointRequired": true
+		"Removable": false
     },
-	"SwivelPoints":[
-		{
-			"id": "stick",
-			"parent": "arm",
-			"pos": [ 26.75, -118.75, 0 ],
-			"movers":[
+    "SwivelPoints": {
+        "stick": {
+            "pos": [ 0.0, 7.421875, -1.65625 ],
+            "parent": "arm",
+			"movers": [
 				{
 					"attribute": "stick_rot",
 					"var": "pitch",
@@ -23,5 +20,5 @@
 				}
 			]
 		}
-	]
+	}
 }
