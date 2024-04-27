@@ -38,11 +38,11 @@
       "arm_rot":{
         "type": "integer",
         "value": 0,
-        "min": 0,
-        "max": 85,
+        "min": -85,
+        "max": 0,
         "keys":{
-          "accelerate": 5,
-          "decelerate": -5
+          "accelerate": -5,
+          "decelerate": 5
         },
         "access": "controller"
       },
@@ -101,16 +101,12 @@
 		"left_back_wheel": {
 			"pos": [ -1.5, 0.375, 1.5 ],
 			"radius": 1,
-			"width": 0.375,
-			"steering": true,
-			"drive": true
+			"width": 0.375
 		},
 		"right_back_wheel": {
 			"pos": [ 1.5, 0.375, 1.5 ],
 			"radius": 1,
 			"width": 0.375,
-			"steering": true,
-			"drive": true,
 			"mirror": true
 		}
 	},
