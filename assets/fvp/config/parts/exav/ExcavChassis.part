@@ -33,7 +33,7 @@
     "SwivelPoints": {
         "arm": {
             "pos": [ 0.4375, 1.15625, 0.3125 ],
-            "parent": "arm",
+            "parent": "base",
 			"movers": [
 				{
 					"attribute": "arm_rot",
