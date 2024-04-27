@@ -1,0 +1,35 @@
+{
+    "ID": "excav_engine",
+    "Addon": "fvp",
+    "Name": "Exavator Diesel Engine",
+    "Model": "null",
+    "Category": "engine",
+	"AttributeModifiers":{
+		"weight": "+500"
+	},
+	"Functions": {
+		"fvtm:engine": {
+			"engine_speed": 1,
+			"idle_consumption": 5,
+			"active_consumption": 40,
+			"consumptions": {
+				"petrodiesel": 40,
+				"synthetic": 45,
+				"biodiesel": 50
+			},
+			"fuel_group": "diesel"
+		},
+		"fvtm_potr:emission_emitter": {
+			"emissions": [ 0.3, 0.01, 0.2 ],
+			"engine": true
+		}
+	},
+	"Sounds": {
+		"engine_start": "minecraft:block.dispenser.dispense",
+		"engine_stop": "minecraft:block.dispenser.fail",
+		"engine_running": {
+			"sound": "minecraft:entity.minecart.riding",
+			"volume": 0.2
+		}
+	}
+}
