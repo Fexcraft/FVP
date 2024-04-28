@@ -24,6 +24,10 @@
         "type": "integer",
         "value": 280000
       },
+      "collision_range": {
+        "type": "float",
+        "value": 10
+      },
       "base_rot":{
         "type": "integer",
         "value": 0,
@@ -33,18 +37,18 @@
           "turn_left": -5,
           "turn_right": 5
         },
-        "access": "controller"
+        "access": [ "controller" ]
       },
       "arm_rot":{
         "type": "integer",
         "value": 0,
-        "min": -85,
-        "max": 0,
+        "min": 0,
+        "max": 85,
         "keys":{
-          "accelerate": -5,
-          "decelerate": 5
+          "accelerate": 5,
+          "decelerate": -5
         },
-        "access": "controller"
+        "access": [ "controller" ]
       },
       "stick_rot":{
         "type": "integer",
@@ -52,10 +56,10 @@
         "min": -24,
         "max": 60,
         "keys":{
-          "gear_up": 6,
-          "gear_down": -6
+          "gear_up": -6,
+          "gear_down": 6
         },
-        "access": "controller"
+        "access": [ "controller" ]
       },
       "bucket_rot":{
         "type": "integer",
@@ -66,7 +70,7 @@
           "roll_left": 10,
           "roll_right": -10
         },
-        "access": "controller"
+        "access": [ "controller" ]
       }
     },
     "SwivelPoints": {
