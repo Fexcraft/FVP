@@ -61,10 +61,14 @@
 		}
 	},
 	"InstalledParts": {
-		"left_front_wheel": "fvp:c2r1_wheel",
-		"right_front_wheel": "fvp:c2r1_wheel",
-		"left_back_wheel": "fvp:c2r1_wheel",
-		"right_back_wheel": "fvp:c2r1_wheel",
+		"left_front_wheel": "fvp:rim_1",
+		"right_front_wheel": "fvp:rim_1",
+		"left_back_wheel": "fvp:rim_1",
+		"right_back_wheel": "fvp:rim_1",
+		"left_front_wheel:tire": "fvp:tire_1",
+		"right_front_wheel:tire": "fvp:tire_1",
+		"left_back_wheel:tire": "fvp:tire_1",
+		"right_back_wheel:tire": "fvp:tire_1",
 		"vehicle:engine": "gep:engine_diesel",
 		"vehicle:doors": "fvp:c10_doors"
 	},
