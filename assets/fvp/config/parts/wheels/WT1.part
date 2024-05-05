@@ -18,7 +18,7 @@
         "Removable": true,
 		"OuterRadius": 0.5,
 		"InnerRadius": 0.375,
-		"Width": 0.1875
+		"Width": 0.25
     },
 	"AttributeModifiers":{
 		"weight": "+10"
