@@ -1,0 +1,26 @@
+{
+	"ID": "rim_1",
+	"Addon": "fvp",
+	"Name": "FVP Generic Rim 1",
+	"Model": "fvp:models/part/rim1.obj",
+	"ModelData": {
+		"Programs": [
+			"group0 fvtm:wheel_auto_all"
+		]
+	},
+	"Category": "wheel",
+	"Functions": {
+		"fvtm:wheel": {}
+	},
+	"Texture": "Default;fvp:textures/wheels/rim_1.png",
+	"Installation": {
+		"Handler": "wheel",
+		"Removable": true,
+		"Radius": 0.375,
+		"Width": 0.1875,
+		"HubSize": 0.25
+	},
+	"AttributeModifiers": {
+		"weight": "+10"
+	}
+}
