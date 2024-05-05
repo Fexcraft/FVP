@@ -17,7 +17,7 @@
 		"Handler": "wheel",
 		"Removable": true,
 		"Radius": 0.375,
-		"Width": 0.1875,
+		"Width": 0.25,
 		"HubSize": 0.125,
 		"Tireless": false
 	},
