@@ -1,0 +1,26 @@
+{
+    "ID": "tire_1",
+    "Addon": "fvp",
+    "Name": "FVP Generic Tire 1",
+    "Model": "fvp:models/part/tire1.obj",
+    "ModelData": {
+    	"Programs":[
+    		"group0 fvtm:wheel_auto_all"
+    	]
+    },
+    "Category": "wheel",
+	"Functions":{
+		"fvtm:tire":{}
+	},
+    "Texture": "Default;fvp:textures/wheels/tire_1.png",
+    "Installation":{
+    	"Handler": "tire",
+        "Removable": true,
+		"OuterRadius": 0.5,
+		"InnerRadius": 0.375,
+		"Width": 0.1875
+    },
+	"AttributeModifiers":{
+		"weight": "+10"
+	}
+}
