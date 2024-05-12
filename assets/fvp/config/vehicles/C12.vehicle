@@ -126,7 +126,8 @@
         "exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ],
         "roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ],
         "rear_window": [ 0.0, 0.875, 1.8125, "rear_window", 0.5 ],
-        "bumper_rear": [ 0.0, -0.0625, 3.3125 ]
+        "bumper_rear": [ 0.0, -0.0625, 3.3125 ],
+        "trailer_hitch": [ 0.0, -0.0625, 3.3125 ]
 	},
 	"InstalledParts": {
 		"left_front_wheel": "fvp:c12_wheel",
