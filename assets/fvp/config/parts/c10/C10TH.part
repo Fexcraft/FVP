@@ -1,0 +1,20 @@
+{
+	"ID": "c10_trailer_hitch",
+	"Addon": "fvp",
+	"Name": "Trailer Hitch",
+	"Description": [
+		"Originally designed for the C10,",
+		"it also works with other FVP cars."
+	],
+	"Model": "fvp:models/part/c10_trailer_hitch.fmf",
+	"Category": "trailer_hitch",
+	"Texture": "Default;fvp:textures/parts/c10_th.png",
+	"Installation": {
+		"Handler": "default",
+		"Removable": true,
+		"Swappable": true
+	},
+	"AttributeModifiers": {
+		"weight": "+25"
+	}
+}
