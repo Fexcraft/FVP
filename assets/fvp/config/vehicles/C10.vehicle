@@ -94,5 +94,11 @@
             "pos": [ 0.0, 0.8125, 2.25 ],
             "parent": "vehicle"
          }
-     }
+     },
+    "LiftingPoints":{
+    	"left_front": [ -1.25, -0.25, -1.25, "left_rear" ],
+    	"left_rear": [ -1.25, -0.25, 1.25, "left_front" ],
+    	"right_front": [ 1.25, -0.25, -1.25, "right_rear" ],
+    	"right_rear": [ 1.25, -0.25, 1.25, "right_front" ]
+    }
 }
