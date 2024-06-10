@@ -220,5 +220,8 @@
     	"left_rear": [ -1.375, -0.5, 1.625, "left_front" ],
     	"right_front": [ 1.375, -0.5, -1.1875, "right_rear" ],
     	"right_rear": [ 1.375, -0.5, 1.625, "right_front" ]
-    }
+    },
+  "InteractZones":{
+    "default": [ 0, 0, 0, 6 ]
+}
 }
