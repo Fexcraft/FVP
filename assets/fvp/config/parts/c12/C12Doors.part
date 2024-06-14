@@ -33,7 +33,10 @@
 			"type": "boolean",
 			"value": false,
 			"editable": true,
-			"access": "driver"
+			"access": [ "driver", "external" ],
+			"interact":{
+				"external": [ -1.453125, 0.40625, 0.25, 0.125 ]
+			}
 		},
     	"c12_door_fr": {
 			"type": "boolean",
