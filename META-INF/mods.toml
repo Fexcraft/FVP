@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+issueTrackerURL="https://github.com/Fexcraft/FVP"
+[[mods]]
+modId="fvp"
+version="3.x.x"
+displayName="Fex's Vehicle Pack"
+displayURL="https://fexcraft.net/wiki/mod/fvtm" 
+#credits="" #optional
+authors="FEX___96"
+displayTest="IGNORE_ALL_VERSION"
+
+description='''A FVTM pack containing vehicles made by FEX___96.'''
+[[dependencies.gep]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.gep]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.fvtm]]
+    modId="fvtm"
+    mandatory=true
+    versionRange="4.+"
+    ordering="AFTER"
+    side="BOTH"
