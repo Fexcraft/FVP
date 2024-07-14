@@ -10,7 +10,10 @@
     	]
     },
     "Category": "hood",
-    "Texture": "Default;fvp:textures/cars/c12.png",
+    "Textures": [
+	"Default;fvp:textures/cars/c12.png",
+	"High Noise;fvp:textures/cars/c12_alt1.png"
+    ],
     "Installation": {
     	"Handler": "default",
         "Removable": false,
