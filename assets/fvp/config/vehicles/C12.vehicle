@@ -6,6 +6,18 @@
     "ModelData":{
     	"Programs":[
     		"primary fvtm:rgb_primary"
+    		"door_front_left fvtm:rgb_primary",
+    		"door_front_right fvtm:rgb_primary",
+    		"door_rear_left fvtm:rgb_primary",
+    		"door_rear_right fvtm:rgb_primary",
+    		"door_boot fvtm:rgb_primary",
+    		"door_boot fvtm:attribute_rotator c12_boot true 0 90 1 0",
+    		"door_front_left fvtm:attribute_rotator c12_door_fl true -60 0 -1 1",
+    		"door_front_right fvtm:attribute_rotator c12_door_fr true 0 60 1 1",
+    		"door_front_left_mirror fvtm:attribute_rotator c12_door_fl true -60 0 -1 1",
+    		"door_front_right_mirror fvtm:attribute_rotator c12_door_fr true 0 60 1 1",
+    		"door_rear_left fvtm:attribute_rotator c12_door_rl true -60 0 -1 1",
+    		"door_rear_right fvtm:attribute_rotator c12_door_rr true 0 60 1 1"
     	]
     },
     "ColorChannels":{
@@ -80,6 +92,39 @@
 			"interact": {
 				"default": [ -0.21875, 0.5625, -0.5625, 0.03125 ]
 			}
+		},
+    		"c12_door_fl": {
+			"type": "boolean",
+			"value": false,
+			"editable": true,
+			"access": [ "driver", "external" ],
+			"interact":{
+				"external": [ -1.453125, 0.40625, 0.25, 0.125 ]
+			}
+		},
+    		"c12_door_fr": {
+			"type": "boolean",
+			"value": false,
+			"editable": true,
+			"access": "pass_front"
+		},
+    		"c12_door_rl": {
+			"type": "boolean",
+			"value": false,
+			"editable": true,
+			"access": "pass_rear_left"
+		},
+    		"c12_door_rr": {
+			"type": "boolean",
+			"value": false,
+			"editable": true,
+			"access": "pass_rear_right"
+		},
+    		"c12_boot": {
+			"type": "boolean",
+			"value": false,
+			"editable": true,
+			"access": "driver"
 		}
 	},
 	"WheelPositions": {
@@ -119,18 +164,18 @@
 		"interior":[],
 		"seats":[],
 		"doors":[],
-		"hood":[],
+        	"hood": [ 0.0, 0.5, -1.75 ],
 		"steering_wheel":[],
-        "lights_front": [ -1.125, 0.25, -2.71875 ],
-        "lights_rear": [ -1.25, 0.25, 3.3125 ],
+        	"lights_front": [ -1.125, 0.25, -2.71875 ],
+        	"lights_rear": [ -1.25, 0.25, 3.3125 ],
 		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ],
 		"bumper_front": [ 0.0, -0.25, -2.75 ],
 		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.75 ],
-        "exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ],
-        "roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ],
-        "rear_window": [ 0.0, 0.875, 1.8125, "rear_window", 0.5 ],
-        "bumper_rear": [ 0.0, -0.0625, 3.3125 ],
-        "trailer_hitch": [ 0.0, -0.0625, 3.3125 ]
+        	"exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ],
+        	"roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ],
+        	"rear_window": [ 0.0, 0.875, 1.8125, "rear_window", 0.5 ],
+        	"bumper_rear": [ 0.0, -0.0625, 3.3125 ],
+        	"trailer_hitch": [ 0.0, -0.0625, 3.3125 ]
 	},
 	"InstalledParts": {
 		"left_front_wheel": "fvp:c12_wheel",
