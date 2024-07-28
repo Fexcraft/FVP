@@ -1,287 +1,443 @@
-{
-    "ID": "c12",
-    "Addon": "fvp",
-    "Name": "FVP Docici [C12]",
-    "Model": "fvp:models/vehicle/c12.fmf",
-    "ModelData":{
-    	"Programs":[
-    		"primary fvtm:rgb_primary"
-    		"door_front_left fvtm:rgb_primary",
-    		"door_front_right fvtm:rgb_primary",
-    		"door_rear_left fvtm:rgb_primary",
-    		"door_rear_right fvtm:rgb_primary",
-    		"door_boot fvtm:rgb_primary",
-    		"door_boot fvtm:attribute_rotator c12_boot true 0 90 1 0",
-    		"door_front_left fvtm:attribute_rotator c12_door_fl true -60 0 -1 1",
-    		"door_front_right fvtm:attribute_rotator c12_door_fr true 0 60 1 1",
-    		"door_front_left_mirror fvtm:attribute_rotator c12_door_fl true -60 0 -1 1",
-    		"door_front_right_mirror fvtm:attribute_rotator c12_door_fr true 0 60 1 1",
-    		"door_rear_left fvtm:attribute_rotator c12_door_rl true -60 0 -1 1",
-    		"door_rear_right fvtm:attribute_rotator c12_door_rr true 0 60 1 1"
-    	]
-    },
-    "ColorChannels":{
-    	"primary": "#fdfdfd",
-    	"secondary": "#fdfdfd",
-    	"seats": "#fdfdfd"
-    },
-    "Textures": [
-	"Default;fvp:textures/cars/c12.png",
-	"High Noise;fvp:textures/cars/c12_alt1.png"
-    ],
-    "Categories": [
-		"car", "offroad"
-	],
-	"Attributes": {
-		"weight": {
-			"type": "float",
-			"value": 1000
-		},
-		"windshield_wipers": {
-			"type": "boolean",
-			"value": false,
-			"access": "driver",
-			"interact": {
-				"default": [ -0.421875, 0.59375, -0.515625, 0.0625 ]
-			}
-		},
-		"turn_lights": {
-			"type": "tristate",
-			"value": "null",
-			"access": "driver",
-			"interact": {
-				"default": [ -0.953125, 0.59375, -0.515625, 0.0625 ]
-			}
-		},
-		"lights": {
-			"type": "boolean",
-			"value": false,
-			"access": "driver",
-			"interact": {
-				"default": [ -1.265625, 0.5625, -0.5625, 0.03125 ]
-			}
-		},
-		"lights_long": {
-			"type": "boolean",
-			"value": false,
-			"access": "driver",
-			"interact": {
-				"default": [ -1.265625, 0.46875, -0.5625, 0.03125 ]
-			}
-		},
-		"lights_fog": {
-			"type": "boolean",
-			"value": false,
-			"access": "driver",
-			"interact": {
-				"default": [ -1.171875, 0.5625, -0.5625, 0.03125 ]
-			}
-		},
-		"lights_extra": {
-			"type": "boolean",
-			"value": false,
-			"access": "driver",
-			"interact": {
-				"default": [ -1.171875, 0.46875, -0.5625, 0.03125 ]
-			}
-		},
-		"warning_lights": {
-			"type": "boolean",
-			"value": false,
-			"access": "driver",
-			"interact": {
-				"default": [ -0.21875, 0.5625, -0.5625, 0.03125 ]
-			}
-		},
-    		"c12_door_fl": {
-			"type": "boolean",
-			"value": false,
-			"editable": true,
-			"access": [ "driver", "external" ],
-			"interact":{
-				"external": [ -1.453125, 0.40625, 0.25, 0.125 ]
-			}
-		},
-    		"c12_door_fr": {
-			"type": "boolean",
-			"value": false,
-			"editable": true,
-			"access": "pass_front"
-		},
-    		"c12_door_rl": {
-			"type": "boolean",
-			"value": false,
-			"editable": true,
-			"access": "pass_rear_left"
-		},
-    		"c12_door_rr": {
-			"type": "boolean",
-			"value": false,
-			"editable": true,
-			"access": "pass_rear_right"
-		},
-    		"c12_boot": {
-			"type": "boolean",
-			"value": false,
-			"editable": true,
-			"access": "driver"
-		}
-	},
-	"WheelPositions": {
-		"left_front_wheel": {
-			"pos": [ -1.125, -0.4375, -2.0625 ],
-			"hubsize": 0.25,
-			"radius": 0.5625,
-			"width": 0.375,
-			"steering": true
-		},
-		"right_front_wheel": {
-			"pos": [ 1.125, -0.4375, -2.0625 ],
-			"hubsize": 0.25,
-			"radius": 0.5625,
-			"width": 0.375,
-			"steering": true,
-			"mirror": true
-		},
-		"left_back_wheel": {
-			"pos": [ -1.125, -0.4375, 2.4375 ],
-			"hubsize": 0.25,
-			"radius": 0.5625,
-			"width": 0.375,
-			"powered": true
-		},
-		"right_back_wheel": {
-			"pos": [ 1.125, -0.4375, 2.4375 ],
-			"hubsize": 0.25,
-			"radius": 0.5625,
-			"width": 0.375,
-			"powered": true,
-			"mirror": true
-		}
-	},
-	"PartSlots":{
-		"engine":[],
-		"interior":[],
-		"seats":[],
-		"doors":[],
-        	"hood": [ 0.0, 0.5, -1.75 ],
-		"steering_wheel":[],
-        	"lights_front": [ -1.125, 0.25, -2.71875 ],
-        	"lights_rear": [ -1.25, 0.25, 3.3125 ],
-		"license_plate_front": [ 0, -0.28125, -2.725, "license_plate" ],
-		"bumper_front": [ 0.0, -0.25, -2.75 ],
-		"cargo": [ 0.0, 0.0, 2.5, "cargo", 0.75 ],
-        	"exhaust": [ 0.0, -0.125, 2.875, "exhaust", 0.5 ],
-        	"roof_lights": [ 0.0, 1.375, -0.25, "roof_lights", 0.25 ],
-        	"rear_window": [ 0.0, 0.875, 1.8125, "rear_window", 0.5 ],
-        	"bumper_rear": [ 0.0, -0.0625, 3.3125 ],
-        	"trailer_hitch": [ 0.0, -0.0625, 3.3125 ]
-	},
-	"InstalledParts": {
-		"left_front_wheel": "fvp:c12_wheel",
-		"right_front_wheel": "fvp:c12_wheel",
-		"left_back_wheel": "fvp:c12_wheel",
-		"right_back_wheel": "fvp:c12_wheel",
-		"vehicle:engine": "gep:engine_diesel",
-		"vehicle:seats": "fvp:c12_seats",
-		"vehicle:doors": "fvp:c12_doors",
-		"vehicle:hood": "fvp:c12_hood",
-		"vehicle:interior": "fvp:c12_interior",
-		"vehicle:steering_wheel": "fvp:c12_steering_wheel",
-		"vehicle:lights_front": "fvp:c12_front_lights",
-		"vehicle:lights_rear": "fvp:c12_rear_lights",
-		"interior:pass_storage_0": "fvp:c12_pass_storage",
-		"interior:pass_storage_1": "fvp:c12_pass_storage"
-	},
-	"Catalog":{
-		"blue":{
-			"name": "Factory Blue",
-			"colors":{
-				"primary": "4066ff"
-			}
-		},
-		"green":{
-			"name": "Factory Green",
-			"colors":{
-				"primary": "0e5e05"
-			}
-		},
-		"offroad_basic":{
-			"name": "Offroad Basic",
-			"description":[
-				"Basic offroad variant of the C12",
-				"Does not include preinstalled spotlights."
-			],
-			"colors":{
-				"primary": "8f2d00",
-				"secondary": "ab3702"
-			},
-			"parts": {
-				"vehicle:rear_window": "fvp:c12_rear_window_net",
-				"vehicle:bumper_front": "fvp:c12_bumper_front",
-				"vehicle:bumper_rear": "fvp:c12_bumper_rear_base",
-				"bumper_rear:bumper_rear_upper": "fvp:c12_bumper_rear_upper",
-				"vehicle:cargo": "fvp:c12_cargo3"
-			},
-			"recipe":[
-				"minecraft:iron_block"
-			]
-		},
-		"offroad_classic":{
-			"name": "Offroad Classic",
-			"description":[
-				"Classic offroad variant of the C12",
-				"Include preinstalled spotlights."
-			],
-			"colors":{
-				"primary": "993e2c"
-			},
-			"parts": {
-				"vehicle:roof_lights": "fvp:c12_roof_lightbar",
-				"vehicle:rear_window": "fvp:c12_rear_window_net",
-				"vehicle:bumper_front": "fvp:c12_bumper_front",
-				"vehicle:bumper_rear": "fvp:c12_bumper_rear_base",
-				"bumper_rear:bumper_rear_upper": "fvp:c12_bumper_rear_upper",
-				"bumper_front:bumper_spotlight_0": "fvp:c12_spotlight",
-				"bumper_front:bumper_spotlight_1": "fvp:c12_spotlight",
-				"bumper_front:bumper_spotlight_2": "fvp:c12_spotlight",
-				"bumper_front:bumper_spotlight_3": "fvp:c12_spotlight",
-				"roof_lights:roof_lightbar_1": "fvp:c12_spotlight",
-				"roof_lights:roof_lightbar_2": "fvp:c12_spotlight",
-				"roof_lights:roof_lightbar_4": "fvp:c12_spotlight",
-				"roof_lights:roof_lightbar_5": "fvp:c12_spotlight",
-				"vehicle:cargo": "fvp:c12_cargo2"
-			},
-			"recipe":[
-				"minecraft:iron_block"
-			]
-		}
-	},
-    "SimplePhysics":{
-    	"MaxPositiveThrottle": 1.5,
-    	"MaxNegativeThrottle": 0.8,
-    	"TurnLeftModifier": 1,
-    	"TurnRightModifier": 1
-    },
-    "LiftingPoints":{
-    	"left_front": {
-		"pos": [ -1.375, -0.5, -1.1875 ]
-		"pair": "left_rear"
-	},
-    	"left_rear": {
-		"pos": [ -1.375, -0.5, 1.625 ],
-		"pair": "left_front"
-	}
-    	"right_front":{
-		"pos": [ 1.375, -0.5, -1.1875 ],
-		"pair": "right_rear"
-	}
-    	"right_rear": {
-		"pos": [ 1.375, -0.5, 1.625 ]
-		"pair": "right_front"
-	}
-    },
-  "InteractZones":{
-    "default": [ 0, 0, 0, 6 ]
-}
+{ 
+    "ID": "c12", 
+    "Addon": "fvp", 
+    "Name": "FVP Docici [C12]", 
+    "Model": "fvp:models/vehicle/c12.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "primary fvtm:rgb_primary", 
+            "door_front_left fvtm:rgb_primary", 
+            "door_front_right fvtm:rgb_primary", 
+            "door_rear_left fvtm:rgb_primary", 
+            "door_rear_right fvtm:rgb_primary", 
+            "door_boot fvtm:rgb_primary", 
+            "door_boot fvtm:attribute_rotator c12_boot true 0 90 1 0", 
+            "door_front_left fvtm:attribute_rotator c12_door_fl true -60 0 -1 1", 
+            "door_front_right fvtm:attribute_rotator c12_door_fr true 0 60 1 1", 
+            "door_front_left_mirror fvtm:attribute_rotator c12_door_fl true -60 0 -1 1", 
+            "door_front_right_mirror fvtm:attribute_rotator c12_door_fr true 0 60 1 1", 
+            "door_rear_left fvtm:attribute_rotator c12_door_rl true -60 0 -1 1", 
+            "door_rear_right fvtm:attribute_rotator c12_door_rr true 0 60 1 1"
+        ]
+    }, 
+    "ColorChannels": { 
+        "primary": "#fdfdfd", 
+        "secondary": "#fdfdfd", 
+        "seats": "#fdfdfd"
+    }, 
+    "Textures": [ 
+        "Default;fvp:textures/cars/c12.png", 
+        "High Noise;fvp:textures/cars/c12_alt1.png"
+    ], 
+    "Categories": [ 
+        "car", 
+        "offroad"
+    ], 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1000
+        }, 
+        "windshield_wipers": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": "driver", 
+            "interact": { 
+                "default": [ 
+                    -0.421875, 
+                    0.59375, 
+                    -0.515625, 
+                    0.0625
+                ]
+            }
+        }, 
+        "turn_lights": { 
+            "type": "tristate", 
+            "value": "null", 
+            "access": "driver", 
+            "interact": { 
+                "default": [ 
+                    -0.953125, 
+                    0.59375, 
+                    -0.515625, 
+                    0.0625
+                ]
+            }
+        }, 
+        "lights": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": "driver", 
+            "interact": { 
+                "default": [ 
+                    -1.265625, 
+                    0.5625, 
+                    -0.5625, 
+                    0.03125
+                ]
+            }
+        }, 
+        "lights_long": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": "driver", 
+            "interact": { 
+                "default": [ 
+                    -1.265625, 
+                    0.46875, 
+                    -0.5625, 
+                    0.03125
+                ]
+            }
+        }, 
+        "lights_fog": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": "driver", 
+            "interact": { 
+                "default": [ 
+                    -1.171875, 
+                    0.5625, 
+                    -0.5625, 
+                    0.03125
+                ]
+            }
+        }, 
+        "lights_extra": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": "driver", 
+            "interact": { 
+                "default": [ 
+                    -1.171875, 
+                    0.46875, 
+                    -0.5625, 
+                    0.03125
+                ]
+            }
+        }, 
+        "warning_lights": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": "driver", 
+            "interact": { 
+                "default": [ 
+                    -0.21875, 
+                    0.5625, 
+                    -0.5625, 
+                    0.03125
+                ]
+            }
+        }, 
+        "c12_door_fl": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver", 
+                "external"
+            ], 
+            "interact": { 
+                "external": [ 
+                    -1.453125, 
+                    0.40625, 
+                    0.25, 
+                    0.125
+                ]
+            }
+        }, 
+        "c12_door_fr": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": "pass_front"
+        }, 
+        "c12_door_rl": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": "pass_rear_left"
+        }, 
+        "c12_door_rr": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": "pass_rear_right"
+        }, 
+        "c12_boot": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": "driver"
+        }
+    }, 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "pos": [ 
+                -1.125, 
+                -0.4375, 
+                -2.0625
+            ], 
+            "hubsize": 0.25, 
+            "radius": 0.5625, 
+            "width": 0.375, 
+            "steering": true
+        }, 
+        "right_front_wheel": { 
+            "pos": [ 
+                1.125, 
+                -0.4375, 
+                -2.0625
+            ], 
+            "hubsize": 0.25, 
+            "radius": 0.5625, 
+            "width": 0.375, 
+            "steering": true, 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "pos": [ 
+                -1.125, 
+                -0.4375, 
+                2.4375
+            ], 
+            "hubsize": 0.25, 
+            "radius": 0.5625, 
+            "width": 0.375, 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "pos": [ 
+                1.125, 
+                -0.4375, 
+                2.4375
+            ], 
+            "hubsize": 0.25, 
+            "radius": 0.5625, 
+            "width": 0.375, 
+            "powered": true, 
+            "mirror": true
+        }
+    }, 
+    "PartSlots": { 
+        "engine": {}, 
+        "interior": {}, 
+        "seats": {}, 
+        "doors": {}, 
+        "hood": { 
+            "pos": [ 
+                0.0, 
+                0.5, 
+                -1.75
+            ]
+        }, 
+        "steering_wheel": {}, 
+        "lights_front": { 
+            "pos": [ 
+                -1.125, 
+                0.25, 
+                -2.71875
+            ]
+        }, 
+        "lights_rear": { 
+            "pos": [ 
+                -1.25, 
+                0.25, 
+                3.3125
+            ]
+        }, 
+        "license_plate_front": { 
+            "pos": [ 
+                0.0, 
+                -0.28125, 
+                -2.725
+            ], 
+            "type": "license_plate"
+        }, 
+        "bumper_front": { 
+            "pos": [ 
+                0.0, 
+                -0.25, 
+                -2.75
+            ]
+        }, 
+        "cargo": { 
+            "pos": [ 
+                0.0, 
+                0.0, 
+                2.5
+            ], 
+            "type": "cargo", 
+            "radius": 0.75
+        }, 
+        "exhaust": { 
+            "pos": [ 
+                0.0, 
+                -0.125, 
+                2.875
+            ], 
+            "type": "exhaust", 
+            "radius": 0.5
+        }, 
+        "roof_lights": { 
+            "pos": [ 
+                0.0, 
+                1.375, 
+                -0.25
+            ], 
+            "type": "roof_lights", 
+            "radius": 0.25
+        }, 
+        "rear_window": { 
+            "pos": [ 
+                0.0, 
+                0.875, 
+                1.8125
+            ], 
+            "type": "rear_window", 
+            "radius": 0.5
+        }, 
+        "bumper_rear": { 
+            "pos": [ 
+                0.0, 
+                -0.0625, 
+                3.3125
+            ]
+        }, 
+        "trailer_hitch": { 
+            "pos": [ 
+                0.0, 
+                -0.0625, 
+                3.3125
+            ]
+        }
+    }, 
+    "InstalledParts": { 
+        "left_front_wheel": "fvp:c12_wheel", 
+        "right_front_wheel": "fvp:c12_wheel", 
+        "left_back_wheel": "fvp:c12_wheel", 
+        "right_back_wheel": "fvp:c12_wheel", 
+        "vehicle:engine": "gep:engine_diesel", 
+        "vehicle:seats": "fvp:c12_seats", 
+        "vehicle:doors": "fvp:c12_doors", 
+        "vehicle:hood": "fvp:c12_hood", 
+        "vehicle:interior": "fvp:c12_interior", 
+        "vehicle:steering_wheel": "fvp:c12_steering_wheel", 
+        "vehicle:lights_front": "fvp:c12_front_lights", 
+        "vehicle:lights_rear": "fvp:c12_rear_lights", 
+        "interior:pass_storage_0": "fvp:c12_pass_storage", 
+        "interior:pass_storage_1": "fvp:c12_pass_storage"
+    }, 
+    "Catalog": { 
+        "blue": { 
+            "name": "Factory Blue", 
+            "colors": { 
+                "primary": "4066ff"
+            }
+        }, 
+        "green": { 
+            "name": "Factory Green", 
+            "colors": { 
+                "primary": "0e5e05"
+            }
+        }, 
+        "offroad_basic": { 
+            "name": "Offroad Basic", 
+            "description": [ 
+                "Basic offroad variant of the C12", 
+                "Does not include preinstalled spotlights."
+            ], 
+            "colors": { 
+                "primary": "8f2d00", 
+                "secondary": "ab3702"
+            }, 
+            "parts": { 
+                "vehicle:rear_window": "fvp:c12_rear_window_net", 
+                "vehicle:bumper_front": "fvp:c12_bumper_front", 
+                "vehicle:bumper_rear": "fvp:c12_bumper_rear_base", 
+                "bumper_rear:bumper_rear_upper": "fvp:c12_bumper_rear_upper", 
+                "vehicle:cargo": "fvp:c12_cargo3"
+            }, 
+            "recipe": [ 
+                "minecraft:iron_block"
+            ]
+        }, 
+        "offroad_classic": { 
+            "name": "Offroad Classic", 
+            "description": [ 
+                "Classic offroad variant of the C12", 
+                "Include preinstalled spotlights."
+            ], 
+            "colors": { 
+                "primary": "993e2c"
+            }, 
+            "parts": { 
+                "vehicle:roof_lights": "fvp:c12_roof_lightbar", 
+                "vehicle:rear_window": "fvp:c12_rear_window_net", 
+                "vehicle:bumper_front": "fvp:c12_bumper_front", 
+                "vehicle:bumper_rear": "fvp:c12_bumper_rear_base", 
+                "bumper_rear:bumper_rear_upper": "fvp:c12_bumper_rear_upper", 
+                "bumper_front:bumper_spotlight_0": "fvp:c12_spotlight", 
+                "bumper_front:bumper_spotlight_1": "fvp:c12_spotlight", 
+                "bumper_front:bumper_spotlight_2": "fvp:c12_spotlight", 
+                "bumper_front:bumper_spotlight_3": "fvp:c12_spotlight", 
+                "roof_lights:roof_lightbar_1": "fvp:c12_spotlight", 
+                "roof_lights:roof_lightbar_2": "fvp:c12_spotlight", 
+                "roof_lights:roof_lightbar_4": "fvp:c12_spotlight", 
+                "roof_lights:roof_lightbar_5": "fvp:c12_spotlight", 
+                "vehicle:cargo": "fvp:c12_cargo2"
+            }, 
+            "recipe": [ 
+                "minecraft:iron_block"
+            ]
+        }
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.5, 
+        "MaxNegativeThrottle": 0.8, 
+        "TurnLeftModifier": 1, 
+        "TurnRightModifier": 1
+    }, 
+    "LiftingPoints": { 
+        "left_front": { 
+            "pos": [ 
+                -1.375, 
+                -0.5, 
+                -1.1875
+            ], 
+            "pair": "left_rear"
+        }, 
+        "left_rear": { 
+            "pos": [ 
+                -1.375, 
+                -0.5, 
+                1.625
+            ], 
+            "pair": "left_front"
+        }, 
+        "right_front": { 
+            "pos": [ 
+                1.375, 
+                -0.5, 
+                -1.1875
+            ], 
+            "pair": "right_rear"
+        }, 
+        "right_rear": { 
+            "pos": [ 
+                1.375, 
+                -0.5, 
+                1.625
+            ], 
+            "pair": "right_front"
+        }
+    }, 
+    "InteractZones": { 
+        "default": [ 
+            0, 
+            0, 
+            0, 
+            6
+        ]
+    }
 }
