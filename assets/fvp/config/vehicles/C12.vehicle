@@ -43,12 +43,7 @@
             "value": false, 
             "access": "driver", 
             "interact": { 
-                "default": [ 
-                    -0.421875, 
-                    0.59375, 
-                    -0.515625, 
-                    0.0625
-                ]
+                "default": [ -0.421875, 0.59375, -0.515625, 0.0625 ]
             }
         }, 
         "turn_lights": { 
@@ -56,12 +51,7 @@
             "value": "null", 
             "access": "driver", 
             "interact": { 
-                "default": [ 
-                    -0.953125, 
-                    0.59375, 
-                    -0.515625, 
-                    0.0625
-                ]
+                "default": [ -0.953125, 0.59375, -0.515625, 0.0625 ]
             }
         }, 
         "lights": { 
@@ -69,12 +59,7 @@
             "value": false, 
             "access": "driver", 
             "interact": { 
-                "default": [ 
-                    -1.265625, 
-                    0.5625, 
-                    -0.5625, 
-                    0.03125
-                ]
+                "default": [ -1.265625, 0.5625, -0.5625, 0.03125 ]
             }
         }, 
         "lights_long": { 
@@ -82,12 +67,7 @@
             "value": false, 
             "access": "driver", 
             "interact": { 
-                "default": [ 
-                    -1.265625, 
-                    0.46875, 
-                    -0.5625, 
-                    0.03125
-                ]
+                "default": [ -1.265625, 0.46875, -0.5625, 0.03125 ]
             }
         }, 
         "lights_fog": { 
@@ -95,12 +75,7 @@
             "value": false, 
             "access": "driver", 
             "interact": { 
-                "default": [ 
-                    -1.171875, 
-                    0.5625, 
-                    -0.5625, 
-                    0.03125
-                ]
+                "default": [ -1.171875, 0.5625, -0.5625, 0.03125 ]
             }
         }, 
         "lights_extra": { 
@@ -108,12 +83,7 @@
             "value": false, 
             "access": "driver", 
             "interact": { 
-                "default": [ 
-                    -1.171875, 
-                    0.46875, 
-                    -0.5625, 
-                    0.03125
-                ]
+                "default": [ -1.171875, 0.46875, -0.5625, 0.03125 ]
             }
         }, 
         "warning_lights": { 
@@ -121,12 +91,7 @@
             "value": false, 
             "access": "driver", 
             "interact": { 
-                "default": [ 
-                    -0.21875, 
-                    0.5625, 
-                    -0.5625, 
-                    0.03125
-                ]
+                "default": [ -0.21875, 0.5625, -0.5625, 0.03125 ]
             }
         }, 
         "c12_door_fl": { 
@@ -138,12 +103,7 @@
                 "external"
             ], 
             "interact": { 
-                "external": [ 
-                    -1.453125, 
-                    0.40625, 
-                    0.25, 
-                    0.125
-                ]
+                "external": [ -1.453125, 0.40625, 0.25, 0.125 ]
             }
         }, 
         "c12_door_fr": { 
@@ -173,22 +133,14 @@
     }, 
     "WheelPositions": { 
         "left_front_wheel": { 
-            "pos": [ 
-                -1.125, 
-                -0.4375, 
-                -2.0625
-            ], 
+            "pos": [ -1.125, -0.4375, -2.0625 ], 
             "hubsize": 0.25, 
             "radius": 0.5625, 
             "width": 0.375, 
             "steering": true
         }, 
         "right_front_wheel": { 
-            "pos": [ 
-                1.125, 
-                -0.4375, 
-                -2.0625
-            ], 
+            "pos": [ 1.125, -0.4375, -2.0625 ], 
             "hubsize": 0.25, 
             "radius": 0.5625, 
             "width": 0.375, 
@@ -196,22 +148,14 @@
             "mirror": true
         }, 
         "left_back_wheel": { 
-            "pos": [ 
-                -1.125, 
-                -0.4375, 
-                2.4375
-            ], 
+            "pos": [ -1.125, -0.4375, 2.4375 ], 
             "hubsize": 0.25, 
             "radius": 0.5625, 
             "width": 0.375, 
             "powered": true
         }, 
         "right_back_wheel": { 
-            "pos": [ 
-                1.125, 
-                -0.4375, 
-                2.4375
-            ], 
+            "pos": [ 1.125, -0.4375, 2.4375 ], 
             "hubsize": 0.25, 
             "radius": 0.5625, 
             "width": 0.375, 
@@ -225,91 +169,47 @@
         "seats": {}, 
         "doors": {}, 
         "hood": { 
-            "pos": [ 
-                0.0, 
-                0.5, 
-                -1.75
-            ]
+            "pos": [ 0.0, 0.5, -1.75 ]
         }, 
         "steering_wheel": {}, 
         "lights_front": { 
-            "pos": [ 
-                -1.125, 
-                0.25, 
-                -2.71875
-            ]
+            "pos": [ -1.125, 0.25, -2.71875 ]
         }, 
         "lights_rear": { 
-            "pos": [ 
-                -1.25, 
-                0.25, 
-                3.3125
-            ]
+            "pos": [ -1.25, 0.25, 3.3125 ]
         }, 
         "license_plate_front": { 
-            "pos": [ 
-                0.0, 
-                -0.28125, 
-                -2.725
-            ], 
+            "pos": [ 0.0, -0.28125, -2.725 ], 
             "type": "license_plate"
         }, 
         "bumper_front": { 
-            "pos": [ 
-                0.0, 
-                -0.25, 
-                -2.75
-            ]
+            "pos": [ 0.0, -0.25, -2.75 ]
         }, 
         "cargo": { 
-            "pos": [ 
-                0.0, 
-                0.0, 
-                2.5
-            ], 
+            "pos": [ 0.0, 0.0, 2.5 ], 
             "type": "cargo", 
             "radius": 0.75
         }, 
         "exhaust": { 
-            "pos": [ 
-                0.0, 
-                -0.125, 
-                2.875
-            ], 
+            "pos": [ 0.0, -0.125, 2.875 ], 
             "type": "exhaust", 
             "radius": 0.5
         }, 
         "roof_lights": { 
-            "pos": [ 
-                0.0, 
-                1.375, 
-                -0.25
-            ], 
+            "pos": [ 0.0, 1.375, -0.25 ], 
             "type": "roof_lights", 
             "radius": 0.25
         }, 
         "rear_window": { 
-            "pos": [ 
-                0.0, 
-                0.875, 
-                1.8125
-            ], 
+            "pos": [ 0.0, 0.875, 1.8125 ], 
             "type": "rear_window", 
             "radius": 0.5
         }, 
         "bumper_rear": { 
-            "pos": [ 
-                0.0, 
-                -0.0625, 
-                3.3125
-            ]
+            "pos": [ 0.0, -0.0625, 3.3125 ]
         }, 
         "trailer_hitch": { 
-            "pos": [ 
-                0.0, 
-                -0.0625, 
-                3.3125
-            ]
+            "pos": [ 0.0, -0.0625, 3.3125 ]
         }
     }, 
     "InstalledParts": { 
@@ -400,44 +300,23 @@
     }, 
     "LiftingPoints": { 
         "left_front": { 
-            "pos": [ 
-                -1.375, 
-                -0.5, 
-                -1.1875
-            ], 
+            "pos": [ -1.375, -0.5, -1.1875 ], 
             "pair": "left_rear"
         }, 
         "left_rear": { 
-            "pos": [ 
-                -1.375, 
-                -0.5, 
-                1.625
-            ], 
+            "pos": [ -1.375, -0.5, 1.625 ], 
             "pair": "left_front"
         }, 
         "right_front": { 
-            "pos": [ 
-                1.375, 
-                -0.5, 
-                -1.1875
-            ], 
+            "pos": [ 1.375, -0.5, -1.1875 ], 
             "pair": "right_rear"
         }, 
         "right_rear": { 
-            "pos": [ 
-                1.375, 
-                -0.5, 
-                1.625
-            ], 
+            "pos": [ 1.375, -0.5, 1.625 ], 
             "pair": "right_front"
         }
     }, 
     "InteractZones": { 
-        "default": [ 
-            0, 
-            0, 
-            0, 
-            6
-        ]
+        "default": [ 0, 0, 0, 6 ]
     }
 }
