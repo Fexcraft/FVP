@@ -1,31 +1,36 @@
-{
-    "ID": "c12_wheel",
-    "Addon": "fvp",
-    "Name": "C12 Wheel",
-    "Model": "fvp:models/part/c12_wheel.fmf",
-    "ModelData": {
-    	"Programs":[
-    		"wheel fvtm:wheel_auto_all"
-    	]
-    },
-    "Category": "wheel",
-	"Functions":{
-		"fvtm:wheel": {},
-		"fvtm:tire":{
-    		"stiffness": 6,
-    		"steering_stiffness": 5.8,
-    		"step_height": 1.2
-		}
-	},
-    "Texture": "Default;fvp:textures/wheels/c12_wheel.png",
-    "Installation":{
-    	"Handler": "wheel",
-        "Removable": true,
-        "Radius": 0.5625,
-		"Width": 0.375,
-		"HubSize": 0.25
-    },
-	"AttributeModifiers":{
-		"weight": "+30"
-	}
+{ 
+    "ID": "c12_wheel", 
+    "Addon": "fvp", 
+    "Name": "C12 Wheel", 
+    "Model": "fvp:models/part/c12_wheel.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "wheel fvtm:wheel_auto_all"
+        ]
+    }, 
+    "Category": [ 
+        "wheel"
+    ], 
+    "Functions": { 
+        "fvtm:wheel": {}, 
+        "fvtm:tire": { 
+            "stiffness": 6, 
+            "steering_stiffness": 5.8, 
+            "step_height": 1.2
+        }
+    }, 
+    "Texture": "Default;fvp:textures/wheels/c12_wheel.png", 
+    "Installation": { 
+        "Handler": "wheel", 
+        "Removable": true, 
+        "Radius": 0.5625, 
+        "Width": 0.375, 
+        "HubSize": 0.25
+    }, 
+    "AttributeModifiers": { 
+        "weight": "+30"
+    }, 
+    "Textures": [ 
+        "Default;fvp:textures/wheels/c12_wheel.png"
+    ]
 }
