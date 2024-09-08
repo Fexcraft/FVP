@@ -1,0 +1,111 @@
+{ 
+    "Addon": "fvp", 
+    "Name": "Trailer Base", 
+    "Model": "fvp:models/vehicle/tr1", 
+    "Texture": "fvp:textures/trailers/tr1_base.png", 
+    "Category": "trailer", 
+    "WheelPositions": { 
+        "left_back_wheel": { 
+            "radius": 0.75, 
+            "pos": [ -1.125, 0.125, 7.90625 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.75, 
+            "pos": [ 1.125, 0.125, 7.90625 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel1": { 
+            "radius": 0.75, 
+            "pos": [ -1.125, 0.125, 9.71875 ]
+        }, 
+        "right_back_wheel1": { 
+            "radius": 0.75, 
+            "pos": [ 1.125, 0.125, 9.71875 ], 
+            "mirror": true
+        }, 
+        "left_back_wheel2": { 
+            "radius": 0.75, 
+            "pos": [ -1.125, 0.125, 11.53125 ]
+        }, 
+        "right_back_wheel2": { 
+            "radius": 0.75, 
+            "pos": [ 1.125, 0.125, 11.53125 ], 
+            "mirror": true
+        }
+    }, 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 2540
+        }, 
+        "collision_range": { 
+            "type": "float", 
+            "value": 16
+        }
+    }, 
+    "Trailer": true, 
+    "LiftingPoints": { 
+        "left_front0": [ 
+            -1.375, 
+            1.0625, 
+            -0.875, 
+            "left_front1"
+        ], 
+        "left_front1": [ 
+            -1.375, 
+            1.0625, 
+            1.0, 
+            "left_front0"
+        ], 
+        "left_rear0": [ 
+            -1.5, 
+            1.125, 
+            12.625, 
+            "left_rear1", 
+            2
+        ], 
+        "left_rear1": [ 
+            -1.5, 
+            1.125, 
+            14.5, 
+            "left_rear0", 
+            2
+        ], 
+        "right_front0": [ 
+            1.375, 
+            1.0625, 
+            -0.875, 
+            "right_front1"
+        ], 
+        "right_front1": [ 
+            1.375, 
+            1.0625, 
+            1.0, 
+            "right_front0"
+        ], 
+        "right_rear0": [ 
+            1.5, 
+            1.125, 
+            12.625, 
+            "right_rear1", 
+            2
+        ], 
+        "right_rear1": [ 
+            1.5, 
+            1.125, 
+            14.5, 
+            "right_rear0", 
+            2
+        ]
+    }, 
+    "ID": "tr1", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff"
+    }, 
+    "InstalledParts": { 
+        "vehicle:license_plate": "fvp:tr1_license_plate", 
+        "vehicle:lights": "fvp:tr1_lights"
+    }, 
+    "SimplePhysics": {}
+}

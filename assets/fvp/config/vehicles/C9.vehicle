@@ -1,0 +1,103 @@
+{ 
+    "Addon": "fvp", 
+    "Name": "Sentinel (C9)", 
+    "Model": "fvp:models/vehicle/c9", 
+    "Textures": [ 
+        "Default;fvp:textures/cars/c9.png", 
+        "Noise;fvp:textures/cars/c9_alt0.png", 
+        "Rand00;fvp:textures/cars/c9_alt1.png", 
+        "Rand01;fvp:textures/cars/c9_alt2.png"
+    ], 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ -1.0, -0.0, -2.0625 ], 
+            "powered": true
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.4375, 
+            "steering": true, 
+            "pos": [ 1.0, -0.0, -2.0625 ], 
+            "mirror": true, 
+            "powered": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ -1.0, -0.0, 2.0625 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.4375, 
+            "pos": [ 1.0, -0.0, 2.0625 ], 
+            "mirror": true
+        }
+    }, 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1500
+        }, 
+        "exhaust": { 
+            "type": "vector3", 
+            "value": [ -57, 7.5, -14 ], 
+            "editable": false, 
+            "group": "exhaust", 
+            "mod-dep": "fvtm_potr"
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -1.125, 
+            -0.3125, 
+            -1.25, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -1.125, 
+            -0.3125, 
+            1.3125, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            1.125, 
+            -0.3125, 
+            -1.25, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            1.125, 
+            -0.3125, 
+            1.3125, 
+            "right_front"
+        ]
+    }, 
+    "PartSlots": { 
+        "license_plate_front": [ 
+            -0.0, 
+            0.1125, 
+            -3.2351563, 
+            "license_plate"
+        ], 
+        "steering_wheel": {}, 
+        "interior": {}, 
+        "seats": {}
+    }, 
+    "ID": "sentinel", 
+    "ColorChannels": { 
+        "primary": "#A8A8A8", 
+        "secondary": "#C2C2C2"
+    }, 
+    "InstalledParts": { 
+        "vehicle:interior": "fvp:c9_interior", 
+        "vehicle:seats": "fvp:c9_seats", 
+        "vehicle:steering_wheel": "fvp:c9_steering_wheel", 
+        "vehicle:front_bumper": "fvp:c9_bumper", 
+        "vehicle:rear_bumper": "fvp:c9_bumper"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.98, 
+        "MaxNegativeThrottle": 0.89, 
+        "TurnLeftModifier": 0.7, 
+        "TurnRightModifier": 0.7
+    }
+}

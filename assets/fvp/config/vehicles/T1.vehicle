@@ -1,0 +1,130 @@
+{ 
+    "Addon": "fvp", 
+    "Name": "T1 [P Variant]", 
+    "Model": "fvp:models/vehicle/t1p", 
+    "Textures": [ 
+        "Default;fvp:textures/trucks/t1p.png", 
+        "Classic;fvp:textures/trucks/t1pc.png"
+    ], 
+    "Category": "truck,lorry", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 2567.8
+        }, 
+        "fuel_capacity": { 
+            "type": "integer", 
+            "value": 100000
+        }, 
+        "t1_door_left": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver"
+            ]
+        }, 
+        "t1_door_right": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "pass_front_right"
+            ]
+        }
+    }, 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.625, 
+            "steering": true, 
+            "pos": [ -1.0625, -0.0, -2.1875 ], 
+            "powered": true
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.625, 
+            "steering": true, 
+            "pos": [ 1.0625, -0.0, -2.1875 ], 
+            "mirror": true, 
+            "powered": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.625, 
+            "pos": [ -1.0625, -0.0, 4.4375 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.625, 
+            "pos": [ 1.0625, -0.0, 4.4375 ], 
+            "mirror": true
+        }, 
+        "exhaust": { 
+            "type": "vector3", 
+            "value": [ 20, -2, 23 ], 
+            "editable": false, 
+            "group": "exhaust", 
+            "mod-dep": "fvtm_potr", 
+            "pos": [ -0.0, -0.0, -0.0 ]
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -1.375, 
+            -0.125, 
+            -3.25, 
+            "none"
+        ], 
+        "right_front": [ 
+            1.375, 
+            -0.125, 
+            -3.25, 
+            "none"
+        ], 
+        "right_rear0": [ 
+            0.6875, 
+            0.0625, 
+            2.25, 
+            "right_rear1", 
+            11
+        ], 
+        "right_rear1": [ 
+            0.6875, 
+            0.0625, 
+            3.25, 
+            "right_rear0", 
+            11
+        ], 
+        "left_rear0": [ 
+            -0.6875, 
+            0.0625, 
+            2.25, 
+            "left_rear1", 
+            11
+        ], 
+        "left_rear1": [ 
+            -0.6875, 
+            0.0625, 
+            3.25, 
+            "left_rear0", 
+            11
+        ]
+    }, 
+    "ID": "t1p", 
+    "ColorChannels": { 
+        "primary": "#A8A8A8", 
+        "secondary": "#C2C2C2"
+    }, 
+    "InstalledParts": { 
+        "vehicle:front_seats": "fvp:t1_front_seats", 
+        "right_back_wheel": "fvp:t1_back_wheel", 
+        "left_back_wheel": "fvp:t1_back_wheel", 
+        "right_front_wheel": "fvp:t1_front_wheel", 
+        "left_front_wheel": "fvp:t1_front_wheel", 
+        "vehicle:steering_wheel": "fvp:t1_steering_wheel", 
+        "vehicle:lights": "fvp:t1_lights"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.2, 
+        "MaxNegativeThrottle": 0.2, 
+        "TurnLeftModifier": 1.5, 
+        "TurnRightModifier": 1.5
+    }
+}

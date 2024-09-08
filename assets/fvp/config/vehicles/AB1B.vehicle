@@ -1,0 +1,176 @@
+{ 
+    "Addon": "fvp", 
+    "Name": "AB1 Variant B", 
+    "Model": "fvp:models/vehicle/ab1b", 
+    "Textures": [ 
+        "Default;fvp:textures/busses/ab1b.png", 
+        "Imperial Blue;fvp:textures/busses/ab1c.png", 
+        "SKR Trans;fvp:textures/busses/ab1d.png"
+    ], 
+    "Category": "autobus,bus", 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.75, 
+            "steering": true, 
+            "pos": [ -1.5625, 0.125, -4.25 ], 
+            "powered": true
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.75, 
+            "steering": true, 
+            "pos": [ 1.5625, 0.125, -4.25 ], 
+            "mirror": true, 
+            "powered": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.75, 
+            "pos": [ -1.5625, 0.125, 4.375 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.75, 
+            "pos": [ 1.5625, 0.125, 4.375 ], 
+            "mirror": true
+        }
+    }, 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 3548.45
+        }, 
+        "ab1b_cargobay_left": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver"
+            ]
+        }, 
+        "ab1b_cargobay_right": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver"
+            ]
+        }, 
+        "collision_range": { 
+            "type": "float", 
+            "value": 7
+        }, 
+        "exhaust": { 
+            "type": "vector3", 
+            "value": [ -111, 0.5, 27.25 ], 
+            "editable": false, 
+            "group": "exhaust", 
+            "mod-dep": "fvtm_potr"
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front0": [ 
+            -1.9375, 
+            -0.125, 
+            -3.125, 
+            "left_front1"
+        ], 
+        "left_front1": [ 
+            -1.9375, 
+            -0.125, 
+            -1.375, 
+            "left_front0"
+        ], 
+        "left_rear0": [ 
+            -1.9375, 
+            -0.125, 
+            1.5, 
+            "left_rear1"
+        ], 
+        "left_rear1": [ 
+            -1.9375, 
+            -0.125, 
+            3.25, 
+            "left_rear0"
+        ], 
+        "right_front0": [ 
+            1.9375, 
+            -0.125, 
+            -3.125, 
+            "right_front1"
+        ], 
+        "right_front1": [ 
+            1.9375, 
+            -0.125, 
+            -1.375, 
+            "right_front0"
+        ], 
+        "right_rear0": [ 
+            1.9375, 
+            -0.125, 
+            1.5, 
+            "right_rear1"
+        ], 
+        "right_rear1": [ 
+            1.9375, 
+            -0.125, 
+            3.25, 
+            "right_rear0"
+        ]
+    }, 
+    "PartSlots": { 
+        "license_plate_front": [ 
+            -0.0, 
+            -0.03125, 
+            -6.3375, 
+            "license_plate", 
+            4, 
+            [ 0, 0, 15 ]
+        ], 
+        "license_plate_rear": [ 
+            -0.0, 
+            0.3125, 
+            6.94375, 
+            "license_plate", 
+            4, 
+            [ 90, 180, 0 ]
+        ], 
+        "side_ad_left": [ 
+            -1.975, 
+            1.1875, 
+            -0.125, 
+            "ad_64x12", 
+            8, 
+            [ 0, 0, 0 ]
+        ], 
+        "side_ad_right": [ 
+            1.975, 
+            1.1875, 
+            -0.125, 
+            "ad_64x12", 
+            8, 
+            [ 0, 180, 0 ]
+        ], 
+        "rear_ad": [ 
+            -0.0, 
+            2.3125, 
+            6.88125, 
+            "ad_32x16", 
+            8, 
+            [ 5, -90, 0 ]
+        ], 
+        "lights": {}
+    }, 
+    "ID": "ab1", 
+    "ColorChannels": { 
+        "primary": "#EFEFEF", 
+        "secondary": "#FAFAFA"
+    }, 
+    "InstalledParts": { 
+        "vehicle:steering_wheel": "fvp:ab1_steering_wheel", 
+        "vehicle:driver_seat": "fvp:ab1_driver_seat"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.1, 
+        "MaxNegativeThrottle": 0.5, 
+        "TurnLeftModifier": 1.1, 
+        "TurnRightModifier": 1.1
+    }
+}

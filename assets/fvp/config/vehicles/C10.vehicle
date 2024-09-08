@@ -1,104 +1,143 @@
-{
-    "ID": "fvp:c10",
-    "Addon": "fvtm:fvp",
-    "Name": "C10",
-    "Model": "fvp:models/vehicle/c10.fmf",
-    "ModelData":{
-    	"Programs":[
-    		"primary fvtm:rgb_primary"
-    	]
-    },
-    "ColorChannels":{
-    	"primary": "#A8A8A8",
-    	"secondary": "#C2C2C2"
-    },
-    "Texture": "Default;fvp:textures/cars/c10.png",
-    "Attributes": {
-		"weight": {
-			"type": "float",
-			"value": 1280
-		},
-    	"c10_trunk": {
-			"type": "boolean",
-			"value": false,
-			"editable": true,
-			"access": "driver"
-		}
-    },
-    "Categories": [
-    	"car", "sedan"
-    ],
-	"WheelPositions": {
-		"left_front_wheel": {
-			"pos": [ -1.125, 0.0, -2.0 ],
-			"hubsize": 0.125,
-			"radius": 0.5,
-			"width": 0.25,
-			"steering": true
-		},
-		"right_front_wheel": {
-			"pos": [ 1.125, 0.0, -2.0 ],
-			"hubsize": 0.125,
-			"radius": 0.5,
-			"width": 0.25,
-			"steering": true,
-			"mirror": true
-		},
-		"left_back_wheel": {
-			"pos": [ -1.125, 0.0, 2.0 ],
-			"hubsize": 0.125,
-			"radius": 0.5,
-			"width": 0.25,
-			"powered": true
-		},
-		"right_back_wheel": {
-			"pos": [ 1.125, 0.0, 2.0 ],
-			"hubsize": 0.125,
-			"radius": 0.5,
-			"width": 0.25,
-			"powered": true,
-			"mirror": true
-		}
-	},
-	"InstalledParts": {
-		"left_front_wheel": "fvp:rim_1",
-		"right_front_wheel": "fvp:rim_1",
-		"left_back_wheel": "fvp:rim_1",
-		"right_back_wheel": "fvp:rim_1",
-		"left_front_wheel:tire": "fvp:tire_1",
-		"right_front_wheel:tire": "fvp:tire_1",
-		"left_back_wheel:tire": "fvp:tire_1",
-		"right_back_wheel:tire": "fvp:tire_1",
-		"vehicle:engine": "gep:engine_diesel",
-		"vehicle:doors": "fvp:c10_doors"
-	},
-	"PartSlots":{
-		"engine":[],
-		"interior":[],
-		"seats":[],
-		"doors":[],
-		"hood":[],
-		"steering_wheel":[],
-        "license_plate_rear": [ 0.0, -0.375, 0.7875, "license_plate", 0.25 ],
-        "roof_lights": [ 0.0, 1.5625, 0.0, "roof_lights", 0.25 ],
-        "license_plate_front": [ 0.0, -0.0625, -3.15625, "license_plate", 0.25 ]
-	},
-    "SimplePhysics":{
-    	"MaxPositiveThrottle": 1.2,
-    	"MaxNegativeThrottle": 0.7,
-    	"TurnLeftModifier": 1.1,
-    	"TurnRightModifier": 1.1
-    },
-    "SwivelPoints": {
-        "trunk": {
-            "pos": [ 0.0, 0.8125, 2.25 ],
+{ 
+    "ID": "fvp:c10", 
+    "Addon": "fvtm:fvp", 
+    "Name": "C10", 
+    "Model": "fvp:models/vehicle/c10.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "primary fvtm:rgb_primary"
+        ]
+    }, 
+    "ColorChannels": { 
+        "primary": "#A8A8A8", 
+        "secondary": "#C2C2C2"
+    }, 
+    "Texture": "Default;fvp:textures/cars/c10.png", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1280
+        }, 
+        "c10_trunk": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": "driver"
+        }
+    }, 
+    "Categories": [ 
+        "car", 
+        "sedan"
+    ], 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "pos": [ -1.125, 0.0, -2.0 ], 
+            "hubsize": 0.125, 
+            "radius": 0.5, 
+            "width": 0.25, 
+            "steering": true
+        }, 
+        "right_front_wheel": { 
+            "pos": [ 1.125, 0.0, -2.0 ], 
+            "hubsize": 0.125, 
+            "radius": 0.5, 
+            "width": 0.25, 
+            "steering": true, 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "pos": [ -1.125, 0.0, 2.0 ], 
+            "hubsize": 0.125, 
+            "radius": 0.5, 
+            "width": 0.25, 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "pos": [ 1.125, 0.0, 2.0 ], 
+            "hubsize": 0.125, 
+            "radius": 0.5, 
+            "width": 0.25, 
+            "powered": true, 
+            "mirror": true
+        }
+    }, 
+    "InstalledParts": { 
+        "left_front_wheel": "fvp:rim_1", 
+        "right_front_wheel": "fvp:rim_1", 
+        "left_back_wheel": "fvp:rim_1", 
+        "right_back_wheel": "fvp:rim_1", 
+        "left_front_wheel:tire": "fvp:tire_1", 
+        "right_front_wheel:tire": "fvp:tire_1", 
+        "left_back_wheel:tire": "fvp:tire_1", 
+        "right_back_wheel:tire": "fvp:tire_1", 
+        "vehicle:engine": "gep:engine_diesel", 
+        "vehicle:doors": "fvp:c10_doors"
+    }, 
+    "PartSlots": { 
+        "engine": [], 
+        "interior": [], 
+        "seats": [], 
+        "doors": [], 
+        "hood": [], 
+        "steering_wheel": [], 
+        "license_plate_rear": [ 
+            0.0, 
+            -0.375, 
+            0.7875, 
+            "license_plate", 
+            0.25
+        ], 
+        "roof_lights": [ 
+            0.0, 
+            1.5625, 
+            0.0, 
+            "roof_lights", 
+            0.25
+        ], 
+        "license_plate_front": [ 
+            0.0, 
+            -0.0625, 
+            -3.15625, 
+            "license_plate", 
+            0.25
+        ]
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.2, 
+        "MaxNegativeThrottle": 0.7, 
+        "TurnLeftModifier": 1.1, 
+        "TurnRightModifier": 1.1
+    }, 
+    "SwivelPoints": { 
+        "trunk": { 
+            "pos": [ 0.0, 0.8125, 2.25 ], 
             "parent": "vehicle"
-         }
-     },
-    "LiftingPoints":{
-    	"left_front": [ -1.25, -0.25, -1.25, "left_rear" ],
-    	"left_rear": [ -1.25, -0.25, 1.25, "left_front" ],
-    	"right_front": [ 1.25, -0.25, -1.25, "right_rear" ],
-    	"right_rear": [ 1.25, -0.25, 1.25, "right_front" ]
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -1.25, 
+            -0.25, 
+            -1.25, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -1.25, 
+            -0.25, 
+            1.25, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            1.25, 
+            -0.25, 
+            -1.25, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            1.25, 
+            -0.25, 
+            1.25, 
+            "right_front"
+        ]
     }
 }

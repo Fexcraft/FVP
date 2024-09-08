@@ -1,0 +1,124 @@
+{ 
+    "RegistryName": "fvp:t3", 
+    "Addon": "fvtm:fvp", 
+    "Name": "T3 Series", 
+    "Model": "fvp:models/vehicle/t3", 
+    "PrimaryColor": "#A8A8A8", 
+    "SecondaryColor": "#C2C2C2", 
+    "Texture": "Default;fvp:textures/trucks/t3.png", 
+    "Category": "truck,semi", 
+    "Attributes": [ 
+        { 
+            "id": "weight", 
+            "type": "float", 
+            "value": 4020
+        }, 
+        { 
+            "id": "fuel_capacity", 
+            "type": "integer", 
+            "value": 250000
+        }, 
+        { 
+            "id": "t3_door_left", 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "seat": "driver", 
+            "external": true, 
+            "hitbox": { 
+                "external-false": [ -0.5, -32.5, 22, 2 ], 
+                "external-true": [ 16, -32.5, 26.25, 2 ], 
+                "false": [ 11.5, -32.5, 21, 2 ], 
+                "true": [ 16, -32.5, 26.25, 2 ]
+            }
+        }, 
+        { 
+            "id": "t3_door_right", 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "seat": "pass_front", 
+            "external": true, 
+            "hitbox": { 
+                "external-false": [ -0.5, -32.5, -22, 2 ], 
+                "external-true": [ 16, -32.5, -26.25, 2 ], 
+                "false": [ 11.5, -32.5, -21, 2 ], 
+                "true": [ 16, -32.5, -26.25, 2 ]
+            }
+        }
+    ], 
+    "WheelPositions": [ 
+        { 
+            "x": 52, 
+            "y": -2, 
+            "z": 20, 
+            "id": "left_front_wheel", 
+            "radius": 12, 
+            "width": 7, 
+            "drive": true, 
+            "steering": true
+        }, 
+        { 
+            "x": 52, 
+            "y": -2, 
+            "z": -20, 
+            "id": "right_front_wheel", 
+            "radius": 12, 
+            "width": 7, 
+            "y_rot": 180, 
+            "drive": true, 
+            "steering": true
+        }
+    ], 
+    "LegacyData": { 
+        "MaxPositiveThrottle": 1.45, 
+        "MaxNegativeThrottle": 0.25, 
+        "TurnLeftModifier": 1.6, 
+        "TurnRightModifier": 1.6, 
+        "TrailerAdjustmentAxe": -1
+    }, 
+    "RequiredParts": [ 
+        "right_front_wheel", 
+        "left_front_wheel", 
+        "right_back_wheel", 
+        "left_back_wheel", 
+        "steering_wheel", 
+        "interior", 
+        "seats", 
+        "cabin"
+    ], 
+    "LiftingPoints": { 
+        "left_front": [ 
+            32, 
+            2.5, 
+            24, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -10, 
+            2.5, 
+            24, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            32, 
+            2.5, 
+            -24, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            -10, 
+            2.5, 
+            -24, 
+            "right_front"
+        ]
+    }, 
+    "ModelData": { 
+        "Programs": [ 
+            "lb_front fvtm:rlb_front_lights 256 2 2 72 48 70 -7.5f 16.75f 0 0 -3", 
+            "lb_front fvtm:rlb_front_lights 256 2 2 72 48 70 -7.5f -16.75f 0 0 -3", 
+            "lb_long fvtm:rlb_long_lights 720 2 2 256 128 70 -7.5f 21.25f 0 0 -5", 
+            "lb_long fvtm:rlb_long_lights 720 2 2 256 128 70 -7.5f -21.25f 0 0 -5"
+        ]
+    }
+}

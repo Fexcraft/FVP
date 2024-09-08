@@ -1,0 +1,167 @@
+{ 
+    "RegistryName": "fvp:c11", 
+    "Addon": "fvtm:fvp", 
+    "Name": "C11 [C-ileven]", 
+    "Model": "fvp:models/vehicle/c11", 
+    "PrimaryColor": "#FFFFFF", 
+    "SecondaryColor": "#A8A8A8", 
+    "Texture": "Default;fvp:textures/cars/c11.png", 
+    "Category": "car,convertible,cabriolet", 
+    "Attributes": [ 
+        { 
+            "id": "weight", 
+            "type": "float", 
+            "value": 1256
+        }, 
+        { 
+            "id": "windshield_wipers", 
+            "type": "boolean", 
+            "value": false, 
+            "seat": "driver", 
+            "hitbox": [ 13, -10, 6, 1 ]
+        }, 
+        { 
+            "id": "turn_lights", 
+            "type": "tristate", 
+            "value": "null", 
+            "seat": "driver", 
+            "hitbox": [ 13, -10, 14, 1 ]
+        }, 
+        { 
+            "id": "lights", 
+            "type": "boolean", 
+            "value": false, 
+            "seat": "driver", 
+            "hitbox": [ 15.0, -9.75, 16.625, 0.25 ]
+        }, 
+        { 
+            "id": "lights_long", 
+            "type": "boolean", 
+            "value": false, 
+            "seat": "driver", 
+            "hitbox": [ 15.0, -8.75, 16.625, 0.25 ]
+        }, 
+        { 
+            "id": "lights_fog", 
+            "type": "boolean", 
+            "value": false, 
+            "seat": "driver", 
+            "hitbox": [ 15.0, -7.75, 16.625, 0.25 ]
+        }, 
+        { 
+            "id": "warning_lights", 
+            "type": "boolean", 
+            "value": false, 
+            "seat": "driver", 
+            "hitbox": [ 14.0, -10.5, 4.5, 0.125 ]
+        }, 
+        { 
+            "id": "exhaust", 
+            "type": "vector3", 
+            "value": [ -50.5, 4.25, -11.75 ], 
+            "editable": false, 
+            "group": "exhaust", 
+            "mod-dep": "fvtm_potr"
+        }
+    ], 
+    "WheelPositions": [ 
+        { 
+            "x": 32, 
+            "y": 2, 
+            "z": 18, 
+            "id": "left_front_wheel", 
+            "radius": 8, 
+            "drive": true, 
+            "steering": true
+        }, 
+        { 
+            "x": 32, 
+            "y": 2, 
+            "z": -18, 
+            "id": "right_front_wheel", 
+            "radius": 8, 
+            "y_rot": 180, 
+            "drive": true, 
+            "steering": true
+        }, 
+        { 
+            "x": -32, 
+            "y": 2, 
+            "z": 18, 
+            "id": "left_back_wheel", 
+            "radius": 8
+        }, 
+        { 
+            "x": -32, 
+            "y": 2, 
+            "z": -18, 
+            "id": "right_back_wheel", 
+            "radius": 8, 
+            "y_rot": 180
+        }
+    ], 
+    "PreInstalled": { 
+        "interior": "fvp:c11_interior"
+    }, 
+    "RequiredParts": [ 
+        "right_front_wheel", 
+        "left_front_wheel", 
+        "right_back_wheel", 
+        "left_back_wheel", 
+        "steering_wheel", 
+        "interior", 
+        "roof", 
+        "seats"
+    ], 
+    "LegacyData": { 
+        "MaxPositiveThrottle": 1.78, 
+        "MaxNegativeThrottle": 0.7, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            20, 
+            6, 
+            19, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -20, 
+            6, 
+            19, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            20, 
+            6, 
+            -19, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            -20, 
+            6, 
+            -19, 
+            "right_front"
+        ]
+    }, 
+    "PartSlots": [ 
+        [ 
+            50.55, 
+            2.5, 
+            0, 
+            "license_plate", 
+            "license_plate_front", 
+            4
+        ], 
+        [ 
+            -49.65, 
+            -0.25, 
+            0, 
+            "license_plate", 
+            "license_plate_rear", 
+            4, 
+            [ 0, 180, 0 ]
+        ]
+    ]
+}

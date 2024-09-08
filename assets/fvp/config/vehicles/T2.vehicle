@@ -1,0 +1,108 @@
+{ 
+    "Addon": "fvp", 
+    "Name": "T2", 
+    "Model": "fvp:models/vehicle/t2p", 
+    "Texture": "fvp:textures/trucks/t2p.png", 
+    "Category": "truck,semi", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 3245.6
+        }, 
+        "fuel_capacity": { 
+            "type": "integer", 
+            "value": 250000
+        }
+    }, 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.75, 
+            "steering": true, 
+            "pos": [ -1.25, 0.125, -2.5 ], 
+            "powered": true
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.75, 
+            "steering": true, 
+            "pos": [ 1.25, 0.125, -2.5 ], 
+            "mirror": true, 
+            "powered": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.75, 
+            "pos": [ -1.25, 0.125, 3.0 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.75, 
+            "pos": [ 1.25, 0.125, 3.0 ], 
+            "mirror": true
+        }, 
+        "exhaust": { 
+            "type": "vector3", 
+            "value": [ 17, -56, 24 ], 
+            "editable": false, 
+            "group": "exhaust", 
+            "mod-dep": "fvtm_potr", 
+            "pos": [ -0.0, -0.0, -0.0 ]
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -1.5625, 
+            -0.1875, 
+            -3.75, 
+            "none"
+        ], 
+        "right_front": [ 
+            1.5625, 
+            -0.1875, 
+            -3.75, 
+            "none"
+        ], 
+        "right_rear0": [ 
+            0.625, 
+            -0.09375, 
+            0.3125, 
+            "right_rear1", 
+            15
+        ], 
+        "right_rear1": [ 
+            0.625, 
+            -0.09375, 
+            1.875, 
+            "right_rear0", 
+            15
+        ], 
+        "left_rear0": [ 
+            -0.625, 
+            -0.09375, 
+            0.3125, 
+            "left_rear1", 
+            15
+        ], 
+        "left_rear1": [ 
+            -0.625, 
+            -0.09375, 
+            1.875, 
+            "left_rear0", 
+            15
+        ]
+    }, 
+    "ID": "t2", 
+    "ColorChannels": { 
+        "primary": "#A8A8A8", 
+        "secondary": "#C2C2C2"
+    }, 
+    "InstalledParts": { 
+        "vehicle:steering_wheel": "fvp:t2_steering_wheel", 
+        "vehicle:interior": "fvp:t2_interior"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.4, 
+        "MaxNegativeThrottle": 0.4, 
+        "TurnLeftModifier": 1.4, 
+        "TurnRightModifier": 1.4, 
+        "TrailerAdjustmentAxe": -1
+    }, 
+    "PartSlots": {}
+}

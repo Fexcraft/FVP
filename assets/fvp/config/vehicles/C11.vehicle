@@ -1,0 +1,153 @@
+{ 
+    "Addon": "fvp", 
+    "Name": "C11 [C-ileven]", 
+    "Model": "fvp:models/vehicle/c11", 
+    "Texture": "Default;fvp:textures/cars/c11.png", 
+    "Category": "car,convertible,cabriolet", 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1256
+        }, 
+        "windshield_wipers": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": [ 
+                "driver"
+            ], 
+            "interact": [ 13, -10, 6, 1 ]
+        }, 
+        "turn_lights": { 
+            "type": "tristate", 
+            "value": "null", 
+            "access": [ 
+                "driver"
+            ], 
+            "interact": [ 13, -10, 14, 1 ]
+        }, 
+        "lights": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": [ 
+                "driver"
+            ], 
+            "interact": [ 15.0, -9.75, 16.625, 0.25 ]
+        }, 
+        "lights_long": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": [ 
+                "driver"
+            ], 
+            "interact": [ 15.0, -8.75, 16.625, 0.25 ]
+        }, 
+        "lights_fog": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": [ 
+                "driver"
+            ], 
+            "interact": [ 15.0, -7.75, 16.625, 0.25 ]
+        }, 
+        "warning_lights": { 
+            "type": "boolean", 
+            "value": false, 
+            "access": [ 
+                "driver"
+            ], 
+            "interact": [ 14.0, -10.5, 4.5, 0.125 ]
+        }, 
+        "exhaust": { 
+            "type": "vector3", 
+            "value": [ -50.5, 4.25, -11.75 ], 
+            "editable": false, 
+            "group": "exhaust", 
+            "mod-dep": "fvtm_potr"
+        }
+    }, 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "radius": 0.5, 
+            "steering": true, 
+            "pos": [ -1.125, -0.125, -2.0 ], 
+            "powered": true
+        }, 
+        "right_front_wheel": { 
+            "radius": 0.5, 
+            "steering": true, 
+            "pos": [ 1.125, -0.125, -2.0 ], 
+            "mirror": true, 
+            "powered": true
+        }, 
+        "left_back_wheel": { 
+            "radius": 0.5, 
+            "pos": [ -1.125, -0.125, 2.0 ]
+        }, 
+        "right_back_wheel": { 
+            "radius": 0.5, 
+            "pos": [ 1.125, -0.125, 2.0 ], 
+            "mirror": true
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": [ 
+            -1.1875, 
+            -0.375, 
+            -1.25, 
+            "left_rear"
+        ], 
+        "left_rear": [ 
+            -1.1875, 
+            -0.375, 
+            1.25, 
+            "left_front"
+        ], 
+        "right_front": [ 
+            1.1875, 
+            -0.375, 
+            -1.25, 
+            "right_rear"
+        ], 
+        "right_rear": [ 
+            1.1875, 
+            -0.375, 
+            1.25, 
+            "right_front"
+        ]
+    }, 
+    "PartSlots": { 
+        "license_plate_front": [ 
+            -0.0, 
+            -0.15625, 
+            -3.159375, 
+            "license_plate", 
+            4
+        ], 
+        "license_plate_rear": [ 
+            -0.0, 
+            0.015625, 
+            3.103125, 
+            "license_plate", 
+            4, 
+            [ 0, 180, 0 ]
+        ], 
+        "steering_wheel": {}, 
+        "interior": {}, 
+        "roof": {}, 
+        "seats": {}
+    }, 
+    "ID": "c11", 
+    "ColorChannels": { 
+        "primary": "#FFFFFF", 
+        "secondary": "#A8A8A8"
+    }, 
+    "InstalledParts": { 
+        "vehicle:interior": "fvp:c11_interior"
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.78, 
+        "MaxNegativeThrottle": 0.7, 
+        "TurnLeftModifier": 0.8, 
+        "TurnRightModifier": 0.8
+    }
+}

@@ -41,7 +41,9 @@
         "windshield_wipers": { 
             "type": "boolean", 
             "value": false, 
-            "access": "driver", 
+            "access": [ 
+                "driver"
+            ], 
             "interact": { 
                 "default": [ -0.421875, 0.59375, -0.515625, 0.0625 ]
             }
@@ -49,7 +51,9 @@
         "turn_lights": { 
             "type": "tristate", 
             "value": "null", 
-            "access": "driver", 
+            "access": [ 
+                "driver"
+            ], 
             "interact": { 
                 "default": [ -0.953125, 0.59375, -0.515625, 0.0625 ]
             }
@@ -57,7 +61,9 @@
         "lights": { 
             "type": "boolean", 
             "value": false, 
-            "access": "driver", 
+            "access": [ 
+                "driver"
+            ], 
             "interact": { 
                 "default": [ -1.265625, 0.5625, -0.5625, 0.03125 ]
             }
@@ -65,7 +71,9 @@
         "lights_long": { 
             "type": "boolean", 
             "value": false, 
-            "access": "driver", 
+            "access": [ 
+                "driver"
+            ], 
             "interact": { 
                 "default": [ -1.265625, 0.46875, -0.5625, 0.03125 ]
             }
@@ -73,7 +81,9 @@
         "lights_fog": { 
             "type": "boolean", 
             "value": false, 
-            "access": "driver", 
+            "access": [ 
+                "driver"
+            ], 
             "interact": { 
                 "default": [ -1.171875, 0.5625, -0.5625, 0.03125 ]
             }
@@ -81,7 +91,9 @@
         "lights_extra": { 
             "type": "boolean", 
             "value": false, 
-            "access": "driver", 
+            "access": [ 
+                "driver"
+            ], 
             "interact": { 
                 "default": [ -1.171875, 0.46875, -0.5625, 0.03125 ]
             }
@@ -89,7 +101,9 @@
         "warning_lights": { 
             "type": "boolean", 
             "value": false, 
-            "access": "driver", 
+            "access": [ 
+                "driver"
+            ], 
             "interact": { 
                 "default": [ -0.21875, 0.5625, -0.5625, 0.03125 ]
             }
@@ -110,25 +124,33 @@
             "type": "boolean", 
             "value": false, 
             "editable": true, 
-            "access": "pass_front"
+            "access": [ 
+                "pass_front"
+            ]
         }, 
         "c12_door_rl": { 
             "type": "boolean", 
             "value": false, 
             "editable": true, 
-            "access": "pass_rear_left"
+            "access": [ 
+                "pass_rear_left"
+            ]
         }, 
         "c12_door_rr": { 
             "type": "boolean", 
             "value": false, 
             "editable": true, 
-            "access": "pass_rear_right"
+            "access": [ 
+                "pass_rear_right"
+            ]
         }, 
         "c12_boot": { 
             "type": "boolean", 
             "value": false, 
             "editable": true, 
-            "access": "driver"
+            "access": [ 
+                "driver"
+            ]
         }
     }, 
     "WheelPositions": { 
@@ -317,6 +339,17 @@
         }
     }, 
     "InteractZones": { 
-        "default": [ 0, 0, 0, 6 ]
-    }
+        "default": { 
+            "pos": [ 0.0, 0.0, 0.0 ], 
+            "range": 6.0
+        }
+    }, 
+    "Sounds": { 
+        "generic": "minecraft:block.bell.use"
+    }, 
+    "Events": [ 
+        "attr_update fvtm:true logger test logging entry", 
+        "attr_update fvtm:true msg Toggled {attr_id} to {attr}! Playing a sound now.", 
+        "attr_update fvtm:true play_sound vehicle generic"
+    ]
 }

@@ -1,0 +1,198 @@
+{ 
+    "RegistryName": "fvp:ab1", 
+    "Addon": "fvtm:fvp", 
+    "Name": "AB1 Variant B", 
+    "Model": "fvp:models/vehicle/ab1b", 
+    "PrimaryColor": "#EFEFEF", 
+    "SecondaryColor": "#FAFAFA", 
+    "Textures": [ 
+        "Default;fvp:textures/busses/ab1b.png", 
+        "Imperial Blue;fvp:textures/busses/ab1c.png", 
+        "SKR Trans;fvp:textures/busses/ab1d.png"
+    ], 
+    "Category": "autobus,bus", 
+    "WheelPositions": [ 
+        { 
+            "x": 68, 
+            "y": -2, 
+            "z": 25, 
+            "id": "left_front_wheel", 
+            "radius": 12, 
+            "drive": true, 
+            "steering": true
+        }, 
+        { 
+            "x": 68, 
+            "y": -2, 
+            "z": -25, 
+            "id": "right_front_wheel", 
+            "radius": 12, 
+            "y_rot": 180, 
+            "drive": true, 
+            "steering": true
+        }, 
+        { 
+            "x": -70, 
+            "y": -2, 
+            "z": 25, 
+            "id": "left_back_wheel", 
+            "radius": 12
+        }, 
+        { 
+            "x": -70, 
+            "y": -2, 
+            "z": -25, 
+            "id": "right_back_wheel", 
+            "radius": 12, 
+            "y_rot": 180
+        }
+    ], 
+    "Attributes": [ 
+        { 
+            "id": "weight", 
+            "type": "float", 
+            "value": 3548.45
+        }, 
+        { 
+            "id": "ab1b_cargobay_left", 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "seat": "driver"
+        }, 
+        { 
+            "id": "ab1b_cargobay_right", 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "seat": "driver"
+        }, 
+        { 
+            "id": "collision_range", 
+            "type": "float", 
+            "value": 7
+        }, 
+        { 
+            "id": "exhaust", 
+            "type": "vector3", 
+            "value": [ -111, 0.5, 27.25 ], 
+            "editable": false, 
+            "group": "exhaust", 
+            "mod-dep": "fvtm_potr"
+        }
+    ], 
+    "RequiredParts": [ 
+        "right_front_wheel", 
+        "left_front_wheel", 
+        "right_back_wheel", 
+        "left_back_wheel", 
+        "lights"
+    ], 
+    "PreInstalled": { 
+        "steering_wheel": "fvp:ab1_steering_wheel", 
+        "driver_seat": "fvp:ab1_driver_seat"
+    }, 
+    "LegacyData": { 
+        "MaxPositiveThrottle": 1.1, 
+        "MaxNegativeThrottle": 0.5, 
+        "TurnLeftModifier": 1.1, 
+        "TurnRightModifier": 1.1
+    }, 
+    "LiftingPoints": { 
+        "left_front0": [ 
+            50, 
+            2, 
+            31, 
+            "left_front1"
+        ], 
+        "left_front1": [ 
+            22, 
+            2, 
+            31, 
+            "left_front0"
+        ], 
+        "left_rear0": [ 
+            -24, 
+            2, 
+            31, 
+            "left_rear1"
+        ], 
+        "left_rear1": [ 
+            -52, 
+            2, 
+            31, 
+            "left_rear0"
+        ], 
+        "right_front0": [ 
+            50, 
+            2, 
+            -31, 
+            "right_front1"
+        ], 
+        "right_front1": [ 
+            22, 
+            2, 
+            -31, 
+            "right_front0"
+        ], 
+        "right_rear0": [ 
+            -24, 
+            2, 
+            -31, 
+            "right_rear1"
+        ], 
+        "right_rear1": [ 
+            -52, 
+            2, 
+            -31, 
+            "right_rear0"
+        ]
+    }, 
+    "PartSlots": [ 
+        [ 
+            101.4, 
+            0.5, 
+            0, 
+            "license_plate", 
+            "license_plate_front", 
+            4, 
+            [ 0, 0, 15 ]
+        ], 
+        [ 
+            -111.1, 
+            -5, 
+            0, 
+            "license_plate", 
+            "license_plate_rear", 
+            4, 
+            [ 90, 180, 0 ]
+        ], 
+        [ 
+            2, 
+            -19, 
+            31.6, 
+            "ad_64x12", 
+            "side_ad_left", 
+            8, 
+            [ 0, 0, 0 ]
+        ], 
+        [ 
+            2, 
+            -19, 
+            -31.6, 
+            "ad_64x12", 
+            "side_ad_right", 
+            8, 
+            [ 0, 180, 0 ]
+        ], 
+        [ 
+            -110.1, 
+            -37, 
+            0, 
+            "ad_32x16", 
+            "rear_ad", 
+            8, 
+            [ 5, -90, 0 ]
+        ]
+    ]
+}
