@@ -128,6 +128,7 @@
     }, 
     "PartSlots": { 
         "engine": [], 
+        "transmission": [], 
         "chassis": { 
             "point": "base", 
             "radius": 1
@@ -151,6 +152,7 @@
         "right_back_wheel": "fvp:excav_wheel", 
         "left_back_wheel": "fvp:excav_wheel", 
         "vehicle:engine": "fvp:excav_engine", 
+		"vehicle:transmission": "gep:automatic_transmission", 
         "vehicle:chassis": "fvp:excav_chassis", 
         "vehicle:arm": "fvp:excav_arm", 
         "vehicle:stick": "fvp:excav_stick", 
