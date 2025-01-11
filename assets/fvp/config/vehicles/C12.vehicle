@@ -266,12 +266,28 @@
 			"name": "Factory Blue", 
 			"colors": { 
 				"primary": "4066ff"
+			},
+			"recipe":{
+				"gep:chassis_car": 1,
+				"gep:door_set": 4,
+				"gep:chassis_components": 2,
+				"gep:lights_set": 2,
+				"gep:electric_components": 3,
+				"gep:seat_set": 5
 			}
 		}, 
 		"green": { 
 			"name": "Factory Green", 
 			"colors": { 
 				"primary": "0e5e05"
+			}
+			"recipe":{
+				"gep:chassis_car": 1,
+				"gep:door_set": 4,
+				"gep:chassis_components": 2,
+				"gep:lights_set": 2,
+				"gep:electric_components": 3,
+				"gep:seat_set": 5
 			}
 		}, 
 		"offroad_basic": { 
@@ -290,10 +306,20 @@
 				"vehicle:bumper_rear": "fvp:c12_bumper_rear_base", 
 				"bumper_rear:bumper_rear_upper": "fvp:c12_bumper_rear_upper", 
 				"vehicle:cargo": "fvp:c12_cargo3"
-			}, 
-			"recipe": [ 
-				"minecraft:iron_block"
-			]
+			},
+			"recipe":{
+				"gep:chassis_car": 1,
+				"gep:door_set": 4,
+				"gep:chassis_components": 2,
+				"gep:lights_set": 2,
+				"gep:electric_components": 3,
+				"gep:seat_set": 5,
+				"fvp:c12_rear_window_net": 1,
+				"fvp:c12_bumper_front": 1,
+				"fvp:c12_bumper_rear_base": 1,
+				"fvp:c12_bumper_rear_upper": 1,
+				"fvp:c12_cargo3": 1
+			}
 		}, 
 		"offroad_classic": { 
 			"name": "Offroad Classic", 
@@ -320,9 +346,21 @@
 				"roof_lights:roof_lightbar_5": "fvp:c12_spotlight", 
 				"vehicle:cargo": "fvp:c12_cargo2"
 			}, 
-			"recipe": [ 
-				"minecraft:iron_block"
-			]
+			"recipe": {
+				"gep:chassis_car": 1,
+				"gep:door_set": 4,
+				"gep:chassis_components": 2,
+				"gep:lights_set": 2,
+				"gep:electric_components": 3,
+				"gep:seat_set": 5,
+				"fvp:c12_roof_lightbar": 1,
+				"fvp:c12_rear_window_net": 1,
+				"fvp:c12_bumper_front": 1,
+				"fvp:c12_bumper_rear_base": 1,
+				"fvp:c12_bumper_rear_upper": 1,
+				"fvp:c12_cargo2": 1,
+				"fvp:c12_spotlight":  8
+			}
 		}
 	}, 
 	"SimplePhysics": { 
