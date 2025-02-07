@@ -1,0 +1,167 @@
+{ 
+    "ID": "c13", 
+    "Name": "C13", 
+    "Addon": "fvp", 
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "seats": "#ffffff"
+    }, 
+    "Textures": [ 
+        "Default;fvp:textures/cars/c13.png"
+    ], 
+    "Categories": [ 
+        "car"
+    ], 
+    "Model": "fvp:models/vehicle/c13.fmf", 
+    "ModelData": { 
+        "Authors": [ 
+            "Ferdinand (FEX___96)"
+        ], 
+        "Programs": [ 
+            "primary fvtm:rgb_channel primary",
+            "door_fl_primary fvtm:rgb_channel primary",
+            "door_fr_primary fvtm:rgb_channel primary",
+            "door_rl_primary fvtm:rgb_channel primary",
+            "door_rr_primary fvtm:rgb_channel primary",
+            "trunk fvtm:rgb_channel primary",
+            "hood fvtm:rgb_channel primary",
+            "seats fvtm:rgb_channel seats",
+            "lights_rear fvtm:back_lights",
+            "lights_reverse fvtm:reverse_lights",
+            "lights_brake fvtm:brake_lights",
+            "lights_left fvtm:turn_signal_left",
+            "lights_right fvtm:turn_signal_right",
+            "lights_front fvtm:front_lights",
+            "lights_long fvtm:long_lights",
+            "lights_fog fvtm:fog_lights"
+        ]
+    }, 
+    "PartSlots": { 
+        "engine": {}, 
+        "transmission": {}
+    }, 
+    "Attributes": { 
+        "door_front_left": { 
+            "type": "boolean", 
+            "access": [ 
+                "front_left", 
+                "external"
+            ]
+        }, 
+        "door_front_right": { 
+            "access": [ 
+                "front_right", 
+                "external"
+            ]
+        }, 
+        "door_rear_left": { 
+            "access": [ 
+                "rear_left", 
+                "rear_middle", 
+                "external"
+            ]
+        }, 
+        "door_rear_right": { 
+            "access": [ 
+                "rear_right", 
+                "rear_middle", 
+                "external"
+            ]
+        }, 
+        "hood": { 
+            "access": [ 
+                "front_left", 
+                "external"
+            ]
+        }, 
+        "trunk": { 
+            "access": [ 
+                "front_left", 
+                "external"
+            ]
+        }
+    }, 
+    "MaxKeys": 3.0, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.5, 
+        "TurnRightModifier": 1.1, 
+        "TurnLeftModifier": 1.1
+    }, 
+    "LiftingPoints": { 
+        "front_left": { 
+            "pair": "front_right", 
+            "pos": [ -1.15625, 0.1875, -0.5 ]
+        }, 
+        "front_right": { 
+            "pair": "front_left", 
+            "pos": [ 1.15625, 0.1875, -0.5 ]
+        }, 
+        "rear_left": { 
+            "pair": "rear_right", 
+            "pos": [ -1.15625, 0.1875, 1.75 ]
+        }, 
+        "rear_right": { 
+            "pair": "rear_left", 
+            "pos": [ 1.15625, 0.1875, 1.75 ]
+        }
+    }, 
+    "Catalog": {}, 
+    "DefaultSeats": { 
+        "front_left": { 
+            "driver": true, 
+            "pos": [ -0.6875, 0.625, 0.4375 ]
+        }, 
+        "front_right": { 
+            "pos": [ 0.6875, 0.625, 0.4375 ]
+        }, 
+        "rear_left": { 
+            "pos": [ -0.625, 0.625, 1.875 ]
+        }, 
+        "rear_right": { 
+            "pos": [ 0.75, 0.625, 1.875 ]
+        }, 
+        "rear_middle": { 
+            "pos": [ 0.0, 0.625, 1.875 ]
+        }
+    }, 
+    "WheelPositions": { 
+        "front_left": { 
+            "pos": [ -0.9375, 0.4375, -1.5 ], 
+            "steering": true, 
+            "required": true, 
+            "relative": false, 
+            "powered": "true", 
+            "braking": true, 
+            "hubsize": 0.25
+        }, 
+        "front_right": { 
+            "pos": [ 0.9375, 0.4375, -1.5 ], 
+            "mirror": true, 
+            "required": true, 
+            "steering": true, 
+            "braking": true, 
+            "hubsize": 0.25
+        }, 
+        "rear_left": { 
+            "pos": [ -0.9375, 0.4375, 2.75 ], 
+            "required": true, 
+            "braking": true, 
+            "hubsize": 0.25
+        }, 
+        "rear_right": { 
+            "pos": [ 0.9375, 0.4375, 2.75 ], 
+            "mirror": true, 
+            "required": true, 
+            "braking": true, 
+            "hubsize": 0.25
+        }
+    }, 
+    "InstalledParts": { 
+        "vehicle:engine": "gep:engine_petrol", 
+        "vehicle:transmission": "gep:transmission", 
+        "front_left": "fvp:c12_wheel",
+        "front_right": "fvp:c12_wheel",
+        "rear_left": "fvp:c12_wheel",
+        "rear_right": "fvp:c12_wheel"
+    }
+}
