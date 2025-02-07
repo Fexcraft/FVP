@@ -2,7 +2,6 @@
 
 # Other
 itemGroup.fvtm:fvp=Fex's Vehicle Pack
-
 # Vehicles
 item.fvp:c9.name=C9
 item.fvp:c10.name=Ci Dieci
@@ -11,13 +10,11 @@ item.fvp:ab1.name=Autobus 1B
 item.fvp:t2.name=T2
 item.fvp:tr1.name=Universal Trailer 1
 item.fvp:c11.name=Ci Undici
-item.fvp:t3.name=T3
-
+item.fvp:t3.name=
 # Wheels
 item.fvp:t1_back_wheel.name=T1 Back Wheel
 item.fvp:t1_front_wheel.name=T1 Front Wheel
 item.fvp:t2r1t1_wheel.name=T2 Wheel
-
 # Parts
 item.fvp:c10_doors.name=C10 Doors
 item.fvp:c10_hood.name=C10 Hood
@@ -72,11 +69,8 @@ item.fvp:c11_roof.name=C11 Roof
 item.fvp:c11_seats.name=C11 Seats
 item.fvp:c11_steering_wheel.name=C11 Steering Wheel
 item.fvp:c11_trunk.name=C11 Trunk
-
 #Bogies
 item.fvp:bogie_st1.name=ST1 Bogie
-
-
 item.fvp:t3_air_filters.name=
 item.fvp:t3_interior_basic.name=
 item.fvp:t3_seats_basic.name=
@@ -87,7 +81,6 @@ item.fvp:t3_mid_chassis.name=
 item.fvp:t3_mirrors.name=
 item.fvp:t3_steering_wheel.name=
 item.fvp:t3_rear_wheel.name=
-item.fvp:t3.name=
 item.fvp:t3_connector.name=
 item.fvp:t3_large_box.name=
 item.fvp:t3_large_tank.name=
@@ -130,3 +123,5 @@ item.fvp:sb1.name=
 item.fvp:c12_spotlight_quad.name=
 item.fvp:dash_gauge1.name=
 item.fvp:dash_gauge2.name=
+#info=File generated via FMT.
+item.fvp:c13.name=C13
