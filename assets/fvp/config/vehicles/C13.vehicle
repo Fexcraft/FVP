@@ -33,7 +33,18 @@
             "lights_right fvtm:turn_signal_right",
             "lights_front fvtm:front_lights",
             "lights_long fvtm:long_lights",
-            "lights_fog fvtm:fog_lights"
+            "lights_fog fvtm:fog_lights",
+            "steering fvtm:steering_base 2 6",
+            "door_fl fvtm:attribute_rotator door_front_left true -60 0 -1 1"
+            "door_fl_primary fvtm:attribute_rotator door_front_left true -60 0 -1 1"
+            "door_fr fvtm:attribute_rotator door_front_right true 0 60 1 1"
+            "door_fr_primary fvtm:attribute_rotator door_front_right true 0 60 1 1"
+            "door_rl fvtm:attribute_rotator door_rear_left true -60 0 -1 1"
+            "door_rl_primary fvtm:attribute_rotator door_rear_left true -60 0 -1 1"
+            "door_rr fvtm:attribute_rotator door_rear_right true 0 60 1 1"
+            "door_rr_primary fvtm:attribute_rotator door_rear_right true 0 60 1 1"
+            "hood fvtm:attribute_rotator hood true 0 60 1 0"
+            "trunk fvtm:attribute_rotator trunk true -60 0 -1 0"
         ]
     }, 
     "PartSlots": { 
@@ -49,12 +60,14 @@
             ]
         }, 
         "door_front_right": { 
+            "type": "boolean",
             "access": [ 
                 "front_right", 
                 "external"
             ]
         }, 
         "door_rear_left": { 
+            "type": "boolean",
             "access": [ 
                 "rear_left", 
                 "rear_middle", 
@@ -62,6 +75,7 @@
             ]
         }, 
         "door_rear_right": { 
+            "type": "boolean",
             "access": [ 
                 "rear_right", 
                 "rear_middle", 
@@ -69,12 +83,14 @@
             ]
         }, 
         "hood": { 
+            "type": "boolean",
             "access": [ 
                 "front_left", 
                 "external"
             ]
         }, 
         "trunk": { 
+            "type": "boolean",
             "access": [ 
                 "front_left", 
                 "external"
