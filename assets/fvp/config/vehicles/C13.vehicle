@@ -316,7 +316,7 @@
             "rows": 1,
             "cols": 1,
             "access": [
-                "rear_left",
+                "rear_right",
                 "rear_middle"
             ],
             "pos": [ 1.25, 0.75, 1.25 ],
