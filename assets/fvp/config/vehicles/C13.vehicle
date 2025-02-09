@@ -49,6 +49,8 @@
             "light_inner_rear fvtm:attribute_lights light_inner_rear",
             "lever_left fvtm:attribute_rotator lights_long true -10 0 -1 2",
             "lever_left_s fvtm:attribute_rotator lights_long true -10 0 -1 2"
+            "interior_glow fvtm:lights"
+            "warning_lights fvtm:attribute_lights warning_lights",
         ]
     }, 
     "PartSlots": { 
@@ -134,6 +136,16 @@
             ],
             "interact":{
                 "default": [ -0.53125, 1.28125, -0.325, 0.125 ]
+            }
+        },
+        "warning_lights": {
+            "type": "boolean",
+            "access": [
+                "front_left",
+                "front_right"
+            ],
+            "interact":{
+                "default": [ 0, 1.04375, -0.4625, 0.63 ]
             }
         },
         "light_inner_front": {
