@@ -178,19 +178,19 @@
     }, 
     "LiftingPoints": { 
         "front_left": { 
-            "pair": "front_right", 
+            "pair": "rear_left",
             "pos": [ -1.15625, 0.1875, -0.5 ]
         }, 
         "front_right": { 
-            "pair": "front_left", 
+            "pair": "rear_right",
             "pos": [ 1.15625, 0.1875, -0.5 ]
         }, 
         "rear_left": { 
-            "pair": "rear_right", 
+            "pair": "front_left",
             "pos": [ -1.15625, 0.1875, 1.75 ]
         }, 
         "rear_right": { 
-            "pair": "rear_left", 
+            "pair": "front_right",
             "pos": [ 1.15625, 0.1875, 1.75 ]
         }
     }, 
@@ -235,38 +235,38 @@
             "required": true, 
             "relative": false, 
             "powered": "true", 
-            "braking": true, 
-            "hubsize": 0.25
+            "braking": true
         }, 
         "front_right": { 
             "pos": [ 0.9375, 0.4375, -1.5 ], 
             "mirror": true, 
             "required": true, 
             "steering": true, 
-            "braking": true, 
-            "hubsize": 0.25
+            "braking": true
         }, 
         "rear_left": { 
             "pos": [ -0.9375, 0.4375, 2.75 ], 
             "required": true, 
-            "braking": true, 
-            "hubsize": 0.25
+            "braking": true
         }, 
         "rear_right": { 
             "pos": [ 0.9375, 0.4375, 2.75 ], 
             "mirror": true, 
             "required": true, 
-            "braking": true, 
-            "hubsize": 0.25
+            "braking": true
         }
     }, 
     "InstalledParts": { 
         "vehicle:engine": "gep:engine_petrol", 
         "vehicle:transmission": "gep:transmission", 
-        "front_left": "fvp:c12_wheel",
-        "front_right": "fvp:c12_wheel",
-        "rear_left": "fvp:c12_wheel",
-        "rear_right": "fvp:c12_wheel"
+        "front_left": "fvp:rim_1",
+        "front_right": "fvp:rim_1",
+        "rear_left": "fvp:rim_1",
+        "rear_right": "fvp:rim_1"
+        "front_left:tire": "fvp:tire_1",
+        "front_right:tire": "fvp:tire_1",
+        "rear_left:tire": "fvp:tire_1",
+        "rear_right:tire": "fvp:tire_1"
     },
     "Inventories":{
         "glove_box":{
