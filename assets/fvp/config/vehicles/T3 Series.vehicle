@@ -1,0 +1,49 @@
+{ 
+    "ID": "t3", 
+    "Name": "T3 Series", 
+    "Addon": "fvp", 
+    "Categories": [ 
+        "truck", 
+        "semi-truck", 
+        "lkw"
+    ], 
+    "Model": "fvp:models/vehicle/t3.fmf", 
+    "Textures": [ 
+        "null;fvp:textures/trucks/t3.png"
+    ], 
+    "LiftingPoints": { 
+        "front_left": { 
+            "pos": [ -1.5, -0.15625, -2.0 ], 
+            "pair": "rear_left"
+        }, 
+        "rear_left": { 
+            "pos": [ -1.5, -0.15625, 0.625 ], 
+            "pair": "front_left"
+        }, 
+        "front_right": { 
+            "pos": [ 1.5, -0.15625, -1.875 ], 
+            "pair": "rear_right"
+        }, 
+        "rear_right": { 
+            "pos": [ 1.5, -0.15625, -0.625 ], 
+            "pair": "front_right"
+        }
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 0.8, 
+        "MaxNegativeThrottle": 0.5, 
+        "TurnLeftModifier": 0.9, 
+        "TurnRightModifier": 0.9, 
+        "WheelSpringStrength": 0.6, 
+        "TrailerAdjustmentAxe": 0.0
+    }, 
+    "InstalledParts": { 
+        "vehicle:engine": "gep:diesel_engine", 
+        "vehicle:transmission": "gep:automatic_transmission"
+    }, 
+    "PartSlots": { 
+        "engine": {}, 
+        "transmission": {}, 
+        "cabin": {}
+    }
+}
