@@ -118,5 +118,7 @@
     "item.fvp.dash_gauge1": "", 
     "item.fvp.dash_gauge2": "", 
     "#info": "File generated via FMT.", 
-    "item.fvp.c13": "C13"
+    "item.fvp.c13": "C13", 
+    "item.fvp.t3_cabin_def": "T3 Default Cabin", 
+    "item.fvp.t3_cabin_ext": "T3 Extended Cabin"
 }
