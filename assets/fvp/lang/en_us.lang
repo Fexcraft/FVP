@@ -125,3 +125,5 @@ item.fvp:dash_gauge1.name=
 item.fvp:dash_gauge2.name=
 #info=File generated via FMT.
 item.fvp:c13.name=C13
+item.fvp:t3_cabin_def.name=T3 Default Cabin
+item.fvp:t3_cabin_ext.name=T3 Extended Cabin
