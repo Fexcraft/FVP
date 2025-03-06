@@ -1,0 +1,23 @@
+{ 
+    "ID": "t2_wheel", 
+    "Name": "T2 Wheel", 
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/t2_wheel.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "wheel fvtm:wheel_auto_all"
+        ]
+    }, 
+    "Installation": { 
+        "Width": 0.375, 
+        "Radius": 1.5, 
+        "Handler": "wheel"
+    }, 
+    "Functions": { 
+        "fvtm:wheel": {}, 
+        "fvtm:tire": {}
+    }, 
+    "Textures": [ 
+        "Default;fvp:textures/wheels/t2_wheel.png"
+    ]
+}
