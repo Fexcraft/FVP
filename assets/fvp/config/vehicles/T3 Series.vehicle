@@ -39,11 +39,28 @@
     }, 
     "InstalledParts": { 
         "vehicle:engine": "gep:diesel_engine", 
-        "vehicle:transmission": "gep:automatic_transmission"
+        "vehicle:transmission": "gep:automatic_transmission", 
+        "front_left": "fvp:t2_wheel", 
+        "front_right": "fvp:t2_wheel"
     }, 
     "PartSlots": { 
         "engine": {}, 
         "transmission": {}, 
         "cabin": {}
+    }, 
+    "WheelPositions": { 
+        "front_left": { 
+            "braking": true, 
+            "steering": true, 
+            "max_radius": 2.0, 
+            "pos": [ -1.25, 0.125, -3.25 ]
+        }, 
+        "front_right": { 
+            "braking": true, 
+            "steering": true, 
+            "mirror": true, 
+            "max_radius": 2.0, 
+            "pos": [ 1.25, 0.125, -3.25 ]
+        }
     }
 }
