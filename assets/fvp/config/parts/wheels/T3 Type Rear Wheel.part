@@ -17,5 +17,12 @@
     "Model": "fvp:models/part/t3/t3_rear_wheel.fmf", 
     "Textures": [ 
         "Default;fvp:textures/wheels/t3_rear_wheel.png"
-    ]
+    ],
+    "ModelData": {
+        "Programs": [
+            "wheel1 fvtm:wheel_auto_all",
+            "wheel2 fvtm:wheel_auto_all",
+            "inner fvtm:wheel_auto_all"
+        ]
+    }
 }
