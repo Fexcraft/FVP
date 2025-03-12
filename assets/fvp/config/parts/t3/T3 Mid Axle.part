@@ -17,6 +17,26 @@
             "axle_2": { 
                 "pos": [ -0.0, -0.0, 2.0 ]
             }
+        }, 
+        "fvtm:wheel_positions": { 
+            "*_left": { 
+                "pos": [ -0.875, -0.375, 1.0 ], 
+                "max_radius": 1.75, 
+                "min_wheel_radius": 0.25, 
+                "max_width": 1.0, 
+                "required": true, 
+                "relative": true, 
+                "braking": true
+            }, 
+            "*_right": { 
+                "pos": [ 0.875, -0.375, 1.0 ], 
+                "mirror": true, 
+                "max_radius": 1.75, 
+                "max_width": 1.0, 
+                "required": true, 
+                "relative": true, 
+                "braking": true
+            }
         }
     }, 
     "Category": [ 
