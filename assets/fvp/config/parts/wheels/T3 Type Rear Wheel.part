@@ -1,0 +1,21 @@
+{ 
+    "ID": "t3_rear_wheel", 
+    "Name": "T3 Type Rear Wheel", 
+    "Addon": "fvp", 
+    "Category": [ 
+        "wheel"
+    ], 
+    "Installation": { 
+        "Radius": 1.5, 
+        "Width": 0.75, 
+        "Handler": "wheel"
+    }, 
+    "Functions": { 
+        "fvtm:wheel": {}, 
+        "fvtm:tire": {}
+    }, 
+    "Model": "fvp:models/part/t3/t3_rear_wheel.fmf", 
+    "Textures": [ 
+        "Default;fvp:textures/wheels/t3_rear_wheel.png"
+    ]
+}
