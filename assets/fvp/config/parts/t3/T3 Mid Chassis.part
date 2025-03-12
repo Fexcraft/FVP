@@ -1,0 +1,12 @@
+{ 
+    "ID": "t3_mid_chassis", 
+    "Name": "T3 Mid Chassis", 
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/t3/t3_mid_chassis.fmf", 
+    "Textures": [ 
+        "Default;fvp:textures/trucks/t3.png"
+    ], 
+    "Category": [ 
+        "mid_chassis"
+    ]
+}
