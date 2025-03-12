@@ -13,5 +13,12 @@
     "Model": "fvp:models/part/t3/t3_cabin_ext.fmf", 
     "Textures": [ 
         "Default;fvp:textures/trucks/t3.png"
-    ]
+    ], 
+    "Functions": { 
+        "fvtm:part_slots": { 
+            "mid_chassis": { 
+                "pos": [ -0.0, 0.5, 2.875 ]
+            }
+        }
+    }
 }
