@@ -14,5 +14,26 @@
     ], 
     "Installation": { 
         "Swappable": false
+    }, 
+    "Functions": { 
+        "fvtm:wheel_positions": { 
+            "*_left": { 
+                "pos": [ -0.875, -0.375, 1.0 ], 
+                "max_radius": 1.75, 
+                "max_width": 1.0, 
+                "required": true, 
+                "relative": true, 
+                "braking": true
+            }, 
+            "*_right": { 
+                "pos": [ 0.875, -0.375, 1.0 ], 
+                "mirror": true, 
+                "max_radius": 1.75, 
+                "max_width": 1.0, 
+                "required": true, 
+                "relative": true, 
+                "braking": true
+            }
+        }
     }
 }
