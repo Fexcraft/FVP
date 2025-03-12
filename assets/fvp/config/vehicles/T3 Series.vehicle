@@ -62,5 +62,10 @@
             "max_radius": 2.0, 
             "pos": [ 1.25, 0.125, -3.25 ]
         }
+    }, 
+    "InteractZones": { 
+        "main": { 
+            "range": 10.0
+        }
     }
 }
