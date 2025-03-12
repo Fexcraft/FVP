@@ -1,0 +1,18 @@
+{ 
+    "ID": "t3_rear_axle", 
+    "Name": "T3 Rear Axle", 
+    "Addon": "fvp", 
+    "Textures": [ 
+        "Default;fvp:textures/trucks/t3.png"
+    ], 
+    "Model": "fvp:models/part/t3/t3_rear_axle.fmf", 
+    "Category": [ 
+        "axle", 
+        "axle_0", 
+        "axle_1", 
+        "axle_2"
+    ], 
+    "Installation": { 
+        "Swappable": false
+    }
+}
