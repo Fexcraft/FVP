@@ -1,0 +1,31 @@
+{ 
+    "ID": "t3_mid_axle", 
+    "Name": "T3 Mid Axle", 
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/t3/t3_mid_axle.fmf", 
+    "Textures": [ 
+        "Default;fvp:textures/trucks/t3.png"
+    ], 
+    "Functions": { 
+        "fvtm:part_slots": { 
+            "axle_0": { 
+                "pos": [ -0.0, -0.0, 2.0 ]
+            }, 
+            "axle_1": { 
+                "pos": [ -0.0, -0.0, 2.0 ]
+            }, 
+            "axle_2": { 
+                "pos": [ -0.0, -0.0, 2.0 ]
+            }
+        }
+    }, 
+    "Category": [ 
+        "axle", 
+        "axle_0", 
+        "axle_1", 
+        "axle_2"
+    ], 
+    "Installation": { 
+        "Swappable": false
+    }
+}
