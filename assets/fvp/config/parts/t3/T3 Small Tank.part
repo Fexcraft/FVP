@@ -3,17 +3,17 @@
     "Name": "T3 Small Tank", 
     "Addon": "fvp", 
     "Model": "fvp:models/part/t3/t3_small_tank.fmf", 
-    "Textures": [
+    "Textures": [ 
         "Default;fvp:textures/trucks/t3.png"
-    ],
+    ], 
     "Category": [ 
-        "t3_side_tank",
+        "t3_side_tank", 
         "t3_side_tank_extra"
-    ],
-    "ModelData":{
-        "Programs":[
-            "small_tank_left fvtm:category_specific side_left"
-            "small_tank_right fvtm:category_specific side_right"
+    ], 
+    "ModelData": { 
+        "Programs": [ 
+            "small_tank_left fvtm:category_specific side_left side_left_extra", 
+            "small_tank_right fvtm:category_specific side_right side_right_extra"
         ]
     }
 }
