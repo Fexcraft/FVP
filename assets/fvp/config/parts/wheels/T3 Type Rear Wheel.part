@@ -6,7 +6,7 @@
         "wheel"
     ], 
     "Installation": { 
-        "Radius": 1.5, 
+        "Radius": 0.75,
         "Width": 0.75, 
         "Handler": "wheel"
     }, 
