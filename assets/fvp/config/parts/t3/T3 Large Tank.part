@@ -1,0 +1,20 @@
+{ 
+    "ID": "t3_large_tank", 
+    "Name": "T3 Large Tank", 
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/t3/t3_large_tank.fmf", 
+    "Textures": [
+        "Default;fvp:textures/trucks/t3.png"
+    ],
+    "Category": [ 
+        "t3_side_tank"
+    ],
+    "Installation":{
+        "Handler": "default",
+        "Incompatible":{
+            "fvp:t3":[
+                "fvp:t3_cabin_def"
+            ]
+        }
+    }
+}
