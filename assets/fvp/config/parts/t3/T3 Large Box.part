@@ -29,6 +29,17 @@
                 "pos": [ -0.0, -0.0, 2.0 ], 
                 "type": "t3_side_tank_extra"
             }
+        },
+        "fvtm:inventory":{
+            "type": "item",
+            "rows": 3,
+            "cols": 5,
+            "access": [
+                "front_left",
+                "front_right",
+                "external"
+            ],
+            "scale": 0.75
         }
     }
 }
