@@ -40,5 +40,13 @@
                 "pos": [ -0.0, 0.375, 1.0 ]
             }
         }
+    }, 
+    "ModelData": { 
+        "Programs": [ 
+            "lights_turn_right_back fvtm:turn_signal_right", 
+            "lights_turn_left_back fvtm:turn_signal_left", 
+            "lights_rear fvtm:back_lights", 
+            "lights_reverse fvtm:reverse_lights"
+        ]
     }
 }
