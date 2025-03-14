@@ -10,7 +10,8 @@
             "pos": [ 0.0, 0, 0 ],
             "type": [ 
                 "truck_trailer", 
-                "semi_trailer"
+                "semi_trailer",
+                "gooseneck"
             ]
         }
     }, 
