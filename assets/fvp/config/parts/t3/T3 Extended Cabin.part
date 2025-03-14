@@ -28,5 +28,11 @@
                 "pos": [ 1.0, 0.5, 1.5 ]
             }
         }
+    }, 
+    "ModelData": { 
+        "Programs": [ 
+            "cab_ext_primary fvtm:rgb_channel primary", 
+            "cab_ext_lights fvtm:lights"
+        ]
     }
 }
