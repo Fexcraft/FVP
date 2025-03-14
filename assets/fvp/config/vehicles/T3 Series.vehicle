@@ -70,11 +70,153 @@
     }, 
     "DefaultSeats": { 
         "front_left": { 
-            "pos": [ -0.75, 1.625, -0.0 ], 
+            "pos": [ -0.75, 1.875, -0.0 ], 
             "driver": true
         }, 
         "front_right": { 
-            "pos": [ 0.75, 1.625, -0.0 ]
+            "pos": [ 0.75, 1.875, -0.0 ]
         }
+    }, 
+    "ModelData": { 
+        "Programs": [ 
+            "chassis_primary fvtm:rgb_channel primary", 
+            "chassis_secondary fvtm:rgb_channel secondary", 
+            "door_left fvtm:rgb_channel primary", 
+            "door_right fvtm:rgb_channel primary", 
+            "lights_turn_left fvtm:turn_signal_left", 
+            "lights_turn_right fvtm:turn_signal_right", 
+            "lights_front fvtm:front_lights", 
+            "lights_long fvtm:long_lights", 
+            "air_filters_lights fvtm:lights"
+        ]
     }
+    "InstalledParts": {
+        "vehicle:engine": "gep:engine_diesel",
+        "vehicle:transmission": "gep:automatic_transmission",
+        "front_left": "fvp:t2_wheel"
+        "front_right": "fvp:t2_wheel"
+    }
+    "Catalog": {
+        "2x2": {
+            "name": "2x2 Default Cabin"
+            "recipe":{
+                "gep:chassis_truck": 1,
+                "gep:door_set": 2,
+                "gep:chassis_components": 2,
+                "gep:lights_set": 2,
+                "gep:electric_components": 2,
+                "gep:seat_set": 2
+            },
+            "parts": {
+                "vehicle:cabin": "fvp:t3_cabin_def",
+                "cabin:mid_chassis": "fvp:t3_mid_chassis",
+                "mid_chassis:axle": "fvp:t3_rear_axle",
+                "axle:connector": "fvp:t3_connector",
+                "axle_left": "fvp:t3_rear_wheel",
+                "axle_right": "fvp:t3_rear_wheel"
+            },
+            "scale": 0.5
+        },
+        "2x4": {
+            "name": "2x4 Default Cabin",
+            "recipe":{
+                "gep:chassis_truck": 1,
+                "gep:door_set": 2,
+                "gep:chassis_components": 4,
+                "gep:lights_set": 2,
+                "gep:electric_components": 2,
+                "gep:seat_set": 2
+            }
+            "parts": {
+                "vehicle:cabin": "fvp:t3_cabin_def",
+                "cabin:mid_chassis": "fvp:t3_mid_chassis",
+                "mid_chassis:axle": "fvp:t3_mid_axle",
+                "axle:axle_0": "fvp:t3_rear_axle",
+                "axle:connector": "fvp:t3_connector",
+                "axle_left": "fvp:t3_rear_wheel",
+                "axle_right": "fvp:t3_rear_wheel",
+                "axle_0_left": "fvp:t3_rear_wheel",
+                "axle_0_right": "fvp:t3_rear_wheel"
+            },
+            "scale": 0.5
+        },
+        "2x4_ext": {
+            "name": "2x4 Extended Cabin",
+            "recipe":{
+                "gep:chassis_truck": 1,
+                "gep:door_set": 2,
+                "gep:chassis_components": 6,
+                "gep:lights_set": 3,
+                "gep:electric_components": 3,
+                "gep:seat_set": 3
+            }
+            "parts": {
+                "vehicle:cabin": "fvp:t3_cabin_ext",
+                "cabin:mid_chassis": "fvp:t3_mid_chassis",
+                "mid_chassis:axle": "fvp:t3_mid_axle",
+                "axle:axle_0": "fvp:t3_rear_axle",
+                "axle:connector": "fvp:t3_connector",
+                "axle_left": "fvp:t3_rear_wheel",
+                "axle_right": "fvp:t3_rear_wheel",
+                "axle_0_left": "fvp:t3_rear_wheel",
+                "axle_0_right": "fvp:t3_rear_wheel"
+            },
+            "scale": 0.5
+        },
+        "2x6_ext": {
+            "name": "2x6 Extended Cabin",
+            "recipe":{
+                "gep:chassis_truck": 1,
+                "gep:door_set": 2,
+                "gep:chassis_components": 8,
+                "gep:lights_set": 3,
+                "gep:electric_components": 3,
+                "gep:seat_set": 3
+            }
+            "parts": {
+                "vehicle:cabin": "fvp:t3_cabin_ext",
+                "cabin:mid_chassis": "fvp:t3_mid_chassis",
+                "mid_chassis:axle": "fvp:t3_mid_axle",
+                "axle:axle_0": "fvp:t3_mid_axle",
+                "axle_0:axle_1": "fvp:t3_rear_axle",
+                "axle_0:connector": "fvp:t3_connector",
+                "axle_left": "fvp:t3_rear_wheel",
+                "axle_right": "fvp:t3_rear_wheel",
+                "axle_0_left": "fvp:t3_rear_wheel",
+                "axle_0_right": "fvp:t3_rear_wheel",
+                "axle_1_left": "fvp:t3_rear_wheel",
+                "axle_1_right": "fvp:t3_rear_wheel"
+            },
+            "scale": 0.5
+        },
+        "2x8_ext": {
+            "name": "2x8 Extended Cabin",
+            "recipe":{
+                "gep:chassis_truck": 1,
+                "gep:door_set": 2,
+                "gep:chassis_components": 10,
+                "gep:lights_set": 3,
+                "gep:electric_components": 3,
+                "gep:seat_set": 3
+            }
+            "parts": {
+                "vehicle:cabin": "fvp:t3_cabin_ext",
+                "cabin:mid_chassis": "fvp:t3_mid_chassis",
+                "mid_chassis:axle": "fvp:t3_mid_axle",
+                "axle:axle_0": "fvp:t3_mid_axle",
+                "axle_0:axle_1": "fvp:t3_mid_axle",
+                "axle_1:axle_2": "fvp:t3_rear_axle",
+                "axle_1:connector": "fvp:t3_connector",
+                "axle_left": "fvp:t3_rear_wheel",
+                "axle_right": "fvp:t3_rear_wheel",
+                "axle_0_left": "fvp:t3_rear_wheel",
+                "axle_0_right": "fvp:t3_rear_wheel",
+                "axle_1_left": "fvp:t3_rear_wheel",
+                "axle_1_right": "fvp:t3_rear_wheel",
+                "axle_2_left": "fvp:t3_rear_wheel",
+                "axle_2_right": "fvp:t3_rear_wheel"
+            },
+            "scale": 0.5
+        }
+    },
 }
