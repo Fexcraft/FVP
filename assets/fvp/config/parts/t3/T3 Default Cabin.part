@@ -29,4 +29,9 @@
             }
         }
     }
+    "ModelData": {
+        "Programs": [
+            "cab_def fvtm:rgb_channel primary"
+        ]
+    }
 }
