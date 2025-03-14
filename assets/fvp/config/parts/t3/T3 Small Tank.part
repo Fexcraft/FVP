@@ -9,5 +9,11 @@
     "Category": [ 
         "t3_side_tank",
         "t3_side_tank_extra"
-    ]
+    ],
+    "ModelData":{
+        "Programs":[
+            "small_tank_left fvtm:category_specific side_left"
+            "small_tank_right fvtm:category_specific side_right"
+        ]
+    }
 }

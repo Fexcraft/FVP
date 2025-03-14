@@ -16,5 +16,11 @@
                 "fvp:t3_cabin_def"
             ]
         }
+    },
+    "ModelData":{
+        "Programs":[
+            "large_tank_left fvtm:category_specific side_left"
+            "large_tank_right fvtm:category_specific side_right"
+        ]
     }
 }
