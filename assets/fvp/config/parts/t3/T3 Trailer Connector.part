@@ -1,0 +1,21 @@
+{ 
+    "ID": "t3_connector", 
+    "Name": "T3 Trailer Connector", 
+    "Addon": "fvp", 
+    "Category": [ 
+        "connector"
+    ], 
+    "Functions": { 
+        "fvtm:connector": { 
+            "pos": [ 0.0, 0, 0 ],
+            "type": [ 
+                "truck_trailer", 
+                "semi_trailer"
+            ]
+        }
+    }, 
+    "Textures": [ 
+        "Default;fvp:textures/trucks/t3.png"
+    ], 
+    "Model": "fvp:models/part/t3/t3_connector.fmf"
+}

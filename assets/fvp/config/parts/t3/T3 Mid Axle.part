@@ -16,6 +16,9 @@
             }, 
             "axle_2": { 
                 "pos": [ -0.0, -0.0, 2.0 ]
+            }, 
+            "connector": { 
+                "pos": [ -0.0, 0.375, 1.0 ]
             }
         }, 
         "fvtm:wheel_positions": { 
