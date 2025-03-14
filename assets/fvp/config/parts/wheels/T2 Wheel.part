@@ -10,7 +10,7 @@
     }, 
     "Installation": { 
         "Width": 0.375, 
-        "Radius": 1.5, 
+        "Radius": 0.75,
         "Handler": "wheel"
     }, 
     "Functions": { 
