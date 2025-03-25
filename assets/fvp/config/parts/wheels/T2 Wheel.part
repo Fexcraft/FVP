@@ -8,6 +8,7 @@
             "wheel fvtm:wheel_auto_all"
         ]
     }, 
+    "Category": "wheel",
     "Installation": { 
         "Width": 0.375, 
         "Radius": 0.75,
