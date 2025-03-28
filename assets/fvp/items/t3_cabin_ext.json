@@ -1,0 +1,6 @@
+{ 
+    "model": { 
+        "type": "minecraft:model", 
+        "model": "fvp:item/t3_cabin_ext"
+    }
+}
