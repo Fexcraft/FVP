@@ -18,44 +18,47 @@
             "Ferdinand (FEX___96)"
         ], 
         "Programs": [ 
-            "primary fvtm:rgb_channel primary",
-            "door_fl_primary fvtm:rgb_channel primary",
-            "door_fr_primary fvtm:rgb_channel primary",
-            "door_rl_primary fvtm:rgb_channel primary",
-            "door_rr_primary fvtm:rgb_channel primary",
-            "trunk fvtm:rgb_channel primary",
-            "hood fvtm:rgb_channel primary",
-            "seats fvtm:rgb_channel seats",
-            "lights_rear fvtm:back_lights",
-            "lights_reverse fvtm:reverse_lights",
-            "lights_brake fvtm:brake_lights",
-            "lights_left fvtm:turn_signal_left",
-            "lights_right fvtm:turn_signal_right",
-            "lights_front fvtm:front_lights",
-            "lights_long fvtm:long_lights",
-            "lights_fog fvtm:fog_lights",
-            "steering fvtm:steering_base 2 6",
-            "door_fl fvtm:attribute_rotator door_front_left true -60 0 -1 1",
-            "door_fl_primary fvtm:attribute_rotator door_front_left true -60 0 -1 1",
-            "door_fr fvtm:attribute_rotator door_front_right true 0 60 1 1",
-            "door_fr_primary fvtm:attribute_rotator door_front_right true 0 60 1 1",
-            "door_rl fvtm:attribute_rotator door_rear_left true -60 0 -1 1",
-            "door_rl_primary fvtm:attribute_rotator door_rear_left true -60 0 -1 1",
-            "door_rr fvtm:attribute_rotator door_rear_right true 0 60 1 1",
-            "door_rr_primary fvtm:attribute_rotator door_rear_right true 0 60 1 1",
-            "hood fvtm:attribute_rotator hood true 0 60 1 0",
-            "trunk fvtm:attribute_rotator trunk true -60 0 -1 0",
-            "light_inner_front fvtm:attribute_lights light_inner_front",
-            "light_inner_rear fvtm:attribute_lights light_inner_rear",
-            "lever_left fvtm:attribute_rotator lights_long true -10 0 -1 2",
-            "lever_left_s fvtm:attribute_rotator lights_long true -10 0 -1 2"
-            "interior_glow fvtm:lights"
-            "warning_lights fvtm:attribute_lights warning_lights",
+            "primary fvtm:rgb_channel primary", 
+            "door_fl_primary fvtm:rgb_channel primary", 
+            "door_fr_primary fvtm:rgb_channel primary", 
+            "door_rl_primary fvtm:rgb_channel primary", 
+            "door_rr_primary fvtm:rgb_channel primary", 
+            "trunk fvtm:rgb_channel primary", 
+            "hood fvtm:rgb_channel primary", 
+            "seats fvtm:rgb_channel seats", 
+            "lights_rear fvtm:back_lights", 
+            "lights_reverse fvtm:reverse_lights", 
+            "lights_brake fvtm:brake_lights", 
+            "lights_left fvtm:turn_signal_left", 
+            "lights_right fvtm:turn_signal_right", 
+            "lights_front fvtm:front_lights", 
+            "lights_long fvtm:long_lights", 
+            "lights_fog fvtm:fog_lights", 
+            "steering fvtm:steering_base 2 6", 
+            "door_fl fvtm:attribute_rotator door_front_left true -60 0 -1 1", 
+            "door_fl_primary fvtm:attribute_rotator door_front_left true -60 0 -1 1", 
+            "door_fr fvtm:attribute_rotator door_front_right true 0 60 1 1", 
+            "door_fr_primary fvtm:attribute_rotator door_front_right true 0 60 1 1", 
+            "door_rl fvtm:attribute_rotator door_rear_left true -60 0 -1 1", 
+            "door_rl_primary fvtm:attribute_rotator door_rear_left true -60 0 -1 1", 
+            "door_rr fvtm:attribute_rotator door_rear_right true 0 60 1 1", 
+            "door_rr_primary fvtm:attribute_rotator door_rear_right true 0 60 1 1", 
+            "hood fvtm:attribute_rotator hood true 0 60 1 0", 
+            "trunk fvtm:attribute_rotator trunk true -60 0 -1 0", 
+            "light_inner_front fvtm:attribute_lights light_inner_front", 
+            "light_inner_rear fvtm:attribute_lights light_inner_rear", 
+            "lever_left fvtm:attribute_rotator lights_long true -10 0 -1 2", 
+            "lever_left_s fvtm:attribute_rotator lights_long true -10 0 -1 2", 
+            "interior_glow fvtm:lights", 
+            "warning_lights fvtm:attribute_lights warning_lights"
         ]
     }, 
     "PartSlots": { 
         "engine": {}, 
-        "transmission": {}
+        "transmission": {}, 
+        "lightbeams": { 
+            "pos": [ -1.0, 0.875, -2.875 ]
+        }
     }, 
     "Attributes": { 
         "door_front_left": { 
@@ -66,14 +69,14 @@
             ]
         }, 
         "door_front_right": { 
-            "type": "boolean",
+            "type": "boolean", 
             "access": [ 
                 "front_right", 
                 "external"
             ]
         }, 
         "door_rear_left": { 
-            "type": "boolean",
+            "type": "boolean", 
             "access": [ 
                 "rear_left", 
                 "rear_middle", 
@@ -81,7 +84,7 @@
             ]
         }, 
         "door_rear_right": { 
-            "type": "boolean",
+            "type": "boolean", 
             "access": [ 
                 "rear_right", 
                 "rear_middle", 
@@ -89,83 +92,83 @@
             ]
         }, 
         "hood": { 
-            "type": "boolean",
+            "type": "boolean", 
             "access": [ 
                 "front_left", 
                 "external"
             ]
         }, 
         "trunk": { 
-            "type": "boolean",
+            "type": "boolean", 
             "access": [ 
                 "front_left", 
                 "external"
             ]
-        },
-        "lights": {
-            "type": "boolean",
-            "access": [
+        }, 
+        "lights": { 
+            "type": "boolean", 
+            "access": [ 
                 "front_left"
-            ],
-            "interact":{
+            ], 
+            "interact": { 
                 "default": [ -0.96875, 1.28125, -0.325, 0.0625 ]
             }
-        },
-        "lights_long": {
-            "type": "boolean",
-            "access": [
+        }, 
+        "lights_long": { 
+            "type": "boolean", 
+            "access": [ 
                 "front_left"
-            ],
-            "interact":{
+            ], 
+            "interact": { 
                 "default": [ -0.84375, 1.28125, -0.325, 0.125 ]
             }
-        },
-        "lights_fog": {
-            "type": "boolean",
-            "access": [
+        }, 
+        "lights_fog": { 
+            "type": "boolean", 
+            "access": [ 
                 "front_left"
-            ],
-            "interact":{
+            ], 
+            "interact": { 
                 "default": [ -1.06875, 1.06875, -0.5625, 0.0625 ]
             }
-        },
-        "turn_lights": {
-            "type": "tristate",
-            "access": [
+        }, 
+        "turn_lights": { 
+            "type": "tristate", 
+            "access": [ 
                 "front_left"
-            ],
-            "interact":{
+            ], 
+            "interact": { 
                 "default": [ -0.53125, 1.28125, -0.325, 0.125 ]
             }
-        },
-        "warning_lights": {
-            "type": "boolean",
-            "access": [
-                "front_left",
+        }, 
+        "warning_lights": { 
+            "type": "boolean", 
+            "access": [ 
+                "front_left", 
                 "front_right"
-            ],
-            "interact":{
+            ], 
+            "interact": { 
                 "default": [ 0, 1.04375, -0.4625, 0.63 ]
             }
-        },
-        "light_inner_front": {
-            "type": "boolean",
-            "access": [
-                "front_left",
+        }, 
+        "light_inner_front": { 
+            "type": "boolean", 
+            "access": [ 
+                "front_left", 
                 "front_right"
-            ],
-            "interact":{
+            ], 
+            "interact": { 
                 "default": [ 0, 2.09375, 0.21875, 0.0625 ]
             }
-        },
-        "light_inner_rear": {
-            "type": "boolean",
-            "access": [
-                "rear_left",
-                "rear_middle",
+        }, 
+        "light_inner_rear": { 
+            "type": "boolean", 
+            "access": [ 
+                "rear_left", 
+                "rear_middle", 
                 "rear_right"
-            ],
-            "interact":{
+            ], 
+            "interact": { 
                 "default": [ 0, 2.09375, 1.90625, 0.0625 ]
             }
         }
@@ -178,38 +181,40 @@
     }, 
     "LiftingPoints": { 
         "front_left": { 
-            "pair": "rear_left",
+            "pair": "rear_left", 
             "pos": [ -1.15625, 0.1875, -0.5 ]
         }, 
         "front_right": { 
-            "pair": "rear_right",
+            "pair": "rear_right", 
             "pos": [ 1.15625, 0.1875, -0.5 ]
         }, 
         "rear_left": { 
-            "pair": "front_left",
+            "pair": "front_left", 
             "pos": [ -1.15625, 0.1875, 1.75 ]
         }, 
         "rear_right": { 
-            "pair": "front_right",
+            "pair": "front_right", 
             "pos": [ 1.15625, 0.1875, 1.75 ]
         }
     }, 
-    "Catalog": {
-		"white": {
-			"name": "Factory White",
-			"colors": {
-				"primary": "ffffff"
-			},
-			"recipe":{
-				"gep:chassis_car": 1,
-				"gep:door_set": 4,
-				"gep:chassis_components": 2,
-				"gep:lights_set": 2,
-				"gep:electric_components": 4,
-				"gep:seat_set": 5
-			}
-		},
-    },
+    "Catalog": { 
+        "white": { 
+            "name": "Factory White", 
+            "colors": { 
+                "primary": "ffffff"
+            }, 
+            "recipe": [ 
+                { 
+                    "gep:chassis_car": 1, 
+                    "gep:door_set": 4, 
+                    "gep:chassis_components": 2, 
+                    "gep:lights_set": 2, 
+                    "gep:electric_components": 4, 
+                    "gep:seat_set": 5
+                }
+            ]
+        }
+    }, 
     "DefaultSeats": { 
         "front_left": { 
             "driver": true, 
@@ -259,68 +264,68 @@
     "InstalledParts": { 
         "vehicle:engine": "gep:engine_petrol", 
         "vehicle:transmission": "gep:transmission", 
-        "front_left": "fvp:rim_1",
-        "front_right": "fvp:rim_1",
-        "rear_left": "fvp:rim_1",
-        "rear_right": "fvp:rim_1"
-        "front_left:tire": "fvp:tire_1",
-        "front_right:tire": "fvp:tire_1",
-        "rear_left:tire": "fvp:tire_1",
+        "front_left": "fvp:rim_1", 
+        "front_right": "fvp:rim_1", 
+        "rear_left": "fvp:rim_1", 
+        "rear_right": "fvp:rim_1", 
+        "front_left:tire": "fvp:tire_1", 
+        "front_right:tire": "fvp:tire_1", 
+        "rear_left:tire": "fvp:tire_1", 
         "rear_right:tire": "fvp:tire_1"
-    },
-    "Inventories":{
-        "glove_box":{
-            "type": "item",
-            "rows": 1,
-            "cols": 4,
-            "access": [
-                "front_left",
+    }, 
+    "Inventories": { 
+        "glove_box": { 
+            "type": "item", 
+            "rows": 1, 
+            "cols": 4, 
+            "access": [ 
+                "front_left", 
                 "front_right"
-            ],
-            "pos": [ 0.625, 1, -0.625 ],
+            ], 
+            "pos": [ 0.625, 1, -0.625 ], 
             "scale": 0.25
-        },
-        "door_front_left":{
-            "type": "item",
-            "rows": 1,
-            "cols": 2,
-            "access": [
+        }, 
+        "door_front_left": { 
+            "type": "item", 
+            "rows": 1, 
+            "cols": 2, 
+            "access": [ 
                 "front_left"
-            ],
-            "pos": [ -1.25, 0.75, 0 ],
+            ], 
+            "pos": [ -1.25, 0.75, 0 ], 
             "scale": 0.125
-        },
-        "door_front_right":{
-            "type": "item",
-            "rows": 1,
-            "cols": 2,
-            "access": [
+        }, 
+        "door_front_right": { 
+            "type": "item", 
+            "rows": 1, 
+            "cols": 2, 
+            "access": [ 
                 "front_right"
-            ],
-            "pos": [ 1.25, 0.75, 0 ],
+            ], 
+            "pos": [ 1.25, 0.75, 0 ], 
             "scale": 0.125
-        },
-        "door_rear_left":{
-            "type": "item",
-            "rows": 1,
-            "cols": 1,
-            "access": [
-                "rear_left",
+        }, 
+        "door_rear_left": { 
+            "type": "item", 
+            "rows": 1, 
+            "cols": 1, 
+            "access": [ 
+                "rear_left", 
                 "rear_middle"
-            ],
-            "pos": [ -1.25, 0.75, 1.25 ],
+            ], 
+            "pos": [ -1.25, 0.75, 1.25 ], 
             "scale": 0.125
-        },
-        "door_rear_right":{
-            "type": "item",
-            "rows": 1,
-            "cols": 1,
-            "access": [
-                "rear_right",
+        }, 
+        "door_rear_right": { 
+            "type": "item", 
+            "rows": 1, 
+            "cols": 1, 
+            "access": [ 
+                "rear_right", 
                 "rear_middle"
-            ],
-            "pos": [ 1.25, 0.75, 1.25 ],
+            ], 
+            "pos": [ 1.25, 0.75, 1.25 ], 
             "scale": 0.125
         }
-    },
+    }
 }

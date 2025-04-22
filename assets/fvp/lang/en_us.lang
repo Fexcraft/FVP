@@ -139,5 +139,6 @@ item.fvp:excav_wheel.name=Excavator Wheel
 item.fvp:tire_1.name=FVP Generic Tire 1
 item.fvp:taxi_roof_lights.name=Taxi (Roof) Lights
 item.fvp:excavator.name=Excavator
-item.fvp:fvp:tram_30.name=Tram Gauge (30pxt)
 item.fvp:tram_30.name=Tram Gauge (30pxt)
+item.fvp:fvp:tram_30.name=Tram Gauge (30pxt)
+item.fvp:c13_lb.name=C13 Lightbeams

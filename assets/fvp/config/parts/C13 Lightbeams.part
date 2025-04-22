@@ -1,0 +1,13 @@
+{ 
+    "ID": "c13_lb", 
+    "Name": "C13 Lightbeams", 
+    "Addon": "fvp", 
+    "Texture": "fvtm:textures/entity/light_beam_solid.png"
+    "Category": "lightbeams"
+    "Model": "fvp:models/part/c13_lb.fmf",
+    "ModelData":{
+        "Programs":[
+            "group0 fvtm:light_beam"
+        ]
+    }
+}

@@ -133,6 +133,7 @@
     "item.fvp.tire_1": "FVP Generic Tire 1", 
     "item.fvp.taxi_roof_lights": "Taxi (Roof) Lights", 
     "item.fvp.excavator": "Excavator", 
+    "item.fvp.tram_30": "Tram Gauge (30pxt)", 
     "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)", 
-    "item.fvp.tram_30": "Tram Gauge (30pxt)"
+    "item.fvp.c13_lb": "C13 Lightbeams"
 }
