@@ -70,7 +70,7 @@ item.fvp:c11_seats.name=C11 Seats
 item.fvp:c11_steering_wheel.name=C11 Steering Wheel
 item.fvp:c11_trunk.name=C11 Trunk
 #Bogies
-item.fvp:bogie_st1.name=ST1 Bogie
+item.fvp:bogie_st1.name=Bogie (S) Type 1
 item.fvp:t3_air_filters.name=
 item.fvp:t3_interior_basic.name=
 item.fvp:t3_seats_basic.name=
@@ -140,5 +140,6 @@ item.fvp:tire_1.name=FVP Generic Tire 1
 item.fvp:taxi_roof_lights.name=Taxi (Roof) Lights
 item.fvp:excavator.name=Excavator
 item.fvp:tram_30.name=Tram Gauge (30pxt)
-item.fvp:fvp:tram_30.name=Tram Gauge (30pxt)
 item.fvp:c13_lb.name=C13 Lightbeams
+item.fvp:bogie_st2.name=Bogie (S) Type 2
+item.fvp:fvp:tram_30.name=Tram Gauge (30pxt)

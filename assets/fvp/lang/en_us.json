@@ -64,7 +64,7 @@
     "item.fvp.c11_seats": "C11 Seats", 
     "item.fvp.c11_steering_wheel": "C11 Steering Wheel", 
     "item.fvp.c11_trunk": "C11 Trunk", 
-    "item.fvp.bogie_st1": "ST1 Bogie", 
+    "item.fvp.bogie_st1": "Bogie (S) Type 1", 
     "item.fvp.t3_air_filters": "", 
     "item.fvp.t3_interior_basic": "", 
     "item.fvp.t3_seats_basic": "", 
@@ -134,6 +134,7 @@
     "item.fvp.taxi_roof_lights": "Taxi (Roof) Lights", 
     "item.fvp.excavator": "Excavator", 
     "item.fvp.tram_30": "Tram Gauge (30pxt)", 
-    "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)", 
-    "item.fvp.c13_lb": "C13 Lightbeams"
+    "item.fvp.c13_lb": "C13 Lightbeams", 
+    "item.fvp.bogie_st2": "Bogie (S) Type 2", 
+    "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)"
 }

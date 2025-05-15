@@ -1,0 +1,22 @@
+{ 
+    "ID": "bogie_st2", 
+    "Name": "Bogie (S) Type 2", 
+    "Addon": "fvp"
+    "Model": "fvp:models/part/bogiest2.fmf",
+    "ModelData":{
+        "Programs":[
+            "chassis fvtm:bogie_auto",
+            "axle0 fvtm:bogie_auto",
+            "axle1 fvtm:bogie_auto"
+        ]
+    },
+    "Category": "bogie",
+    "Texture": "fvp:textures/bogies/st2.png",
+    "Installation":{
+    	"Handler": "bogie",
+    	"Height": 0.75
+    },
+    "Functions":{
+        "fvtm:bogie":{}
+    }
+}
