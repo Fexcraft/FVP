@@ -14,7 +14,7 @@
     "Texture": "fvp:textures/bogies/st1.png",
     "Installation":{
     	"Handler": "bogie",
-    	"Height": 0.875
+    	"Height": 0.75
     },
     "Functions":{
         "fvtm:bogie":{}
