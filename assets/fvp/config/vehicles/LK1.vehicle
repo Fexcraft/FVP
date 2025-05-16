@@ -1,0 +1,78 @@
+{ 
+    "ID": "lk1", 
+    "Name": "LK1", 
+    "Addon": "fvp", 
+    "Categories": [ 
+        "locomotive", 
+        "train", 
+        "rail"
+    ], 
+    "VehicleType": "RAIL", 
+    "ImpactWrench": 1.0, 
+    "WheelPositions": { 
+        "bogie_front": { 
+            "pos": [ 0, 0.75, -3.0 ]
+        }, 
+        "bogie_rear": { 
+            "pos": [ 0, 0.75, 3.0 ]
+        }
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 3.0
+    }, 
+    "InstalledParts": { 
+        "vehicle:engine": "gep:engine_diesel", 
+        "bogie_front": "fvp:bogie_st2", 
+        "bogie_rear": "fvp:bogie_st2"
+    }, 
+    "PartSlots": { 
+        "engine": { 
+            "pos": [ 0.0, 1.875, 0.0 ], 
+            "radius": 1.0
+        }
+    }, 
+    "Catalog": {}, 
+    "InteractZones": { 
+        "default": { 
+            "range": 10.0
+        }
+    }, 
+    "Model": "fvp:models/vehicle/lk1.fmf", 
+    "ModelData": { 
+        "TextureWidth": 512.0, 
+        "TextureHeight": 512.0, 
+        "Programs": [ 
+            "primary fvtm:rgb_channel primary", 
+            "door_fl fvtm:rgb_channel primary",
+            "door_fr fvtm:rgb_channel primary",
+            "door_rl fvtm:rgb_channel primary",
+            "door_rr fvtm:rgb_channel primary",
+            "lights_forward fvtm:lights_rail_forward", 
+            "lights_reverse fvtm:lights_rail_backward"
+        ]
+    }, 
+    "Textures": [ 
+        "Default;fvp:textures/trains/lk1.png", 
+        "Blank Logos;fvp:textures/trains/lk1_logos.png"
+    ], 
+    "DefaultSeats": { 
+        "driver_front": { 
+            "pos": [ 0.625, 2.5, -5.0 ], 
+            "driver": true
+        }, 
+        "aux_front": { 
+            "pos": [ -0.625, 2.5, -5.0 ]
+        }, 
+        "driver_rear": { 
+            "pos": [ -0.625, 2.5, 5.0 ], 
+            "driver": true
+        }, 
+        "aux_rear": { 
+            "pos": [ 0.625, 2.5, 5.0 ]
+        }
+    }
+    "Connectors":{
+        "rear": [ 0, 0.25, 6.75 ],
+        "front": [ 0, 0.25, -6.75 ]
+    },
+}
