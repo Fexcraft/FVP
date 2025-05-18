@@ -52,7 +52,10 @@
         ]
     }, 
     "Textures": [ 
-        "Default;fvp:textures/trains/lk1.png", 
+        "Default;fvp:textures/trains/lk1.png",
+        "FR Regio;fvp:textures/trains/lk1_alt2.png",
+        "FR Cargo;fvp:textures/trains/lk1_alt3.png",
+        "FVP;fvp:textures/trains/lk1_alt1.png",
         "Blank Logos;fvp:textures/trains/lk1_logos.png"
     ], 
     "DefaultSeats": { 
