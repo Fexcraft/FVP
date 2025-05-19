@@ -396,7 +396,7 @@
 	"Sounds": { 
 		"generic": "minecraft:block.bell.use"
 	}, 
-	"Events": [ 
+	"#Events": [
 		"attr_update fvtm:true logger test logging entry", 
 		"attr_update fvtm:true msg Toggled {attr_id} to {attr}! Playing a sound now.", 
 		"attr_update fvtm:true play_sound vehicle generic"
