@@ -43,60 +43,64 @@
         "TextureHeight": 512.0, 
         "Programs": [ 
             "primary fvtm:rgb_channel primary", 
-            "door_fl fvtm:rgb_channel primary",
-            "door_fr fvtm:rgb_channel primary",
-            "door_rl fvtm:rgb_channel primary",
-            "door_rr fvtm:rgb_channel primary",
+            "door_fl fvtm:rgb_channel primary", 
+            "door_fr fvtm:rgb_channel primary", 
+            "door_rl fvtm:rgb_channel primary", 
+            "door_rr fvtm:rgb_channel primary", 
             "lights_forward fvtm:lights_rail_forward", 
             "lights_reverse fvtm:lights_rail_backward"
         ]
     }, 
     "Textures": [ 
-        "Default;fvp:textures/trains/lk1.png",
-        "FR Regio;fvp:textures/trains/lk1_alt2.png",
-        "FR Cargo;fvp:textures/trains/lk1_alt3.png",
-        "FVP;fvp:textures/trains/lk1_alt1.png",
+        "Default;fvp:textures/trains/lk1.png", 
+        "FR Regio;fvp:textures/trains/lk1_alt2.png", 
+        "FR Cargo;fvp:textures/trains/lk1_alt3.png", 
+        "FVP;fvp:textures/trains/lk1_alt1.png", 
         "Blank Logos;fvp:textures/trains/lk1_logos.png"
     ], 
     "DefaultSeats": { 
         "driver_front": { 
             "pos": [ 0.625, 2.5, -5.0 ], 
-            "driver": true
+            "driver": true, 
+            "dismount": [ 2.0, 1.9375, -4.5 ]
         }, 
         "aux_front": { 
-            "pos": [ -0.625, 2.5, -5.0 ]
+            "pos": [ -0.625, 2.5, -5.0 ], 
+            "dismount": [ -2.0, 1.9375, -4.5 ]
         }, 
         "driver_rear": { 
             "pos": [ -0.625, 2.5, 5.0 ], 
-            "driver": true
+            "driver": true, 
+            "dismount": [ -2.0, 1.9375, 4.5 ]
         }, 
         "aux_rear": { 
-            "pos": [ 0.625, 2.5, 5.0 ]
+            "pos": [ 0.625, 2.5, 5.0 ], 
+            "dismount": [ 2.0, 1.9375, 4.5 ]
         }
-    }
-    "Connectors":{
-        "rear": [ 0, 0.25, 6.75 ],
+    }, 
+    "Connectors": { 
+        "rear": [ 0, 0.25, 6.75 ], 
         "front": [ 0, 0.25, -6.75 ]
-    },
-    "BoundingBoxes":{
-        "floor": {
-            "pos": [ 0, 1.25, 0 ],
+    }, 
+    "BoundingBoxes": { 
+        "floor": { 
+            "pos": [ 0, 1.25, 0 ], 
             "size": [ 3.25, 1.375, 12.5 ]
-        },
-        "roof": {
-            "pos": [ 0, 4.1875, 0 ],
+        }, 
+        "roof": { 
+            "pos": [ 0, 4.1875, 0 ], 
             "size": [ 3.25, 0.5, 12.5 ]
-        },
-        "engine": {
-            "pos": [ 0, 2.9375, 0 ]
+        }, 
+        "engine": { 
+            "pos": [ 0, 2.9375, 0 ], 
             "size": [ 3.25, 2, 7.75 ]
-        },
-        "front": {
-            "pos": [ 0, 2.9375, -5.625 ],
+        }, 
+        "front": { 
+            "pos": [ 0, 2.9375, -5.625 ], 
             "size": [ 3.25, 2, 1.25 ]
-        },
-        "rear": {
-            "pos": [ 0, 2.9375, 5.625 ],
+        }, 
+        "rear": { 
+            "pos": [ 0, 2.9375, 5.625 ], 
             "size": [ 3.25, 2, 1.25 ]
         }
     }
