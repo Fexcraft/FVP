@@ -1,0 +1,49 @@
+{ 
+    "ID": "wg1", 
+    "Name": "Wagon 1", 
+    "Addon": "fvp",
+    "Categories": [
+        "wagon",
+        "train",
+        "rail"
+    ],
+    "Wagon": true,
+    "VehicleType": "RAIL",
+    "ImpactWrench": 1.0,
+    "WheelPositions": {
+        "bogie_front": {
+            "pos": [ 0, 0.75, -5.0 ]
+        },
+        "bogie_rear": {
+            "pos": [ 0, 0.75, 5.0 ]
+        }
+    },
+    "InstalledParts": {
+        "bogie_front": "fvp:bogie_st2",
+        "bogie_rear": "fvp:bogie_st2"
+    },
+    "PartSlots": {
+
+    },
+    "Catalog": {},
+    "InteractZones": {
+        "default": {
+            "range": 20.0
+        }
+    },
+    "Model": "fvp:models/vehicle/wg1.fmf",
+    "ModelData": {
+        "Programs": []
+    },
+    "Textures": [],
+    "DefaultSeats": {
+
+    },
+    "Connectors": {
+        "front": [ 0, 0.25, -9.625 ],
+        "rear": [ 0, 0.25, 9.625 ]
+    },
+    "BoundingBoxes": {
+
+    }
+}
