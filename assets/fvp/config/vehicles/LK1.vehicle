@@ -37,6 +37,16 @@
             "range": 12.0
         }
     }, 
+    "Attributes": {
+        "line_info": {
+            "type": "string",
+            "sync": true
+        },
+        "line_dest": {
+            "type": "string",
+            "sync": true
+        }
+    },
     "Model": "fvp:models/vehicle/lk1.fmf", 
     "ModelData": { 
         "TextureWidth": 512.0, 
