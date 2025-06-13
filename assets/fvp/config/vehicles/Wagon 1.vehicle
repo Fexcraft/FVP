@@ -41,11 +41,18 @@
             "sync": true
         }
     },
+    "ColorChannels": {
+        "primary": "#ffffff", ,
+        "inner": "#ffffff"
+        "seats": "#ffffff"
+    },
     "Model": "fvp:models/vehicle/wg1.fmf",
     "ModelData": {
+        "TextureWidth": 1024,
+        "TextureHeight": 512,
         "Programs": [
             {
-                "group": "primary",
+                "group": "infoboard",
                 "id": "fvtm:text",
                 "pos": [ 1.95, 1.8125, -4.9375 ],
                 "centered": false,
@@ -55,7 +62,7 @@
                 "font": "fvp:kompakt"
             },
             {
-                "group": "primary",
+                "group": "infoboard",
                 "id": "fvtm:text",
                 "pos": [ 1.95, 1.625, -4.9375 ],
                 "centered": false,
@@ -64,7 +71,7 @@
                 "font": "fvp:kompakt"
             },
             {
-                "group": "primary",
+                "group": "infoboard",
                 "id": "fvtm:text",
                 "pos": [ 1.95, 1.5, -4.9375 ],
                 "centered": false,
@@ -73,7 +80,7 @@
                 "font": "fvp:kompakt"
             },
             {
-                "group": "primary",
+                "group": "infoboard",
                 "id": "fvtm:text",
                 "pos": [ -1.95, 1.8125, 4.9375 ],
                 "rot": [ 0, 180, 0],
@@ -84,7 +91,7 @@
                 "font": "fvp:kompakt"
             }
             {
-                "group": "primary",
+                "group": "infoboard",
                 "id": "fvtm:text",
                 "pos": [ -1.95, 1.625, 4.9375 ],
                 "rot": [ 0, 180, 0],
@@ -94,7 +101,7 @@
                 "font": "fvp:kompakt"
             },
             {
-                "group": "primary",
+                "group": "infoboard",
                 "id": "fvtm:text",
                 "pos": [ -1.95, 1.5, 4.9375 ],
                 "rot": [ 0, 180, 0],
@@ -102,11 +109,24 @@
                 "attr": "line_dest",
                 "color": "cba03",
                 "font": "fvp:kompakt"
-            }
+            },
+            "primary fvtm:rgb_channel primary"
+            "door_front fvtm:rgb_channel primary"
+            "door_rear fvtm:rgb_channel primary"
+            "door_front_left fvtm:rgb_channel primary"
+            "door_rear_left fvtm:rgb_channel primary"
+            "door_front_right fvtm:rgb_channel primary"
+            "door_rear_right fvtm:rgb_channel primary"
+            "seats fvtm:rgb_channel seats"
+            "innerwalls fvtm:rgb_channel inner"
+            "lights_front fvtm:lights_rail_forward",
+            "lights_rear fvtm:lights_rail_backward"
 
         ]
     },
-    "Textures": [],
+    "Textures": [
+        "Default;fvp:textures/trains/wg1.png"
+    ],
     "DefaultSeats": {
         "seat_0": {
             "pos": [ 1.375, 1.3125, 6.375 ],
