@@ -31,9 +31,80 @@
             "range": 20.0
         }
     },
+    "Attributes": {
+        "line_info": {
+            "type": "string",
+            "sync": true
+        },
+        "line_dest": {
+            "type": "string",
+            "sync": true
+        }
+    },
     "Model": "fvp:models/vehicle/wg1.fmf",
     "ModelData": {
-        "Programs": []
+        "Programs": [
+            {
+                "group": "primary",
+                "id": "fvtm:text",
+                "pos": [ 1.95, 1.8125, -4.9375 ],
+                "centered": false,
+                "attr": "line_name",
+                "color": "cba03",
+                "scale": 5,
+                "font": "fvp:kompakt"
+            },
+            {
+                "group": "primary",
+                "id": "fvtm:text",
+                "pos": [ 1.95, 1.625, -4.9375 ],
+                "centered": false,
+                "attr": "line_info",
+                "color": "cba03",
+                "font": "fvp:kompakt"
+            },
+            {
+                "group": "primary",
+                "id": "fvtm:text",
+                "pos": [ 1.95, 1.5, -4.9375 ],
+                "centered": false,
+                "attr": "line_dest",
+                "color": "cba03",
+                "font": "fvp:kompakt"
+            },
+            {
+                "group": "primary",
+                "id": "fvtm:text",
+                "pos": [ -1.95, 1.8125, 4.9375 ],
+                "rot": [ 0, 180, 0],
+                "centered": false,
+                "attr": "line_name",
+                "color": "cba03",
+                "scale": 5,
+                "font": "fvp:kompakt"
+            }
+            {
+                "group": "primary",
+                "id": "fvtm:text",
+                "pos": [ -1.95, 1.625, 4.9375 ],
+                "rot": [ 0, 180, 0],
+                "centered": false,
+                "attr": "line_info",
+                "color": "cba03",
+                "font": "fvp:kompakt"
+            },
+            {
+                "group": "primary",
+                "id": "fvtm:text",
+                "pos": [ -1.95, 1.5, 4.9375 ],
+                "rot": [ 0, 180, 0],
+                "centered": false,
+                "attr": "line_dest",
+                "color": "cba03",
+                "font": "fvp:kompakt"
+            }
+
+        ]
     },
     "Textures": [],
     "DefaultSeats": {
