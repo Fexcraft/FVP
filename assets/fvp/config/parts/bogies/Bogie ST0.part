@@ -1,0 +1,16 @@
+{ 
+    "ID": "bogie_st0", 
+    "Name": "Bogie ST0", 
+    "Addon": "fvp"
+    "Model": "fvp:models/part/bogiest0.blank",
+    "ModelData":{},
+    "Name": "Bogie (S) Type 0",
+    "Category": "bogie",
+    "Installation":{
+    	"Handler": "bogie",
+    	"Height": 0
+    },
+    "Functions":{
+        "fvtm:bogie":{}
+    }
+}
