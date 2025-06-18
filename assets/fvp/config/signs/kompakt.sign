@@ -1,0 +1,12 @@
+{
+    "ID": "kompakt",
+    "Name": "Fexcraft 'Kompakt!' Font",
+    "Addon": "fvp",
+    "Model": "fvp:models/sign/text.obj",
+    "Text": true,
+    "ModelData":{
+        "Programs":[
+            "text fvtm:sign_text fvp:kompakt"
+        ]
+    }
+}

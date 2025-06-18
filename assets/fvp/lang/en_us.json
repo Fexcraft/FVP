@@ -139,7 +139,8 @@
     "item.fvp.lk1": "LK1", 
     "item.fvp.wg1": "Wagon 1", 
     "item.fvp.sf1": "Ferry", 
-    "item.fvp.bogie_st0": "Bogie ST0", 
+    "item.fvp.bogie_st0": "Bogie (S) Type 0", 
+    "item.fvp.waterway": "Waterway Gauge", 
     "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)", 
-    "item.fvp.waterway": "Waterway Gauge"
+    "item.fvp.kompakt": "Fexcraft 'Kompakt!' Font"
 }
