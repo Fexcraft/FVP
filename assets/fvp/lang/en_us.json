@@ -137,6 +137,9 @@
     "item.fvp.c13_lb": "C13 Lightbeams", 
     "item.fvp.bogie_st2": "Bogie (S) Type 2", 
     "item.fvp.lk1": "LK1", 
+    "item.fvp.wg1": "Wagon 1", 
+    "item.fvp.sf1": "Ferry", 
+    "item.fvp.bogie_st0": "Bogie ST0", 
     "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)", 
-    "item.fvp.wg1": "Wagon 1"
+    "item.fvp.waterway": "Waterway Gauge"
 }

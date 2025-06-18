@@ -1,0 +1,162 @@
+{ 
+    "ID": "sf1", 
+    "Name": "Ferry", 
+    "Addon": "fvp",
+    "Categories": [
+        "train",
+        "rail",
+        "ship",
+        "ferry"
+    ],
+    "VehicleType": "RAIL",
+    "ImpactWrench": 1.0,
+    "WheelPositions": {
+        "bogie_front": {
+            "pos": [ 0, 0, -10.0 ]
+        },
+        "bogie_rear": {
+            "pos": [ 0, 0, 10.0 ]
+        }
+    },
+    "Attributes": {
+        "gauge": {
+            "type": "float",
+            "value": 0
+        }
+    }
+    "InstalledParts": {
+        "vehicle:engine": "gep:engine_diesel",
+        "bogie_front": "fvp:bogie_st0",
+        "bogie_rear": "fvp:bogie_st0"
+    },
+    "PartSlots": {
+        "engine": {
+            "pos": [ 0.0, 0, -2.0 ]
+        }
+    },
+    "InteractZones": {
+        "default": {
+            "range": 20.0
+        }
+    },
+    "ColorChannels": {
+        "primary": "#ffffff",
+        "secondary": "#ffffff",
+        "floor": "#ffffff",
+        "roof": "#ffffff",
+        "barriers": "#ffffff",
+        "chains": "#ffffff",
+        "pillars": "#ffffff",
+        "walls": "#ffffff",
+        "seats": "#ffffff"
+    },
+    "Model": "fvp:models/vehicle/sf1.fmf",
+    "ModelData": {
+        "TextureWidth": 1024,
+        "TextureHeight": 512,
+        "Programs": [
+            "primary fvtm:rgb_channel primary"
+            "secondary fvtm:rgb_channel secondary"
+            "floor fvtm:rgb_channel floor"
+            "roof fvtm:rgb_channel roof"
+            "barriers fvtm:rgb_channel barriers"
+            "chains fvtm:rgb_channel chains"
+            "pillars fvtm:rgb_channel pillars"
+            "walls fvtm:rgb_channel walls"
+            "seats fvtm:rgb_channel seats"
+            "lights fvtm:lights",
+            "lights_front fvtm:lights_rail_forward",
+            "lights_rear fvtm:lights_rail_backward"
+
+        ]
+    },
+    "Textures": [
+        "Default;fvp:textures/ships/sf1.png"
+    ],
+    "DefaultSeats": {
+        "driver": {
+            "pos": [ 0.0, 1.75, -4.3125 ],
+            "dismount": [ 0.0, 1.75, -4.3125 ],
+            "driver": true
+        },
+        "seat_0": {
+            "pos": [ 1.4375, 1.25, -1.25 ],
+            "dismount": [ 1.4375, 1.25, -1.25 ]
+        },
+        "seat_1": {
+            "pos": [ 1.4375, 1.25, -0.3125 ],
+            "dismount": [ 1.4375, 1.25, -0.3125 ]
+        },
+        "seat_2": {
+            "pos": [ 1.4375, 1.25, 0.625 ],
+            "dismount": [ 1.4375, 1.25, 0.625 ]
+        },
+        "seat_3": {
+            "pos": [ 1.4375, 1.25, 3.4375 ],
+            "dismount": [ 1.4375, 1.25, 3.4375 ]
+        },
+        "seat_4": {
+            "pos": [ 1.4375, 1.25, 2.5 ],
+            "dismount": [ 1.4375, 1.25, 2.5 ]
+        },
+        "seat_5": {
+            "pos": [ 1.4375, 1.25, 1.5625 ],
+            "dismount": [ 1.4375, 1.25, 1.5625 ]
+        },
+        "seat_6": {
+            "pos": [ 1.4375, 1.25, 4.375 ],
+            "dismount": [ 1.4375, 1.25, 4.375 ]
+        },
+        "seat_7": {
+            "pos": [ 1.4375, 1.25, 5.3125 ],
+            "dismount": [ 1.4375, 1.25, 5.3125 ]
+        },
+        "seat_8": {
+            "pos": [ -1.4375, 1.25, -0.3125 ],
+            "dismount": [ -1.4375, 1.25, -0.3125 ]
+        },
+        "seat_9": {
+            "pos": [ -1.4375, 1.25, -1.25 ],
+            "dismount": [ -1.4375, 1.25, -1.25 ]
+        },
+        "seat_10": {
+            "pos": [ -1.4375, 1.25, 0.625 ],
+            "dismount": [ -1.4375, 1.25, 0.625 ]
+        },
+        "seat_11": {
+            "pos": [ -1.4375, 1.25, 3.4375 ],
+            "dismount": [ -1.4375, 1.25, 3.4375 ]
+        },
+        "seat_12": {
+            "pos": [ -1.4375, 1.25, 2.5 ],
+            "dismount": [ -1.4375, 1.25, 2.5 ]
+        },
+        "seat_13": {
+            "pos": [ -1.4375, 1.25, 1.5625 ],
+            "dismount": [ -1.4375, 1.25, 1.5625 ]
+        },
+        "seat_14": {
+            "pos": [ -1.4375, 1.25, 4.375 ],
+            "dismount": [ -1.4375, 1.25, 4.375 ]
+        },
+        "seat_15": {
+            "pos": [ -1.4375, 1.25, 5.3125 ],
+            "dismount": [ -1.4375, 1.25, 5.3125 ]
+        },
+        "seat_16": {
+            "pos": [ -1.4375, 1.25, -3.4375 ],
+            "dismount": [ -1.4375, 1.25, -3.4375 ]
+        },
+        "seat_17": {
+            "pos": [ 1.4375, 1.25, -3.4375 ],
+            "dismount": [ 1.4375, 1.25, -3.4375 ]
+        }
+    }
+    "Connectors": {
+        "front": [ 0, 0, -11 ],
+        "rear": [ 0, 0, 1 ]
+    },
+    "BoundingBoxes": {
+
+    }
+}
