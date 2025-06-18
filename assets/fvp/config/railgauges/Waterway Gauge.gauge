@@ -1,0 +1,7 @@
+{ 
+    "ID": "waterway", 
+    "Name": "Waterway Gauge", 
+    "Addon": "fvp"
+    "Width": 0,
+    "Height": 0,
+}
