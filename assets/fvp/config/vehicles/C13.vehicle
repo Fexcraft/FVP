@@ -252,6 +252,7 @@
             "mirror": true, 
             "required": true, 
             "steering": true, 
+            "powered": "true",
             "braking": true
         }, 
         "rear_left": { 
