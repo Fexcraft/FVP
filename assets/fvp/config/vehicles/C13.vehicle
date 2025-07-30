@@ -203,16 +203,14 @@
             "colors": { 
                 "primary": "ffffff"
             }, 
-            "recipe": [ 
-                { 
-                    "gep:chassis_car": 1, 
-                    "gep:door_set": 4, 
-                    "gep:chassis_components": 2, 
-                    "gep:lights_set": 2, 
-                    "gep:electric_components": 4, 
-                    "gep:seat_set": 5
-                }
-            ]
+            "recipe": {
+                "gep:chassis_car": 1,
+                "gep:door_set": 4,
+                "gep:chassis_components": 2,
+                "gep:lights_set": 2,
+                "gep:electric_components": 4,
+                "gep:seat_set": 5
+            }
         }
     }, 
     "DefaultSeats": { 
