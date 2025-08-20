@@ -58,6 +58,9 @@
         "transmission": {}, 
         "lightbeams": { 
             "pos": [ -1.0, 0.875, -2.875 ]
+        },
+        "trailer_hitch": {
+            "pos": [ 0, 0.3125, 3.8125 ]
         }
     }, 
     "Attributes": { 
