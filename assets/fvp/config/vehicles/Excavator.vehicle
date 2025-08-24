@@ -68,8 +68,8 @@
         "bucket_rot": { 
             "type": "integer", 
             "value": 0, 
-            "min": -160, 
-            "max": 160, 
+            "min": -60,
+            "max": 60,
             "keys": { 
                 "roll_left": 10, 
                 "roll_right": -10
