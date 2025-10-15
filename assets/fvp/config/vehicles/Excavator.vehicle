@@ -68,8 +68,8 @@
         "bucket_rot": { 
             "type": "integer", 
             "value": 0, 
-            "min": -60,
-            "max": 60,
+            "min": -60, 
+            "max": 60, 
             "keys": { 
                 "roll_left": 10, 
                 "roll_right": -10
@@ -88,6 +88,121 @@
                     "attribute": "base_rot", 
                     "var": "yaw", 
                     "speed": 0.1
+                }
+            ]
+        }, 
+        "arm": { 
+            "pos": [ 0.4375, 1.15625, 0.3125 ], 
+            "parent": "base", 
+            "movers": [ 
+                { 
+                    "attribute": "arm_rot", 
+                    "var": "pitch", 
+                    "speed": 0.5
+                }
+            ]
+        }, 
+        "arm_hyd_low": { 
+            "pos": [ 0.4375, 1, -1.0625 ], 
+            "parent": "base", 
+            "movers": [ 
+                { 
+                    "type": "pointing_towards", 
+                    "towards_point": "arm_hyd_up"
+                }
+            ]
+        }, 
+        "arm_hyd_up": { 
+            "pos": [ 0, 3.25, -0.125 ], 
+            "parent": "arm", 
+            "movers": [ 
+                { 
+                    "type": "pointing_towards", 
+                    "towards_point": "arm_hyd_low"
+                }
+            ]
+        }, 
+        "stick": { 
+            "pos": [ 0.0, 7.421875, -1.65625 ], 
+            "parent": "arm", 
+            "movers": [ 
+                { 
+                    "attribute": "stick_rot", 
+                    "var": "pitch", 
+                    "speed": 0.5
+                }
+            ]
+        }, 
+        "stick_hyd_low": { 
+            "pos": [ 0, 4.265625, 0.046875 ], 
+            "parent": "arm", 
+            "movers": [ 
+                { 
+                    "type": "pointing_towards", 
+                    "towards_point": "stick_hyd_up"
+                }
+            ]
+        }, 
+        "stick_hyd_up": { 
+            "pos": [ 0, 0.125, 1.375 ], 
+            "parent": "stick", 
+            "movers": [ 
+                { 
+                    "type": "pointing_towards", 
+                    "towards_point": "stick_hyd_low"
+                }
+            ]
+        }, 
+        "crank": { 
+            "pos": [ 0.0, -0.0625, -2.90625 ], 
+            "parent": "stick", 
+            "movers": [ 
+                { 
+                    "attribute": "bucket_rot", 
+                    "var": "pitch", 
+                    "speed": 0.5
+                }
+            ]
+        }, 
+        "bucket": { 
+            "pos": [ 0.0, -0.09375, -3.59375 ], 
+            "parent": "stick", 
+            "movers": [ 
+                { 
+                    "attribute": "bucket_rot", 
+                    "var": "pitch", 
+                    "speed": 0.5
+                }
+            ]
+        }, 
+        "rocker": { 
+            "pos": [ 0.0, 0.5, 0 ], 
+            "parent": "crank", 
+            "movers": [ 
+                { 
+                    "type": "pointing_towards", 
+                    "towards_point": "bucket", 
+                    "towards_offset": [ 0, 0.5, 0 ]
+                }
+            ]
+        }, 
+        "crank_hyd_low": { 
+            "pos": [ 0, 0.71875, -0.25 ], 
+            "parent": "stick", 
+            "movers": [ 
+                { 
+                    "type": "pointing_towards", 
+                    "towards_point": "crank_hyd_up"
+                }
+            ]
+        }, 
+        "crank_hyd_up": { 
+            "pos": [ 0.0, 0.5, 0 ], 
+            "parent": "crank", 
+            "movers": [ 
+                { 
+                    "type": "pointing_towards", 
+                    "towards_point": "crank_hyd_low"
                 }
             ]
         }
@@ -127,8 +242,8 @@
         "TurnRightModifier": 2
     }, 
     "PartSlots": { 
-        "engine": [], 
-        "transmission": [], 
+        "engine": {}, 
+        "transmission": {}, 
         "chassis": { 
             "point": "base", 
             "radius": 1
@@ -144,6 +259,30 @@
         "bucket": { 
             "point": "bucket", 
             "radius": 1
+        }, 
+        "arm_hyd_low": { 
+            "point": "arm_hyd_low"
+        }, 
+        "arm_hyd_up": { 
+            "point": "arm_hyd_up"
+        }, 
+        "stick_hyd_low": { 
+            "point": "stick_hyd_low"
+        }, 
+        "stick_hyd_up": { 
+            "point": "stick_hyd_up"
+        }, 
+        "crank_hyd_low": { 
+            "point": "crank_hyd_low"
+        }, 
+        "crank_hyd_up": { 
+            "point": "crank_hyd_up"
+        }, 
+        "crank": { 
+            "point": "crank"
+        }, 
+        "rocker": { 
+            "point": "rocker"
         }
     }, 
     "InstalledParts": { 
@@ -152,10 +291,21 @@
         "right_back_wheel": "fvp:excav_wheel", 
         "left_back_wheel": "fvp:excav_wheel", 
         "vehicle:engine": "fvp:excav_engine", 
-		"vehicle:transmission": "gep:automatic_transmission", 
+        "vehicle:transmission": "gep:automatic_transmission", 
         "vehicle:chassis": "fvp:excav_chassis", 
         "vehicle:arm": "fvp:excav_arm", 
         "vehicle:stick": "fvp:excav_stick", 
-        "vehicle:bucket": "fvp:excav_bucket"
-    }
+        "vehicle:bucket": "fvp:excav_bucket", 
+        "vehicle:arm_hyd_low": "fvp:excav_arm_hyd_low", 
+        "vehicle:arm_hyd_up": "fvp:excav_arm_hyd_up", 
+        "vehicle:stick_hyd_low": "fvp:excav_stick_hyd_low", 
+        "vehicle:stick_hyd_up": "fvp:excav_stick_hyd_up", 
+        "vehicle:crank": "fvp:excav_crank",
+        "vehicle:rocker": "fvp:excav_rocker",
+        "vehicle:crank_hyd_low": "fvp:excav_crank_hyd_low", 
+        "vehicle:crank_hyd_up": "fvp:excav_crank_hyd_up"
+    }, 
+    "Categories": [ 
+        "excavator"
+    ]
 }

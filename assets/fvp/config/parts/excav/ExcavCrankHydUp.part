@@ -1,0 +1,11 @@
+{ 
+    "ID": "excav_crank_hyd_up",
+    "Name": "Excav. Crank Hyd. Up.",
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/excav_crank_hyd_up.fmf"
+    "Category": "crank_hyd_up",
+    "Installation":{
+    	"Handler": "default",
+		"Removable": false
+    }
+}

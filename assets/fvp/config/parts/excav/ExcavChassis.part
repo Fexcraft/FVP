@@ -23,18 +23,5 @@
 				"driver": true
 			}
 		}
-	},
-    "SwivelPoints": {
-        "arm": {
-            "pos": [ 0.4375, 1.15625, 0.3125 ],
-            "parent": "base",
-			"movers": [
-				{
-					"attribute": "arm_rot",
-					"var": "pitch",
-					"speed": 0.5
-				}
-			]
-		}
 	}
 }

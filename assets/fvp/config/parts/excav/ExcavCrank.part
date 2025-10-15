@@ -1,0 +1,11 @@
+{ 
+    "ID": "excav_crank",
+    "Name": "Excav. Crank",
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/excav_crank.fmf"
+    "Category": "crank",
+    "Installation":{
+    	"Handler": "default",
+		"Removable": false
+    }
+}

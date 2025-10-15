@@ -1,0 +1,11 @@
+{ 
+    "ID": "excav_rocker",
+    "Name": "Excav. Rocker",
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/excav_rocker.fmf"
+    "Category": "rocker",
+    "Installation":{
+    	"Handler": "default",
+		"Removable": false
+    }
+}

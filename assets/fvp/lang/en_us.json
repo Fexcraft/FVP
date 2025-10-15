@@ -141,6 +141,14 @@
     "item.fvp.sf1": "Ferry", 
     "item.fvp.bogie_st0": "Bogie (S) Type 0", 
     "item.fvp.waterway": "Waterway Gauge", 
+    "item.fvp.kompakt": "Fexcraft 'Kompakt!' Font", 
+    "item.fvp.excav_arm_hyd_low": "Excav. Arm Hyd. Low.", 
+    "item.fvp.excav_arm_hyd_up": "Excav. Arm Hyd. Up", 
     "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)", 
-    "item.fvp.kompakt": "Fexcraft 'Kompakt!' Font"
+    "item.fvp.excav_rocker": "Excav. Rocker", 
+    "item.fvp.excav_stick_hyd_up": "Excav. Stick Hyd. Up.", 
+    "item.fvp.excav_stick_hyd_low": "Excav. Stick Hyd. Low.", 
+    "item.fvp.excav_crank_hyd_low": "Excav. Crank Hyd. Low.", 
+    "item.fvp.excav_crank_hyd_up": "Excav. Crank Hyd. Up.", 
+    "item.fvp.excav_crank": "Excav. Crank"
 }

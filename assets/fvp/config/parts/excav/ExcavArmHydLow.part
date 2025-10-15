@@ -1,0 +1,11 @@
+{ 
+    "ID": "excav_arm_hyd_low", 
+    "Name": "Excav. Arm Hyd. Low.", 
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/excav_arm_hyd_low.fmf"
+    "Category": "arm_hyd_low",
+    "Installation":{
+    	"Handler": "default",
+		"Removable": false
+    }
+}

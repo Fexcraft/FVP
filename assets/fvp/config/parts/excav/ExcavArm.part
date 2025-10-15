@@ -7,18 +7,5 @@
     "Installation":{
     	"Handler": "default",
 		"Removable": false
-    },
-    "SwivelPoints": {
-        "stick": {
-            "pos": [ 0.0, 7.421875, -1.65625 ],
-            "parent": "arm",
-			"movers": [
-				{
-					"attribute": "stick_rot",
-					"var": "pitch",
-					"speed": 0.5
-				}
-			]
-		}
-	}
+    }
 }

@@ -7,18 +7,5 @@
     "Installation":{
     	"Handler": "default",
 		"Removable": false
-    },
-    "SwivelPoints": {
-        "bucket": {
-            "pos": [ 0.0, -0.09375, -3.59375 ],
-            "parent": "stick",
-			"movers": [
-				{
-					"attribute": "bucket_rot",
-					"var": "pitch",
-					"speed": 0.5
-				}
-			]
-		}
-	}
+    }
 }

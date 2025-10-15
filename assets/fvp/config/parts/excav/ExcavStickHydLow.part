@@ -1,0 +1,11 @@
+{ 
+    "ID": "excav_stick_hyd_low",
+    "Name": "Excav. Stick Hyd. Low.",
+    "Addon": "fvp", 
+    "Model": "fvp:models/part/excav_stick_hyd_low.fmf"
+    "Category": "stick_hyd_low",
+    "Installation":{
+    	"Handler": "default",
+		"Removable": false
+    }
+}
