@@ -105,9 +105,10 @@
         "arm_hyd_low": { 
             "pos": [ 0.4375, 1, -1.0625 ], 
             "parent": "base", 
+            "detached": true,
             "movers": [ 
                 { 
-                    "type": "pointing_towards", 
+                    "type": "z_hyd",
                     "towards_point": "arm_hyd_up"
                 }
             ]
@@ -115,9 +116,10 @@
         "arm_hyd_up": { 
             "pos": [ 0, 3.25, -0.125 ], 
             "parent": "arm", 
+            "detached": true,
             "movers": [ 
                 { 
-                    "type": "pointing_towards", 
+                    "type": "z_hyd",
                     "towards_point": "arm_hyd_low"
                 }
             ]
@@ -136,20 +138,24 @@
         "stick_hyd_low": { 
             "pos": [ 0, 4.265625, 0.046875 ], 
             "parent": "arm", 
+            "detached": true,
             "movers": [ 
                 { 
-                    "type": "pointing_towards", 
-                    "towards_point": "stick_hyd_up"
+                    "type": "z_hyd",
+                    "towards_point": "stick_hyd_up",
+                    "add_angle": 90
                 }
             ]
         }, 
         "stick_hyd_up": { 
             "pos": [ 0, 0.125, 1.375 ], 
             "parent": "stick", 
+            "detached": true,
             "movers": [ 
                 { 
-                    "type": "pointing_towards", 
-                    "towards_point": "stick_hyd_low"
+                    "type": "z_hyd",
+                    "towards_point": "stick_hyd_low",
+                    "add_angle": 90
                 }
             ]
         }, 
@@ -177,21 +183,23 @@
         }, 
         "rocker": { 
             "pos": [ 0.0, 0.5, 0 ], 
-            "parent": "crank", 
+            "parent": "bucket",
+            "detached": true,
             "movers": [ 
                 { 
-                    "type": "pointing_towards", 
-                    "towards_point": "bucket", 
-                    "towards_offset": [ 0, 0.5, 0 ]
+                    "type": "z_hyd",
+                    "towards_point": "crank_hyd_up",
+                    "add_angle": -90
                 }
             ]
         }, 
         "crank_hyd_low": { 
             "pos": [ 0, 0.71875, -0.25 ], 
             "parent": "stick", 
+            "detached": true,
             "movers": [ 
                 { 
-                    "type": "pointing_towards", 
+                    "type": "z_hyd",
                     "towards_point": "crank_hyd_up"
                 }
             ]
@@ -199,9 +207,10 @@
         "crank_hyd_up": { 
             "pos": [ 0.0, 0.5, 0 ], 
             "parent": "crank", 
+            "detached": true,
             "movers": [ 
                 { 
-                    "type": "pointing_towards", 
+                    "type": "z_hyd",
                     "towards_point": "crank_hyd_low"
                 }
             ]
@@ -239,7 +248,8 @@
         "MaxPositiveThrottle": 0.2, 
         "MaxNegativeThrottle": 0.2, 
         "TurnLeftModifier": 2, 
-        "TurnRightModifier": 2
+        "TurnRightModifier": 2,
+        "UseRoll": false
     }, 
     "PartSlots": { 
         "engine": {}, 
