@@ -16,7 +16,7 @@
 	"Functions": {
 		"fvtm:seats": {
 			"controller": {
-				"pos": [ -1.125, 0.78125, 0 ],
+				"pos": [ -1.125, 1.1875, 0 ],
 				"swivel_point": "base",
 				"min_yaw": -180,
 				"max_yaw": 180,
