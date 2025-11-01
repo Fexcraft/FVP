@@ -3,6 +3,9 @@
     "Name": "Excav. Rocker",
     "Addon": "fvp", 
     "Model": "fvp:models/part/excav_rocker.fmf"
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "Category": "rocker",
     "Installation":{
     	"Handler": "default",

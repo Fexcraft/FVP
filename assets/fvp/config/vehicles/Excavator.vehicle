@@ -7,7 +7,19 @@
         "Excavator Model 1"
     ], 
     "Model": "fvp:models/vehicle/excav.fmf", 
-    "ModelData": {}, 
+    "ModelData": {
+        "Programs":[
+            "lights_front fvtm:front_lights",
+            "lights_fog fvtm:fog_lights",
+            "lights_left fvtm:turn_signal_left",
+            "lights_right fvtm:turn_signal_right",
+            "lights_rear fvtm:back_lights",
+            "lights_reverse fvtm:reverse_lights"
+        ]
+    },
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "ColorChannels": { 
         "primary": "#fdfdfd", 
         "secondary": "#fdfdfd"

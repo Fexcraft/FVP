@@ -7,6 +7,9 @@
 			"#cabin_windows fvtm:hide"
 		]
 	},
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "Name": "Excavator Chassis",
     "Category": "chassis",
     "Installation":{

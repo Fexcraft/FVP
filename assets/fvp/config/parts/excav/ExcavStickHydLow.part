@@ -3,6 +3,9 @@
     "Name": "Excav. Stick Hyd. Low.",
     "Addon": "fvp", 
     "Model": "fvp:models/part/excav_stick_hyd_low.fmf"
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "Category": "stick_hyd_low",
     "Installation":{
     	"Handler": "default",

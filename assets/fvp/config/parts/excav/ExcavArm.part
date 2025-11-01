@@ -2,6 +2,9 @@
     "ID": "excav_arm",
     "Addon": "fvp",
     "Model": "fvp:models/part/excav_arm.fmf",
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "Name": "Excavator Arm",
     "Category": "arm",
     "Installation":{

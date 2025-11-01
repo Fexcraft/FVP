@@ -3,6 +3,9 @@
     "Name": "Excav. Arm Hyd. Low.", 
     "Addon": "fvp", 
     "Model": "fvp:models/part/excav_arm_hyd_low.fmf"
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "Category": "arm_hyd_low",
     "Installation":{
     	"Handler": "default",

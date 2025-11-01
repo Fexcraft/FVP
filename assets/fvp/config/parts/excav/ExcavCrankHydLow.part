@@ -3,6 +3,9 @@
     "Name": "Excav. Crank Hyd. Low.",
     "Addon": "fvp", 
     "Model": "fvp:models/part/excav_crank_hyd_low.fmf"
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "Category": "crank_hyd_low",
     "Installation":{
     	"Handler": "default",

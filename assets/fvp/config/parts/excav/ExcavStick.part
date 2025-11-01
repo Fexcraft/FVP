@@ -2,6 +2,9 @@
     "ID": "excav_stick",
     "Addon": "fvp",
     "Model": "fvp:models/part/excav_stick.fmf",
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "Name": "Excavator Stick",
     "Category": "stick",
     "Installation":{

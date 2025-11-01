@@ -2,6 +2,9 @@
     "ID": "excav_bucket",
     "Addon": "fvp",
     "Model": "fvp:models/part/excav_bucket.fmf",
+    "Textures": [
+        "Default;fvp:textures/parts/excav.png"
+    ],
     "Name": "Excavator Bucket",
     "Category": "bucket",
     "Installation":{
