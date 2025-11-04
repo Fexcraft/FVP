@@ -329,5 +329,22 @@
     }, 
     "Categories": [ 
         "excavator"
-    ]
+    ],
+    "Catalog": {
+        "default": {
+            "name": "Fexcraft Excavator I25",
+            "colors": {
+                "primary": "ffffff"
+            },
+            "recipe": {
+                "gep:chassis_truck": 1,
+                "gep:door_set": 1,
+                "gep:chassis_components": 10,
+                "gep:lights_set": 2,
+                "gep:electric_components": 6,
+                "gep:seat_set": 1
+            }
+            "scale": 0.5
+        }
+    }
 }
