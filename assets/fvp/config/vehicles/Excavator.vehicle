@@ -78,15 +78,28 @@
             ]
         }, 
         "bucket_rot": { 
-            "type": "integer", 
-            "value": 0, 
-            "min": -60, 
-            "max": 60, 
-            "keys": { 
-                "roll_left": 10, 
+            "type": "integer",
+            "value": 0,
+            "min": -60,
+            "max": 60,
+            "keys": {
+                "roll_left": 10,
                 "roll_right": -10
             }, 
             "access": [ 
+                "controller"
+            ]
+        },
+        "workmode": {
+            "type": "integer",
+            "value": 0,
+            "min": -1,
+            "max": 1,
+            "keys": {
+                "pbrake": -2,
+                "brake": 2
+            },
+            "access": [
                 "controller"
             ]
         }
@@ -99,7 +112,7 @@
                 { 
                     "attribute": "base_rot", 
                     "var": "yaw", 
-                    "speed": 0.1
+                    "speed": 1
                 }
             ]
         }, 
@@ -110,7 +123,7 @@
                 { 
                     "attribute": "arm_rot", 
                     "var": "pitch", 
-                    "speed": 0.5
+                    "speed": 1
                 }
             ]
         }, 
@@ -143,7 +156,7 @@
                 { 
                     "attribute": "stick_rot", 
                     "var": "pitch", 
-                    "speed": 0.5
+                    "speed": 1
                 }
             ]
         }, 
@@ -178,7 +191,7 @@
                 { 
                     "attribute": "bucket_rot", 
                     "var": "pitch", 
-                    "speed": 0.5
+                    "speed": 2
                 }
             ]
         }, 
@@ -189,7 +202,7 @@
                 { 
                     "attribute": "bucket_rot", 
                     "var": "pitch", 
-                    "speed": 0.5
+                    "speed": 2
                 }
             ]
         }, 
@@ -257,10 +270,10 @@
         }
     }, 
     "SimplePhysics": { 
-        "MaxPositiveThrottle": 0.2, 
-        "MaxNegativeThrottle": 0.2, 
-        "TurnLeftModifier": 2, 
-        "TurnRightModifier": 2,
+        "MaxPositiveThrottle": 0.8,
+        "MaxNegativeThrottle": 0.8,
+        "TurnLeftModifier": 4,
+        "TurnRightModifier": 4,
         "UseRoll": false
     }, 
     "PartSlots": { 
@@ -343,8 +356,32 @@
                 "gep:lights_set": 2,
                 "gep:electric_components": 6,
                 "gep:seat_set": 1
-            }
+            },
             "scale": 0.5
         }
-    }
+    },
+    "Events": [
+        {
+            "type": "vehicle_update",
+            "cond": [
+                "&&",
+                "vehicle_state engine_on == true",
+                "vehicle_state has_driver == true",
+                "attribute workmode == 1"
+            ],
+            "action": "vehicle_driver_break_block",
+            "args": "bucket 0 0 -1"
+        },
+        {
+            "type": "vehicle_update",
+            "cond": [
+                "&&",
+                "vehicle_state engine_on == true",
+                "vehicle_state has_driver == true",
+                "attribute workmode == 1"
+            ],
+            "action": "vehicle_driver_break_block",
+            "args": "bucket 0 0 -0.5"
+        }
+    ],
 }
