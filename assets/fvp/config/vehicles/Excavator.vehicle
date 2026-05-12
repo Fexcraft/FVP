@@ -8,14 +8,7 @@
     ], 
     "Model": "fvp:models/vehicle/excav.fmf", 
     "ModelData": {
-        "Programs":[
-            "lights_front fvtm:front_lights",
-            "lights_fog fvtm:fog_lights",
-            "lights_left fvtm:turn_signal_left",
-            "lights_right fvtm:turn_signal_right",
-            "lights_rear fvtm:back_lights",
-            "lights_reverse fvtm:reverse_lights"
-        ]
+        "Import": "fvp:config/vehicles/excav_md.json"
     },
     "Textures": [
         "Default;fvp:textures/parts/excav.png"
