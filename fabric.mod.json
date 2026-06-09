@@ -1,0 +1,24 @@
+{ 
+    "schemaVersion": 1, 
+    "id": "fvp", 
+    "version": "3.9.0", 
+    "name": "Fexcraft Vehicle Pack", 
+    "description": "A pack for FVTM", 
+    "authors": [], 
+    "contact": { 
+        "homepage": "https://fexcraft.net/", 
+        "sources": "https://github.com/Fexcraft/FVP"
+    }, 
+    "license": "ARR", 
+    "environment": "*", 
+    "entrypoints": {}, 
+    "mixins": [], 
+    "depends": { 
+        "fabricloader": ">=0.18.5", 
+        "minecraft": ">=26.1", 
+        "java": ">=25", 
+        "fabric-api": "*", 
+        "fvtm": "*", 
+        "fcl": "*"
+    }
+}
