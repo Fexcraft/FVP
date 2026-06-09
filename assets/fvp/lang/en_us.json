@@ -1,7 +1,7 @@
 { 
     "itemGroup.fvtm:fvp": "Fex's Vehicle Pack", 
     "item.fvp.c9": "C9", 
-    "item.fvp.c10": "Ci Dieci", 
+    "item.fvp.c10": "C10", 
     "item.fvp.t1p": "T1P", 
     "item.fvp.ab1": "Autobus 1B", 
     "item.fvp.t2": "T2", 
@@ -143,12 +143,12 @@
     "item.fvp.waterway": "Waterway Gauge", 
     "item.fvp.kompakt": "Fexcraft 'Kompakt!' Font", 
     "item.fvp.excav_arm_hyd_low": "Excav. Arm Hyd. Low.", 
-    "item.fvp.excav_arm_hyd_up": "Excav. Arm Hyd. Up", 
-    "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)", 
+    "item.fvp.excav_arm_hyd_up": "Excav. Arm Hyd. Up.", 
     "item.fvp.excav_rocker": "Excav. Rocker", 
     "item.fvp.excav_stick_hyd_up": "Excav. Stick Hyd. Up.", 
     "item.fvp.excav_stick_hyd_low": "Excav. Stick Hyd. Low.", 
     "item.fvp.excav_crank_hyd_low": "Excav. Crank Hyd. Low.", 
     "item.fvp.excav_crank_hyd_up": "Excav. Crank Hyd. Up.", 
-    "item.fvp.excav_crank": "Excav. Crank"
+    "item.fvp.excav_crank": "Excav. Crank", 
+    "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)"
 }
