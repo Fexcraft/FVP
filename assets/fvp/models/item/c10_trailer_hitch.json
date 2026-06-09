@@ -1,6 +1,6 @@
 { 
     "parent": "item/generated", 
     "textures": { 
-        "layer0": "fvp:item/placeholder"
+        "layer0": "fvp:item/c10_trailer_hitch"
     }
 }
