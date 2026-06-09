@@ -1,13 +1,13 @@
-{
-	"ID": "fvp",
-	"Name": "Fexcraft Vehicle Pack",
-	"URL": "http://fexcraft.net/wiki/mod/fvtm",
-	"License": "http://fexcraft.net/license?id=mods",
-	"Dependencies": [
-		"gep"
-	],
-	"Authors": [
-		"01e4af9b-2a30-471e-addf-f6338ffce04b"
-	],
-	"Version": "3.8.1"
+{ 
+    "ID": "fvp", 
+    "Name": "Fexcraft Vehicle Pack", 
+    "URL": "http://fexcraft.net/wiki/mod/fvtm", 
+    "License": "http://fexcraft.net/license?id=mods", 
+    "Dependencies": [ 
+        "gep"
+    ], 
+    "Authors": [ 
+        "01e4af9b-2a30-471e-addf-f6338ffce04b"
+    ], 
+    "Version": "3.9.0"
 }
