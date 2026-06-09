@@ -1,0 +1,204 @@
+{ 
+    "ID": "c10", 
+    "Addon": "fvp", 
+    "Name": "C10", 
+    "Model": "fvp:models/vehicle/c10.fmf", 
+    "ModelData": { 
+        "Programs": [ 
+            "primary fvtm:rgb_primary", 
+            "door_front_left fvtm:rgb_primary", 
+            "door_front_right fvtm:rgb_primary", 
+            "door_rear_left fvtm:rgb_primary", 
+            "door_rear_right fvtm:rgb_primary", 
+            "door_front_left fvtm:attribute_rotator c10_door_fl true -60 0 -1 1", 
+            "door_front_right fvtm:attribute_rotator c10_door_fr true 0 60 1 1", 
+            "door_rear_left fvtm:attribute_rotator c10_door_rl true -60 0 -1 1", 
+            "door_rear_right fvtm:attribute_rotator c10_door_rr true 0 60 1 1", 
+            "hood fvtm:rgb_primary", 
+            "trunk_primary fvtm:rgb_primary", 
+            "trunk_glow fvtm:lights", 
+            "lights_rear fvtm:back_lights", 
+            "lights_reverse fvtm:reverse_lights", 
+            "indicator_left fvtm:turn_signal_left", 
+            "indicator_right fvtm:turn_signal_right", 
+            "lights_front fvtm:front_lights", 
+            "lights_fog fvtm:fog_lights"
+        ]
+    }, 
+    "ColorChannels": { 
+        "primary": "#A8A8A8", 
+        "secondary": "#C2C2C2"
+    }, 
+    "Textures": [ 
+        "Default;fvp:textures/cars/c10.png"
+    ], 
+    "Attributes": { 
+        "weight": { 
+            "type": "float", 
+            "value": 1280
+        }, 
+        "c10_trunk": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver"
+            ]
+        }, 
+        "c10_door_fl": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "driver"
+            ]
+        }, 
+        "c10_door_fr": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "pass_front"
+            ]
+        }, 
+        "c10_door_rl": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "pass_rear_left"
+            ]
+        }, 
+        "c10_door_rr": { 
+            "type": "boolean", 
+            "value": false, 
+            "editable": true, 
+            "access": [ 
+                "pass_rear_right"
+            ]
+        }
+    }, 
+    "Categories": [ 
+        "car", 
+        "sedan"
+    ], 
+    "WheelPositions": { 
+        "left_front_wheel": { 
+            "pos": [ -1.125, 0.0, -2.0 ], 
+            "hubsize": 0.125, 
+            "radius": 0.5, 
+            "width": 0.25, 
+            "steering": true
+        }, 
+        "right_front_wheel": { 
+            "pos": [ 1.125, 0.0, -2.0 ], 
+            "hubsize": 0.125, 
+            "radius": 0.5, 
+            "width": 0.25, 
+            "steering": true, 
+            "mirror": true
+        }, 
+        "left_back_wheel": { 
+            "pos": [ -1.125, 0.0, 2.0 ], 
+            "hubsize": 0.125, 
+            "radius": 0.5, 
+            "width": 0.25, 
+            "powered": true
+        }, 
+        "right_back_wheel": { 
+            "pos": [ 1.125, 0.0, 2.0 ], 
+            "hubsize": 0.125, 
+            "radius": 0.5, 
+            "width": 0.25, 
+            "powered": true, 
+            "mirror": true
+        }
+    }, 
+    "InstalledParts": { 
+        "left_front_wheel": "fvp:rim_1", 
+        "right_front_wheel": "fvp:rim_1", 
+        "left_back_wheel": "fvp:rim_1", 
+        "right_back_wheel": "fvp:rim_1", 
+        "left_front_wheel:tire": "fvp:tire_1", 
+        "right_front_wheel:tire": "fvp:tire_1", 
+        "left_back_wheel:tire": "fvp:tire_1", 
+        "right_back_wheel:tire": "fvp:tire_1", 
+        "vehicle:engine": "gep:engine_diesel"
+    }, 
+    "PartSlots": { 
+        "engine": {}, 
+        "roof_lights": { 
+            "pos": [ 0.0, 1.5625, 0.0 ], 
+            "type": "roof_lights", 
+            "radius": 0.25
+        }, 
+        "trailer_hitch": { 
+            "pos": [ 0, -0.125, 3 ]
+        }
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 1.2, 
+        "MaxNegativeThrottle": 0.7, 
+        "TurnLeftModifier": 1.1, 
+        "TurnRightModifier": 1.1
+    }, 
+    "SwivelPoints0": { 
+        "trunk": { 
+            "pos": [ 0.0, 0.8125, 2.25 ], 
+            "parent": "vehicle"
+        }
+    }, 
+    "LiftingPoints": { 
+        "left_front": { 
+            "pos": [ -1.25, -0.25, -1.25 ], 
+            "pair": "left_rear"
+        }, 
+        "left_rear": { 
+            "pos": [ -1.25, -0.25, 1.25 ], 
+            "pair": "left_front"
+        }, 
+        "right_front": { 
+            "pos": [ 1.25, -0.25, -1.25 ], 
+            "pair": "right_rear"
+        }, 
+        "right_rear": { 
+            "pos": [ 1.25, -0.25, 1.25 ], 
+            "pair": "right_front"
+        }
+    }, 
+    "Catalog": { 
+        "white": { 
+            "name": "Factory White", 
+            "colors": { 
+                "primary": "ffffff"
+            }, 
+            "recipe": { 
+                "gep:chassis_car": 1, 
+                "gep:door_set": 4, 
+                "gep:chassis_components": 2, 
+                "gep:lights_set": 2, 
+                "gep:electric_components": 4, 
+                "gep:seat_set": 5
+            }, 
+            "scale": 0.0
+        }
+    }, 
+    "DefaultSeats": { 
+        "driver": { 
+            "pos": [ -0.625, 0.1875, -0.125 ], 
+            "driver": true
+        }, 
+        "pass_front": { 
+            "pos": [ 0.625, 0.1875, -0.125 ]
+        }, 
+        "pass_rear_left": { 
+            "pos": [ -0.625, 0.1875, 1.0 ]
+        }, 
+        "pass_rear_right": { 
+            "pos": [ 0.625, 0.1875, 1.0 ]
+        }, 
+        "pass_rear_middle": { 
+            "pos": [ -0.0, 0.1875, 1.0 ]
+        }
+    }
+}
