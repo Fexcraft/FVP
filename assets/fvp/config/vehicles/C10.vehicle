@@ -180,7 +180,7 @@
                 "gep:electric_components": 4, 
                 "gep:seat_set": 5
             }, 
-            "scale": 0.0
+            "scale": 1.0
         }
     }, 
     "DefaultSeats": { 
