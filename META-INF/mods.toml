@@ -4,7 +4,7 @@ license="All Rights Reserved"
 issueTrackerURL="https://github.com/Fexcraft/FVP"
 [[mods]]
 modId="fvtm"
-version="3.9.0"
+version="3.10.0"
 displayName="Fex's Vehicle Pack"
 displayURL="https://fexcraft.net/wiki/mod/fvtm" 
 #credits="" #optional
