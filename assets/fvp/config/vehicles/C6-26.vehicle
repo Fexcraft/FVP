@@ -1,0 +1,200 @@
+{ 
+    "ID": "c6_26", 
+    "Name": "C6-26", 
+    "Addon": "fvp", 
+    "Textures": [ 
+        "Default;fvp:textures/cars/c6_26.png"
+    ], 
+    "Model": "fvp:models/vehicle/c6_26.fmf",
+    "ModelData": {
+        "Authors": [
+            "Ferdinand (FEX___96)"
+        ],
+        "Programs": [
+            "primary fvtm:rgb_channel primary",
+            "door_fl fvtm:rgb_channel primary",
+            "door_fr fvtm:rgb_channel primary",
+            "door_rl fvtm:rgb_channel primary",
+            "door_rr fvtm:rgb_channel primary",
+            "rear_door_left fvtm:rgb_channel primary",
+            "rear_door_right fvtm:rgb_channel primary",
+            "trunk fvtm:rgb_channel primary",
+            "front_seat_left fvtm:rgb_channel seats",
+            "front_seat_right fvtm:rgb_channel seats",
+            "rear_seats fvtm:rgb_channel seats",
+            "lights fvtm:front_lights", ,
+            "lights_long fvtm:long_lights",
+            "lights_fog fvtm:fog_lights",
+            "lights_rear fvtm:back_lights",
+            "lights_reverse fvtm:reverse_lights",
+            "lights_brake fvtm:brake_lights",
+            "turn_left fvtm:turn_signal_left",
+            "turn_right fvtm:turn_signal_right"
+            "steering_wheel fvtm:steering_base 2 4",
+        ]
+    },
+    "ColorChannels": { 
+        "primary": "#ffffff", 
+        "secondary": "#ffffff", 
+        "seats": "#ffffff"
+    }, 
+    "Attributes": { 
+        "door_front_left": { 
+            "type": "boolean", 
+            "access": [ 
+                "front_left"
+            ]
+        }, 
+        "door_front_right": { 
+            "type": "boolean", 
+            "access": [ 
+                "front_right"
+            ]
+        }, 
+        "door_rear_left": { 
+            "type": "boolean", 
+            "access": [ 
+                "rear_left", 
+                "rear_center"
+            ]
+        }, 
+        "door_rear_right": { 
+            "type": "boolean", 
+            "access": [ 
+                "rear_right", 
+                "rear_center"
+            ]
+        }, 
+        "trunk": { 
+            "type": "boolean"
+        }
+    }, 
+    "SimplePhysics": { 
+        "MaxPositiveThrottle": 0.9, 
+        "MaxNegativeThrottle": 0.8, 
+        "TurnLeftModifier": 1.0, 
+        "WheelStepHeight": 1.5, 
+        "WheelSpringStrength": 0.75
+    }, 
+    "InstalledParts": { 
+        "vehicle:engine": "gep:engine_diesel",
+        "transmission": "gep:transmission",
+        "front_left": "fvp:rim_1", 
+        "front_right": "fvp:rim_1", 
+        "rear_left": "fvp:rim_1", 
+        "rear_right": "fvp:rim_1", 
+        "front_left:tire": "fvp:tire_1", 
+        "front_right:tire": "fvp:tire_1", 
+        "rear_left:tire": "fvp:tire_1", 
+        "rear_right:tire": "fvp:tire_1"
+    }, 
+    "PartSlots": { 
+        "engine": {}, 
+        "transmission": {}
+        "rear_frame": {}
+        "rear_bars": {}
+    }, 
+    "DefaultSeats": { 
+        "front_left": { 
+            "pos": [ -0.6875, 0.1875, -2.1875 ], 
+            "driver": true
+        }, 
+        "front_right": { 
+            "pos": [ 0.6875, 0.1875, -2.1875 ]
+        }, 
+        "rear_left": { 
+            "pos": [ -0.6875, 0.1875, -1.125 ]
+        }, 
+        "rear_right": { 
+            "pos": [ 0.6875, 0.1875, -1.125 ]
+        }, 
+        "rear_center": { 
+            "pos": [ -0.0, 0.1875, -1.125 ]
+        }
+    }, 
+    "WheelPositions": { 
+        "front_left": { 
+            "pos": [ -1.0625, -0.125, -4.0 ], 
+            "steering": true, 
+            "braking": true
+        }, 
+        "front_right": { 
+            "pos": [ 1.0625, -0.125, -4.0 ], 
+            "braking": true, 
+            "steering": true, 
+            "mirror": true
+        }, 
+        "rear_left": { 
+            "pos": [ -1.0625, -0.125, 0.01 ],
+            "braking": true,
+        }, 
+        "rear_right": { 
+            "pos": [ 1.0625, -0.125, 0.01 ],
+            "braking": true, 
+            "mirror": true
+        }
+    }, 
+    "Categories": [ 
+        "car"
+    ], 
+    "Catalog": { 
+        "white_full": {
+			"name": "Full Frame without Bars",
+            "colors": { 
+                "primary": "#ffffff", 
+                "secondary": "#ffffff", 
+                "seats": "#6a8274"
+            }, 
+            "parts":{
+                "vehicle:rear_frame": "fvp:c6_26_rear_frame"
+            }
+            "recipe": { 
+                "gep:chassis_car": 1, 
+                "gep:door_set": 4, 
+                "gep:chassis_components": 3,
+                "gep:lights_set": 2, 
+                "gep:electric_components": 2, 
+                "gep:seat_set": 5
+            }
+        }
+        "white_open": {
+			"name": "Open Back/Frame with Bars",
+            "colors": {
+                "primary": "#ffffff",
+                "secondary": "#ffffff",
+                "seats": "#6a8274"
+            },
+            "parts":{
+                "vehicle:rear_bars": "fvp:c6_26_rear_bars"
+            }
+            "recipe": {
+                "gep:chassis_car": 1,
+                "gep:door_set": 4,
+                "gep:chassis_components": 2,
+                "gep:lights_set": 2,
+                "gep:electric_components": 2,
+                "gep:seat_set": 5
+            }
+        }
+        "white_all": {
+			"name": "Full Frame with Bars",
+            "colors": {
+                "primary": "#ffffff",
+                "secondary": "#ffffff",
+                "seats": "#6a8274"
+            },
+            "parts":{
+                "vehicle:rear_frame": "fvp:c6_26_rear_frame"
+                "vehicle:rear_bars": "fvp:c6_26_rear_bars"
+            }
+            "recipe": {
+                "gep:chassis_car": 1,
+                "gep:door_set": 4,
+                "gep:chassis_components": 4,
+                "gep:lights_set": 2,
+                "gep:electric_components": 2,
+                "gep:seat_set": 5
+            }
+        }
+    }
+}

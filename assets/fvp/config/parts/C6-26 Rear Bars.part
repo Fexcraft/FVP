@@ -1,0 +1,18 @@
+{ 
+    "ID": "c6_26_rear_bars", 
+    "Name": "C6-26 Rear Bars", 
+    "Addon": "fvp"
+    "Model": "fvp:models/part/c6_26_rear_bars.fmf",
+    "ModelData": {
+        "Authors": [
+            "Ferdinand (FEX___96)"
+        ],
+        "Programs": [
+            "gitter fvtm:rgb_channel secondary",
+        ]
+    },
+    "Textures": [
+        "Default;fvp:textures/cars/c6_26.png"
+    ],
+    "Category": "rear_bars"
+}

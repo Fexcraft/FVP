@@ -1,0 +1,20 @@
+{ 
+    "ID": "c6_26_rear_frame", 
+    "Name": "C6-26 Rear Frame", 
+    "Addon": "fvp"
+    "Model": "fvp:models/part/c6_26_rear_chassis.fmf",
+    "ModelData": {
+        "Authors": [
+            "Ferdinand (FEX___96)"
+        ],
+        "Programs": [
+            "rear_chassis fvtm:rgb_channel secondary",
+            "rear_chassis_door_left fvtm:rgb_channel secondary",
+            "rear_chassis_door_right fvtm:rgb_channel secondary",
+        ]
+    },
+    "Textures": [
+        "Default;fvp:textures/cars/c6_26.png"
+    ],
+    "Category": "rear_frame"
+}

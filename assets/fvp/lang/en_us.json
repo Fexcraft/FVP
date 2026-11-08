@@ -150,5 +150,8 @@
     "item.fvp.excav_crank_hyd_low": "Excav. Crank Hyd. Low.", 
     "item.fvp.excav_crank_hyd_up": "Excav. Crank Hyd. Up.", 
     "item.fvp.excav_crank": "Excav. Crank", 
-    "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)"
+    "item.fvp.c6_26": "C6-26", 
+    "item.fvp.fvp:tram_30": "Tram Gauge (30pxt)", 
+    "item.fvp.c6_26_rear_bars": "C6-26 Rear Bars", 
+    "item.fvp.c6_26_rear_frame": "C6-26 Rear Frame"
 }
